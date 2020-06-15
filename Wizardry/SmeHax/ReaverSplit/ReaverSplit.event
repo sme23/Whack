@@ -1,0 +1,13 @@
+
+#ifdef USE_REAVER_SPLIT
+
+//Original by Colorz, rewritten by Sme
+
+#include "ReaverSplit.lyn.event"
+
+PUSH
+ORG 0x2C770
+jumpToHack(ReverseWeaponTriangle)
+POP
+
+#endif // USE_REAVER_SPLIT

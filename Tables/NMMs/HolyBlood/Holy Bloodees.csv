@@ -1,0 +1,256 @@
+INLINE HolyBloodCharacterTable,"Holy Blood ID (Set bit 0x80 for major, don't if minor)"
+None,NoBlood
+Eirika,RenaisBlood|IsMajor
+Seth,NoBlood
+Gilliam,NoBlood
+Franz,NoBlood
+Moulder,NoBlood
+Vanessa,NoBlood
+Ross,NoBlood
+Neimi,NoBlood
+Colm,NoBlood
+Garcia,NoBlood
+Innes,FreliaBlood|IsMajor
+Lute,NoBlood
+Natasha,NoBlood
+Cormag,NoBlood
+Ephraim,RenaisBlood|IsMajor
+Forde,NoBlood
+Kyle,NoBlood
+Amelia,NoBlood
+Artur,NoBlood
+Gerik,NoBlood
+Tethys,NoBlood
+Marisa,NoBlood
+Saleh,NoBlood
+Ewan,NoBlood
+L'Arachel,LatonaBlood|IsMajor
+Dozla,NoBlood
+-0,NoBlood
+Rennac,NoBlood
+Duessel,NoBlood
+Myrrh,NoBlood
+Knoll,NoBlood
+Joshua,JehannaBlood|IsMajor
+Syrene,NoBlood
+Tana,FreliaBlood
+Lyon,GradoBlood|IsMajor
+Orson,NoBlood
+Glen,NoBlood
+Selena,NoBlood
+Valter,NoBlood
+Riev,NoBlood
+Caellach,NoBlood
+Fado,RenaisBlood|IsMajor
+Ismaire,JehannaBlood|IsMajor
+Hayden,FreliaBlood|IsMajor
+FakeEirika,RenaisBlood|IsMajor
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+Lyon's Summon,NoBlood
+-0,NoBlood
+-0,NoBlood
+Knoll's Summon,NoBlood
+Ewan's Summon,NoBlood
+Lyon (Ch 17),GradoBlood|IsMajor
+Morva (Ch 20),NoBlood
+Orson (Ch 5x),NoBlood
+Valter (Ch 15),NoBlood
+Selena (Ch 10B & 13B),NoBlood
+Valter (Prologue),NoBlood
+Breguet (Ch 1),NoBlood
+Bone (Ch 2),NoBlood
+Bazba (Ch 3),NoBlood
+Entombed (Ch 4),NoBlood
+Saar (Ch 5),NoBlood
+Novala (Ch 6),NoBlood
+Murray (Ch 7),NoBlood
+Tirado (Ch 8),NoBlood
+Binks (Ch 9A),NoBlood
+Pablo (Ch 10A),NoBlood
+Maelduin (Ch 12A),NoBlood
+Aias (Ch 13A),NoBlood
+Carlyle (Ch 14A),NoBlood
+Caellach (Ch 15),NoBlood
+Pablo (Ch 13A),NoBlood
+-0,NoBlood
+Gorgon (Ch 18),NoBlood
+Riev (Ch 19 & 20),FomortiisBlood
+-0,NoBlood
+-0,NoBlood
+Gheb (Ch 9B),NoBlood
+Beran (Ch 10B),NoBlood
+Cyclops (Ch 12B),NoBlood
+Wight (Ch 11A),NoBlood
+Deathgoyle (Ch 11B),NoBlood
+Entombed (Monster Boss),NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+Hunter (Ch 16),NoBlood
+-0,NoBlood
+Brigand,NoBlood
+-0,NoBlood
+O'Neill (Prologue),NoBlood
+Glen (Cutscene),NoBlood
+Zonta (Ch 5x),NoBlood
+Vigarde (Ch 14B),GradoBlood|IsMajor
+Lyon (Ch Final),GradoBlood|IsMajor
+Orson (Ch 16),NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+Grado Soldier (Special),NoBlood
+Grado Soldier 1 (Normal),NoBlood
+Grado Soldier 2,NoBlood
+Grado Soldier 3,NoBlood
+Grado Soldier 4,NoBlood
+Grado Soldier 5,NoBlood
+Grado Soldier 6,NoBlood
+Grado Soldier 7,NoBlood
+Grado Soldier 8,NoBlood
+Grado Soldier 9,NoBlood
+Grado Soldier 10 (Duessel's),NoBlood
+Grado Soldier 11 (Duessel's),NoBlood
+Grado Soldier 12 (Duessel's),NoBlood
+Grado Soldier 13,NoBlood
+Grado Remnant 1 (Main),NoBlood
+Cutthroat,NoBlood
+Grado Remnant 2 (Cutscene and C16 only?),NoBlood
+Grado Remnant 3 (C16 only?),NoBlood
+Grado Remnant 4 (C16 only?),NoBlood
+Wraith (Sage),NoBlood
+Wraith (Swords),NoBlood
+Wraith (Axes),NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+Mercenary (C9A),NoBlood
+Mercenary (C10A),NoBlood
+Merc Remnant (C13A),NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Monster,NoBlood
+Demon King,FomortiisBlood|IsMajor
+-0,NoBlood
+Frelian,NoBlood
+Frelian,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+Fado (Renais),RenaisBlood|IsMajor
+-0,NoBlood
+Hayden (Frelia),FreliaBlood|IsMajor
+Mansel (Rausten),LatonaBlood
+Klimt (Carcino),NoBlood
+Dara (Caer Pelyn),NoBlood
+Ismaire (Jehanna),JehannaBlood|IsMajor
+Pegasus Messenger,NoBlood
+Rausten Knight,NoBlood
+Rausten Knight,NoBlood
+(Untested Beyond this point),NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood
+-0,NoBlood

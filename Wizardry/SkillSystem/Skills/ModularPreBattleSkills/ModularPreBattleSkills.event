@@ -1,0 +1,34 @@
+//This goes in the pre-battle calc loop
+//Lets you define skills w/ effects without touching any assembly
+
+#include "ModularPreBattleSkills.lyn.event"
+
+#define PreBattleSkillEntry(skillID,aAtk,aDef,aAS,aHit,aAvo,aCrit,aDdg,dAtk,dDef,dAS,dHit,dAvo,dCrit,dDdg) "BYTE skillID aAtk aDef aAS aHit aAvo aCrit aDdg dAtk dDef dAS dHit dAvo dCrit dDdg 0"
+#define PreBattleSkillListEnd "WORD 0 0 0 0"
+
+ALIGN 4
+ModularPreBattleSkillList:
+PreBattleSkillEntry(NiceThighsID,100,-100,0,0,0,0,0,0,0,0,0,0,0,0) //test entry
+PreBattleSkillListEnd
+
+
+
+
+/*
++0x00 	Byte	Skill ID				Checked on attacker; function is run twice, once with attacker/defender swapped, so it will apply accordingly
++0x01	Byte	Attacker's Atk			Signed (can be negative)
++0x02	Byte	Attacker's Def			Signed (can be negative)
++0x03	Byte	Attacker's AS			Signed (can be negative)
++0x04	Byte	Attacker's Hit
++0x05	Byte	Attacker's Avoid
++0x06	Byte	Attacker's Crit			Signed (can be negative)
++0x07	Byte	Attacker's Crit Avoid	Signed (can be negative)
++0x08	Byte	Defender's Atk			Signed (can be negative)
++0x09	Byte	Defender's Def			Signed (can be negative)
++0x0A	Byte	Defender's AS			Signed (can be negative)
++0x0B	Byte	Defender's Hit
++0x0C	Byte	Defender's Avoid
++0x0D	Byte	Defender's Crit			Signed (can be negative)
++0x0E	Byte	Defender's Crit Avoid	Signed (can be negative)
++0x0F	Byte	Padding					4-alignment thing, isn't read
+*/

@@ -1,0 +1,16 @@
+#ifdef USE_NOS_RESIRE
+
+PUSH
+	ORG $5F568
+	jumpToHack(NosResirePal1Func)
+	ORG $5F4E4
+	jumpToHack(NosResirePal2Func)
+POP
+
+#include "NosResire.lyn.event"
+
+ALIGN 4
+ResirePalette: //Palette by Tequila
+#incext Png2Dmp "Resire.png" --palette-only
+
+#endif // USE_NOS_RESIRE
