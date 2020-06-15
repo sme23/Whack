@@ -1240,4 +1240,12 @@ Mag/2 range.[X]
 Synchronize: Statuses are also[N]
 applied to the attacker.[X]
 
+## SD_Wildheart
+Wildheart: This unit is[N]
+always shifted, but stat[N]
+boosts are halved.[X]
+
+## SD_Formshift
+Formshift: This unit[N]
+is always shifted.[X]
 

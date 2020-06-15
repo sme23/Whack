@@ -3,6 +3,9 @@
 //Skills are categorized broadly by where their effect is applied, in no particular order within each category.
 
 
+#define WildheartID 255
+#define FormshiftID 255
+
 //AI Skills
 
 //Provoke: Enemies are more likely to target this unit.

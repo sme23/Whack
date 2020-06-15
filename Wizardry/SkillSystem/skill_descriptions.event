@@ -304,4 +304,6 @@ SkillDescription(MoonlightID,SD_Moonlight)
 SkillDescription(VengeanceID,SD_Vengeance)
 SkillDescription(SwarpID,SD_Swarp)
 SkillDescription(SynchronizeID,SD_Synchronize)
+SkillDescription(WildheartID,SD_Wildheart)
+SkillDescription(FormshiftID,SD_Formshift)
 
