@@ -29,7 +29,16 @@
 
 #include "Wizardry/SkillSystem/skill_definitions.event"
 
- #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+
+//Useful macros
+#define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"
+#define GiveGold(money) "SVAL 0x3 money; GIVEITEMTOMAIN 0"
+#define EndConvo "CALL $9EE2C4"
+#define ClearAllUnits "CLEA 0x0; CLEE 0x0; CLEN 0x0"
+#define FadeOutMusic "MUSCMID 0x7FFF"
+#define ScrollBoxText(textID) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textID; TEXTEND; REMA"
+//End of useful macros
 
 #define Bowgun (GoldGem+1)
 
@@ -305,5 +314,23 @@
 #define HardModeModifierFlag 191 //2 scenarios beaten
 #define FixedGrowthsModifierFlag 192 //3 scenarios beaten
 #define CasualModeModifierFlag 193 //4 scenarios beaten
-#define 1RNModifierFlag 194 //6 scenarios beaten
+#define OneRNModifierFlag 194 //6 scenarios beaten
 #define FatesRNModifierFlag 195 //8 scenarios beaten
+
+
+//event ptr table defs
+
+#define HubEventsID 0x7
+#define SkirmishInGalliaEventsID 0xA
+#define ManaketeMayhemEventsID 0xD
+#define FatedRevelationsEventsID 0x14
+#define BloodFeudEventsID 0x17
+#define StatusSanctuaryEventsID 0x1E
+#define FromTheDarknessEventsID 0x21
+#define MerchantMadnessEventsID 0x24
+#define DemonBloodEventsID 0x27
+#define MiniThracia1EventsID 0x82
+#define MiniThracia2EventsID 0x83
+#define MiniThracia2xEventsID 0x84
+#define MiniThracia3EventsID 0x85
+

@@ -1,4 +1,4 @@
-EventPointerTable(0x7, PointerList)
+EventPointerTable(MiniThracia1EventsID, PointerList)
 
 PointerList:
 POIN TurnBasedEvents

@@ -1,4 +1,4 @@
-EventPointerTable(0x7, PointerList)
+EventPointerTable(HubEventsID, PointerList)
 
 PointerList:
 POIN TurnBasedEvents
@@ -64,6 +64,8 @@ BeginningScene:
 //actually probably more than 1 more like 3 or 4
 //that can be cycled through
 
+FADU 10
+
 CHECK_EVENTID OpeningViewedFlag
 BNE 0 s0 sC
 CALL FirstTimeOpeningEvent
@@ -73,10 +75,7 @@ LABEL 0
 CALL HandleNewModifiersEvent
 
 //pre-menu text
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubPreMenuText
-TEXTEND
-REMA
+ScrollBoxText(HubPreMenuText)
 
 //call menu
 CALL CallFirstMenu
@@ -96,7 +95,7 @@ ALIGN 4
 FirstTimeOpeningEvent:
 //this only plays the first time you start up a new file
 //because it sets a flag to say 'dont play me again'
-ENUT FirstTimeOpeningEvent
+ENUT OpeningViewedFlag
 
 
 NoFade
@@ -122,8 +121,8 @@ LABEL 1
 SVAL s1 2
 BNE 2 s1 sC
 
-//confirm for Manakete Madness
-CALL ManaketeMadness_Start
+//confirm for Manakete Mayhem
+CALL ManaketeMayhem_Start
 
 LABEL 2
 SVAL s1 3
@@ -149,10 +148,7 @@ CALL CallSecondMenu
 LABEL 5
 
 //If we end up here, something has gone horribly wrong
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenu1ErrorText
-TEXTEND
-REMA
+ScrollBoxText(HubMenu1ErrorText)
 
 CALL CallFirstMenu //recursion time
 
@@ -207,10 +203,7 @@ CALL CallThirdMenu
 LABEL 5
 
 //If we end up here, something has gone horribly wrong
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenu2ErrorText
-TEXTEND
-REMA
+ScrollBoxText(HubMenu2ErrorText)
 
 CALL CallSecondMenu //recursion time
 
@@ -265,10 +258,7 @@ CALL CallFirstMenu
 LABEL 5
 
 //If we end up here, something has gone horribly wrong
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenu3ErrorText
-TEXTEND
-REMA
+ScrollBoxText(HubMenu3ErrorText)
 
 CALL CallThirdMenu //recursion time
 
@@ -286,9 +276,7 @@ ENDA
 
 ALIGN 4
 SkirmishInGallia_Start:
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuSkirmishInGalliaConfirm
-TEXTEND
+ScrollBoxText(HubMenuSkirmishInGalliaConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -307,15 +295,11 @@ ManaketeMayhem_Start:
 CHECK_EVENTID SkirmishInGalliaBeatenFlag
 BNE 1 s0 sC
 
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuManaketeMayhemLocked
-TEXTEND
+ScrollBoxText(HubMenuManaketeMayhemLocked)
 GOTO 0
 
 LABEL 1
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuManaketeMayhemConfirm
-TEXTEND
+ScrollBoxText(HubMenuManaketeMayhemConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -330,9 +314,7 @@ ENDA
 
 ALIGN 4
 FatedRevelations_Start:
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuFatedRevelationsConfirm
-TEXTEND
+ScrollBoxText(HubMenuFatedRevelationsConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -347,9 +329,7 @@ ENDA
 
 ALIGN 4
 StatusSanctuary_Start:
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuStatusSanctuaryConfirm
-TEXTEND
+ScrollBoxText(HubMenuStatusSanctuaryConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -368,15 +348,11 @@ BloodFeud_Start:
 CHECK_EVENTID FatedRevelationsBeatenFlag
 BNE 1 s0 sC
 
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuBloodFeudLocked
-TEXTEND
+ScrollBoxText(HubMenuBloodFeudLocked)
 GOTO 0
 
 LABEL 1
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuBloodFeudConfirm
-TEXTEND
+ScrollBoxText(HubMenuBloodFeudConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -391,9 +367,7 @@ ENDA
 
 ALIGN 4
 FromTheDarkness_Start:
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuFromTheDarknessConfirm
-TEXTEND
+ScrollBoxText(HubMenuFromTheDarknessConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -408,9 +382,7 @@ ENDA
 
 ALIGN 4
 MerchantMadness_Start:
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuMerchantMadnessConfirm
-TEXTEND
+ScrollBoxText(HubMenuMerchantMadnessConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -429,19 +401,15 @@ MiniThracia_Start:
 CHECK_EVENTID StatusSanctuaryBeatenFlag
 BNE 1 s0 sC
 
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuMiniThraciaLocked
-TEXTEND
+ScrollBoxText(HubMenuMiniThraciaLocked)
 GOTO 0
 
 LABEL 1
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuMiniThraciaConfirm
-TEXTEND
+ScrollBoxText(HubMenuMiniThraciaConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
-MNC2 MiniThraciaChID
+MNC2 MiniThracia1ChID
 NoFade
 ENDB
 
@@ -456,15 +424,11 @@ DemonBlood_Start:
 CALL IsDemonBloodUnlockedEvent //returns sC bool
 BNE 1 s0 sC
 
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuDemonBloodLocked
-TEXTEND
+ScrollBoxText(HubMenuDemonBloodLocked)
 GOTO 0
 
 LABEL 1
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuDemonBloodConfirm
-TEXTEND
+ScrollBoxText(HubMenuDemonBloodConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -479,9 +443,7 @@ ENDA
 
 ALIGN 4
 GameplayModifiers_Start:
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuGameplayModifiersConfirm
-TEXTEND
+ScrollBoxText(HubMenuGameplayModifiersConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -494,9 +456,7 @@ ENDA
 
 ALIGN 4
 Options_Start:
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuOptionsConfirm
-TEXTEND
+ScrollBoxText(HubMenuOptionsConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -512,9 +472,7 @@ ENDA
 
 ALIGN 4
 Credits_Start:
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuCreditsConfirm
-TEXTEND
+ScrollBoxText(HubMenuCreditsConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
@@ -546,9 +504,7 @@ GameplayModifiersSelectionEvent:
 //1RN mode unlocks at 6 chapters
 //Fates RN mode unlocks at 8 chapters
 //when you're done, return to menu 3
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuDebugModifierText
-TEXTEND
+ScrollBoxText(HubMenuDebugModifierText)
 
 
 NoFade
@@ -563,9 +519,7 @@ OptionsSelectionEvent:
 //this is just a wrapper that should call the Options menu
 //a way to set them outside of any individual chapter
 //when you're done, return to menu 3
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuDebugOptionsText
-TEXTEND
+ScrollBoxText(HubMenuDebugOptionsText)
 
 NoFade
 ENDA
@@ -576,9 +530,7 @@ CreditsDisplayEvent:
 //display the endgame credits, best turn counts for each chapter, etc
 //no character endings
 //look at how this sequence is called in the Epilogue
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuDebugCreditsText
-TEXTEND
+ScrollBoxText(HubMenuDebugCreditsText)
 
 
 NoFade
@@ -640,55 +592,55 @@ HandleNewModifiersEvent:
 
 COUNTER_SET 0 0
 
-CHECK_EVENTID 
+CHECK_EVENTID SkirmishInGalliaBeatenFlag
 BNE 0 s0 sC
 
 COUNTER_INC 0
 
 LABEL 0 
-CHECK_EVENTID 
+CHECK_EVENTID ManaketeMayhemBeatenFlag
 BNE 1 s0 sC
 
 COUNTER_INC 0
 
 LABEL 1
-CHECK_EVENTID 
+CHECK_EVENTID FatedRevelationsBeatenFlag
 BNE 2 s0 sC
 
 COUNTER_INC 0
 
 LABEL 2
-CHECK_EVENTID 
+CHECK_EVENTID BloodFeudBeatenFlag
 BNE 3 s0 sC
 
 COUNTER_INC 0
 
 LABEL 3
-CHECK_EVENTID 
+CHECK_EVENTID StatusSanctuaryBeatenFlag
 BNE 4 s0 sC
 
 COUNTER_INC 0
 
 LABEL 4
-CHECK_EVENTID 
+CHECK_EVENTID FromTheDarknessBeatenFlag
 BNE 5 s0 sC
 
 COUNTER_INC 0
 
 LABEL 5
-CHECK_EVENTID 
+CHECK_EVENTID MerchantMadnessBeatenFlag
 BNE 6 s0 sC
 
 COUNTER_INC 0
 
 LABEL 6
-CHECK_EVENTID 
+CHECK_EVENTID DemonBloodBeatenFlag
 BNE 7 s0 sC
 
 COUNTER_INC 0
 
 LABEL 7
-CHECK_EVENTID 
+CHECK_EVENTID MiniThraciaBeatenFlag
 BNE 8 s0 sC
 
 COUNTER_INC 0
@@ -707,9 +659,7 @@ CHECK_EVENTID EasyModeModifierFlag
 BNE 9 s0 sC
 
 SOUN 0x5B //level up jingle
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuModifierUnlockEasyMode
-TEXTEND
+ScrollBoxText(HubMenuModifierUnlockEasyMode)
 ENUT EasyModeModifierFlag
 
 LABEL 9
@@ -723,9 +673,7 @@ CHECK_EVENTID HardModeModifierFlag
 BNE 10 s0 sC
 
 SOUN 0x5B //level up jingle
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuModifierUnlockHardMode
-TEXTEND
+ScrollBoxText(HubMenuModifierUnlockHardMode)
 ENUT HardModeModifierFlag
 
 LABEL 10
@@ -739,9 +687,7 @@ CHECK_EVENTID FixedGrowthsModifierFlag
 BNE 11 s0 sC
 
 SOUN 0x5B //level up jingle
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuModifierUnlockFixedGrowths
-TEXTEND
+ScrollBoxText(HubMenuModifierUnlockFixedGrowths)
 ENUT FixedGrowthsModifierFlag
 
 LABEL 11
@@ -755,9 +701,7 @@ CHECK_EVENTID CasualModeModifierFlag
 BNE 12 s0 sC
 
 SOUN 0x5B //level up jingle
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuModifierUnlockCasualMode
-TEXTEND
+ScrollBoxText(HubMenuModifierUnlockCasualMode)
 ENUT CasualModeModifierFlag
 
 LABEL 12
@@ -767,14 +711,12 @@ COUNTER_CHECK 0
 SVAL s1 6
 BNE 13 s1 sC
 
-CHECK_EVENTID 1RNModifierFlag
+CHECK_EVENTID OneRNModifierFlag
 BNE 13 s0 sC
 
 SOUN 0x5B //level up jingle
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuModifierUnlock1RN
-TEXTEND
-ENUT 1RNModifierFlag
+ScrollBoxText(HubMenuModifierUnlock1RN)
+ENUT OneRNModifierFlag
 
 LABEL 13
 
@@ -787,9 +729,7 @@ CHECK_EVENTID FatesRNModifierFlag
 BNE 14 s0 sC
 
 SOUN 0x5B //level up jingle
-TUTORIALTEXTBOXSTART
-TEXTSHOW HubMenuModifierUnlockFatesRN
-TEXTEND
+ScrollBoxText(HubMenuModifierUnlockFatesRN)
 ENUT FatesRNModifierFlag
 
 LABEL 14
@@ -815,6 +755,9 @@ ENDA
 
 #define EventMenuCommand(aTextId) "WORD 0; SHORT aTextId 0; WORD 0; POIN (0x04F448+1); WORD 0; POIN (prEventMenuCommandEffect+1); WORD 0 0 0"
 #define EventMenuCommandEnd "WORD 0 0 0 0 0 0 0 0 0"
+prEventMenuCommandEffect:
+	SHORT 0xB500 0x203C 0x5C08 0x4B03 0x469E 0xF800 0x2017 0xBC02 0x4708 0x0000 0xD1F8 0x0800
+	ALIGN 4
 
 
 ALIGN 4
@@ -822,10 +765,6 @@ prCallEventMenu1:
 	SHORT 0xB510 0x1C04 0x4B10 0x469E 0xF800 0x4A10 0x7850 0x2101 0x4308 0x2102 0x4308 0x2104 0x4308 0x2108 0x4308 0x2110 0x4308 0x7050 0x2000 0x4B0A 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4809 0x1C21 0x4B07 0x469E 0xF800 0xBC10 0xBC01 0x4700 0xE884 0x0804 0x3080 0x0300 0x3D38 0x0800 0x43A8 0x0800 0xEB68 0x0804 0xEBC8 0x0804
 	POIN pMenuDefinition1
 ALIGN 4
-	
-	prEventMenuCommandEffect1:
-		SHORT 0xB500 0x203C 0x5C08 0x4B03 0x469E 0xF800 0x2017 0xBC02 0x4708 0x0000 0xD1F8 0x0800
-		ALIGN 4
 
 	pMenuDefinition1:
 	BYTE 4 5 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
@@ -853,10 +792,6 @@ prCallEventMenu2:
 	SHORT 0xB510 0x1C04 0x4B10 0x469E 0xF800 0x4A10 0x7850 0x2101 0x4308 0x2102 0x4308 0x2104 0x4308 0x2108 0x4308 0x2110 0x4308 0x7050 0x2000 0x4B0A 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4809 0x1C21 0x4B07 0x469E 0xF800 0xBC10 0xBC01 0x4700 0xE884 0x0804 0x3080 0x0300 0x3D38 0x0800 0x43A8 0x0800 0xEB68 0x0804 0xEBC8 0x0804
 	POIN pMenuDefinition2
 ALIGN 4
-	
-	prEventMenuCommandEffect2:
-		SHORT 0xB500 0x203C 0x5C08 0x4B03 0x469E 0xF800 0x2017 0xBC02 0x4708 0x0000 0xD1F8 0x0800
-		ALIGN 4
 
 	pMenuDefinition2:
 	BYTE 4 5 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
@@ -887,10 +822,6 @@ prCallEventMenu3:
 	SHORT 0xB510 0x1C04 0x4B10 0x469E 0xF800 0x4A10 0x7850 0x2101 0x4308 0x2102 0x4308 0x2104 0x4308 0x2108 0x4308 0x2110 0x4308 0x7050 0x2000 0x4B0A 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4809 0x1C21 0x4B07 0x469E 0xF800 0xBC10 0xBC01 0x4700 0xE884 0x0804 0x3080 0x0300 0x3D38 0x0800 0x43A8 0x0800 0xEB68 0x0804 0xEBC8 0x0804
 	POIN pMenuDefinition3
 ALIGN 4
-	
-	prEventMenuCommandEffect3:
-		SHORT 0xB500 0x203C 0x5C08 0x4B03 0x469E 0xF800 0x2017 0xBC02 0x4708 0x0000 0xD1F8 0x0800
-		ALIGN 4
 
 	pMenuDefinition3:
 	BYTE 4 5 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)

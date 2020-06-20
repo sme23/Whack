@@ -42,6 +42,9 @@ Gameplay Modifiers[X]
 ## HubMenuOptions
 Options[X]
 
+## HubMenuCredits
+Credits[X]
+
 ## HubMenuUnknown
 ???[X]
 

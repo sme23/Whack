@@ -1,4 +1,4 @@
-EventPointerTable(0x7, PointerList)
+EventPointerTable(DemonBloodEventsID, PointerList)
 
 PointerList:
 POIN TurnBasedEvents

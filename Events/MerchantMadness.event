@@ -1,4 +1,4 @@
-EventPointerTable(0x7, PointerList)
+EventPointerTable(MerchantMadnessEventsID, PointerList)
 
 PointerList:
 POIN TurnBasedEvents

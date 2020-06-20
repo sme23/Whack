@@ -1,4 +1,4 @@
-EventPointerTable(0x7, PointerList)
+EventPointerTable(FatedRevelationsEventsID, PointerList)
 
 PointerList:
 POIN TurnBasedEvents
