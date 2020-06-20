@@ -1,0 +1,73 @@
+//kill opening world map cutscene
+{
+#include "KillOpening.event"
+}
+
+//hub map (probably a series of menus, rather than the EN approach)
+{
+#include "Hub.event"
+}
+
+
+//this can double as a chapter idea list ig
+
+
+//chapter for laguz using transformation bars
+{
+#include "SkirmishInGallia.event" //laguz bars
+}
+
+//chapter for manaketes using tranformation bars
+{
+#include "ManaketeMayhem.event" 
+}
+
+//set of thracia-inspired chapters to show off fatigue & thracia escape
+//Thracia 0.7.76 
+//includes liberal use of status-inflicting weapons
+//includes Aum staff (Valkyrie staff? since Jugdral setting)
+//we could use thracia tilesets for these maps too probably
+//
+{
+#include "MiniThracia1.event" //thracia escape
+}
+{
+#include "MiniThracia2.event" //thracia fog
+}
+{
+#include "MiniThracia2x.event" //if gaiden requirements met, can reclaim captured allies here if any
+}
+{
+#include "MiniThracia3.event" //
+}
+
+//chapter making heavy use of dragon veins w/ holy blood (add heal tiles onto this one)
+{
+#include "FatedRevelations.event"
+}
+
+//chapter making heavy use of holy blood w/ a jugdral theme
+{
+#include "BloodFeud.event"
+}
+
+//chapter showing off new status effects via staves & dancer rings + dancer ring refresh
+{
+#include "StatusSanctuary.event"
+}
+
+//chapter utilizing tellius torches
+{
+#include "FromTheDarkness.event"
+}
+
+//chapter utilizing shop units where you escort merchants (map indicator traps pog)
+{
+#include "MerchantMadness.event"
+}
+
+//chapter utilizing a combination of laguz bars, holy blood, & fog + tellius torches, focused on monsters w/ Lyon transforming into Demon King being a thing
+{
+#include "DemonBlood.event"
+}
+

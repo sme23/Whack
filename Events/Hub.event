@@ -1,0 +1,77 @@
+EventPointerTable(0x7, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT
+
+EnemyUnits:
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+//this is going to be a chapter select hub
+//referencing stan stuff we can do it with route split boxes
+//but should have variable text?
+//it may be easier to do this EN-style
+//where you talk to a unit to select a chapter
+//or they could just always be played in a specific order idk
+//would rather not do that tho
+//aaaaactually, we can just do the thing
+//nvm then 1 menu works
+//actually probably more than 1 more like 3 or 4
+//that can be cycled through
+
+
+
+
+NoFade
+ENDA
+
+EndingScene:
+MNC2 HubChID
+NoFade
+ENDA
+

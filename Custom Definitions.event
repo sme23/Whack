@@ -265,3 +265,21 @@
 //Weapon Lock Array
 #define USE_WEAPON_LOCK_ARRAY
 
+//Chapter ID defs
+
+#define HubChID 0
+#define SkirmishInGalliaChID 1
+#define ManaketeMayhemChID 2
+#define FatedRevelationsChID 3
+#define BloodFeudChID 4
+#define StatusSanctuaryChID 5
+#define FromTheDarknessChID 6
+#define MerchantMadnessChID 7
+#define DemonBloodChID 8
+#define MiniThracia1ChID 30
+#define MiniThracia2ChID 31
+#define MiniThracia2xChID 32
+#define MiniThracia3ChID 33
+
+
+
