@@ -3,6 +3,9 @@
     #include "Custom Definitions.event"
 
     ORG FreeSpace
+	
+	#inctext DateTimeSetter
+	#inctext ProjectNameSetter
 
     #include "repointedTextTable.event"
 

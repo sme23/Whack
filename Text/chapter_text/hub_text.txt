@@ -126,11 +126,11 @@ Change modifiers?[A][N]
 [Yes][X]
 
 ## HubMenuOptionsConfirm
-Change options?[A][N]
+Change options?[N]
 [Yes][X]
 
 ## HubMenuCreditsConfirm
-View the credits?[A][N]
+View the credits?[N]
 [No][X]
 
 ## HubMenuManaketeMayhemLocked
