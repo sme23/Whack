@@ -546,6 +546,9 @@ GameplayModifiersSelectionEvent:
 //1RN mode unlocks at 6 chapters
 //Fates RN mode unlocks at 8 chapters
 //when you're done, return to menu 3
+TUTORIALTEXTBOXSTART
+TEXTSHOW HubMenuDebugModifierText
+TEXTEND
 
 
 NoFade
@@ -560,7 +563,9 @@ OptionsSelectionEvent:
 //this is just a wrapper that should call the Options menu
 //a way to set them outside of any individual chapter
 //when you're done, return to menu 3
-
+TUTORIALTEXTBOXSTART
+TEXTSHOW HubMenuDebugOptionsText
+TEXTEND
 
 NoFade
 ENDA
@@ -571,6 +576,9 @@ CreditsDisplayEvent:
 //display the endgame credits, best turn counts for each chapter, etc
 //no character endings
 //look at how this sequence is called in the Epilogue
+TUTORIALTEXTBOXSTART
+TEXTSHOW HubMenuDebugCreditsText
+TEXTEND
 
 
 NoFade
