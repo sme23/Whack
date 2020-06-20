@@ -265,6 +265,8 @@
 //Weapon Lock Array
 #define USE_WEAPON_LOCK_ARRAY
 
+
+
 //Chapter ID defs
 
 #define HubChID 0
@@ -283,3 +285,25 @@
 
 
 
+
+//Global flag defs
+
+#define UnlockGuideFlag 0 //this will disable the guide entirely
+
+#define OpeningViewedFlag 180 //normally first guide flag
+#define SkirmishInGalliaBeatenFlag 181
+#define ManaketeMayhemBeatenFlag 182
+#define FatedRevelationsBeatenFlag 183
+#define BloodFeudBeatenFlag 184
+#define StatusSanctuaryBeatenFlag 185
+#define FromTheDarknessBeatenFlag 186
+#define MerchantMadnessBeatenFlag 187
+#define DemonBloodBeatenFlag 188
+#define MiniThraciaBeatenFlag 189
+
+#define EasyModeModifierFlag 190 //1 scenario beaten
+#define HardModeModifierFlag 191 //2 scenarios beaten
+#define FixedGrowthsModifierFlag 192 //3 scenarios beaten
+#define CasualModeModifierFlag 193 //4 scenarios beaten
+#define 1RNModifierFlag 194 //6 scenarios beaten
+#define FatesRNModifierFlag 195 //8 scenarios beaten
