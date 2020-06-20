@@ -175,3 +175,11 @@ New modifier unlocked![N]
 New modifier unlocked![N]
 [ToggleRed]Fates RN[ToggleRed][A][X]
 
+## HubMenuDebugModifierText
+insert modifier menu here[A][X]
+
+## HubMenuDebugOptionsText
+insert options menu here[A][X]
+
+## HubMenuDebugCreditsText
+insert credits here[A][X]
