@@ -66,6 +66,8 @@ BeginningScene:
 
 FADU 10
 
+EVBIT_MODIFY 4
+
 CHECK_EVENTID OpeningViewedFlag
 BNE 0 s0 sC
 CALL FirstTimeOpeningEvent
