@@ -107,15 +107,15 @@ ENUT OpeningViewedFlag
 NoFade
 ENDA
 
-#define FirstMenuStartLabel 777
-#define SecondMenuStartLabel 778
-#define ThirdMenuStartLabel 779
+#define FirstMenuStartLabel 666
+#define SecondMenuStartLabel 420
+#define ThirdMenuStartLabel 69
 
 ALIGN 4
 CallFirstMenu:
 LABEL FirstMenuStartLabel
 EndConvo
-STAL 2
+
 ASMC prCallEventMenu1|1 //returns number based on entry # in list that was selected, 0-indexed
 BNE 0 s0 sC
 
@@ -170,53 +170,53 @@ GOTO FirstMenuStartLabel //recursion bad
 
 LABEL SecondMenuStartLabel
 EndConvo
-STAL 2
+
 ASMC prCallEventMenu2|1 //returns number based on entry # in list that was selected, 0-indexed
-BNE 0 s0 sC
+BNE 10 s0 sC
 
 //load last menu, always 1
 GOTO FirstMenuStartLabel
 
-LABEL 0
+LABEL 10
 SVAL s1 1
-BNE 1 s1 sC
+BNE 11 s1 sC
 
 //confirm for blood feud
 CALL BloodFeud_Start
 GOTO SecondMenuStartLabel
 
-LABEL 1
+LABEL 11
 SVAL s1 2
-BNE 2 s1 sC
+BNE 12 s1 sC
 
 //confirm for from the darkness
 CALL FromTheDarkness_Start
 GOTO SecondMenuStartLabel
 
-LABEL 2
+LABEL 12
 SVAL s1 3
-BNE 3 s1 sC
+BNE 13 s1 sC
 
 //confirm for merchant madness
 CALL MerchantMadness_Start
 GOTO SecondMenuStartLabel
 
-LABEL 3
+LABEL 13
 SVAL s1 4
-BNE 4 s1 sC
+BNE 14 s1 sC
 
 //confirm for mini thracia
 CALL MiniThracia_Start
 GOTO SecondMenuStartLabel
 
-LABEL 4
+LABEL 14
 SVAL s1 5
-BNE 5 s1 sC
+BNE 15 s1 sC
 
 //load next page
 GOTO ThirdMenuStartLabel
 
-LABEL 5
+LABEL 15
 
 //If we end up here, something has gone horribly wrong
 ScrollBoxText(HubMenu2ErrorText)
@@ -227,53 +227,53 @@ GOTO SecondMenuStartLabel //recursion bad
 
 LABEL ThirdMenuStartLabel
 EndConvo
-STAL 2
+
 ASMC prCallEventMenu3|1 //returns number based on entry # in list that was selected, 0-indexed
-BNE 0 s0 sC
+BNE 20 s0 sC
 
 //load last menu, always 2
 GOTO SecondMenuStartLabel
 
-LABEL 0
+LABEL 20
 SVAL s1 1
-BNE 1 s1 sC
+BNE 21 s1 sC
 
 //confirm for demon's blood
 CALL DemonBlood_Start
 GOTO ThirdMenuStartLabel
 
-LABEL 1
+LABEL 21
 SVAL s1 2
-BNE 2 s1 sC
+BNE 22 s1 sC
 
 //confirm for gameplay modifiers
 CALL GameplayModifiers_Start
 GOTO ThirdMenuStartLabel
 
-LABEL 2
+LABEL 22
 SVAL s1 3
-BNE 3 s1 sC
+BNE 23 s1 sC
 
 //confirm for options
 CALL Options_Start
 GOTO ThirdMenuStartLabel
 
-LABEL 3
+LABEL 23
 SVAL s1 4
-BNE 4 s1 sC
+BNE 24 s1 sC
 
 //confirm for credits
 CALL Credits_Start
 GOTO ThirdMenuStartLabel
 
-LABEL 4
+LABEL 24
 SVAL s1 5
-BNE 5 s1 sC
+BNE 25 s1 sC
 
 //load next page (always 1)
 GOTO FirstMenuStartLabel
 
-LABEL 5
+LABEL 25
 
 //If we end up here, something has gone horribly wrong
 ScrollBoxText(HubMenu3ErrorText)
@@ -765,7 +765,7 @@ prCallEventMenu1:
 	
 ALIGN 4
 	pMenuDefinition1:
-	BYTE 4 5 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
+	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
 	WORD 0                  // style (change it if u want)
 	POIN pCommandDefinition1 // Command Definitions
 	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
@@ -788,7 +788,7 @@ prCallEventMenu2:
 
 ALIGN 4
 	pMenuDefinition2:
-	BYTE 4 5 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
+	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
 	WORD 0                  // style (change it if u want)
 	POIN pCommandDefinition2 // Command Definitions
 	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
@@ -815,7 +815,7 @@ prCallEventMenu3:
 
 ALIGN 4
 	pMenuDefinition3:
-	BYTE 4 5 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
+	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
 	WORD 0                  // style (change it if u want)
 	POIN pCommandDefinition3 // Command Definitions
 	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
