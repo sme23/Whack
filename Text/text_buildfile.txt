@@ -107,9 +107,6 @@ Revives a dead ally.[X]
 ## SmeName
 Smethlyn[X]
 
-## LaguzName
-Laguz[X]
-
 ## QuilavaName
 Quilava[X]
 
@@ -182,6 +179,8 @@ Unit Shop[X]
 ## RefugeScrollText
 Select a unit to take refuge with.[X]
 
+
+#include "class_text.txt"
 
 #include "holyblood_text.txt"
 

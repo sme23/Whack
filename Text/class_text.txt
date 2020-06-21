@@ -1,0 +1,69 @@
+## LaguzName
+Laguz[X]
+
+## ManaketeName
+Manakete[X]
+
+## CatLaguzDesc
+A member of the Beast tribe.[N]
+Agile and evasive, but weak.[X]
+
+## LionLaguzDesc
+A member of the Beast tribe.[N]
+Strong and sturdy.[X]
+
+## TigerLaguzDesc
+A member of the Beast tribe.[N]
+Very sturdy, but much slower.[X]
+
+## WolfLaguzDesc
+A member of the Beast tribe.[N]
+Fast and skillful.[X]
+
+## HawkLaguzDesc
+A member of the Bird tribe.[N]
+Strong and swift.[X]
+
+## RavenLaguzDesc
+A member of the Bird tribe.[N]
+Frail, but able to steal.[X]
+
+## HeronLaguzDesc
+A member of the Bird tribe.[N]
+Cannot fight, but has Galdrar.[X]
+
+## RedDragonDesc
+A member of the Dragon tribe.[N]
+Slow, but physically defensive.[X]
+
+## WhiteDragonDesc
+A member of the Dragon tribe.[N]
+Magically attuned.[X]
+
+## BlackDragonDesc
+A member of the Dragon tribe.[N]
+The most powerful of dragons.[X]
+
+## DivineDragonDesc
+A manakete who wields the[N]
+power of a Divine Dragon.[X]
+
+## EarthDragonDesc
+A manakete who wields the[N]
+power of an Earth Dragon.[X]
+
+## IceDragonDesc
+A manakete who wields the[N]
+power of an Ice Dragon.[X]
+
+## MageDragonDesc
+A manakete who wields the[N]
+power of a Mage Dragon.[X]
+
+## WyvernDesc
+A manakete who wields[N]
+the power of a Wyvern.[X]
+
+## FireDragonDesc
+A manakete who wields the[N]
+power of a Fire Dragon.[X]

@@ -501,3 +501,5 @@
 #define MageDragonTransformed 176
 #define WyvernTransformed 177
 
+#define FireDragonUntransformed 178
+#define FireDragonTransformed 179
