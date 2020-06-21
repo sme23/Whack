@@ -5,13 +5,13 @@
  </tileset>
  <layer id="1" name="Tile Layer 1" width="15" height="10">
   <properties>
-   <property name="Anims1" value="0"/>
+   <property name="Anims1" value="ValniAnims"/>
    <property name="ChapterID" value="HubChID"/>
    <property name="Main" value=""/>
    <property name="MapID" value="HubMapID"/>
-   <property name="ObjectType" value="0x88"/>
-   <property name="PaletteID" value="0x89"/>
-   <property name="TileConfig" value="0x8A"/>
+   <property name="ObjectType" value="ValniObjType"/>
+   <property name="PaletteID" value="ValniPalette1"/>
+   <property name="TileConfig" value="ValniTileConfig"/>
   </properties>
   <data encoding="csv">
 98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,

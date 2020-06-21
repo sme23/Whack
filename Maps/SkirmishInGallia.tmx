@@ -5,14 +5,14 @@
  </tileset>
  <layer id="1" name="Main" width="19" height="13">
   <properties>
-   <property name="Anims1" value=""/>
+   <property name="Anims1" value="PlainsAnims"/>
    <property name="ChapterID" value="SkirmishInGalliaChID"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="SkirmishInGalliaMapChangesID"/>
    <property name="MapID" value="SkirmishInGalliaMapID"/>
-   <property name="ObjectType" value=""/>
-   <property name="PaletteID" value=""/>
-   <property name="TileConfig" value=""/>
+   <property name="ObjectType" value="PlainsObjType"/>
+   <property name="PaletteID" value="PlainsPalette2"/>
+   <property name="TileConfig" value="PlainsTileConfig"/>
   </properties>
   <data encoding="csv">
 213,213,213,213,213,213,566,598,573,164,783,784,333,334,783,67,721,573,597,
@@ -30,13 +30,13 @@
 131,99,68,785,851,786,68,99,132,199,402,232,67,132,100,164,816,164,132
 </data>
  </layer>
- <layer id="2" name="VillageDestroy" width="19" height="13">
+ <layer id="2" name="VillageDestroy" width="19" height="13" visible="0">
   <properties>
-   <property name="Height" value=""/>
+   <property name="Height" value="2"/>
    <property name="ID" value="0"/>
-   <property name="Width" value=""/>
-   <property name="X" value=""/>
-   <property name="Y" value=""/>
+   <property name="Width" value="3"/>
+   <property name="X" value="16"/>
+   <property name="Y" value="9"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -54,13 +54,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="3" name="VillageClose" width="19" height="13">
+ <layer id="3" name="VillageClose" width="19" height="13" visible="0">
   <properties>
-   <property name="Height" value=""/>
+   <property name="Height" value="1"/>
    <property name="ID" value="1"/>
-   <property name="Width" value=""/>
-   <property name="X" value=""/>
-   <property name="Y" value=""/>
+   <property name="Width" value="1"/>
+   <property name="X" value="17"/>
+   <property name="Y" value="10"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

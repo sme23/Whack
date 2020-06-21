@@ -7,7 +7,7 @@ POP
 HackLocation:
 #incbin "doubleRogueSkillFE8.dmp"
 
-POIN ClassTable
+POIN LocktouchClassList
 
-ClassTable:
+LocktouchClassList:
 BYTE 0x33 0x5E 0x00 
