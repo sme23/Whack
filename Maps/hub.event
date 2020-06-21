@@ -2,6 +2,6 @@
 
 #include eastdlib.event
 
-SetChapterData(0,0x88,0,0x89,0x8A,4,Map,0,0,0)
+SetChapterData(HubChID,ValniObjType,0,ValniPalette1,ValniTileConfig,HubMapID,Map,ValniAnims,0,0)
 Map:
 #incbin "hub_data.dmp"

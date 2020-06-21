@@ -12,3 +12,6 @@
 {
 #include "hub.event"
 }
+{
+#include "SkirmishInGallia.event"
+}
