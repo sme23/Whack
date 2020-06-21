@@ -29,7 +29,16 @@
 
 #include "Wizardry/SkillSystem/skill_definitions.event"
 
- #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+
+//Useful macros
+#define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"
+#define GiveGold(money) "SVAL 0x3 money; GIVEITEMTOMAIN 0"
+#define EndConvo "CALL $9EE2C4"
+#define ClearAllUnits "CLEA 0x0; CLEE 0x0; CLEN 0x0"
+#define FadeOutMusic "MUSCMID 0x7FFF"
+#define ScrollBoxText(textID) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textID; TEXTEND; REMA"
+//End of useful macros
 
 #define Bowgun (GoldGem+1)
 
@@ -264,4 +273,231 @@
 
 //Weapon Lock Array
 #define USE_WEAPON_LOCK_ARRAY
+
+
+
+//Chapter ID defs
+
+#define HubChID 0
+#define SkirmishInGalliaChID 1
+#define ManaketeMayhemChID 2
+#define FatedRevelationsChID 3
+#define BloodFeudChID 4
+#define StatusSanctuaryChID 5
+#define FromTheDarknessChID 6
+#define MerchantMadnessChID 7
+#define DemonBloodChID 8
+#define MiniThracia1ChID 30
+#define MiniThracia2ChID 31
+#define MiniThracia2xChID 32
+#define MiniThracia3ChID 33
+
+
+
+
+//Global flag defs
+
+#define UnlockGuideFlag 0 //this will disable the guide entirely
+
+#define OpeningViewedFlag 180 //normally first guide flag
+#define SkirmishInGalliaBeatenFlag 181
+#define ManaketeMayhemBeatenFlag 182
+#define FatedRevelationsBeatenFlag 183
+#define BloodFeudBeatenFlag 184
+#define StatusSanctuaryBeatenFlag 185
+#define FromTheDarknessBeatenFlag 186
+#define MerchantMadnessBeatenFlag 187
+#define DemonBloodBeatenFlag 188
+#define MiniThraciaBeatenFlag 189
+
+#define EasyModeModifierFlag 190 //1 scenario beaten
+#define HardModeModifierFlag 191 //2 scenarios beaten
+#define FixedGrowthsModifierFlag 192 //3 scenarios beaten
+#define CasualModeModifierFlag 193 //4 scenarios beaten
+#define OneRNModifierFlag 194 //6 scenarios beaten
+#define FatesRNModifierFlag 195 //8 scenarios beaten
+
+
+//event ptr table defs
+
+#define HubEventsID 0x7
+#define SkirmishInGalliaEventsID 0xA
+#define ManaketeMayhemEventsID 0xD
+#define FatedRevelationsEventsID 0x14
+#define BloodFeudEventsID 0x17
+#define StatusSanctuaryEventsID 0x1E
+#define FromTheDarknessEventsID 0x21
+#define MerchantMadnessEventsID 0x24
+#define DemonBloodEventsID 0x27
+#define MiniThracia1EventsID 0x82
+#define MiniThracia2EventsID 0x83
+#define MiniThracia2xEventsID 0x84
+#define MiniThracia3EventsID 0x85
+
+#define HubMapID 0x4
+#define HubMapChangesID 0x6
+#define SkirmishInGalliaMapID 0x8
+#define SkirmishInGalliaMapChangesID 0x9
+#define ManaketeMayhemMapID 0xB
+#define ManaketeMayhemMapChangesID 0xC
+#define FatedRevelationsMapID 0x11
+#define FatedRevelationsMapChangesID 0x13
+#define StatusSanctuaryMapID 0x1B
+#define StatusSanctuaryMapChangesID 0x1D
+#define FromTheDarknessMapID 0x1F
+#define FromTheDarknessMapChangesID 0x20
+#define MerchantMadnessMapID 0x22
+#define MerchantMadnessMapChangesID 0x23
+#define DemonBloodMapID 0x25
+#define DemonBloodMapChangesID 0x26
+#define BloodFeudMapID 0x15
+#define BloodFeudMapChangesID 0x16
+#define MiniThracia1MapID 0x4D
+#define MiniThracia1MapChangesID 0x4E
+#define MiniThracia2MapID 0x53
+#define MiniThracia2MapChangesID 0x55
+#define MiniThracia2xMapID 0x58
+#define MiniThracia2xMapChangesID 0x59
+#define MiniThracia3MapID 0x5C
+#define MiniThracia3MapChangesID 0x5D
+
+//this is probably the third time i've done these with the thought of "oh I only have to do this once then I'll have them whenever I need them in the future"
+
+#define PlainsObjType 0x1
+#define PlainsTileConfig 0x3
+#define PlainsAnims 0x5
+
+#define PlainsPalette1 0x2
+#define PlainsPalette2 0x38
+#define PlainsPalette3 0x4C
+#define PlainsPalette4 0x5B
+
+#define VillageObjType 0xE
+#define VillageTileConfig 0x10
+#define VillageAnims 0x12
+
+#define VillagePalette1 0xF
+#define VillagePalette2 0x72
+#define VillagePalette3 0xEA
+
+#define CastleObjType 0x18
+#define CastleTileConfig 0x1A
+#define CastleAnims 0x1C
+
+#define CastlePalette1 0x19
+#define CastlePalette2 0x48
+#define CastlePalette3 0x57
+#define CastlePalette4 0xB9
+
+#define FieldsObjType 0x2E
+#define FieldsTileConfig 0x30
+#define FieldsAnims 0x5 //may be wrong
+
+#define FieldsPalette1 0x2F
+#define FieldsPalette2 0x34
+
+#define FortObjType 0x3C
+#define FortTileConfig 0x3E
+#define FortAnims 0x0
+
+#define FortPalette1 0x3D
+#define FortPalette2 0x68
+#define FortPalette3 0xCE
+
+#define DesertObjType 0x42
+#define DesertTileConfig 0x44
+#define DesertAnims 0x5
+
+#define DesertPalette1 0x43
+
+#define LavaObjType 0x50
+#define LavaTileConfig 0x52
+#define LavaAnims 0x0
+#define LavaAnims2 0x54
+
+#define LavaPalette1 0x51
+
+#define TempleObjType 0x5F
+#define TempleTileConfig 0x61
+#define TempleAnims 0x0
+
+#define TemplePalette1 0x60
+
+#define StrongholdObjType 0x79
+#define StrongholdTileConfig 0x7B
+#define StrongholdAnims 0x7D
+
+#define StrongholdPalette1 0x7A
+#define StrongholdPalette2 0xE6
+
+#define MountainousObjType 0x6C
+#define MountainousTileConfig 0x6E
+#define MountainousAnims 0x5
+
+#define MountainousPalette1 0x6D
+#define MountainousPalette2 0xA3
+
+#define ValniObjType 0x88
+#define ValniTileConfig 0x8A
+#define ValniAnims 0x0
+
+#define ValniPalette1 0x89
+
+
+//class defs
+
+#define CatLaguzUntransformed 128
+#define CatLaguzFUntransformed 129
+#define LionLaguzUntransformed 130
+#define LionLaguzFUntransformed 131
+#define TigerLaguzUntransformed 132
+#define TigerLaguzFUntransformed 133
+#define WolfLaguzUntransformed 134
+#define WolfLaguzFUntransformed 135
+#define HawkLaguzUntransformed 136
+#define HawkLaguzFUntransformed 137
+#define RavenLaguzUntransformed 138
+#define RavenLaguzFUntransformed 139
+#define HeronLaguzUntransformed 140
+#define HeronLaguzFUntransformed 141
+#define RedDragonUntransformed 142
+#define RedDragonFUntransformed 143
+#define WhiteDragonUntransformed 144
+#define WhiteDragonFUntransformed 145
+#define BlackDragonUntransformed 146
+#define BlackDragonFUntransformed 147
+
+#define CatLaguzTransformed 148
+#define CatLaguzFTransformed 149
+#define LionLaguzTransformed 150
+#define LionLaguzFTransformed 151
+#define TigerLaguzTransformed 152
+#define TigerLaguzFTransformed 153
+#define WolfLaguzTransformed 154
+#define WolfLaguzFTransformed 155
+#define HawkLaguzTransformed 156
+#define HawkLaguzFTransformed 157
+#define RavenLaguzTransformed 158
+#define RavenLaguzFTransformed 159
+#define HeronLaguzTransformed 160
+#define HeronLaguzFTransformed 161
+#define RedDragonTransformed 162
+#define RedDragonFTransformed 163
+#define WhiteDragonTransformed 164
+#define WhiteDragonFTransformed 165
+#define BlackDragonTransformed 166
+#define BlackDragonFTransformed 167
+
+
+#define DivineDragonUntransformed 168
+#define EarthDragonUntransformed 169
+#define IceDragonUntransformed 170
+#define MageDragonUntransformed 171
+#define WyvernUntransformed 172
+
+#define DivineDragonTransformed 173
+#define EarthDragonTransformed 174
+#define IceDragonTransformed 175
+#define MageDragonTransformed 176
+#define WyvernTransformed 177
 

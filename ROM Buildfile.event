@@ -1,8 +1,11 @@
 #ifdef _FE8_
     #include "EAstdlib.event"
     #include "Custom Definitions.event"
-//PROTECT $BCA57C
+
     ORG FreeSpace
+	
+	#inctext DateTimeSetter
+	#inctext ProjectNameSetter
 
     #include "repointedTextTable.event"
 
@@ -18,12 +21,11 @@
     #include "Wizardry/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
-    //Events
-    #include "Events/Release_map.event"
-    #include "Events/WorldMapEvents.event"
-
     //Maps
     #include "Maps/Master Map Installer.event"
+	
+	//Events
+    #include "Events/_MasterEventInstaller.event"
     
     MESSAGE Used free space ends at currentOffset
 #else

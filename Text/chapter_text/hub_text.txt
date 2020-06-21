@@ -1,0 +1,188 @@
+
+## HubPreMenuText
+Please select a chapter.[A][X]
+
+## HubMenuBack
+<- BACK[X]
+
+## HubMenuNext
+NEXT ->[X]
+
+
+## HubMenuSkirmishInGallia
+Skirmish in Gallia[X]
+
+## HubMenuManaketeMayhem
+Manakete Mayhem[X]
+
+## HubMenuFatedRevelations
+Fated Revelations[X]
+
+## HubMenuBloodFeud
+Blood Feud[X]
+
+## HubMenuStatusSanctuary
+Status Sanctuary[X]
+
+## HubMenuFromTheDarkness
+From the Darkness[X]
+
+## HubMenuMerchantMadness
+Merchant Madness[X]
+
+## HubMenuDemonBlood
+Demon's Blood[X]
+
+## HubMenuMiniThracia
+Beta 0.7.76[X]
+
+## HubMenuModifiers
+Gameplay Modifiers[X]
+
+## HubMenuOptions
+Options[X]
+
+## HubMenuCredits
+Credits[X]
+
+## HubMenuUnknown
+???[X]
+
+## HubMenu1ErrorText
+ERROR![A][N]
+Menu 1 has returned[N]
+an invalid value.[A][N]
+Let's try again,[N]
+shall we?[A][X]
+
+## HubMenu2ErrorText
+ERROR![A][N]
+Menu 2 has returned[N]
+an invalid value.[A][N]
+Let's try again,[N]
+shall we?[A][X]
+
+## HubMenu3ErrorText
+ERROR![A][N]
+Menu 3 has returned[N]
+an invalid value.[A][N]
+Let's try again,[N]
+shall we?[A][X]
+
+
+
+## HubMenuSkirmishInGalliaConfirm
+Play the scenario,[N]
+[ToggleRed]Skirmish in Gallia[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuManaketeMayhemConfirm
+Play the scenario,[N]
+[ToggleRed]Manakete Mayhem[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuFatedRevelationsConfirm
+Play the scenario,[N]
+[ToggleRed]Fated Revelations[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuStatusSanctuaryConfirm
+Play the scenario,[N]
+[ToggleRed]Status Sanctuary[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuBloodFeudConfirm
+Play the scenario,[N]
+[ToggleRed]Blood Feud[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuFromTheDarknessConfirm
+Play the scenario,[N]
+[ToggleRed]From the Darkness[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuMerchantMadnessConfirm
+Play the scenario,[N]
+[ToggleRed]Merchant Madness[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuMiniThraciaConfirm
+This scenario is longer than 1 chapter.[A][N]
+Note that, once started, you cannot[N]
+return to this menu until all are beaten.[A][N]
+Play the scenario,[N]
+[ToggleRed]Beta 0.7.76[ToggleRed]?[A][N]
+[No][X]
+
+## HubMenuDemonBloodConfirm
+Play the scenario,[N]
+[ToggleRed]Demon's Blood[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuGameplayModifiersConfirm
+These Modifiers will alter[N]
+aspects of the gameplay.[A][N]
+Change modifiers?[A][N]
+[Yes][X]
+
+## HubMenuOptionsConfirm
+Change options?[N]
+[Yes][X]
+
+## HubMenuCreditsConfirm
+View the credits?[N]
+[No][X]
+
+## HubMenuManaketeMayhemLocked
+This scenario is locked.[A][N]
+To unlock it, you must beat[N]
+[ToggleRed]Skirmish in Gallia[ToggleRed].[A][X]
+
+## HubMenuBloodFeudLocked
+This scenario is locked.[A][N]
+To unlock it, you must beat[N]
+[ToggleRed]Fated Revelations[ToggleRed].[A][X]
+
+## HubMenuMiniThraciaLocked
+This scenario is locked.[A][N]
+To unlock it, you must beat[N]
+[ToggleRed]Status Sanctuary[ToggleRed].[A][X]
+
+## HubMenuDemonBloodLocked
+This scenario is locked.[A][N]
+To unlock it, you must beat[N]
+all other scenarios,[A][N]
+excempting [ToggleRed]Beta 0.7.76[ToggleRed].[A][X]
+
+## HubMenuModifierUnlockEasyMode
+New modifier unlocked![N]
+[ToggleRed]Easy Mode[ToggleRed][A][X]
+
+## HubMenuModifierUnlockHardMode
+New modifier unlocked![N]
+[ToggleRed]Hard Mode[ToggleRed][A][X]
+
+## HubMenuModifierUnlockFixedGrowths
+New modifier unlocked![N]
+[ToggleRed]Fixed Growths[ToggleRed][A][X]
+
+## HubMenuModifierUnlockCasualMode
+New modifier unlocked![N]
+[ToggleRed]Casual Mode[ToggleRed][A][X]
+
+## HubMenuModifierUnlock1RN
+New modifier unlocked![N]
+[ToggleRed]1RN[ToggleRed][A][X]
+
+## HubMenuModifierUnlockFatesRN
+New modifier unlocked![N]
+[ToggleRed]Fates RN[ToggleRed][A][X]
+
+## HubMenuDebugModifierText
+insert modifier menu here[A][X]
+
+## HubMenuDebugOptionsText
+insert options menu here[A][X]
+
+## HubMenuDebugCreditsText
+insert credits here[A][X]
