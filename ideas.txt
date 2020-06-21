@@ -1,0 +1,46 @@
+we're gonna do some dumb shit ok
+anthology hack that contains ~30 chapters of largely independent gameplay
+includes remakes of previous 1-chapter hacks (?)
+perhaps can use this as an opportunity to properly create some chapters taking advantage of the various mechanical asm things i've done
+so we get like
+
+the 4 things on the stat screen should be in every map
+fatigue disabled via chapter ID to start using fatigue when it's not being used for a given chapter
+
+Laguz used as laguz for a map
+
+
+
+map ideas
+- laguz bars used to implement laguz
+	- Skirmish in Gallia
+	- you control various gallians and fight against daein accompanied by some raven laguz
+- laguz bars used to implement manaketes
+- dragon veins based on holy blood (unfinished MAFC4 entry?)
+- 4 consecutive chapters utilizing fatigue (+aum?)
+	- contains a map with thracia escape and a map where you can rescue the captured units
+- merchant transport map utilizing unit shops
+	- transport merchants across a map, they double as portable shops that you can use to obtain supplies
+- Escape chapter, all units must escape in any order
+- Escape chapter, lord must escape last
+- Arrive chapter
+- map where you promote units and have split promo items 
+- map where you get to play with new positive & negative status effects
+- fog of war map with tellius torches
+- map with excessive randomness for its own sake
+- map utilizing enemy talk AI
+- FE4 reference with holy blood focus
+
+
+global feature ideas
+- cannot crit weapons
+- dancer rings w/ refresh
+- Aum staff
+- status staves for new status effects
+- more magic swords
+- status weapons
+- resire, separately from nosferatu
+- skill scrolls
+- Refuge
+- str/mag split (to show off some things mag-related)
+- all the default qol stuff
