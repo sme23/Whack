@@ -114,7 +114,7 @@ ENDA
 ALIGN 4
 CallFirstMenu:
 LABEL FirstMenuStartLabel
-EndConvo
+CLEAN
 
 ASMC prCallEventMenu1|1 //returns number based on entry # in list that was selected, 0-indexed
 BNE 0 s0 sC
@@ -169,7 +169,7 @@ GOTO FirstMenuStartLabel //recursion bad
 
 
 LABEL SecondMenuStartLabel
-EndConvo
+CLEAN
 
 ASMC prCallEventMenu2|1 //returns number based on entry # in list that was selected, 0-indexed
 BNE 10 s0 sC
@@ -226,7 +226,7 @@ GOTO SecondMenuStartLabel //recursion bad
 
 
 LABEL ThirdMenuStartLabel
-EndConvo
+CLEAN
 
 ASMC prCallEventMenu3|1 //returns number based on entry # in list that was selected, 0-indexed
 BNE 20 s0 sC

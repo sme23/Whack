@@ -334,3 +334,38 @@
 #define MiniThracia2xEventsID 0x84
 #define MiniThracia3EventsID 0x85
 
+#define HubMapID 0x4
+#define HubMapChangesID 0x6
+#define SkirmishInGalliaMapID 0x8
+#define SkirmishInGalliaMapChangesID 0x9
+#define ManaketeMayhemMapID 0xB
+#define ManaketeMayhemMapChangesID 0xC
+#define FatedRevelationsMapID 0x11
+#define FatedRevelationsMapChangesID 0x13
+#define StatusSanctuaryMapID 0x1B
+#define StatusSanctuaryMapChangesID 0x1D
+#define FromTheDarknessMapID 0x1F
+#define FromTheDarknessMapChangesID 0x20
+#define MerchantMadnessMapID 0x22
+#define MerchantMadnessMapChangesID 0x23
+#define DemonBloodMapID 0x25
+#define DemonBloodMapChangesID 0x26
+#define BloodFeudMapID 0x15
+#define BloodFeudMapChangesID 0x16
+#define MiniThracia1MapID 0x4D
+#define MiniThracia1MapChangesID 0x4E
+#define MiniThracia2MapID 0x53
+#define MiniThracia2MapChangesID 0x55
+#define MiniThracia2xMapID 0x58
+#define MiniThracia2xMapChangesID 0x59
+#define MiniThracia3MapID 0x5C
+#define MiniThracia3MapChangesID 0x5D
+
+
+
+
+
+
+
+
+
