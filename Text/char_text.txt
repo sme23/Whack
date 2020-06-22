@@ -1,0 +1,41 @@
+## GiffcaName
+Giffca[X]
+
+## GiffcaDesc
+[X]
+
+## MordecaiName
+Mordecai[X]
+
+## MordecaiDesc
+[X]
+
+## LetheName
+Lethe[X]
+
+## LetheDesc
+[X]
+
+## LyreName
+Lyre[X]
+
+## LyreDesc
+[X]
+
+## RanulfName
+Ranulf[X]
+
+## RanulfDesc
+[X]
+
+## KyzaName
+Kyza[X]
+
+## KyzaDesc
+[X]
+
+## DaeinName
+Daein[X]
+
+## DaeinDesc
+[X]

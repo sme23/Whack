@@ -503,3 +503,28 @@
 
 #define FireDragonUntransformed 178
 #define FireDragonTransformed 179
+
+
+
+//char defs
+
+#define Giffca 1
+#define Mordecai 2
+#define Lethe 3
+#define Lyre 4
+#define Ranulf 5
+#define Kyza 6
+
+#define DaeinGeneric 0x70
+
+
+//mug defs
+
+#define GiffcaMug 2
+#define MordecaiMug 3
+#define LetheMug 4
+#define LyreMug 5
+#define RanulfMug 6
+#define KyzaMug 7
+
+#define DaeinSolderMug 8

@@ -179,6 +179,7 @@ Unit Shop[X]
 ## RefugeScrollText
 Select a unit to take refuge with.[X]
 
+#include "char_text.txt"
 
 #include "class_text.txt"
 

@@ -38,6 +38,12 @@ Tutorial:
 END_MAIN
 
 Units1:
+UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [9,12] 0 0 0 1 NoItems NoAI
+UNIT Mordecai TigerLaguzUntransformed 0 Level(10,Ally,0) [10,12] 0 0 0 1 NoItems NoAI
+UNIT Lethe CatLaguzFUntransformed 0 Level(10,Ally,0) [10,11] 0 0 0 1 NoItems NoAI
+UNIT Lyre CatLaguzFUntransformed 0 Level(10,Ally,0) [11,11] 0 0 0 1 NoItems NoAI
+UNIT Ranulf CatLaguzUntransformed 0 Level(10,Ally,0) [12,10] 0 0 0 1 NoItems NoAI
+UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [11,10] 0 0 0 1 NoItems NoAI
 UNIT
 
 EnemyUnits:
@@ -52,7 +58,7 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-LOAD1 0 EnemyUnits
+LOAD1 0 Units1
 ENUN
 GotoPrepScreen
 
