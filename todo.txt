@@ -1,17 +1,3 @@
-do class stats for new classes
-
-items
-
-weapons
-Claw (Cat) - 8mt, 1wt, 90hit, 0crt, 1range, unbreakable
-Claw (Tiger) - 9mt, 1wt, 90hit, 0crt, 1range, unbreakable
-Claw (Lion) - 10mt, 1wt, 90hit, 0crt, 1range, unbreakable
-
 usable items
 Olivi Grass - +15 bar - 5 uses
 Laguz Stone - instantly transform - 2 uses
-
-accessories
-Demi Band - just gives Wildheart
-Laguz Band - just gives Formshift
-

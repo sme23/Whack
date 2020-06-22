@@ -179,6 +179,39 @@ Unit Shop[X]
 ## RefugeScrollText
 Select a unit to take refuge with.[X]
 
+## ClawName
+Claw[X]
+
+## ClawDesc
+[X]
+ 
+## DemiBandName
+Demi Band[X]
+
+## DemiBandDesc
+Allows wielder to halfshift.[X]
+
+## LaguzBandName
+Laguz Band[X]
+
+## LaguzBandDesc
+Allows wielder to always[N]
+be transformed.[X]
+
+## OliviGrassName
+Olivi Grass[X]
+
+## OliviGrassDesc
+Fills some bar when used.[X]
+
+## LaguzStoneName
+Laguz Stone[X]
+
+## LaguzStoneDesc
+Fills bar & auto-transforms.[X]
+
+
+
 #include "char_text.txt"
 
 #include "class_text.txt"

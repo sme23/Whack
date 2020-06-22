@@ -3,12 +3,6 @@
 
 //Original by Vennobennu, rewritten by Sme for skill system/general buildfile compatibility
 
-//Make prf weapons defined via array with no wrank say "Prf" (not thoroughly tested)
-PUSH
-ORG 0x16DD8
-BYTE $00 $3C $3D $FF 
-POP
-
 
 #inctext lyn "AdvWeaponLocks.elf"
 
@@ -23,5 +17,128 @@ BYTE HardClassLock
 BYTE EirikaLord
 BYTE Rogue
 BYTE EndLockArray
+
+
+ALIGN 4
+CatLaguzArray:
+BYTE HardClassLock
+BYTE CatLaguzTransformed
+BYTE EndLockArray
+
+ALIGN 4
+CatLaguzFArray:
+BYTE HardClassLock
+BYTE CatLaguzFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+TigerLaguzArray:
+BYTE HardClassLock
+BYTE TigerLaguzTransformed
+BYTE EndLockArray
+
+ALIGN 4
+TigerLaguzFArray:
+BYTE HardClassLock
+BYTE TigerLaguzFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+LionLaguzArray:
+BYTE HardClassLock
+BYTE LionLaguzTransformed
+BYTE EndLockArray
+
+ALIGN 4
+LionLaguzFArray:
+BYTE HardClassLock
+BYTE LionLaguzFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+WolfLaguzArray:
+BYTE HardClassLock
+BYTE WolfLaguzTransformed
+BYTE EndLockArray
+
+ALIGN 4
+WolfLaguzFArray:
+BYTE HardClassLock
+BYTE WolfLaguzFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+HawkLaguzArray:
+BYTE HardClassLock
+BYTE HawkLaguzTransformed
+BYTE EndLockArray
+
+ALIGN 4
+HawkLaguzFArray:
+BYTE HardClassLock
+BYTE HawkLaguzFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+RavenLaguzArray:
+BYTE HardClassLock
+BYTE RavenLaguzTransformed
+BYTE EndLockArray
+
+ALIGN 4
+RavenLaguzFArray:
+BYTE HardClassLock
+BYTE RavenLaguzFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+HeronLaguzArray:
+BYTE HardClassLock
+BYTE HeronLaguzTransformed
+BYTE EndLockArray
+
+ALIGN 4
+HeronLaguzFArray:
+BYTE HardClassLock
+BYTE HeronLaguzFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+RedDragonArray:
+BYTE HardClassLock
+BYTE RedDragonTransformed
+BYTE EndLockArray
+
+ALIGN 4
+RedDragonFArray:
+BYTE HardClassLock
+BYTE RedDragonFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+WhiteDragonArray:
+BYTE HardClassLock
+BYTE WhiteDragonTransformed
+BYTE EndLockArray
+
+ALIGN 4
+WhiteDragonFArray:
+BYTE HardClassLock
+BYTE WhiteDragonFTransformed
+BYTE EndLockArray
+
+ALIGN 4
+BlackDragonArray:
+BYTE HardClassLock
+BYTE BlackDragonTransformed
+BYTE EndLockArray
+
+ALIGN 4
+BlackDragonFArray:
+BYTE HardClassLock
+BYTE BlackDragonFTransformed
+BYTE EndLockArray
+
+
 
 #endif // ADV_WEAPON_LOCKS

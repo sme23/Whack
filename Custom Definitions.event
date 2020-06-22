@@ -528,3 +528,14 @@
 #define KyzaMug 7
 
 #define DaeinSolderMug 8
+
+
+//items
+
+#define ClawCatLaguz Bowgun+1
+#define ClawLionLaguz Bowgun+2
+#define ClawTigerLaguz Bowgun+3
+#define DemiBand Bowgun+4
+#define LaguzBand Bowgun+5
+#define OliviGrass Bowgun+6
+#define LaguzStone Bowgun+7
