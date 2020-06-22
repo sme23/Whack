@@ -31,10 +31,6 @@ ShopUnitTargetSelectionStruct:
 
 ALIGN 4
 ShopUnitList:
-ShopUnitListEntry(Ephraim,1,ShopUnitShopList)
-ShopUnitListEntry(Gilliam,0,ShopUnitShopList2)
-ShopUnitListEntry(Seth,3,ShopUnitShopList3)
-ShopUnitListEntry(Tethys,2,ShopUnitShopList4)
 ShopUnitListEnd
 
 ALIGN 4

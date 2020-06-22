@@ -12,8 +12,8 @@ BYTE Necromancer DemonKing
 
 BYTE CatLaguzUntransformed CatLaguzTransformed
 BYTE CatLaguzFUntransformed CatLaguzFTransformed
-BYTE LionLaguzUntransformed LionlaguzTransformed
-BYTE LionlaguzFUntransformed LionLaguzFTransformed
+BYTE LionLaguzUntransformed LionLaguzTransformed
+BYTE LionLaguzFUntransformed LionLaguzFTransformed
 BYTE TigerLaguzUntransformed TigerLaguzTransformed
 BYTE TigerLaguzFUntransformed TigerLaguzFTransformed
 BYTE WolfLaguzUntransformed WolfLaguzTransformed
