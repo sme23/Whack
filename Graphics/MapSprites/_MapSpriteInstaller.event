@@ -48,4 +48,72 @@ ALIGN 4
 MovingMapSpriteTable:
 FILL (256*8)
 
+//we need to fill out these tables with the vanilla table contents
+//we'll use dmps because i'm lazy
 
+PUSH
+ORG StandingMapSpriteTable
+#incbin "VanillaStandingMapSpriteTable.dmp"
+ORG MovingMapSpriteTable
+#incbin "VanillaMovingMapSpriteTable.dmp"
+POP
+
+
+//setting moving map sprites for new classes as existing ones temporarily
+
+MovingMapSprite(CatLaguzUntransformed, $8201338, $8200C54)
+MovingMapSprite(CatLaguzFUntransformed, $8201B84, $8201490)
+MovingMapSprite(LionLaguzUntransformed, $8201338, $8200C54)
+MovingMapSprite(LionLaguzFUntransformed, $8201B84, $8201490)
+MovingMapSprite(TigerLaguzUntransformed, $8201338, $8200C54)
+MovingMapSprite(TigerLaguzFUntransformed, $8201B84, $8201490)
+MovingMapSprite(WolfLaguzUntransformed, $8201338, $8200C54)
+MovingMapSprite(WolfLaguzFUntransformed, $8201B84, $8201490)
+MovingMapSprite(HawkLaguzUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(HawkLaguzFUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(RavenLaguzUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(RavenLaguzFUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(HeronLaguzUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(HeronLaguzFUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(RedDragonUntransformed, $8201338, $8200C54)
+MovingMapSprite(RedDragonFUntransformed, $8201B84, $8201490)
+MovingMapSprite(WhiteDragonUntransformed, $8201338, $8200C54)
+MovingMapSprite(WhiteDragonFUntransformed, $8201B84, $8201490)
+MovingMapSprite(BlackDragonUntransformed, $8201338, $8200C54)
+MovingMapSprite(BlackDragonFUntransformed, $8201B84, $8201490)
+
+MovingMapSprite(CatLaguzTransformed, $81F5468, $81F4B18)
+MovingMapSprite(CatLaguzFTransformed, $81F5468, $81F4B18)
+MovingMapSprite(LionLaguzTransformed, $81F607C, $81F55C0)
+MovingMapSprite(LionLaguzFTransformed, $81F607C, $81F55C0)
+MovingMapSprite(TigerLaguzTransformed, $81F607C, $81F55C0)
+MovingMapSprite(TigerLaguzFTransformed, $81F607C, $81F55C0)
+MovingMapSprite(WolfLaguzTransformed, $81F5468, $81F4B18)
+MovingMapSprite(WolfLaguzFTransformed, $81F5468, $81F4B18)
+MovingMapSprite(HawkLaguzTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(HawkLaguzFTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(RavenLaguzTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(RavenLaguzFTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(HeronLaguzTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(HeronLaguzFTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(RedDragonTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(RedDragonFTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(WhiteDragonTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(WhiteDragonFTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(BlackDragonTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(BlackDragonFTransformed, $81E2F34, $81E21E0)
+
+MovingMapSprite(DivineDragonUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(EarthDragonUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(IceDragonUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(MageDragonUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(WyvernUntransformed, $81E39EC, $81E308C)
+
+MovingMapSprite(DivineDragonTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(EarthDragonTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(IceDragonTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(MageDragonTransformed, $81E2F34, $81E21E0)
+MovingMapSprite(WyvernTransformed, $81E2F34, $81E21E0)
+
+MovingMapSprite(FireDragonUntransformed, $81E39EC, $81E308C)
+MovingMapSprite(FireDragonTransformed, $81E2F34, $81E21E0)

@@ -1,0 +1,27 @@
+#include "MapSprites/_MapSpriteInstaller.event"
+
+
+//this is a misc thing for now so we'll do it here
+PUSH
+//Weapon Icons Palette
+ORG 0x35D0
+POIN WeaponIconsPal
+
+ORG 0x35E8
+POIN WeaponIconsPal
+
+ORG 0x885CE
+BYTE 0x2
+
+ORG 0x885E8
+BYTE 0x2
+
+ORG 0x8D070
+BYTE 0x2
+POP
+
+ALIGN 4
+WeaponIconsPal:
+#incbin "WeaponIconsPal.bin"
+
+

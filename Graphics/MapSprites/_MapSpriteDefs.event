@@ -133,9 +133,47 @@
 #define DragonLaguzUntransformedStandingMapSpriteID 111
 #define DragonLaguzFUntransformedStandingMapSpriteID 112
 
-#define DivineDragonUntransformedStandingMapSpriteID 113
-#define EarthDragonUntransformedStandingMapSpriteID 114
-#define IceDragonUntransformedStandingMapSpriteID 115
-#define MageDragonUntransformedStandingMapSpriteID 116
-#define WyvernUntransformedStandingMapSpriteID 117
+#define CatLaguzTransformedStandingMapSpriteID 113
+#define CatLaguzFTransformedStandingMapSpriteID 114
 
+#define TigerLaguzTransformedStandingMapSpriteID 115
+#define TigerLaguzFTransformedStandingMapSpriteID 116
+
+#define LionLaguzTransformedStandingMapSpriteID 117
+#define LionLaguzFTransformedStandingMapSpriteID 118
+
+#define WolfLaguzTransformedStandingMapSpriteID 119
+#define WolfLaguzFTransformedStandingMapSpriteID 120
+
+#define HawkLaguzTransformedStandingMapSpriteID 121
+#define HawkLaguzFTransformedStandingMapSpriteID 122
+
+#define RavenLaguzTransformedStandingMapSpriteID 123
+#define RavenLaguzFTransformedStandingMapSpriteID 124
+
+#define HeronLaguzTransformedStandingMapSpriteID 125
+#define HeronLaguzFTransformedStandingMapSpriteID 126
+
+#define RedDragonTransformedStandingMapSpriteID 127
+#define RedDragonFTransformedStandingMapSpriteID 128
+
+#define WhiteDragonTransformedStandingMapSpriteID 129
+#define WhiteDragonFTransformedStandingMapSpriteID 130
+
+#define BlackDragonTransformedStandingMapSpriteID 131
+#define BlackDragonFTransformedStandingMapSpriteID 132
+
+#define DivineDragonUntransformedStandingMapSpriteID 133
+#define EarthDragonUntransformedStandingMapSpriteID 134
+#define IceDragonUntransformedStandingMapSpriteID 135
+#define MageDragonUntransformedStandingMapSpriteID 136
+#define WyvernUntransformedStandingMapSpriteID 137
+
+#define DivineDragonTransformedStandingMapSpriteID 138
+#define EarthDragonTransformedStandingMapSpriteID 139
+#define IceDragonTransformedStandingMapSpriteID 140
+#define MageDragonTransformedStandingMapSpriteID 141
+#define WyvernTransformedStandingMapSpriteID 142
+
+#define FireDragonUntransformedStandingMapSpriteID 143
+#define FireDragonTransformedStandingMapSpriteID 144

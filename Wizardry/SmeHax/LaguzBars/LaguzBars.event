@@ -8,8 +8,37 @@
 
 ALIGN 4
 LaguzClassList:
-BYTE EirikaLord Mauthedoog
 BYTE Necromancer DemonKing
+
+BYTE CatLaguzUntransformed CatLaguzTransformed
+BYTE CatLaguzFUntransformed CatLaguzFTransformed
+BYTE LionLaguzUntransformed LionlaguzTransformed
+BYTE LionlaguzFUntransformed LionLaguzFTransformed
+BYTE TigerLaguzUntransformed TigerLaguzTransformed
+BYTE TigerLaguzFUntransformed TigerLaguzFTransformed
+BYTE WolfLaguzUntransformed WolfLaguzTransformed
+BYTE WolfLaguzFUntransformed WolfLaguzFTransformed
+BYTE HawkLaguzUntransformed HawkLaguzTransformed
+BYTE HawkLaguzFUntransformed HawkLaguzFTransformed
+BYTE RavenLaguzUntransformed RavenLaguzTransformed
+BYTE RavenLaguzFUntransformed RavenLaguzFTransformed
+BYTE HeronLaguzUntransformed HeronLaguzTransformed
+BYTE HeronLaguzFUntransformed HeronLaguzFTransformed
+BYTE RedDragonUntransformed RedDragonTransformed
+BYTE RedDragonFUntransformed RedDragonFTransformed
+BYTE WhiteDragonUntransformed WhiteDragonTransformed
+BYTE WhiteDragonFUntransformed WhiteDragonFTransformed
+BYTE BlackDragonUntransformed BlackDragonTransformed
+BYTE BlackDragonFUntransformed BlackDragonFTransformed
+BYTE DivineDragonUntransformed DivineDragonTransformed
+BYTE EarthDragonUntransformed EarthDragonTransformed
+BYTE IceDragonUntransformed IceDragonTransformed
+BYTE MageDragonUntransformed MageDragonTransformed
+BYTE WyvernUntransformed WyvernTransformed
+BYTE FireDragonUntransformed FireDragonTransformed
+
+BYTE Necromancer DemonKing
+
 BYTE 0 0 // terminator
 
 ALIGN 4

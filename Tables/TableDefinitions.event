@@ -103,6 +103,7 @@
 #define AnimaAffinity 7
 #define EarthAffinity 8
 #define HeavenAffinity 9
+#define WaterAffinity 10
 
 //Generic minimugs
 #define MinimugDefault 0
