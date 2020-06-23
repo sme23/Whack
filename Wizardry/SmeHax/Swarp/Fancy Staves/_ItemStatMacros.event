@@ -4,9 +4,6 @@
 	
 	#ifdef _FE8_
 	//Item routines
-		#ifndef ItemTable
-			#define ItemTable 0x809B10 //Item Data Table Offset
-		#endif	
 		#ifndef Item_GetStat_EffectID
 			#define Item_GetStat_EffectID 0x1773C
 		#endif

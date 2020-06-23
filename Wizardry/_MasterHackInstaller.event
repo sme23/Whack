@@ -175,6 +175,9 @@ POP
   //Item Effect Revamp by Teraspark
   #include "Necessary/ItemEffectRevamp/IERevamp_Installer.event"
   
+  //Trade Fix by Circles
+  #include "ExternalHacks/TradeFix/Installer.event"
+  
   
   //SmeHax
   #include "SmeHax/SmeHaxInstaller.event"
