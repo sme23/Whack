@@ -210,6 +210,9 @@ Laguz Stone[X]
 ## LaguzStoneDesc
 Fills bar & auto-transforms.[X]
 
+## LaguzWTypeText
+Laguz[X]
+
 
 
 #include "char_text.txt"

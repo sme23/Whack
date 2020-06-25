@@ -47,6 +47,14 @@ UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [11,10] 0 0 0 1 [ClawTigerL
 UNIT
 
 EnemyUnits:
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,0) [12,3] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,0) [13,2] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,0) [12,0] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,0) [11,7] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,0) [14,9] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,0) [13,7] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,0) [12,5] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,0) [15,6] 0 0 0 1 [SteelLance] NoAI
 UNIT
 
 Traps1:
@@ -59,6 +67,8 @@ ALIGN 4
 
 BeginningScene:
 LOAD1 0 Units1
+ENUN
+LOAD1 0 EnemyUnits
 ENUN
 GotoPrepScreen
 

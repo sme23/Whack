@@ -1,5 +1,5 @@
 #include "MapSprites/_MapSpriteInstaller.event"
-
+#include "Animations/_MasterAnimsInstaller.event"
 
 //this is a misc thing for now so we'll do it here
 PUSH
@@ -18,10 +18,16 @@ BYTE 0x2
 
 ORG 0x8D070
 BYTE 0x2
+
+ORG $B1C74
+POIN FixedConfigGFX
 POP
 
 ALIGN 4
 WeaponIconsPal:
 #incbin "WeaponIconsPal.bin"
 
+ALIGN 4
+FixedConfigGFX:
+#incext Png2Dmp "Config.png" --lz77
 

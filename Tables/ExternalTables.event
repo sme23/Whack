@@ -7,3 +7,31 @@ defWeaponDebuffs(0,0,4,0,4,4,0) //0x4: Silver Shuriken debuff.
 defWeaponDebuffs(4,0,4,0,4,4,0) //0x5: Pebble debuff.
 
 #include "SingleGuideFlag.event"
+
+//updating the texts for weapon types in r text
+PUSH
+ORG $16E28
+SHORT 0x46C0 0x46C0 0x46C0 0x46C0 0x46C0 0x46C0 0x46C0 0x46C0
+SHORT 0x0080
+SHORT 0x1840
+ORG $16E4C
+POIN WeaponTypeTextIDArray
+POP
+
+ALIGN 4
+WeaponTypeTextIDArray:
+WORD 0x505	//Sword
+WORD 0x506	//Lance
+WORD 0x507	//Axe
+WORD 0x508	//Bow
+WORD 0x509	//Staff
+WORD 0x50A	//Anima
+WORD 0x50B	//Light
+WORD 0x50C	//Dark
+WORD 0x50D	//Item
+WORD 0x50E	//Bllsta
+WORD 0x50F	//Dragon
+WORD LaguzWTypeText
+WORD LaguzWTypeText
+WORD LaguzWTypeText
+WORD LaguzWTypeText
