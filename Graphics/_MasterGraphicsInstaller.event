@@ -1,5 +1,6 @@
 #include "MapSprites/_MapSpriteInstaller.event"
 #include "Animations/_MasterAnimsInstaller.event"
+#include "Mugs/_MugInstaller.event"
 
 //this is a misc thing for now so we'll do it here
 PUSH
