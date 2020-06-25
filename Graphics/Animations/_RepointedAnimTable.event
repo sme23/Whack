@@ -24,12 +24,12 @@ POIN ClassAnimTable
 POP
 
 ALIGN 4
-ClassAnimTable:
-FILL ((NumberOfAnims+1)*32)+32
-PUSH
-ORG ClassAnimTable+0x18
 BYTE NumberOfAnims 0 0 0
 WORD 0
+ClassAnimTable:
+FILL ((NumberOfAnims+1)*32)
+PUSH
+ORG ClassAnimTable
 #incbin "VanillaAnimTable.dmp"
 POP
 
