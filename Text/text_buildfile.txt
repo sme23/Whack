@@ -202,13 +202,15 @@ be transformed.[X]
 Olivi Grass[X]
 
 ## OliviGrassDesc
-Fills some bar when used.[X]
+Fills some bar[N]
+when used.[X]
 
 ## LaguzStoneName
 Laguz Stone[X]
 
 ## LaguzStoneDesc
-Fills bar & auto-transforms.[X]
+Fills bar and[N]
+auto-transforms.[X]
 
 ## LaguzWTypeText
 Laguz[X]
