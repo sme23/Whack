@@ -51,3 +51,5 @@ PrepScreenProc:
 PROC_CALL_ROUTINE(InitializeLaguzBarsIfPrepScreen)
 #incbin "bin/PrepScreenProc.dmp"
 
+#include "asm/LaguzBars_Items.lyn.event"
+

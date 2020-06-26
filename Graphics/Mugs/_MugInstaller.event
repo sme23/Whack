@@ -1,6 +1,37 @@
 
 
+setMugEntry(GiffcaMug,GiffcaPortrait,2,4,2,2)
+ALIGN 4
+GiffcaPortrait:
+#incext PortraitFormatter "giffca.png"
+
+setMugEntry(MordecaiMug,MordecaiPortrait,2,6,2,4)
+ALIGN 4
+MordecaiPortrait:
+#incext PortraitFormatter "mordy.png"
+
+setMugEntry(LetheMug,LethePortrait,2,5,3,3)
+ALIGN 4
+LethePortrait:
+#incext PortraitFormatter "lethe.png"
+
+setMugEntry(LyreMug,LyrePortrait,2,7,3,5)
+ALIGN 4
+LyrePortrait:
+#incext PortraitFormatter "lyre.png"
+
+setMugEntry(RanulfMug,RanulfPortrait,2,6,3,4)
+ALIGN 4
+RanulfPortrait:
+#incext PortraitFormatter "ranulf.png"
+
+setMugEntry(KyzaMug,KyzaPortrait,2,6,3,4)
+ALIGN 4
+KyzaPortrait:
+#incext PortraitFormatter "kyza.png"
+
 setMugEntry(DaeinSolderMug, DaeinSoldierPortrait, 3, 4, 3, 2)
 ALIGN 4
 DaeinSoldierPortrait:
 #incext PortraitFormatter "Nuramon_SoldierBlack.png"
+

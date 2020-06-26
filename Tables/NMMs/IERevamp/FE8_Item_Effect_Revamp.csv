@@ -60,8 +60,8 @@ Aum,AumUsability|IsPointer,0x802a100,0x802905c,AumEffect|IsPointer
 Swarp,0x8028acc,0x802a100,0x8028fac,SwarpEffectWrapper|IsPointer
 Fatigue Restoration Item,FatigueRestorationUsability|IsPointer,FatigueRestorationPrepUsability|IsPointer,0x802905c,FatigueRestoreEffect|IsPointer
 S Drink,FatigueRestorationUsability|IsPointer,FatigueRestorationPrepUsability|IsPointer,0x802905c,SDrinkEffect|IsPointer
-0x3d,0x8028c04,0x802a100,0x802905c,0x802ff76
-0x3e,0x8028b60,0x802a100,0x802905c,0x802ff76
+Olivi Grass,LaguzBarItemUsability|IsPointer,0x802a100,0x802905c,OliviGrassEffect|IsPointer
+Laguz Stone,LaguzBarItemUsability|IsPointer,0x802a100,0x802905c,LaguzStoneEffect|IsPointer
 0x3f,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x40,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x41,0x8028c04,0x802a100,0x802905c,0x802ff76
