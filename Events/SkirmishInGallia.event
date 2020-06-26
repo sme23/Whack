@@ -37,13 +37,13 @@ END_MAIN
 Tutorial:
 END_MAIN
 
-UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [9,12] 0 0 0 1 [ClawLionLaguz] NoAI
+UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [9,12] 0 0 0 1 [ClawLionLaguz,LaguzStone] NoAI
 Units1:
-UNIT Mordecai TigerLaguzUntransformed 0 Level(10,Ally,0) [10,12] 0 0 0 1 [ClawTigerLaguz] NoAI
+UNIT Mordecai TigerLaguzUntransformed 0 Level(10,Ally,0) [10,12] 0 0 0 1 [ClawTigerLaguz,LaguzStone] NoAI
 UNIT Lethe CatLaguzFUntransformed 0 Level(10,Ally,0) [10,11] 0 0 0 1 [ClawCatLaguz,OliviGrass] NoAI
 UNIT Lyre CatLaguzFUntransformed 0 Level(10,Ally,0) [11,11] 0 0 0 1 [ClawCatLaguz,OliviGrass] NoAI
 UNIT Ranulf CatLaguzUntransformed 0 Level(10,Ally,0) [12,10] 0 0 0 1 [ClawCatLaguz,LaguzStone] NoAI
-UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [11,10] 0 0 0 1 [ClawTigerLaguz] NoAI
+UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [11,10] 0 0 0 1 [ClawTigerLaguz,OliviGrass] NoAI
 UNIT
 
 EnemyUnits:
