@@ -130,7 +130,7 @@ Text(SkirmishInGallia_MordecaiJoinConvo)
 EndConvo
 LOAD1 0 MordecaiUnitGroup
 ENUN
-MURE
+MURE 10
 NoFade
 ENDA
 
