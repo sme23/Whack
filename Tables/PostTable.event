@@ -1,0 +1,21 @@
+//for things touching csvs after the fact
+
+
+//rather than grab a new NMM i'll just do this because laziness
+#define SetChapterName(chapterID,textID) "PUSH; ORG ($8B0890 + (chapterID*148) + 0x70); SHORT textID textID; POP"
+
+SetChapterName(HubChID,HubChName)
+SetChapterName(SkirmishInGalliaChID,SkirmishInGalliaChName)
+SetChapterName(ManaketeMayhemChID,ManaketeMayhemChName)
+SetChapterName(FatedRevelationsChID,FatedRevelationsChName)
+SetChapterName(BloodFeudChID,BloodFeudChName)
+SetChapterName(StatusSanctuaryChID,StatusSanctuaryChName)
+SetChapterName(FromTheDarknessChID,FromTheDarknessChName)
+SetChapterName(MerchantMadnessChID,MerchantMadnessChName)
+SetChapterName(DemonBloodChID,DemonBloodChName)
+SetChapterName(MiniThracia1ChID,MiniThracia1ChName)
+SetChapterName(MiniThracia2ChID,MiniThracia2ChName)
+SetChapterName(MiniThracia2xChID,MiniThracia2xChName)
+SetChapterName(MiniThracia3ChID,MiniThracia3ChName)
+
+

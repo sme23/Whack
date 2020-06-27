@@ -74,15 +74,17 @@ MUSC Advance
 SetBackground(Woodland)
 FADU 10
 Text(SkirmishInGallia_Opening1)
-
-MUSC Tension
-Text(SkirmishInGallia_Opening2)
-
+FADI 10
 LOAD1 0 Units1
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
-GotoPrepScreen
+CAM1 Ranulf
+EndConvo
+MUSC Tension
+Text(SkirmishInGallia_Opening2)
+NoFade
+ENDA
 
 EndingScene:
 DISA Giffca
@@ -107,6 +109,7 @@ UNIT
 ALIGN 4
 LetheJoinEvent:
 MUSC Comrades
+CAM1 [1,10]
 LOAD1 0 LetheUnitGroup
 ENUN
 CUMO Lethe
@@ -118,7 +121,7 @@ ENDA
 
 
 MordecaiUnitGroup:
-UNIT Mordecai TigerLaguzUntransformed 0 Level(10,Ally,0) [12,10] 0 0 1 REDA16R11 [ClawTigerLaguz,LaguzStone] NoAI
+UNIT Mordecai TigerLaguzUntransformed 0 Level(10,Ally,0) [17,10] 0 0 1 REDA16R11 [ClawTigerLaguz,LaguzStone] NoAI
 UNIT
 
 
@@ -181,5 +184,4 @@ EndConvo
 MUNO
 NoFade
 ENDA
-
 
