@@ -1,1 +1,5 @@
+#include "chapter_names.txt"
+
 #include "hub_text.txt"
+#include "skirmishingallia_text.txt"
+

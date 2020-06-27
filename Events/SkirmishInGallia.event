@@ -13,12 +13,18 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,LetheJoinEvent,2)
 END_MAIN
 
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Village(7,MordecaiVillageEvent,17,10)
+House(0,HouseEvent1,5,7)
+House(0,HouseEvent2,2,8)
+House(0,HouseEvent3,1,10)
+House(0,HouseEvent4,4,11)
 END_MAIN
 
 MiscBasedEvents:
@@ -38,12 +44,10 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [9,12] 0 0 0 1 [ClawLionLaguz,LaguzStone] NoAI
-UNIT Mordecai TigerLaguzUntransformed 0 Level(10,Ally,0) [10,12] 0 0 0 1 [ClawTigerLaguz,LaguzStone] NoAI
-UNIT Lethe CatLaguzFUntransformed 0 Level(10,Ally,0) [10,11] 0 0 0 1 [ClawCatLaguz,OliviGrass] NoAI
-UNIT Lyre CatLaguzFUntransformed 0 Level(10,Ally,0) [11,11] 0 0 0 1 [ClawCatLaguz,OliviGrass] NoAI
-UNIT Ranulf CatLaguzUntransformed 0 Level(10,Ally,0) [12,10] 0 0 0 1 [ClawCatLaguz,LaguzStone] NoAI
-UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [11,10] 0 0 0 1 [ClawTigerLaguz,OliviGrass] NoAI
+UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [12,12] 0 0 0 1 [ClawLionLaguz] NoAI
+UNIT Lyre CatLaguzFUntransformed 0 Level(10,Ally,0) [9,11] 0 0 0 1 [ClawCatLaguz] NoAI
+UNIT Ranulf CatLaguzUntransformed 0 Level(10,Ally,0) [11,11] 0 0 0 1 [ClawCatLaguz] NoAI
+UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [9,12] 0 0 0 1 [ClawTigerLaguz,OliviGrass] NoAI
 UNIT
 
 EnemyUnits:
@@ -66,6 +70,14 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+MUSC Advance
+SetBackground(Woodland)
+FADU 10
+Text(SkirmishInGallia_Opening1)
+
+MUSC Tension
+Text(SkirmishInGallia_Opening2)
+
 LOAD1 0 Units1
 ENUN
 LOAD1 0 EnemyUnits
@@ -73,7 +85,101 @@ ENUN
 GotoPrepScreen
 
 EndingScene:
+DISA Giffca
+DISA Mordecai
+DISA Lethe
+DISA Lyre
+DISA Ranulf
+DISA Kyza
+
+ENUT SkirmishInGalliaBeatenFlag
 MNC2 HubChID
 NoFade
 ENDA
+
+
+ALIGN 4
+LetheUnitGroup:
+UNIT Lethe CatLaguzFUntransformed 0 Level(10,Ally,0) [1,10] 0 0 1 REDA2R11 [ClawCatLaguz,OliviGrass] NoAI
+UNIT
+
+
+ALIGN 4
+LetheJoinEvent:
+MUSC Comrades
+LOAD1 0 LetheUnitGroup
+ENUN
+CUMO Lethe
+STAL 20
+CURE
+Text(SkirmishInGallia_LetheJoinConvo)
+NoFade
+ENDA
+
+
+MordecaiUnitGroup:
+UNIT Mordecai TigerLaguzUntransformed 0 Level(10,Ally,0) [12,10] 0 0 1 REDA16R11 [ClawTigerLaguz,LaguzStone] NoAI
+UNIT
+
+
+ALIGN 4
+MordecaiVillageEvent:
+SetBackground(Village)
+MUSS Comrades
+Text(SkirmishInGallia_MordecaiJoinConvo)
+EndConvo
+LOAD1 0 MordecaiUnitGroup
+ENUN
+MURE
+NoFade
+ENDA
+
+
+
+ALIGN 4
+HouseEvent1:
+MUSI
+SetBackground(HouseBG)
+Text(SkirmishInGallia_HouseText1)
+EndConvo
+MUNO
+NoFade
+ENDA
+
+
+
+ALIGN 4
+HouseEvent2:
+MUSI
+SetBackground(HouseBG)
+Text(SkirmishInGallia_HouseText2)
+EndConvo
+MUNO
+NoFade
+ENDA
+
+
+
+ALIGN 4
+HouseEvent3:
+MUSI
+SetBackground(HouseBG)
+Text(SkirmishInGallia_HouseText3)
+EndConvo
+MUNO
+NoFade
+ENDA
+
+
+
+ALIGN 4
+HouseEvent4:
+MUSI
+SetBackground(HouseBG)
+Text(SkirmishInGallia_HouseText4)
+EndConvo
+MUNO
+NoFade
+ENDA
+
 

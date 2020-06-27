@@ -30,7 +30,7 @@ ALIGN 4
 KyzaPortrait:
 #incext PortraitFormatter "kyza.png"
 
-setMugEntry(DaeinSolderMug, DaeinSoldierPortrait, 3, 4, 3, 2)
+setMugEntry(DaeinSoldierMug, DaeinSoldierPortrait, 3, 4, 3, 2)
 ALIGN 4
 DaeinSoldierPortrait:
 #incext PortraitFormatter "Nuramon_SoldierBlack.png"

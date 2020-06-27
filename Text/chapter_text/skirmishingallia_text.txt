@@ -1,0 +1,123 @@
+## SkirmishInGallia_Opening1
+#Giffca, Ranulf, Lyre, Kyza in Gallia, approaching the northern border
+#reports of daein soldiers about, headed to confirm
+[OpenMidLeft][LoadRanulf]
+[OpenRight][LoadKyza]
+[OpenFarRight][LoadLyre]
+Are we theeere yet?[A]
+
+[OpenRight]
+Lyre![....] Such disrespect![....][N]
+Apologise to Captain Ranulf![A]
+
+[OpenFarRight]
+Hiss[Beat][A]
+
+[OpenMidLeft]
+It's fine, Kyza.[N]
+We're approaching the border.[A][N]
+Soon we'll see if the[N]
+reports were true[Beat][A]
+
+[OpenFarRight]
+Do you really think Daein[N]
+would invade Gallia[Beat]?[A]
+
+[OpenRight]
+Of course they would,[N]
+Daein hates laguz.[A][N]
+It's surprising they haven't[N]
+already tried to invade.[A][N]
+Especially with Crimea in[N]
+the state it's in[Beat][A]
+
+[ClearFace][OpenFarRight][ClearFace]
+[OpenMidRight][LoadGiffca]
+[Beat]We've arrived.[A][X]
+
+
+
+## SkirmishInGallia_Opening2
+[OpenFarRight][LoadDaeinSoldier]
+Glory to Daein![N]
+Death to the sub-humans![A]
+
+[ClearFace]
+[OpenMidLeft][LoadRanulf]
+Well, that answers that then.[A][N]
+Everyone, stay on your guard![A][X]
+
+
+
+
+## SkirmishInGallia_LetheJoinConvo
+[OpenMidLeft][LoadLethe]
+Ugh[Beat][N]
+What's all this racket?[A]
+[OpenFarRight][LoadLyre]
+Lethe!?[A]
+[OpenMidLeft]
+Lyre?[N]
+Is something happening?[A]
+[OpenFarRight]
+Daein is invading![A]
+[OpenMidLeft]
+Hiss[Beat][A][N]
+Fine, I'll help.[A][X]
+
+
+
+## SkirmishInGallia_MordecaiJoinConvo
+[OpenMidLeft][LoadFace][0xFF][0xFF]
+[OpenMidRight][LoadMordecai]
+Mmm?[A][N]
+[Beat]I see.[A][N]
+[Beat]I'll help.[A][X]
+
+
+
+
+
+## SkirmishInGallia_HouseText1
+[OpenMidLeft][LoadCurrent]
+[OpenMidRight][LoadFace][0x5D][0x1]
+Your transformation[N]
+bar will fill over time,[A][N]
+and even more so as you[N]
+participate in battles.[A][N]
+Once it's full, you can transform.[N]
+Then, your bar will start to fall.[A][N]
+Once your bar is empty, you[N]
+will automatically untransform.[A][X]
+
+
+
+## SkirmishInGallia_HouseText2
+[OpenMidLeft][LoadCurrent]
+[OpenMidRight][LoadFace][0x61][0x1]
+Different kinds of laguz will[N]
+transform at different speeds.[A][N]
+Some may be faster than others,[N]
+but everyone's transformation[N]
+bars start at their own place.[A][X]
+
+
+
+## SkirmishInGallia_HouseText3
+[OpenMidLeft][LoadCurrent]
+Doesn't look like anyone's home[Beat][A]
+[X]
+
+
+
+## SkirmishInGallia_HouseText4
+[OpenMidLeft][LoadCurrent]
+[OpenMidRight][LoadFace][0x62][0x1]
+There exist items that allow you to[N]
+expedite the transformation process.[A][N]
+Olivi Grass will fill half a bar, and[N]
+a Laguz Stone will fill an entire bar.[A][N]
+If using one fills your bar,[N]
+you will transform automatically![A][X]
+
+
