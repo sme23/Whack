@@ -1,3 +1,0 @@
-
-Laguz Bars Not Decrementing When Transformed Or Battling (guessing a skill check is always true)
-
