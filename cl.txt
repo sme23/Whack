@@ -1,0 +1,41 @@
+Freelancer (Xane)
+
+
+Hunter
+Sword Knight
+Lance Knight
+Axe Knight
+Bow Knight
+Sword Armor
+Lance Armor
+Axe Armor
+Bow Armor
+Nomad
+Fire Mage
+Thunder Mage
+Wind Mage
+Tactician
+Barbarian
+Outlaw
+Maid
+Butler
+
+
+Dread Fighter
+Baron
+Gold Knight
+Silver Knight
+Nomad Trooper
+Halberdier
+Fire Sage
+Thunder Sage
+Wind Sage
+Grandmaster
+Trickster
+Dark Knight
+War Monk/War Cleric
+Dark Flier
+Griffon Rider
+Adventurer
+Malig Knight
+Strategist
