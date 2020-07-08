@@ -743,3 +743,15 @@ MonsterAnim(ManaketeUndeadAnimID)
 UnarmedAnim(ManaketeUndeadAnimID)
 EndAnim
 
+
+ALIGN 4
+HalberdierAnims:
+LanceAnim(SoldierLanceAnimID)
+UnarmedAnim(SoldierUnarmedAnimID)
+EndAnim
+
+ALIGN 4
+HalberdierFAnims:
+LanceAnim(SoldierLanceAnimID)
+UnarmedAnim(SoldierUnarmedAnimID)
+EndAnim

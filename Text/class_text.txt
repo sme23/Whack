@@ -67,3 +67,11 @@ the power of a Wyvern.[X]
 ## FireDragonDesc
 A manakete who wields the[N]
 power of a Fire Dragon.[X]
+
+## HalberdierName
+Halberdier[X]
+
+## HalberdierDesc
+A promoted soldier[N]
+proficient in lances.[X]
+

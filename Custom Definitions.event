@@ -500,6 +500,8 @@
 #define FireDragonUntransformed 178
 #define FireDragonTransformed 179
 
+#define Halberdier 180
+#define Halberdier_F 181
 
 
 //char defs

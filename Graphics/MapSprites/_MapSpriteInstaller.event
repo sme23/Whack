@@ -117,3 +117,7 @@ MovingMapSprite(WyvernTransformed, $81E2F34, $81E21E0)
 
 MovingMapSprite(FireDragonUntransformed, $81E39EC, $81E308C)
 MovingMapSprite(FireDragonTransformed, $81E2F34, $81E21E0)
+
+MovingMapSprite(Halberdier, $81ED418, $81EDBC4)
+MovingMapSprite(Halberdier_F, $81ED418, $81EDBC4)
+

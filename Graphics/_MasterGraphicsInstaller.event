@@ -1,6 +1,7 @@
 #include "MapSprites/_MapSpriteInstaller.event"
 #include "Animations/_MasterAnimsInstaller.event"
 #include "Mugs/_MugInstaller.event"
+#include "TitleScreen/titlebackgroundinstaller.event"
 
 //this is a misc thing for now so we'll do it here
 PUSH
@@ -31,4 +32,7 @@ WeaponIconsPal:
 ALIGN 4
 FixedConfigGFX:
 #incext Png2Dmp "Config.png" --lz77
+
+
+
 
