@@ -29,6 +29,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatAll(EndingScene)
 END_MAIN
 
 Dunno1:
@@ -51,14 +52,18 @@ UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [9,12] 0 0 0 1 [ClawTigerLa
 UNIT
 
 EnemyUnits:
-UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [12,3] 0 0 0 1 [SteelLance] NoAI
-UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [13,2] 0 0 0 1 [SteelLance] NoAI
-UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [12,0] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Halberdier 0 Level(5,Enemy,1) [12,3] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Ranger_F 0 Level(5,Enemy,1) [13,0] 0 0 0 1 [SteelBow,SteelSword] NoAI
+UNIT DaeinGeneric General 0 Level(5,Enemy,1) [2,4] 0 0 0 1 [SteelLance,SteelSword] NoAI
+UNIT DaeinGeneric Paladin 0 Level(5,Enemy,1) [12,0] 0 0 0 1 [SteelLance,SteelSword] NoAI
+UNIT DaeinGeneric Warrior 0 Level(5,Enemy,1) [14,2] 0 0 0 1 [SteelAxe,SteelBow] NeverMoveAI
 UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [11,7] 0 0 0 1 [SteelLance] NoAI
-UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [14,9] 0 0 0 1 [SteelLance] NoAI
-UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [13,7] 0 0 0 1 [SteelLance] NoAI
-UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [12,5] 0 0 0 1 [SteelLance] NoAI
-UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [15,6] 0 0 0 1 [SteelLance] NoAI
+UNIT DaeinGeneric Fighter 0 Level(20,Enemy,1) [18,2] 0 0 0 1 [SteelAxe] NoAI
+UNIT DaeinGeneric Fighter 0 Level(20,Enemy,1) [18,11] 0 0 0 1 [HandAxe] NoAI
+UNIT DaeinGeneric Myrmidon 0 Level(20,Enemy,1) [6,3] 0 0 0 1 [IronSword] NoAI
+UNIT DaeinGeneric Mercenary 0 Level(20,Enemy,1) [16,4] 0 0 0 1 [SteelSword] NoAI
+UNIT DaeinGeneric Cavalier 0 Level(20,Enemy,1) [9,5] 0 0 0 1 [SteelSword] NoAI
+UNIT DaeinGeneric Soldier 0 Level(20,Enemy,1) [13,8] 0 0 0 1 [SteelLance] NoAI
 UNIT
 
 Traps1:
