@@ -14,6 +14,9 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0,LetheJoinEvent,2)
+TurnEventPlayer(0,Reinforcements1,4)
+TurnEventPlayer(0,Reinforcements2,5)
+TurnEventPlayer(0,Reinforcements3,6)
 END_MAIN
 
 CharacterBasedEvents:
@@ -98,6 +101,7 @@ DISA Lethe
 DISA Lyre
 DISA Ranulf
 DISA Kyza
+ASMC ClearConvoyASMC
 
 ENUT SkirmishInGalliaBeatenFlag
 MNC2 HubChID
@@ -187,6 +191,56 @@ SetBackground(HouseBG)
 Text(SkirmishInGallia_HouseText4)
 EndConvo
 MUNO
+NoFade
+ENDA
+
+
+
+ALIGN 4
+ReinforcementGroup1:
+UNIT DaeinGeneric Paladin 0 Level(3,Enemy,1) [12,0] 0 0 0 1 [SilverSword] NoAI
+UNIT DaeinGeneric Hero 0 Level(3,Enemy,1) [13,0] 0 0 0 1 [HandAxe] NoAI
+UNIT
+
+ALIGN 4
+ReinforcementGroup2:
+UNIT DaeinGeneric Ranger_F 0 Level(3,Enemy,1) [12,0] 0 0 0 1 [SilverSword] NoAI
+UNIT DaeinGeneric Swordmaster 0 Level(3,Enemy,1) [13,0] 0 0 0 1 [KillingEdge] NoAI
+UNIT
+
+ALIGN 4
+ReinforcementGroup3:
+UNIT DaeinGeneric Halberdier 0 Level(3,Enemy,1) [12,0] 0 0 0 1 [KillerLance] NoAI
+UNIT DaeinGeneric FalcoKnight 0 Level(3,Enemy,1) [13,0] 0 0 0 1 [Javelin] NoAI
+UNIT
+
+ALIGN 4
+Reinforcements1:
+CAM1 [12,0]
+LOAD1 0 ReinforcementGroup1
+ENUN
+STAL 10
+NoFade
+ENDA
+
+
+ALIGN 4
+Reinforcements2:
+CAM1 [12,0]
+LOAD1 0 ReinforcementGroup2
+ENUN
+STAL 10
+NoFade
+ENDA
+
+
+
+ALIGN 4
+Reinforcements3:
+CAM1 [12,0]
+LOAD1 0 ReinforcementGroup3
+ENUN
+STAL 10
 NoFade
 ENDA
 
