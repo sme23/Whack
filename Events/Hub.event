@@ -116,7 +116,8 @@ CallFirstMenu:
 LABEL FirstMenuStartLabel
 CLEAN
 
-ASMC prCallEventMenu1|1 //returns number based on entry # in list that was selected, 0-indexed
+SVAL s1 HubMenuPage1|IsPointer
+ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
 BNE 0 s0 sC
 
 GOTO ThirdMenuStartLabel
@@ -171,7 +172,8 @@ GOTO FirstMenuStartLabel //recursion bad
 LABEL SecondMenuStartLabel
 CLEAN
 
-ASMC prCallEventMenu2|1 //returns number based on entry # in list that was selected, 0-indexed
+SVAL s1 HubMenuPage2|IsPointer
+ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
 BNE 10 s0 sC
 
 //load last menu, always 1
@@ -228,7 +230,8 @@ GOTO SecondMenuStartLabel //recursion bad
 LABEL ThirdMenuStartLabel
 CLEAN
 
-ASMC prCallEventMenu3|1 //returns number based on entry # in list that was selected, 0-indexed
+SVAL s1 HubMenuPage3|IsPointer
+ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
 BNE 20 s0 sC
 
 //load last menu, always 2
@@ -247,15 +250,15 @@ SVAL s1 2
 BNE 22 s1 sC
 
 //confirm for gameplay modifiers
-CALL GameplayModifiers_Start
+CALL AceAttorney_Start
 GOTO ThirdMenuStartLabel
 
 LABEL 22
 SVAL s1 3
 BNE 23 s1 sC
 
-//confirm for options
-CALL Options_Start
+//confirm for gameplay modifiers
+CALL GameplayModifiers_Start
 GOTO ThirdMenuStartLabel
 
 LABEL 23
@@ -451,24 +454,26 @@ NoFade
 ENDA
 
 ALIGN 4
-GameplayModifiers_Start:
-ScrollBoxText(HubMenuGameplayModifiersConfirm)
+AceAttorney_Start:
+ScrollBoxText(HubMenuAceAttorneyConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
-CALL GameplayModifiersSelectionEvent
+MNC2 AceAttorneyChID
+NoFade
+ENDB
 
 LABEL 0
 NoFade
 ENDA
 
 ALIGN 4
-Options_Start:
-ScrollBoxText(HubMenuOptionsConfirm)
+GameplayModifiers_Start:
+ScrollBoxText(HubMenuGameplayModifiersConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
-CALL OptionsSelectionEvent
+CALL GameplayModifiersSelectionEvent
 
 LABEL 0
 NoFade
@@ -738,94 +743,3 @@ COUNTER_SET 0 0
 NoFade
 ENDA
 
-
-
-
-
-
-
-
-
-
-
-//Menu definitions
-
-
-#define EventMenuCommand(aTextId) "WORD 0; SHORT aTextId 0; WORD 0; POIN (0x04F448+1); WORD 0; POIN (prEventMenuCommandEffect+1); WORD 0 0 0"
-#define EventMenuCommandEnd "WORD 0 0 0 0 0 0 0 0 0"
-
-ALIGN 4
-prEventMenuCommandEffect:
-	SHORT 0xB500 0x203C 0x5C08 0x4B03 0x469E 0xF800 0x2097 0xBC02 0x4708 0x0000 0xD1F8 0x0800
-
-ALIGN 4
-prCallEventMenu1:
-	SHORT 0xB510 0x1C04 0x4B10 0x469E 0xF800 0x4A10 0x7850 0x2101 0x4308 0x2102 0x4308 0x2104 0x4308 0x2108 0x4308 0x2110 0x4308 0x7050 0x2000 0x4B0A 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4809 0x1C21 0x4B07 0x469E 0xF800 0xBC10 0xBC01 0x4700 0xE884 0x0804 0x3080 0x0300 0x3D38 0x0800 0x43A8 0x0800 0xEB68 0x0804 0xEBC8 0x0804
-	POIN pMenuDefinition1
-	
-ALIGN 4
-	pMenuDefinition1:
-	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
-	WORD 0                  // style (change it if u want)
-	POIN pCommandDefinition1 // Command Definitions
-	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
-
-ALIGN 4
-	pCommandDefinition1:
-		EventMenuCommand(HubMenuBack) //loops back to the last one
-		EventMenuCommand(HubMenuSkirmishInGallia)
-		EventMenuCommand(HubMenuManaketeMayhem) //locked until skirmish in gallia is beaten
-		EventMenuCommand(HubMenuFatedRevelations)
-		EventMenuCommand(HubMenuStatusSanctuary)
-		EventMenuCommand(HubMenuNext)
-	EventMenuCommandEnd
-
-
-ALIGN 4
-prCallEventMenu2:
-	SHORT 0xB510 0x1C04 0x4B10 0x469E 0xF800 0x4A10 0x7850 0x2101 0x4308 0x2102 0x4308 0x2104 0x4308 0x2108 0x4308 0x2110 0x4308 0x7050 0x2000 0x4B0A 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4809 0x1C21 0x4B07 0x469E 0xF800 0xBC10 0xBC01 0x4700 0xE884 0x0804 0x3080 0x0300 0x3D38 0x0800 0x43A8 0x0800 0xEB68 0x0804 0xEBC8 0x0804
-	POIN pMenuDefinition2
-
-ALIGN 4
-	pMenuDefinition2:
-	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
-	WORD 0                  // style (change it if u want)
-	POIN pCommandDefinition2 // Command Definitions
-	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
-
-ALIGN 4
-	pCommandDefinition2:
-		EventMenuCommand(HubMenuBack)
-		EventMenuCommand(HubMenuBloodFeud)
-		EventMenuCommand(HubMenuFromTheDarkness)
-		EventMenuCommand(HubMenuMerchantMadness)
-		EventMenuCommand(HubMenuMiniThracia)
-		EventMenuCommand(HubMenuNext)
-	EventMenuCommandEnd
-	
-	
-	
-	
-	
-	
-ALIGN 4
-prCallEventMenu3:
-	SHORT 0xB510 0x1C04 0x4B10 0x469E 0xF800 0x4A10 0x7850 0x2101 0x4308 0x2102 0x4308 0x2104 0x4308 0x2108 0x4308 0x2110 0x4308 0x7050 0x2000 0x4B0A 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4B09 0x469E 0xF800 0x4809 0x1C21 0x4B07 0x469E 0xF800 0xBC10 0xBC01 0x4700 0xE884 0x0804 0x3080 0x0300 0x3D38 0x0800 0x43A8 0x0800 0xEB68 0x0804 0xEBC8 0x0804
-	POIN pMenuDefinition3
-
-ALIGN 4
-	pMenuDefinition3:
-	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
-	WORD 0                  // style (change it if u want)
-	POIN pCommandDefinition3 // Command Definitions
-	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
-	
-ALIGN 4
-	pCommandDefinition3:
-		EventMenuCommand(HubMenuBack)
-		EventMenuCommand(HubMenuDemonBlood) 
-		EventMenuCommand(HubMenuModifiers)
-		EventMenuCommand(HubMenuOptions)
-		EventMenuCommand(HubMenuCredits)
-		EventMenuCommand(HubMenuNext)
-	EventMenuCommandEnd

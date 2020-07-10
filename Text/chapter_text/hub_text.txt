@@ -39,6 +39,9 @@ Beta 0.7.76[X]
 ## HubMenuModifiers
 Gameplay Modifiers[X]
 
+## HubMenuAceAttorney
+Ace Attorney[X]
+
 ## HubMenuOptions
 Options[X]
 
@@ -119,6 +122,11 @@ Play the scenario,[N]
 [ToggleRed]Demon's Blood[ToggleRed]?[A][N]
 [Yes][X]
 
+## HubMenuAceAttorneyConfirm
+Play the scenario,[N]
+[ToggleRed]Ace Attorney[ToggleRed]?[A][N]
+[Yes][X]
+
 ## HubMenuGameplayModifiersConfirm
 These Modifiers will alter[N]
 aspects of the gameplay.[A][N]
@@ -186,3 +194,28 @@ insert options menu here[A][X]
 
 ## HubMenuDebugCreditsText
 insert credits here[A][X]
+
+## LockedScenarioText_ManaketeMayhem
+This scenario is locked behind[N]
+Skirmish in Gallia.
+[X]
+
+## LockedScenarioText_BloodFeud
+This scenario is locked behind[N]
+Fated Revelations.
+[X]
+
+## LockedScenarioText_MiniThracia
+This scenario is locked behind[N]
+Status Sanctuary.
+[X]
+
+## LockedScenarioText_DemonBlood
+This scenario is locked behind[N]
+all other scenarios.
+[X]
+
+## LockedScenarioText_AceAttorney
+This scenario is locked.
+[X]
+

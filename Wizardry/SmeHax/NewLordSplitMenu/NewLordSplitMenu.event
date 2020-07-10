@@ -1,0 +1,117 @@
+//Very largely based on Stan's work with the lord split menu in the past
+//Extended to allow for a handful of additional features + the passing of command lists via memory slot
+
+#include "NewLordSplitMenu.lyn.event"
+#include "HubCommandUsabilities.lyn.event"
+
+//ID links for various menu-related flags
+ALIGN 4
+SkirmishInGalliaBeatenFlagIDLink:
+SHORT SkirmishInGalliaBeatenFlag
+ManaketeMayhemBeatenFlagIDLink:
+SHORT ManaketeMayhemBeatenFlag
+FatedRevelationsBeatenFlagIDLink:
+SHORT FatedRevelationsBeatenFlag
+BloodFeudBeatenFlagIDLink:
+SHORT BloodFeudBeatenFlag
+StatusSanctuaryBeatenFlagIDLink:
+SHORT StatusSanctuaryBeatenFlag
+FromTheDarknessBeatenFlagIDLink:
+SHORT FromTheDarknessBeatenFlag
+MerchantMadnessBeatenFlagIDLink:
+SHORT MerchantMadnessBeatenFlag
+DemonBloodBeatenFlagIDLink:
+SHORT DemonBloodBeatenFlag
+MiniThraciaBeatenFlagIDLink:
+SHORT MiniThraciaBeatenFlag
+AceAttorneyBeatenFlagIDLink:
+SHORT AceAttorneyBeatenFlag
+
+EasyModeModifierFlagIDLink:
+SHORT EasyModeModifierFlag
+HardModeModifierFlagIDLink:
+SHORT HardModeModifierFlag
+FixedGrowthsModifierFlagIDLink:
+SHORT FixedGrowthsModifierFlag
+CasualModeModifierFlagIDLink:
+SHORT CasualModeModifierFlag
+OneRNModifierFlagIDLink:
+SHORT OneRNModifierFlag
+FatesRNModifierFlagIDLink:
+SHORT FatesRNModifierFlag
+
+LockedScenarioText_ManaketeMayhemIDLink:
+SHORT LockedScenarioText_ManaketeMayhem
+LockedScenarioText_BloodFeudIDLink:
+SHORT LockedScenarioText_BloodFeud
+LockedScenarioText_MiniThraciaIDLink:
+SHORT LockedScenarioText_MiniThracia
+LockedScenarioText_DemonBloodIDLink:
+SHORT LockedScenarioText_DemonBlood
+LockedScenarioText_AceAttorneyIDLink:
+SHORT LockedScenarioText_AceAttorney
+
+
+#define EventMenuCommand(textId) "WORD 0; SHORT textId 0; WORD 0; POIN (0x04F448+1); WORD 0; POIN (prEventMenuCommandEffect|1); WORD 0 0 0"
+#define EventMenuCommandEnd "WORD 0 0 0 0 0 0 0 0 0"
+#define EventMenuCommand(textID,usabilityFunc,effectFunc) "WORD 0; SHORT textID 0; WORD 0; POIN usabilityFunc; WORD 0; POIN effectFunc; WORD 0 0 0"
+//in addition, the normal MenuCommand(name,desc,colour,usability,effect) macro work here
+
+	
+ALIGN 4
+	HubMenuPage1:
+	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
+	WORD 0                  // style (change it if u want)
+	POIN HubMenuPage1_Commands // Command Definitions
+	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
+
+ALIGN 4
+	HubMenuPage1_Commands:
+		EventMenuCommand(HubMenuBack) //loops back to the last one
+		EventMenuCommand(HubMenuSkirmishInGallia)
+		EventMenuCommand(HubMenuManaketeMayhem,CommandUsability_ManaketeMayhem,CommandEffect_ManaketeMayhem)
+		EventMenuCommand(HubMenuFatedRevelations)
+		EventMenuCommand(HubMenuStatusSanctuary)
+		EventMenuCommand(HubMenuNext)
+	EventMenuCommandEnd
+
+
+
+ALIGN 4
+	HubMenuPage2:
+	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
+	WORD 0                  // style (change it if u want)
+	POIN HubMenuPage2_Commands // Command Definitions
+	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
+	
+ALIGN 4
+	HubMenuPage2_Commands:
+		EventMenuCommand(HubMenuBack)
+		EventMenuCommand(HubMenuBloodFeud,CommandUsability_BloodFeud,CommandEffect_BloodFeud)
+		EventMenuCommand(HubMenuFromTheDarkness)
+		EventMenuCommand(HubMenuMerchantMadness)
+		EventMenuCommand(HubMenuMiniThracia,CommandUsability_MiniThracia,CommandEffect_MiniThracia)
+		EventMenuCommand(HubMenuNext)
+	EventMenuCommandEnd
+
+
+
+ALIGN 4
+	HubMenuPage3:
+	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
+	WORD 0                  // style (change it if u want)
+	POIN HubMenuPage3_Commands // Command Definitions
+	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
+
+ALIGN 4
+	HubMenuPage3_Commands:
+		EventMenuCommand(HubMenuBack)
+		EventMenuCommand(HubMenuDemonBlood,CommandUsability_DemonBlood,CommandEffect_DemonBlood)
+		EventMenuCommand(HubMenuAceAttorney,CommandUsability_AceAttorney,CommandEffect_AceAttorney)
+		EventMenuCommand(HubMenuModifiers)
+		EventMenuCommand(HubMenuCredits)
+		EventMenuCommand(HubMenuNext)
+	EventMenuCommandEnd
+
+
+	

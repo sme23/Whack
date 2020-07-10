@@ -283,6 +283,8 @@
 #define FromTheDarknessChID 6
 #define MerchantMadnessChID 7
 #define DemonBloodChID 8
+#define AceAttorneyChID 9
+
 #define MiniThracia1ChID 30
 #define MiniThracia2ChID 31
 #define MiniThracia2xChID 32
@@ -312,6 +314,8 @@
 #define CasualModeModifierFlag 193 //4 scenarios beaten
 #define OneRNModifierFlag 194 //6 scenarios beaten
 #define FatesRNModifierFlag 195 //8 scenarios beaten
+
+#define AceAttorneyBeatenFlag 196
 
 
 //event ptr table defs

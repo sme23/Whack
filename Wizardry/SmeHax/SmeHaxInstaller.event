@@ -12,6 +12,7 @@
 #include "Fatigue/Fatigue.event"
 #include "SplitPromoItems/SplitPromoItems.event"
 #include "FixedDamageWeapons/FixedDamageWeapons.event"
+#include "NewLordSplitMenu/NewLordSplitMenu.event"
 #include "NosResire/NosResire.event"
 #include "ShopUnit/MoreShops.event"
 #include "ShopUnit/ShopUnit.event"
