@@ -1,0 +1,60 @@
+{
+#include "Songs/allegro2001.event"
+SongTable(Allegro2001,allegro2001,MapMusicGroup)
+}
+
+{
+#include "Songs/courtroomlobby.event"
+SongTable(CourtroomLobby,courtroomlobby,MapMusicGroup)
+}
+
+{
+#include "Songs/cove2.event"
+SongTable(TreasureTroveCove,cove2,MapMusicGroup)
+}
+
+{
+#include "Songs/logicandtrick.event"
+SongTable(LogicAndTrick,logicandtrick,MapMusicGroup)
+}
+
+{
+#include "Songs/lyingcoldly.event"
+SongTable(LyingColdly,lyingcoldly,MapMusicGroup)
+}
+
+{
+#include "Songs/maple.event"
+SongTable(MapleLeafRag,maple,MapMusicGroup)
+}
+
+{
+#include "Songs/objection2001.event"
+SongTable(Objection2001,objection2001,MapMusicGroup)
+}
+
+{
+#include "Songs/outside.event"
+SongTable(MG1Outside,outside,MapMusicGroup)
+}
+
+{
+#include "Songs/suspense.event"
+SongTable(Suspense,suspense,MapMusicGroup)
+}
+
+{
+#include "Songs/Tara.event"
+SongTable(ThemeOfTara,Tara,MapMusicGroup)
+}
+
+{
+#include "Songs/testimony.event"
+SongTable(Testimony,testimony,MapMusicGroup)
+}
+
+{
+#include "Songs/trial.event"
+SongTable(Trial,trial,MapMusicGroup)
+}
+

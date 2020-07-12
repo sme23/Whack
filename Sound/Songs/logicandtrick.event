@@ -1,0 +1,2112 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	logicandtrick_grp  MusicVoices
+	#define	logicandtrick_pri  0
+	#define	logicandtrick_rev  0
+	#define	logicandtrick_mvl  75
+	#define	logicandtrick_key  0
+	#define	logicandtrick_tbs  1
+	#define	logicandtrick_exg  0
+	#define	logicandtrick_cmp  1
+
+	// .rodata
+	//	logicandtrick
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+logicandtrick_1:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   109*logicandtrick_tbs/2
+	BYTE		VOICE   5
+	BYTE		VOL     63*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v-20
+	BYTE		N11     En4   v060
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        Cn5 
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+// 001   ----------------------------------------
+logicandtrick_1_001:
+	BYTE		N11     En4   v060
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE	PEND
+// 002   ----------------------------------------
+logicandtrick_1_002:
+	BYTE		N11     En4   v060
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        Cn5 
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_002
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_1_001
+	BYTE	GoTo
+	 POIN2	logicandtrick_1_B1
+logicandtrick_1_B2:
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+logicandtrick_2:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   4
+	BYTE		VOL     63*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v+20
+	BYTE	W18
+	BYTE		N12     En4   v060
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N12     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+// 001   ----------------------------------------
+logicandtrick_2_001:
+	BYTE		N06     An4   v060
+	BYTE	W06
+	BYTE		        Cn5 
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N12     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+	BYTE	PEND
+// 002   ----------------------------------------
+logicandtrick_2_002:
+	BYTE		N06     En4   v060
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N12     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_002
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_2_001
+	BYTE	GoTo
+	 POIN2	logicandtrick_2_B1
+logicandtrick_2_B2:
+// 032   ----------------------------------------
+	BYTE		N06     En4   v060
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.4) ****************//
+
+logicandtrick_3:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   4
+	BYTE		VOL     51*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		MOD     0
+	BYTE		N11     En4   v127
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        Cn5 
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+// 001   ----------------------------------------
+logicandtrick_3_001:
+	BYTE		N11     En4   v127
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE	PEND
+// 002   ----------------------------------------
+logicandtrick_3_002:
+	BYTE		N11     En4   v127
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N05     Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        Cn5 
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_002
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_3_001
+	BYTE	GoTo
+	 POIN2	logicandtrick_3_B1
+logicandtrick_3_B2:
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.5) ****************//
+
+logicandtrick_4:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   36
+	BYTE		VOL     64*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		MOD     0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W72
+	BYTE	W01
+	BYTE	W11
+	BYTE	W09
+	BYTE	W03
+// 020   ----------------------------------------
+	BYTE		N03     An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An1   v127
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An2   v112
+	BYTE	W04
+	BYTE	W02
+	BYTE		        An1   v127
+	BYTE	W03
+	BYTE	W03
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W03
+	BYTE	W03
+	BYTE		        An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W01
+	BYTE	W05
+// 021   ----------------------------------------
+	BYTE		        An1   v127
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An2   v112
+	BYTE	W04
+	BYTE	W02
+	BYTE		        An1   v127
+	BYTE	W03
+	BYTE	W03
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W04
+	BYTE	W02
+	BYTE		        An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An1   v127
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An2   v112
+	BYTE	W04
+	BYTE	W02
+// 022   ----------------------------------------
+	BYTE		        An1   v127
+	BYTE	W03
+	BYTE	W03
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W03
+	BYTE	W03
+	BYTE		        An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An1   v127
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An2   v112
+	BYTE	W04
+	BYTE	W02
+	BYTE		        An1   v127
+	BYTE	W03
+	BYTE	W03
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An2   v112
+	BYTE	W03
+	BYTE	W03
+// 023   ----------------------------------------
+	BYTE		        An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An1   v127
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W01
+	BYTE	W05
+	BYTE		        An2   v112
+	BYTE	W06
+	BYTE		        An1   v127
+	BYTE	W03
+	BYTE	W03
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W03
+	BYTE	W03
+	BYTE		        An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W06
+// 024   ----------------------------------------
+logicandtrick_4_024:
+	BYTE		N03     An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W06
+	BYTE		        An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W06
+	BYTE		        An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W06
+	BYTE		        An1   v127
+	BYTE	W06
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W06
+	BYTE	PEND
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_4_024
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_4_024
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_4_024
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_4_024
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_4_024
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_4_024
+// 031   ----------------------------------------
+	BYTE		N03     An1   v127
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Dn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        An2   v112
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE		        An1   v127
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Dn2   v120
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE		        En2 
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE		        An2   v112
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        An1   v127
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE		        Dn2   v120
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE		        En2 
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        An2   v112
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE		        An1   v127
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE		        Dn2   v120
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        En2 
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE		        An2   v112
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	GoTo
+	 POIN2	logicandtrick_4_B1
+logicandtrick_4_B2:
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.6) ****************//
+
+logicandtrick_5:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		VOL     76*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W84
+	BYTE		N06     Cn1   v120
+	BYTE	W12
+// 004   ----------------------------------------
+logicandtrick_5_004:
+	BYTE		N06     Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE	PEND
+// 005   ----------------------------------------
+logicandtrick_5_005:
+	BYTE		N06     Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_5_004
+// 007   ----------------------------------------
+	BYTE		N06     Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W18
+	BYTE		        Cs1 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		        Cs1   v092
+	BYTE	W12
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_5_005
+// 009   ----------------------------------------
+	BYTE		N06     Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_5_005
+// 011   ----------------------------------------
+	BYTE		N06     Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W18
+	BYTE		N03     Cs1   v092
+	BYTE	W03
+	BYTE		        Cs1   v120
+	BYTE	W03
+	BYTE		N06     Cn1 
+	BYTE	W12
+	BYTE		        Cs1   v092
+	BYTE	W12
+// 012   ----------------------------------------
+logicandtrick_5_012:
+	BYTE		N06     Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE		N06     Cs1 
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE		N06     Cs1 
+	BYTE	W24
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE		        Cn1 
+	BYTE	W24
+	BYTE		N06   
+	BYTE		N06     Cs1 
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N06     Cs1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_5_012
+// 015   ----------------------------------------
+	BYTE		N06     Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE		N06     Cs1 
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE		N06     Cs1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N06     Cs1   v092
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+// 016   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W30
+	BYTE		        Cs1   v120
+	BYTE	W24
+// 017   ----------------------------------------
+	BYTE	W24
+	BYTE		        Cs1   v124
+	BYTE	W18
+	BYTE		        Cs1   v108
+	BYTE	W30
+	BYTE		        Cs1   v124
+	BYTE	W24
+// 018   ----------------------------------------
+	BYTE	W24
+	BYTE		        Cs1   v120
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W30
+	BYTE		        Cs1   v120
+	BYTE	W24
+// 019   ----------------------------------------
+	BYTE	W48
+	BYTE		        Cs1   v076
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N03     Cs1   v108
+	BYTE	W03
+	BYTE		        Cs1   v092
+	BYTE	W03
+	BYTE		N06     Cs1   v108
+	BYTE	W06
+	BYTE		        Cs1   v120
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+// 020   ----------------------------------------
+	BYTE		        Cn1 
+	BYTE	W18
+	BYTE		        Cn1   v080
+	BYTE	W06
+	BYTE		        Cs1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cs1   v092
+	BYTE	W12
+	BYTE		        Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+// 021   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W24
+// 022   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+// 023   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+// 024   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cn1   v120
+	BYTE	W06
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cs1   v092
+	BYTE	W12
+	BYTE		        Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W12
+// 025   ----------------------------------------
+	BYTE		        Cn1 
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+// 026   ----------------------------------------
+	BYTE		N06   
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+// 027   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W18
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Cs1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N06     Cs1 
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+// 028   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE	W24
+	BYTE		N06   
+	BYTE		N06     Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Cs1 
+	BYTE	W12
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+// 029   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		N06   
+	BYTE		N06     Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+// 030   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE		N06     Cs1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N06     Dn1   v096
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+// 031   ----------------------------------------
+	BYTE		        Cn1   v120
+	BYTE		N06     Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W24
+	BYTE		        Cn1   v120
+	BYTE		N06     Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cs1   v108
+	BYTE	W06
+	BYTE		        Cs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N06     Dn1   v096
+	BYTE	W12
+	BYTE		        Cn1   v120
+	BYTE	W12
+	BYTE		N06   
+	BYTE		N06     Cs1 
+	BYTE		N06     Dn1   v096
+	BYTE	W08
+	BYTE		        Cs1   v092
+	BYTE	W08
+	BYTE		        Cs1   v076
+	BYTE	W08
+	BYTE	GoTo
+	 POIN2	logicandtrick_5_B1
+logicandtrick_5_B2:
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.7) ****************//
+
+logicandtrick_6:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   52
+	BYTE		VOL     63*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v+10
+	BYTE		MOD     0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     Cn4   v080
+	BYTE	W03
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Gn3   v120
+	BYTE	W03
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Dn4   v080
+	BYTE	W03
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     An3   v120
+	BYTE	W03
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		N92     Gn3 
+	BYTE	W03
+// 012   ----------------------------------------
+logicandtrick_6_012:
+	BYTE	W92
+	BYTE	W01
+	BYTE		N92     Dn4   v080
+	BYTE	W03
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		        An3   v120
+	BYTE	W03
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_6_012
+// 015   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     Cn4   v080
+	BYTE	W03
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Gn3   v120
+	BYTE	W03
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Dn4   v080
+	BYTE	W03
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     An3   v120
+	BYTE	W03
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		N92     Gn3 
+	BYTE	W03
+// 024   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		        Dn4   v092
+	BYTE	W03
+// 025   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     An3   v120
+	BYTE	W03
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W15
+	BYTE	W03
+	BYTE	W03
+	BYTE	W04
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W03
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	logicandtrick_6_B1
+logicandtrick_6_B2:
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.8) ****************//
+
+logicandtrick_7:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   52
+	BYTE		VOL     38*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v-50
+	BYTE		MOD     0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     Gn3   v100
+	BYTE	W03
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Dn3 
+	BYTE	W03
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     An3 
+	BYTE	W03
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En3 
+	BYTE	W03
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		N92     Dn3 
+	BYTE	W03
+// 012   ----------------------------------------
+logicandtrick_7_012:
+	BYTE	W92
+	BYTE	W01
+	BYTE		N92     An3   v100
+	BYTE	W03
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		        En3 
+	BYTE	W03
+// 014   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		        Gn3 
+	BYTE	W03
+// 015   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE   
+	BYTE	W03
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Dn3 
+	BYTE	W03
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     An3 
+	BYTE	W03
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En3 
+	BYTE	W03
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		N92     Dn3 
+	BYTE	W03
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_7_012
+// 025   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     En3   v100
+	BYTE	W03
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W15
+	BYTE	W03
+	BYTE	W03
+	BYTE	W04
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W03
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	logicandtrick_7_B1
+logicandtrick_7_B2:
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.9) ****************//
+
+logicandtrick_8:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_8_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   52
+	BYTE		VOL     63*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v+50
+	BYTE		MOD     0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     Dn3   v100
+	BYTE	W03
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     An2   v120
+	BYTE	W03
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En3   v100
+	BYTE	W03
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Bn2   v120
+	BYTE	W03
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		N92     An2 
+	BYTE	W03
+// 012   ----------------------------------------
+logicandtrick_8_012:
+	BYTE	W92
+	BYTE	W01
+	BYTE		N92     En3   v100
+	BYTE	W03
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		        Bn2   v120
+	BYTE	W03
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_8_012
+// 015   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     Dn3   v100
+	BYTE	W03
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     An2   v120
+	BYTE	W03
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En3   v100
+	BYTE	W03
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Bn2   v120
+	BYTE	W03
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		N92     An2 
+	BYTE	W03
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	logicandtrick_8_012
+// 025   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     Bn2   v120
+	BYTE	W03
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W15
+	BYTE	W03
+	BYTE	W03
+	BYTE	W04
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W03
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	logicandtrick_8_B1
+logicandtrick_8_B2:
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.11) ****************//
+
+logicandtrick_9:
+	BYTE	KEYSH   logicandtrick_key+0
+logicandtrick_9_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   52
+	BYTE		VOL     63*logicandtrick_mvl/mxv
+	BYTE		PAN     c_v-10
+	BYTE		MOD     0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W92
+	BYTE	W01
+	BYTE		TIE     Fn2   v120
+	BYTE	W03
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En2 
+	BYTE	W03
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Fn2 
+	BYTE	W03
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En2 
+	BYTE	W03
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Fn2 
+	BYTE	W03
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En2 
+	BYTE	W03
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Fn2 
+	BYTE	W03
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En2 
+	BYTE	W03
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Fn2 
+	BYTE	W03
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En2 
+	BYTE	W03
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     Fn2 
+	BYTE	W03
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W92
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		TIE     En2 
+	BYTE	W03
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W15
+	BYTE	W03
+	BYTE	W03
+	BYTE	W04
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W01
+	BYTE		EOT   
+	BYTE	W01
+	BYTE	W03
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	logicandtrick_9_B1
+logicandtrick_9_B2:
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+logicandtrick:
+	BYTE	9	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	logicandtrick_pri	// Priority
+	BYTE	logicandtrick_rev	// Reverb.
+
+	POIN2	logicandtrick_grp
+
+	POIN2	logicandtrick_1
+	POIN2	logicandtrick_2
+	POIN2	logicandtrick_3
+	POIN2	logicandtrick_4
+	POIN2	logicandtrick_5
+	POIN2	logicandtrick_6
+	POIN2	logicandtrick_7
+	POIN2	logicandtrick_8
+	POIN2	logicandtrick_9
+
+	

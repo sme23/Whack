@@ -29,6 +29,9 @@
     //Maps
     #include "Maps/Master Map Installer.event"
 	
+	//Sound
+	#include "Sound/_MasterSoundInstaller.event"
+	
 	//Events
     #include "Events/_MasterEventInstaller.event"
     

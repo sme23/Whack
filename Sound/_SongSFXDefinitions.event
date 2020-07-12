@@ -1,0 +1,39 @@
+#define Env_Windy1 0x47
+#define Env_Windy2 0x48
+#define Env_Lava 0x49
+#define Env_Night 0x4A
+#define Env_Water 0x4B
+#define Env_Birds 0x4C
+#define Env_Windy3 0x4D
+#define Env_WindGusts 0x4E
+#define Env_WindGustsEnd 0x4F
+#define Env_Blizzard 0x50
+#define Env_LegendaryWeapon 0x51
+#define Env_Outside 0x52
+#define Env_River 0x53
+#define Env_Experience 0x74
+#define Env_CrowdCheer 0x8F
+#define Env_Sandstorm 0x95
+
+#define SFX_SlamDesk 0x58
+#define SFX_DramaPound 0x59
+#define SFX_Evidence 0x5D
+#define SFX_Gallery 0x5E
+#define SFX_Gavel 0x5F
+#define SFX_Lightbulb 0x62
+#define SFX_Objection 0x63
+#define SFX_Realization 0x64
+
+#define Allegro2001 0x92
+#define CourtroomLobby 0x93
+#define TreasureTroveCove 0x94
+#define LogicAndTrick 0xA8
+#define LyingColdly 0xA9
+#define MapleLeafRag 0xAD
+#define Objection2001 0xAE
+#define MG1Outside 0xB2
+#define Suspense 0xBB
+#define ThemeOfTara 0xC0
+#define Testimony 0xC1
+#define Trial 0xC2
+

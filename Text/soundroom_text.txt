@@ -1,0 +1,35 @@
+## SongName_Allegro2001
+Allegro (2001)[X]
+
+## SongName_CourtroomLobby
+Courtroom Lobby[X]
+
+## SongName_TreasureTroveCove
+Treasure Trove Cove[X]
+
+## SongName_LogicAndTrick
+Logic and Trick[X]
+
+## SongName_LyingColdly
+Pursuit - Lying Coldly[X]
+
+## SongName_MapleLeafRag
+Maple Leaf Rag[X]
+
+## SongName_Objection2001
+Objection! 2001[X]
+
+## SongName_MG1Outside
+Outside[X]
+
+## SongName_Suspense
+Suspense[X]
+
+## SongName_ThemeOfTara
+Theme of Tara[X]
+
+## SongName_Testimony
+Testimony[X]
+
+## SongName_Trial
+Trial[X]

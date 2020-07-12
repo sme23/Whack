@@ -1,0 +1,4 @@
+#include "Instruments/_InstrumentInstaller.event"
+#include "_SongInstaller.event"
+
+#include "_SoundRoomInstaller.event"

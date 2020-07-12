@@ -1,0 +1,52 @@
+
+SongTable(SFX_Evidence,sfx-evidence,SFXGroup)
+
+    #include "MPlayDef.event"
+
+    #define    loop_sfx_grp_sfx-evidence  sfx-evidence_map
+    #define    loop_sfx_pri_sfx-evidence  0
+    #define    loop_sfx_rev_sfx-evidence  0
+    #define    loop_sfx_mvl_sfx-evidence  127
+    #define    loop_sfx_key_sfx-evidence  0
+    #define    loop_sfx_tbs_sfx-evidence  1
+    #define    loop_sfx_exg_sfx-evidence  0
+    #define    loop_sfx_cmp_sfx-evidence  1
+
+    ALIGN 4
+
+loop_sfx_1:
+    BYTE        VOL     127*loop_sfx_mvl/mxv
+    BYTE    KEYSH   loop_sfx_key_sfx-evidence+0
+    BYTE        VOICE   0
+    BYTE        TIE     Cn3   v064
+    BYTE    W96
+loop_sfx_1_B1:
+    BYTE    W96
+    BYTE    W96
+    BYTE    GoTo
+     POIN2    loop_sfx_1_B1
+loop_sfx_1_B2:
+    BYTE    W06
+    BYTE        EOT     Cn3 
+    BYTE    FINE
+
+    ALIGN 4
+
+sfx-evidence:
+    BYTE    1    // NumTrks
+    BYTE    0    // NumBlks
+    BYTE    loop_sfx_pri_sfx-evidence    // Priority
+    BYTE    loop_sfx_rev_sfx-evidence    // Reverb.
+
+    POIN2    loop_sfx_grp_sfx-evidence
+
+    POIN2    loop_sfx_1
+
+    
+sfx-evidence_map:
+WORD $3c00
+POIN sfx-evidence_wav
+WORD $FF00FF
+
+sfx-evidence_wav:
+#incbin "sfx-evidence.bin"

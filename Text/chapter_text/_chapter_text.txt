@@ -2,4 +2,4 @@
 
 #include "hub_text.txt"
 #include "skirmishingallia_text.txt"
-
+#include "aceattorney_text.txt"

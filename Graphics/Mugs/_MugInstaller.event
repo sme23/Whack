@@ -35,3 +35,29 @@ ALIGN 4
 DaeinSoldierPortrait:
 #incext PortraitFormatter "Nuramon_SoldierBlack.png"
 
+
+
+setMugEntry(AlmMugNeutral,AlmPortraitNeutral,3,5,3,3)
+ALIGN 4
+AlmPortraitNeutral:
+#incext PortraitFormatter "almneutral.png"
+
+setMugEntry(AlmMugSmug,AlmPortraitSmug,3,5,3,3)
+ALIGN 4
+AlmPortraitSmug:
+#incext PortraitFormatter "almsmug.png"
+
+setMugEntry(AlmMugPain,AlmPortraitPain,3,5,3,3)
+ALIGN 4
+AlmPortraitPain:
+#incext PortraitFormatter "almpain.png"
+
+setMugEntry(AlmMugHappy,AlmPortraitHappy,3,5,3,3)
+ALIGN 4
+AlmPortraitHappy:
+#incext PortraitFormatter "almhappy.png"
+
+setMugEntry(AlmMugShock,AlmPortraitShock,3,5,3,3)
+ALIGN 4
+AlmPortraitShock:
+#incext PortraitFormatter "almshock.png"

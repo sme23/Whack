@@ -1,0 +1,25 @@
+{
+#include "sfx-deskslam Installer.txt"
+}
+{
+#include "sfx-dramapound Installer.txt"
+}
+{
+#include "sfx-evidence Installer.txt"
+}
+{
+#include "sfx-gallery Installer.txt"
+}
+{
+#include "sfx-gavel Installer.txt"
+}
+{
+#include "sfx-lightbulb Installer.txt"
+}
+{
+#include "sfx-objection Installer.txt"
+}
+{
+#include "sfx-realization Installer.txt"
+}
+

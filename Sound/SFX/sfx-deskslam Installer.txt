@@ -1,0 +1,52 @@
+
+SongTable(SFX_SlamDesk,sfx-deskslam,SFXGroup)
+
+    #include "MPlayDef.event"
+
+    #define    loop_sfx_grp_sfx-deskslam  sfx-deskslam_map
+    #define    loop_sfx_pri_sfx-deskslam  0
+    #define    loop_sfx_rev_sfx-deskslam  0
+    #define    loop_sfx_mvl_sfx-deskslam  127
+    #define    loop_sfx_key_sfx-deskslam  0
+    #define    loop_sfx_tbs_sfx-deskslam  1
+    #define    loop_sfx_exg_sfx-deskslam  0
+    #define    loop_sfx_cmp_sfx-deskslam  1
+
+    ALIGN 4
+
+loop_sfx_1:
+    BYTE        VOL     127*loop_sfx_mvl/mxv
+    BYTE    KEYSH   loop_sfx_key_sfx-deskslam+0
+    BYTE        VOICE   0
+    BYTE        TIE     Cn3   v064
+    BYTE    W96
+loop_sfx_1_B1:
+    BYTE    W96
+    BYTE    W96
+    BYTE    GoTo
+     POIN2    loop_sfx_1_B1
+loop_sfx_1_B2:
+    BYTE    W06
+    BYTE        EOT     Cn3 
+    BYTE    FINE
+
+    ALIGN 4
+
+sfx-deskslam:
+    BYTE    1    // NumTrks
+    BYTE    0    // NumBlks
+    BYTE    loop_sfx_pri_sfx-deskslam    // Priority
+    BYTE    loop_sfx_rev_sfx-deskslam    // Reverb.
+
+    POIN2    loop_sfx_grp_sfx-deskslam
+
+    POIN2    loop_sfx_1
+
+    
+sfx-deskslam_map:
+WORD $3c00
+POIN sfx-deskslam_wav
+WORD $FF00FF
+
+sfx-deskslam_wav:
+#incbin "sfx-deskslam.bin"

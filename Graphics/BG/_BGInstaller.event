@@ -1,0 +1,125 @@
+
+PUSH
+ORG $E894
+POIN NewBGTable
+ORG $ECF4
+POIN NewBGTable
+ORG $EDF8
+POIN NewBGTable
+ORG $10E44
+POIN NewBGTable
+POP
+
+NewBGTable:
+#incbin "VanillaBGTable.dmp"
+POIN BlankBG_img BlankBG_tsa BlankBG_pal
+WORD 0 0 0 //this entry (0x36) is never actually read anyhow
+FILL $96C //up to 256 entries
+
+#define SetBG(id,img,pal,tsa) "PUSH; ORG (NewBGTable+(id*12)); POIN img tsa pal; POP"
+
+#define AA_Consult 0x38
+#define AA_Hammer 0x39
+#define AA_Judge 0x3A
+#define AA_LeftBench 0x3B
+#define AA_RightBench 0x3C
+#define AA_Witness 0x3D
+
+
+SetBG(AA_Consult,consult_img,consult_pal,consult_tsa)
+SetBG(AA_Hammer,hammer_img,hammer_pal,hammer_tsa)
+SetBG(AA_Judge,judge_img,judge_pal,judge_tsa)
+SetBG(AA_LeftBench,leftbench_img,leftbench_pal,leftbench_tsa)
+SetBG(AA_RightBench,rightbench_img,rightbench_pal,rightbench_tsa)
+SetBG(AA_Witness,witness_img,witness_pal,witness_tsa)
+
+ALIGN 4
+consult_img:
+#incbin "consult_img.dmp"
+
+ALIGN 4
+consult_pal:
+#incbin "consult_pal.dmp"
+
+ALIGN 4
+consult_tsa:
+#incbin "consult_tsa.dmp"
+
+
+ALIGN 4
+hammer_img:
+#incbin "hammer_img.dmp"
+
+ALIGN 4
+hammer_pal:
+#incbin "hammer_pal.dmp"
+
+ALIGN 4
+hammer_tsa:
+#incbin "hammer_tsa.dmp"
+
+
+ALIGN 4
+judge_img:
+#incbin "judge_img.dmp"
+
+ALIGN 4
+judge_pal:
+#incbin "judge_pal.dmp"
+
+ALIGN 4
+judge_tsa:
+#incbin "judge_tsa.dmp"
+
+
+ALIGN 4
+leftbench_img:
+#incbin "leftbench_img.dmp"
+
+ALIGN 4
+leftbench_pal:
+#incbin "leftbench_pal.dmp"
+
+ALIGN 4
+leftbench_tsa:
+#incbin "leftbench_tsa.dmp"
+
+
+ALIGN 4
+rightbench_img:
+#incbin "rightbench_img.dmp"
+
+ALIGN 4
+rightbench_pal:
+#incbin "rightbench_pal.dmp"
+
+ALIGN 4
+rightbench_tsa:
+#incbin "rightbench_tsa.dmp"
+
+
+ALIGN 4
+witness_img:
+#incbin "witness_img.dmp"
+
+ALIGN 4
+witness_pal:
+#incbin "witness_pal.dmp"
+
+ALIGN 4
+witness_tsa:
+#incbin "witness_tsa.dmp"
+
+
+ALIGN 4
+BlankBG_img:
+#incbin "blankbg_img.dmp"
+
+ALIGN 4
+BlankBG_pal:
+#incbin "blankbg_pal.dmp"
+
+ALIGN 4
+BlankBG_tsa:
+#incbin "blankbg_tsa.dmp"
+

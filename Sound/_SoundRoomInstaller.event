@@ -1,0 +1,43 @@
+PUSH
+ORG $1BC14
+POIN SoundRoomList
+ORG $1BCC4
+POIN SoundRoomList
+ORG $AECA8
+POIN SoundRoomList
+ORG $AECD0
+POIN SoundRoomList
+ORG $AED2C
+POIN SoundRoomList
+ORG $AEEBC
+POIN SoundRoomList
+ORG $AF438
+POIN SoundRoomList
+ORG $AF830
+POIN SoundRoomList
+ORG $AFE30
+POIN SoundRoomList
+ORG $B0080
+POIN SoundRoomList
+ORG $B042C
+POIN SoundRoomList
+POP
+
+#define SoundRoomEntry(songID,songLength,nameTextID) "WORD songID songLength 0 nameTextID"
+#define SoundRoomTerminator "WORD 0xFFFFFFFF 0 0 0"
+
+ALIGN 4
+SoundRoomList:
+SoundRoomEntry(Allegro2001,0,SongName_Allegro2001)
+SoundRoomEntry(CourtroomLobby,0,SongName_CourtroomLobby)
+SoundRoomEntry(TreasureTroveCove,0,SongName_TreasureTroveCove)
+SoundRoomEntry(LogicAndTrick,0,SongName_LogicAndTrick)
+SoundRoomEntry(LyingColdly,0,SongName_LyingColdly)
+SoundRoomEntry(MapleLeafRag,0,SongName_MapleLeafRag)
+SoundRoomEntry(Objection2001,0,SongName_Objection2001)
+SoundRoomEntry(MG1Outside,0,SongName_MG1Outside)
+SoundRoomEntry(Suspense,0,SongName_Suspense)
+SoundRoomEntry(ThemeOfTara,0,SongName_ThemeOfTara)
+SoundRoomEntry(Testimony,0,SongName_Testimony)
+SoundRoomEntry(Trial,0,SongName_Trial)
+SoundRoomTerminator
