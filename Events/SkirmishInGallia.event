@@ -78,19 +78,19 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-MUSC Advance
-SetBackground(Woodland)
-FADU 10
-Text(SkirmishInGallia_Opening1)
-FADI 10
+//MUSC Advance
+//SetBackground(Woodland)
+//FADU 10
+//Text(SkirmishInGallia_Opening1)
+//FADI 10
 LOAD1 0 Units1
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
 CAM1 Ranulf
 EndConvo
-MUSC Tension
-Text(SkirmishInGallia_Opening2)
+//MUSC Tension
+//Text(SkirmishInGallia_Opening2)
 NoFade
 ENDA
 
@@ -124,7 +124,7 @@ ENUN
 CUMO Lethe
 STAL 20
 CURE
-Text(SkirmishInGallia_LetheJoinConvo)
+//Text(SkirmishInGallia_LetheJoinConvo)
 NoFade
 ENDA
 
