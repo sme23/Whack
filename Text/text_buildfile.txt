@@ -215,6 +215,27 @@ auto-transforms.[X]
 ## LaguzWTypeText
 Laguz[X]
 
+## MorshuShopEntryText
+Lamp oil? Rope?[N]
+Bombs? You want it?[A][2NL]
+It's yours, my friend![N]
+As long as you[A][2NL]
+have enough gold.[N]
+[Buy/Sell][X]
+
+
+## MorshuShopCannotBuyText
+Sorry bud, I can't give credit![A][2NL]
+Come back when you're[N]
+a little, mmm... richer![A][X]
+
+
+## MorshuName
+Morshu[X]
+
+## MorshuDesc
+A merchant from a far-off land.[X]
+
 
 
 #include "char_text.txt"

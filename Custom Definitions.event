@@ -511,6 +511,8 @@
 
 //char defs
 
+
+//playables
 #define Giffca 1
 #define Mordecai 2
 #define Lethe 3
@@ -518,7 +520,15 @@
 #define Ranulf 5
 #define Kyza 6
 
+//bosses
+
+
+//generics
 #define DaeinGeneric 0x70
+
+
+//neutrals
+#define Morshu 162
 
 
 //mug defs
@@ -538,6 +548,8 @@
 #define AlmMugHappy 12
 #define AlmMugShock 13
 
+#define MorshuMug 14
+#define MorshuShopMug 15
 
 //items
 
@@ -548,3 +560,4 @@
 #define LaguzBand Bowgun+5
 #define OliviGrass Bowgun+6
 #define LaguzStone Bowgun+7
+

@@ -31,20 +31,12 @@ ShopUnitTargetSelectionStruct:
 
 ALIGN 4
 ShopUnitList:
+ShopUnitListEntry(Morshu,3,MorshuShopList)
 ShopUnitListEnd
 
 ALIGN 4
-ShopUnitShopList:
-SHLI IronSword Fire Vulnerary
-ALIGN 4
-ShopUnitShopList2:
-SHLI SteelBlade
-ALIGN 4
-ShopUnitShopList3:
-SHLI Nosferatu
-ALIGN 4
-ShopUnitShopList4:
-SHLI Vulnerary
+MorshuShopList:
+SHLI Fire Vulnerary IronBow
 ALIGN 4
 
 

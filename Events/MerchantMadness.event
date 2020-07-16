@@ -7,7 +7,7 @@ POIN LocationBasedEvents
 POIN MiscBasedEvents
 POIN Dunno1 Dunno2 Dunno3 Tutorial
 POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN PlayerUnits PlayerUnits  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
@@ -37,10 +37,16 @@ END_MAIN
 Tutorial:
 END_MAIN
 
-Units1:
+PlayerUnits:
+UNIT Giffca 1 1 Level(1,Ally,0) [0,0] 0 0 0 1 NoItems NoAI
+UNIT
+
+NPCUnits:
+UNIT Morshu 1 1 Level(1,NPC,0) [0,1] 0 0 0 1 NoItems NoAI
 UNIT
 
 EnemyUnits:
+UNIT DaeinGeneric 1 1 Level(1,Enemy,0) [14,9] 0 0 0 1 NoItems NoAI
 UNIT
 
 Traps1:
@@ -52,11 +58,39 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+LOAD1 0 PlayerUnits
+ENUN
+LOAD1 0 NPCUnits
+ENUN
 LOAD1 0 EnemyUnits
 ENUN
-GotoPrepScreen
+NoFade
+ENDA
+
+//the impetus of this chapter is you are escorting various merchants & can shop with them as well
+//let's give enemies droppables of both directly gold and sellables
+//whomst would the playable cast contain?
+//for the NPCs, let's see who there exists f2u shop mugs of
+//and/or who could easily be made into a shop mug
+//preferrably someone that also has a normal mug
+//if not we can just use a bunch of annas lol
+//so we've got like
+// - Armory man
+// - Vendor woman
+// - Arena man
+// - Anna
+// - Morshu
+// - ???
+// - ???
+// - ???
+// - ???
+// - ???
+// - ???
+// - ???
 
 EndingScene:
+
+
 MNC2 HubChID
 NoFade
 ENDA

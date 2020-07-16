@@ -19,7 +19,7 @@ ShopPortraitTable:
 WORD $65
 WORD $66
 WORD $68
-WORD $67
+WORD MorshuShopMug
 
 
 ALIGN 4
@@ -27,7 +27,7 @@ ShopEnterPrepScreenTextTable:
 SHORT 0x896
 SHORT 0x897
 SHORT 0x897
-SHORT 0x896
+SHORT MorshuShopEntryText
 
 ALIGN 4
 ShopLeavePrepScreenTextTable:
@@ -41,7 +41,7 @@ ShopEnterTextTable:
 SHORT 0x89A
 SHORT 0x89B
 SHORT 0x89C
-SHORT 0x89A
+SHORT MorshuShopEntryText
 
 ALIGN 4
 ShopReturnToBuySellTextTable:
@@ -97,7 +97,7 @@ ShopNotEnoughMoneyTextTable:
 SHORT 0x8B2
 SHORT 0x8B3
 SHORT 0x8B4
-SHORT 0x8B2
+SHORT MorshuShopCannotBuyText
 
 ALIGN 4
 ShopItemPriceTextTable:

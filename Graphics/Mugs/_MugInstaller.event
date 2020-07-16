@@ -61,3 +61,15 @@ setMugEntry(AlmMugShock,AlmPortraitShock,3,5,3,3)
 ALIGN 4
 AlmPortraitShock:
 #incext PortraitFormatter "almshock.png"
+
+
+setMugEntry(MorshuMug,MorshuPortrait,3,5,3,3)
+ALIGN 4
+MorshuPortrait:
+#incext PortraitFormatter "Morshu.png"
+
+setMugEntry(MorshuShopMug,MorshuShopPortrait,4,3,2,0)
+ALIGN 4
+MorshuShopPortrait:
+#incext PortraitFormatter "MorshuShop.png"
+
