@@ -49,3 +49,5 @@ Demon's Blood[X]
 ## MiniThracia3ChName
 0.7.76-3[X]
 
+## AceAttorneyChName
+Ace Attorney[X]

@@ -1,0 +1,18 @@
+ALIGN 4
+CourtroomObj:
+//#incext Png2Dmp "courtroom.png" --lz77
+#incbin "courtroom.dmp"
+
+ALIGN 4
+CourtroomPal:
+//#incext Png2Dmp "courtroom.png" --palette-only
+#incbin "courtroom_pal.dmp"
+
+ALIGN 4
+CourtroomTiles:
+//#incext compress "courtroom.mapchip_config"
+#incbin "courtroom_comp.dmp"
+
+EventPointerTable(CourtroomObjType, CourtroomObj)
+EventPointerTable(CourtroomPalette1, CourtroomPal)
+EventPointerTable(CourtroomTileConfig, CourtroomTiles)

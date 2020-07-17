@@ -75,3 +75,7 @@
 #include "DemonBlood.event"
 }
 
+{
+#include "AceAttorney.event"
+}
+

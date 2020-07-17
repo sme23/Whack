@@ -362,6 +362,10 @@
 #define MiniThracia3MapID 0x5C
 #define MiniThracia3MapChangesID 0x5D
 
+#define AceAttorneyMapID  0x28
+#define AceAttorneyMapChangesID 0x29
+#define AceAttorneyEventsID 0x2A
+
 //this is probably the third time i've done these with the thought of "oh I only have to do this once then I'll have them whenever I need them in the future"
 
 #define PlainsObjType 0x1
@@ -443,6 +447,10 @@
 #define ValniAnims 0x0
 
 #define ValniPalette1 0x89
+
+#define CourtroomObjType 0xE9
+#define CourtroomTileConfig 0xEA
+#define CourtroomPalette1 0xEB
 
 
 //class defs
@@ -542,14 +550,18 @@
 
 #define DaeinSoldierMug 8
 
-#define AlmMugNeutral 9
-#define AlmMugSmug 10
-#define AlmMugPain 11
-#define AlmMugHappy 12
-#define AlmMugShock 13
+#define AlmMug 9
+#define CelicaMug 10
+#define NomahMug 11
+#define BerkutMug 12
+#define FayeMug 13
+#define TobinMug 14 
+#define KliffMug 15
+#define ForsythMug 16
+#define FayeBreakdownMug 17
 
-#define MorshuMug 14
-#define MorshuShopMug 15
+#define MorshuMug 18
+#define MorshuShopMug 19
 
 //items
 

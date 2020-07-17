@@ -3,6 +3,7 @@
 #include "Mugs/_MugInstaller.event"
 #include "TitleScreen/titlebackgroundinstaller.event"
 #include "BG/_BGInstaller.event"
+#include "Tilesets/Tilesets.event"
 
 //this is a misc thing for now so we'll do it here
 PUSH
