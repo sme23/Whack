@@ -44,9 +44,10 @@ calm your nerves.[A]
 [OpenMidLeft][LoadAlm]
 Yeah, that's a good idea.[A]
 [CloseSpeechSlow]
-[OpenMidRight][MoveFarFarLeft][ClearFace]
-[LoadOverworldFaces] #fade in black bg
-[OpenMidLeft]
+[OpenMidRight][MoveFarFarLeft][ClearFace][X]
+
+## AAScene1Talk3
+[OpenMidLeft][LoadAlm]
 My name is Alm Albein Rudolf.[A][N]
 Today, I'm a new attorney,[N]
 and this is my first trial.[A][N]
@@ -55,8 +56,10 @@ accused of[Beat] [ToggleRed]murder[ToggleRed].[A][N]
 But I just know he's innocent![A][N]
 There's no way he did it.[N]
 Not him![.....] No way![A]
-[CloseSpeechSlow]
-[LoadOverworldFaces] #load bg back in
+[CloseSpeechSlow][X]
+
+## AAScene1Talk4
+[OpenMidLeft][LoadAlm]
 [OpenFarFarRight][LoadTobin][MoveMidRight]
 [Beat][A]
 [OpenMidLeft]

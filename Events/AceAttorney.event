@@ -76,22 +76,21 @@ MUSC CourtroomLobby
 SetBackground(AA_Lobby)
 Text(AAScene1Talk1)
 GiveItem(Newspaper,Alm)
-TEXTSTART
-TEXTSHOW AAScene1Talk2
-TEXTEND
+Text(AAScene1Talk2)
 SetBackground(BlankBG)
-TEXTCONT
-TEXTEND
+STAL 40
+Text(AAScene1Talk3)
 SetBackground(AA_Lobby)
-TEXTCONT
-TEXTEND
-REMA
-
+STAL 40
+Text(AAScene1Talk4)
 EndConvo
+MUSC 0x7FFF
+
 SVAL sB Coords(0xFFFF,95)
 SOLOTEXTBOXSTART
 TEXTSHOW AAScene2OpeningText
 TEXTEND
+REMA
 MUSC Trial
 Text(AAScene2Talk1)
 GiveItem(MurderKnife,Alm)
