@@ -31,11 +31,17 @@ Have you gone over the case?[A]
 [OpenMidLeft]
 Not as much as I'd like to[Beat][A]
 [OpenMidRight]
-Well, I have to prepare some[N]
-things for our case.[A][N]
-Why don't you go talk[N]
-with the defendant?[A]
-[OpenMidLeft]
+Oh yeah, I picked this[N]
+up on my way in.[A][N]
+Reading it could help[N]
+calm your nerves.[A]
+# Newspaper added to court record
+[X]
+
+
+## AAScene1Talk2
+[OpenMidRight][LoadCelica]
+[OpenMidLeft][LoadAlm]
 Yeah, that's a good idea.[A]
 [CloseSpeechSlow]
 [OpenMidRight][MoveFarFarLeft][ClearFace]
@@ -129,14 +135,15 @@ Such a good lad[Beat][A]
 [ClearFace][OpenMidLeft][LoadBerkut]
 The prosecution would like[N]
 to call their first witness.[A][N]
-Detective, please take the stand.[A][X]
-
-## AAScene3Talk1
+Detective, please take the stand.[A]
+[LoadOverworldFaces] #load forsyth and move him to the stand
 [OpenRight][LoadForsyth]
 [.......][ClearFace][OpenMidLeft][LoadBerkut]
 Detective, please testify as to[N]
 what evidence you've uncovered.[A]
 [ClearFace][OpenRight][LoadForsyth]
 Of course![N]
-Leave it to me![A]
+Leave it to me![A][X]
 
+## AATestimony1
+[X]
