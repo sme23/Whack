@@ -528,6 +528,8 @@
 #define Ranulf 5
 #define Kyza 6
 
+#define Alm 7
+
 //bosses
 
 
@@ -537,6 +539,17 @@
 
 //neutrals
 #define Morshu 162
+
+//AA stuff
+#define Celica 200
+#define Berkut 201
+#define Nomah 202
+#define Forsyth 203
+#define Kliff 204
+#define Tobin 205
+#define Gray 206
+#define Faye 207
+#define Clair 208
 
 
 //mug defs

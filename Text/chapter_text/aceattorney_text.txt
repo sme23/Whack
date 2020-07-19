@@ -97,6 +97,10 @@ The defense is ready, Your Honor.[A]
 [Beat][A][N]
 The prosecution is[N]
 ready, Your Honor.[A]
+[ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
+(Who is that?[N]
+He looks just like Berkut.[A][N]
+Just, a lot less angry...)[A]
 [ClearFace][OpenLeft][LoadNomah]
 Then let's begin.[A][N]
 The defendant may[N]
@@ -146,4 +150,36 @@ Of course![N]
 Leave it to me![A][X]
 
 ## AATestimony1
+[OpenLeft][LoadForsyth]
+The victim was killed[N]
+with this knife.[A][N]
+The blood on the knife[N]
+belongs to the victim.[A][N]
+The defendant's fingerprints[N]
+were found on the handle.[A][N]
+We think he was killed[N]
+near the village gates.[A]
 [X]
+
+## AAScene3Talk1
+[OpenLeft][LoadForsyth]
+Ah, that's right![A][N]
+Here's the victim's[N]
+autopsy report.[A]
+#Gray's Autopsy Report added to Court Record
+[X]
+
+## AAScene3Talk2
+[OpenLeft][LoadNomah]
+The defense may now[N]
+cross-examine the witness.[A]
+[ClearFace][OpenRight][LoadAlm][OpenFarRight][LoadCelica]
+Alm, this is your 
+first time in court.[A][N]
+Let me explain how[N]
+to [ToggleRed]cross-examine[ToggleRed].[A]
+#Here we go into the setup for cross-examining
+[X]
+
+
+

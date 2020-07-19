@@ -52,11 +52,15 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-LOAD1 0 EnemyUnits
-ENUN
-GotoPrepScreen
+
+
+NoFade
+ENDA
+
 
 EndingScene:
+DISA
+
 MNC2 HubChID
 NoFade
 ENDA
