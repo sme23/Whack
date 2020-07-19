@@ -37,10 +37,10 @@ DaeinSoldierPortrait:
 
 
 
-setMugEntry(AlmMug,AlmPortrait,3,5,3,3)
-ALIGN 4
-AlmPortrait:
-#incext PortraitFormatter "alm.png"
+//setMugEntry(AlmMug,AlmPortrait,3,5,3,3)
+//ALIGN 4
+//AlmPortrait:
+//#incext PortraitFormatter "alm.png"
 
 
 

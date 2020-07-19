@@ -39,3 +39,71 @@ Daein[X]
 
 ## DaeinDesc
 [X]
+
+## AlmName
+Alm[X]
+
+## AlmDesc
+Future ruler of Valentia,[N]
+and greenhorn lawyer.[X]
+
+## CelicaName
+Celica[X]
+
+## CelicaDesc
+Alm's wife and partner.[X]
+
+## NomahName
+Nomah[X]
+
+## NomahDesc
+Very old man, and[N]
+also the judge.[X]
+
+## BerkutName
+Berkut?[X]
+
+## BerkutDesc
+A prosecutor with a striking[N]
+resemblance to Berkut.[X]
+
+## FayeName
+Faye[X]
+
+## FayeDesc
+Alm's childhood friend,[N]
+and a witness.[X]
+
+## TobinName
+Tobin[X]
+
+## TobinDesc
+Alm's childhood friend,[N]
+and the defendant.[X]
+
+## KliffName
+Kliff[X]
+
+## KliffDesc
+Alm's childhood friend,[N]
+and a witness.[X]
+
+## ForsythName
+Forsyth[X]
+
+## ForsythDesc
+An enthusiastic detective.[X]
+
+## ClairName
+Clair[X]
+
+## ClairDesc
+Gray's wife.[X]
+
+## GrayName
+Gray[X]
+
+## GrayDesc
+Alm's childhood friend,[N]
+and the victim.[X]
+

@@ -237,6 +237,54 @@ Morshu[X]
 A merchant from a far-off land.[X]
 
 
+## NewspaperName
+Newspaper[X]
+
+## NewspaperDesc
+Yesterday's weather report.[N]
+Very foggy and below[N]
+freezing through the night.[X]
+
+## MurderKnifeName
+Murder Knife[X]
+
+## MurderKnifeDesc
+The murder weapon.[N]
+Found near the body.[X]
+
+## AutopsyReportName
+Autopsy Report[X]
+
+## AutopsyReportDesc
+Body found this morning.[N]
+Death from stab to the heart.[N]
+Time of Death: 2AM-3AM.[X]
+
+## VillageDiagramName
+Village Diagram[X]
+
+## VillageDiagramDesc
+A diagram of the village gates.[N]
+There's a clear line of sight[N]
+between the two guard towers.[X]
+
+## VillageMapName
+Village Map[X]
+
+## VillageMapDesc
+A map of Ram Village.[N]
+Faye lives opposite the entrance.[N]
+The blacksmith is in the center.[X]
+
+## HeadpieceName
+Headpiece[X]
+
+## HeadpieceDesc
+A headpiece of Clair's.[N]
+Found by Tobin at the[N]
+scene of the crime.[X]
+
+
 
 #include "char_text.txt"
 

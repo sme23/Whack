@@ -51,15 +51,65 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
+CourtroomStartGroup:
+UNIT Alm 0 0 Level(1,Ally,0) [14,13] 0 0 0 1 NoItems NoAI
+UNIT Celica 0 0 Level(1,NPC,0) [14,12] 0 0 0 1 NoItems NeverMoveAI
+UNIT Berkut 0 0 Level(1,Enemy,0) [1,13] 0 0 0 1 NoItems NeverMoveAI
+UNIT Nomah 0 0 Level(1,NPC,0) [7,9] 0 0 0 1 NoItems NeverMoveAI
+UNIT
+
+ForsythUnitGroup:
+UNIT Forsyth 0 0 Level(1,NPC,0) [8,15] 0 0 1 REDA8R14 NoItems NeverMoveAI
+UNIT
+
 BeginningScene:
+LOAD1 0 CourtroomStartGroup
+ENUN
 SetBackground(BlankBG)
 SVAL sB Coords(0xFFFF,95)
+MUSC 0x7FFF
 SOLOTEXTBOXSTART
 TEXTSHOW AAScene1OpenText
 TEXTEND
+
 MUSC CourtroomLobby
 SetBackground(AA_Lobby)
 Text(AAScene1Talk1)
+GiveItem(Newspaper,Alm)
+TEXTSTART
+TEXTSHOW AAScene1Talk2
+TEXTEND
+SetBackground(BlankBG)
+TEXTCONT
+TEXTEND
+SetBackground(AA_Lobby)
+TEXTCONT
+TEXTEND
+REMA
+
+EndConvo
+SVAL sB Coords(0xFFFF,95)
+SOLOTEXTBOXSTART
+TEXTSHOW AAScene2OpeningText
+TEXTEND
+MUSC Trial
+Text(AAScene2Talk1)
+GiveItem(MurderKnife,Alm)
+TEXTSTART
+TEXTSHOW AAScene2Talk2
+TEXTEND
+LOAD1 0 ForsythUnitGroup
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+
+MUSC Testimony
+Text(AATestimony1)
+MUSC 0x7FFF
+Text(AAScene3Talk1)
+GiveItem(AutopsyReport,Alm)
+Text(AAScene3Talk2)
 
 
 NoFade
@@ -67,7 +117,7 @@ ENDA
 
 
 EndingScene:
-DISA
+DISA Alm
 
 MNC2 HubChID
 NoFade

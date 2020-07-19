@@ -35,6 +35,7 @@
 #define ClearAllUnits "CLEA 0x0; CLEE 0x0; CLEN 0x0"
 #define FadeOutMusic "MUSCMID 0x7FFF"
 #define ScrollBoxText(textID) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textID; TEXTEND; REMA"
+#define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
 //End of useful macros
 
 #define Bowgun (GoldGem+1)
@@ -571,10 +572,11 @@
 #define TobinMug 14 
 #define KliffMug 15
 #define ForsythMug 16
-#define FayeBreakdownMug 17
+#define ClairMug 17
+#define GrayMug 18
 
-#define MorshuMug 18
-#define MorshuShopMug 19
+#define MorshuMug 19
+#define MorshuShopMug 20
 
 //items
 
@@ -586,12 +588,12 @@
 #define OliviGrass Bowgun+6
 #define LaguzStone Bowgun+7
 
-#define Newspaper 
-#define MurderKnife 
-#define AutopsyReport 
-#define 
-#define 
-#define 
+#define Newspaper 0xc4
+#define MurderKnife 0xc6
+#define AutopsyReport 0xc5
+#define VillageDiagram 0xc7
+#define VillageMap 0xc8
+#define Headpiece 0xc9
 
 
 //BGs
