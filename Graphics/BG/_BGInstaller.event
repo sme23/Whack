@@ -18,20 +18,13 @@ FILL $96C //up to 256 entries
 
 #define SetBG(id,img,pal,tsa) "PUSH; ORG (NewBGTable+(id*12)); POIN img tsa pal; POP"
 
-#define AA_Consult 0x38
-#define AA_Hammer 0x39
-#define AA_Judge 0x3A
-#define AA_LeftBench 0x3B
-#define AA_RightBench 0x3C
-#define AA_Witness 0x3D
-
-
 SetBG(AA_Consult,consult_img,consult_pal,consult_tsa)
 SetBG(AA_Hammer,hammer_img,hammer_pal,hammer_tsa)
 SetBG(AA_Judge,judge_img,judge_pal,judge_tsa)
 SetBG(AA_LeftBench,leftbench_img,leftbench_pal,leftbench_tsa)
 SetBG(AA_RightBench,rightbench_img,rightbench_pal,rightbench_tsa)
 SetBG(AA_Witness,witness_img,witness_pal,witness_tsa)
+SetBG(AA_Lobby,lobby_img,lobby_pal,lobby_tsa)
 
 ALIGN 4
 consult_img:
@@ -122,4 +115,17 @@ BlankBG_pal:
 ALIGN 4
 BlankBG_tsa:
 #incbin "blankbg_tsa.dmp"
+
+
+ALIGN 4
+lobby_img:
+#incbin "lobby_img.dmp"
+
+ALIGN 4
+lobby_pal:
+#incbin "lobby_pal.dmp"
+
+ALIGN 4
+lobby_tsa:
+#incbin "lobby_tsa.dmp"
 

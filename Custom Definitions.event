@@ -586,3 +586,24 @@
 #define OliviGrass Bowgun+6
 #define LaguzStone Bowgun+7
 
+#define Newspaper 
+#define MurderKnife 
+#define AutopsyReport 
+#define 
+#define 
+#define 
+
+
+//BGs
+
+#define BlankBG 0x35
+#define AA_Consult 0x38
+#define AA_Hammer 0x39
+#define AA_Judge 0x3A
+#define AA_LeftBench 0x3B
+#define AA_RightBench 0x3C
+#define AA_Witness 0x3D
+#define AA_Lobby 0x3E
+
+
+

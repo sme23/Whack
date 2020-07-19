@@ -52,6 +52,14 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+SetBackground(BlankBG)
+SVAL sB Coords(0xFFFF,95)
+SOLOTEXTBOXSTART
+TEXTSHOW AAScene1OpenText
+TEXTEND
+MUSC CourtroomLobby
+SetBackground(AA_Lobby)
+Text(AAScene1Talk1)
 
 
 NoFade
