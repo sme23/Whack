@@ -496,6 +496,10 @@ ldr r1,=ClassTable
 add r0,r1
 str r0,[r4,#4] @class = untransformed class
 
+@toggle transformed bit
+mov r0,r4
+bl ToggleLaguzTransformed
+
 @do fancy animation here
 
 LaguzUntransform_GoBack:
