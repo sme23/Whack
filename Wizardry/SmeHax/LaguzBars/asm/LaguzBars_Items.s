@@ -1,7 +1,7 @@
 .thumb
 .align
 
-
+.include "LaguzBars_Defs.s"
 
 .global LaguzBarItemUsability
 .type LaguzBarItemUsability, %function

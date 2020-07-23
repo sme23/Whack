@@ -1,10 +1,11 @@
-#ifdef USE_LAGUZ_BARS
 
 #ifndef LAGUZ_BARS_INSTALLED
 #define LAGUZ_BARS_INSTALLED
 
 #include "eastdlib.event"
 #include "Extensions/Hack Installation.txt"
+
+#include "ModuleConfig.event"
 
 ALIGN 4
 LaguzClassList:
@@ -41,14 +42,16 @@ BYTE Necromancer DemonKing
 
 BYTE 0 0 // terminator
 
+#ifdef LAGUZ_SKILLS
+
 ALIGN 4
 WildheartIDLink:
 BYTE WildheartID
 FormshiftIDLink:
 BYTE FormshiftID
 
+#endif // LAGUZ_SKILLS
+
 #include "LaguzBars_Internal.event"
 
 #endif // LAGUZ_BARS_INSTALLED
-
-#endif // USE_LAGUZ_BARS

@@ -1,16 +1,10 @@
 .thumb
 .align
 
+.include "LaguzBars_Defs.s"
+
 .global LaguzBarMSSGetter
 .type LaguzBarMSSGetter, %function
-
-
-.macro blh to, reg=r3
-    ldr \reg, =\to
-    mov lr, \reg
-    .short 0xF800
-.endm
-
 
 
 LaguzBarMSSGetter:

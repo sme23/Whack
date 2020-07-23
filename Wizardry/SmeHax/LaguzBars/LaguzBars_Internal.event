@@ -1,8 +1,34 @@
 
 #include "bin/ProcDefinitions.txt"
 
-#include "asm/LaguzBars.lyn.event"
-#include "asm/LaguzBarsMSS.lyn.event"
+
+#ifndef LAGUZ_SKILLS
+	#include "asm/LaguzBars_Lib.lyn.event"
+#else // LAGUZ_SKILLS
+	#include "asm/LaguzBars_SkillsLib.lyn.event"
+#endif // LAGUZ_SKILLS
+
+#include "asm/LaguzBars_InitBars.lyn.event"
+
+#include "asm/LaguzBars_IncDecBars.lyn.event"
+
+#include "asm/LaguzBars_NonPlayer.lyn.event"
+
+#include "asm/LaguzBars_UnitMenu.lyn.event"
+
+#ifndef LAGUZ_SKILLS
+	#include "asm/LaguzBars_StatBoosts.lyn.event"
+#else // LAGUZ_SKILLS
+	#include "asm/LaguzBars_SkillsStatBoosts.lyn.event"
+#endif // LAGUZ_SKILLS
+
+#include "asm/LaguzBars_MSS.lyn.event"
+
+#ifdef LAGUZ_ITEMS
+	#include "asm/LaguzBars_Items.lyn.event"
+#endif // LAGUZ_ITEMS
+
+
 
 DebuffTableLink:
 WORD DebuffTable
@@ -50,6 +76,4 @@ ALIGN 4
 PrepScreenProc:
 PROC_CALL_ROUTINE(InitializeLaguzBarsIfPrepScreen)
 #incbin "bin/PrepScreenProc.dmp"
-
-#include "asm/LaguzBars_Items.lyn.event"
 

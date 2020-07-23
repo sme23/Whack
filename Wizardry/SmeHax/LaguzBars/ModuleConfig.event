@@ -1,0 +1,11 @@
+//The base content you can't turn off, if you don't want it then don't use Laguz Bars at all
+
+//Skills Module Config
+//Uncomment this line to enable laguz bar-related skills
+#define LAGUZ_SKILLS
+
+//Items Module Config
+//Uncomment this line to enable laguz bar-related items
+//Note that this will only install the functions, you will need to set them to items yourself
+#define LAGUZ_ITEMS
+
