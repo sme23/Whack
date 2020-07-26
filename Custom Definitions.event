@@ -552,6 +552,14 @@
 #define Faye 207
 #define Clair 208
 
+#define Statement1 209
+#define Statement2 210
+#define Statement3 211
+#define Statement4 212
+#define Statement5 213
+#define Statement6 214
+#define Statement7 215
+#define Statement8 216
 
 //mug defs
 

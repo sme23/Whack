@@ -131,7 +131,14 @@ UnitMenuTable:
 #endif // COMBAT_ARTS
 
   // UM_Talk
-  MenuCommand(0x680, 0x6c9, GreenText, 0x23c81, 0x23cc5)
+  MenuCommand(0x680, 0x6c9, GreenText, TalkUsability, 0x23cc5)
+  
+  MenuCommand(UM_Hear,UM_HearDesc,GreenText,TestimonyCommandUsability,HearEffect)
+  MenuCommand(UM_Press,UM_PressDesc,GreenText,TestimonyCommandUsability,PressEffect)
+  MenuCommand(UM_Present,UM_PresentDesc,GreenText,TestimonyCommandUsability,PresentEffect)
+  
+  MenuCommand(UM_Consult, UM_ConsultDesc, GreenText, ConsultUsability, 0x23cc5)
+  
   // UM_Support
   MenuCommand(0x681, 0x6ca, GreenText, 0x23d15, 0x23d65)
   UM_Visit

@@ -1,0 +1,25 @@
+#include "AAStuff.lyn.event"
+
+#define SetPressEvent(testimonyID,statementID,eventPtr) "PUSH; ORG (PressEventPointerTable+(32*testimonyID)+(4*statementID)); POIN eventPtr; POP"
+#define SetPresentEvent(testimonyID,statementID,eventPtr) "PUSH; ORG (PresentEventPointerTable+(32*testimonyID)+(4*statementID)); POIN eventPtr; POP"
+#define SetHearEvent(testimonyID,statementID,eventPtr) "PUSH; ORG (HearEventPointerTable+(32*testimonyID)+(4*statementID)); POIN eventPtr; POP"
+
+#define SetTestimony(testimonyID) "SVAL s2 testimonyID; ASMC SetCurrentTestimonyASMC"
+
+ALIGN 4
+PressEventPointerTable:
+FILL 8192
+
+ALIGN 4
+PresentEventPointerTable:
+FILL 8192
+
+ALIGN 4
+HearEventPointerTable:
+FILL 8192
+
+ALIGN 4
+AceAttorneyChIDLink:
+BYTE AceAttorneyChID
+
+ALIGN 4

@@ -107,3 +107,9 @@ Gray[X]
 Alm's childhood friend,[N]
 and the victim.[X]
 
+## StatementName
+Statement[X]
+
+## StatementDesc
+Representation of a[N]
+witness's statement.[X]

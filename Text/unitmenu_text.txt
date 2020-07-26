@@ -161,3 +161,29 @@ A precision attack that always[N]
 hits and does 1.5x damage.[N]
 (4 Durability Per Hit)[X]
 
+## UM_Press
+ Press[X]
+ 
+## UM_PressDesc
+Press the statement[N]
+for more information.[X]
+
+## UM_Present
+ Present[X]
+ 
+## UM_PresentDesc
+Present evidence that[N]
+contradicts with statement.[X]
+
+## UM_Hear
+ Hear[X]
+
+## UM_HearDesc
+Hear the statement.[X]
+
+## UM_Consult
+ Consult[X]
+ 
+## UM_ConsultDesc
+Consult on the[N]
+current testimony.[X]

@@ -186,4 +186,127 @@ to [ToggleRed]cross-examine[ToggleRed].[A]
 [X]
 
 
+## AACrossExaminationTutorial1
+[OpenMidRight][LoadCelica]
+Each unit in the middle of the[N]
+floor represents a [ToggleRed]statement[ToggleRed].[A]
+[CloseSpeechSlow][LoadOverworldFaces] #do cursor flash on each statement
+Move just below statement, and[N]
+you can interact with it.[A][N]
+If you [ToggleRed]Hear[ToggleRed] the statement,[N]
+you can listen to that statement again.[A][N]
+If you [ToggleRed]Press[ToggleRed] the statement,[N]
+you can get more information.[A][N]
+If you think you've spotted a contradiction,[A][N] [ToggleRed]Present[ToggleRed] evidence that[N]
+conflicts with the statement.[A][N]
+If you're stumped, feel free[N]
+to [ToggleRed]Consult[ToggleRed] with me.[A][N]
+I'll help you think things through.[A]
+[CloseSpeechSlow][ClearFace][LoadAlm][ToggleMouthMove]
+(So basically, I [ToggleRed]Present[ToggleRed] evidence if[N]
+I spot a contradiction,[A][N]
+and [ToggleRed]Press[ToggleRed] if I don't...)[A][N]
+(Makes sense to me. Let's go!)[A][X]
+
+
+
+
+## AATestimony1Statement1
+[OpenLeft][LoadForsyth]
+The victim was killed[N]
+with this knife.[A][X]
+
+## AATestimony1Press1
+[OpenMidRight][LoadAlm]
+By "this knife", you mean[N]
+the Murder Knife, correct?[A]
+[ClearFace][OpenLeft][LoadForsyth]
+Yep! That's the one![A]
+[ClearFace][OpenMidRight][LoadAlm]
+Well, how do you know that this[N]
+knife is the murder weapon?[A]
+[ClearFace][OpenLeft][LoadForsyth]
+I'm glad you asked! You see[Beat][A][X]
+
+## AATestimony1Statement2
+[OpenLeft][LoadForsyth]
+The blood on the knife[N]
+belongs to the victim.[A][X]
+
+## AATestimony1Press2
+[OpenMidRight][LoadAlm]
+[Beat]Okay, but that doesn't prove[N]
+it was my client who used the knife![A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+[Beat][A][N]
+Do you ever think[N]
+before you leap?[A]
+[ClearFace][OpenMidRight][LoadAlm]
+[Beat]I'm sorry?[A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+Witness, tell us how we know[N]
+the defendant is the murderer.[A]
+[ClearFace][OpenLeft][LoadForsyth]
+Certainly! You see,[Beat][A][X]
+
+## AATestimony1Statement3
+[OpenLeft][LoadForsyth]
+The defendant's fingerprints[N]
+were found on the handle.[A][X]
+
+## AATestimony1Press3
+[OpenMidRight][LoadAlm]
+W-well, how do you know[N]
+they're his fingerprints?[A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+I know this is your[N]
+first day in court,[A][N]
+but you could at least act[N]
+like you know what you're doing.[A][N]
+Asking dumb questions gets you nowhere.[A]
+[ClearFace][OpenRight][LoadNomah]
+The defense will refrain from[N]
+asking further dumb questions.[A][X]
+
+## AATestimony1Statement4
+[OpenLeft][LoadForsyth]
+We think he was killed[N]
+near the village gates.[A][X]
+
+## AATestimony1Press4
+[OpenMidRight][LoadAlm]
+How did you come to[N]
+that conclusion?[A]
+[ClearFace][OpenLeft][LoadForsyth]
+Well, the body was found in some[N]
+bushes just next to the gates.[A][N]
+There wasn't a trail of blood,[A][N]
+and there was blood all[N]
+over the bushes.[A][N]
+If the body had been moved,[N]
+it would have left more bloodstains.[A]
+[OpenMidRight][LoadAlm]
+I[Beat] see[Beat][A][N]
+[ToggleMouthMove]
+(This is looking worse[N]
+and worse by the second...)[A][ToggleMouthMove][X]
+
+## AAIncorrectPresent
+[OpenMidRight][LoadAlm]
+There's a contradiction in[N]
+your last statement![A]
+[ClearFace][OpenLeft][LoadNomah]
+There is? Where?[A]
+[ClearFace][OpenMidRight][LoadAlm]
+Oh, uhh[Beat][A]
+[ClearFace][OpenLeft][LoadNomah]
+Mr. Rudolf, please do not[N]
+waste this court's time.[A][X]
+
+## AATestimony1Consult
+[OpenMidRight][LoadCelica]
+Alm, I don't think you'll find[N]
+a contradiction in this testimony.[A][N]
+Press him for more information,[N]
+and see where that gets us.[A][X]
 

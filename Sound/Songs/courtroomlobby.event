@@ -20,13 +20,11 @@ courtroomlobby_1:
 	BYTE	KEYSH   courtroomlobby_key+0
 // 000   ----------------------------------------
 	BYTE	TEMPO   100*courtroomlobby_tbs/2
-	BYTE		VOICE   34
-	BYTE		VOL     49*courtroomlobby_mvl/mxv
-	BYTE		MOD     0
+	BYTE		VOICE   33
+	BYTE		VOL     38*courtroomlobby_mvl/mxv
 	BYTE	W96
 courtroomlobby_1_B1:
 // 001   ----------------------------------------
-	BYTE		PAN     c_v+0
 	BYTE		N06     Gn2   v120
 	BYTE	W06
 	BYTE		        As2 
@@ -64,11 +62,9 @@ courtroomlobby_1_B1:
 	BYTE	W12
 	BYTE		N01     Cs3   v080
 	BYTE	W01
-	BYTE		MOD     4
 	BYTE		N23     Dn3   v112
 	BYTE	W23
 // 003   ----------------------------------------
-	BYTE		MOD     0
 	BYTE	W96
 // 004   ----------------------------------------
 	BYTE	W96
@@ -170,9 +166,8 @@ courtroomlobby_2:
 	BYTE	KEYSH   courtroomlobby_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   41
-	BYTE		VOL     60*courtroomlobby_mvl/mxv
 	BYTE		PAN     c_v-20
-	BYTE		MOD     0
+	BYTE		VOL     60*courtroomlobby_mvl/mxv
 	BYTE		N96     Cn3   v112
 	BYTE		N96     Gn3 
 	BYTE	W96
@@ -242,9 +237,7 @@ courtroomlobby_3:
 	BYTE	KEYSH   courtroomlobby_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   80
-	BYTE		VOL     63*courtroomlobby_mvl/mxv
-	BYTE		PAN     c_v+0
-	BYTE		MOD     20
+	BYTE		VOL     60*courtroomlobby_mvl/mxv
 	BYTE		N96     Cn2   v076
 	BYTE	W96
 courtroomlobby_3_B1:
@@ -354,7 +347,6 @@ courtroomlobby_4:
 // 000   ----------------------------------------
 	BYTE		VOICE   80
 	BYTE		VOL     60*courtroomlobby_mvl/mxv
-	BYTE		PAN     c_v-10
 	BYTE		N96     Gn2   v072
 	BYTE	W96
 courtroomlobby_4_B1:
@@ -450,14 +442,14 @@ courtroomlobby_4_B2:
 //**************** Track 5 (Midi-Chn.5) ****************//
 
 courtroomlobby_5:
+	BYTE		VOL     127*courtroomlobby_mvl/mxv
 	BYTE	KEYSH   courtroomlobby_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   34
-	BYTE		VOL     35*courtroomlobby_mvl/mxv
+	BYTE		PAN     c_v+0
 	BYTE	W96
 courtroomlobby_5_B1:
 // 001   ----------------------------------------
-	BYTE		PAN     c_v+0
 	BYTE		N03     Gn2   v120
 	BYTE	W06
 	BYTE		        As2 
@@ -577,7 +569,11 @@ courtroomlobby_5_B1:
 	BYTE		N92     Gs2 
 	BYTE	W24
 // 012   ----------------------------------------
-	BYTE	W96
+	BYTE	W68
+	BYTE	W03
+	BYTE		VOL     35*courtroomlobby_mvl/mxv
+	BYTE	W24
+	BYTE	W01
 // 013   ----------------------------------------
 	BYTE	W96
 // 014   ----------------------------------------
@@ -595,9 +591,7 @@ courtroomlobby_6:
 	BYTE	KEYSH   courtroomlobby_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   34
-	BYTE		VOL     43*courtroomlobby_mvl/mxv
-	BYTE		PAN     c_v+0
-	BYTE		MOD     0
+	BYTE		VOL     32*courtroomlobby_mvl/mxv
 	BYTE	W92
 	BYTE	W03
 	BYTE		N06     Gn2   v127
@@ -746,6 +740,8 @@ courtroomlobby_6_004:
 courtroomlobby_6_B2:
 // 015   ----------------------------------------
 	BYTE	W05
+	BYTE		PAN     c_v+0
+	BYTE		MOD     0
 	BYTE	FINE
 
 //**************** Track 7 (Midi-Chn.7) ****************//
@@ -755,8 +751,6 @@ courtroomlobby_7:
 // 000   ----------------------------------------
 	BYTE		VOICE   21
 	BYTE		VOL     54*courtroomlobby_mvl/mxv
-	BYTE		PAN     c_v+20
-	BYTE		MOD     0
 	BYTE		N96     Gn2   v120
 	BYTE		N96     Cn3 
 	BYTE	W96
@@ -825,24 +819,15 @@ courtroomlobby_7_B2:
 //**************** Track 8 (Midi-Chn.8) ****************//
 
 courtroomlobby_8:
+	BYTE		VOL     127*courtroomlobby_mvl/mxv
 	BYTE	KEYSH   courtroomlobby_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   123
-	BYTE		VOL     63*courtroomlobby_mvl/mxv
+	BYTE		VOICE   127
+	BYTE		PAN     c_v+0
 	BYTE	W96
 courtroomlobby_8_B1:
 // 001   ----------------------------------------
-	BYTE		PAN     c_v+0
-	BYTE		N06     Cn1   v100
-	BYTE	W24
-	BYTE		N06   
-	BYTE	W24
-	BYTE		N06   
-	BYTE	W24
-	BYTE		N06   
-	BYTE	W24
-// 002   ----------------------------------------
-courtroomlobby_8_002:
+courtroomlobby_8_001:
 	BYTE		N06     Cn1   v100
 	BYTE	W24
 	BYTE		N06   
@@ -852,8 +837,11 @@ courtroomlobby_8_002:
 	BYTE		N06   
 	BYTE	W24
 	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	courtroomlobby_8_001
 // 003   ----------------------------------------
-	BYTE		N06   
+	BYTE		N06     Cn1   v100
 	BYTE	W24
 	BYTE		N06   
 	BYTE	W24
@@ -879,10 +867,10 @@ courtroomlobby_8_002:
 	BYTE	W24
 // 005   ----------------------------------------
 	BYTE	PATT
-	 POIN2	courtroomlobby_8_002
+	 POIN2	courtroomlobby_8_001
 // 006   ----------------------------------------
 	BYTE	PATT
-	 POIN2	courtroomlobby_8_002
+	 POIN2	courtroomlobby_8_001
 // 007   ----------------------------------------
 	BYTE		N06     Cn1   v100
 	BYTE	W06
@@ -952,7 +940,7 @@ courtroomlobby_8_009:
 	 POIN2	courtroomlobby_8_009
 // 013   ----------------------------------------
 	BYTE	PATT
-	 POIN2	courtroomlobby_8_002
+	 POIN2	courtroomlobby_8_001
 // 014   ----------------------------------------
 	BYTE		N06     Cn1   v100
 	BYTE	W24
@@ -965,7 +953,9 @@ courtroomlobby_8_009:
 	BYTE		N05     Ds1   v080
 	BYTE	W06
 	BYTE		        Ds1   v028
-	BYTE	W06
+	BYTE	W05
+	BYTE		VOL     63*courtroomlobby_mvl/mxv
+	BYTE	W01
 	BYTE	GoTo
 	 POIN2	courtroomlobby_8_B1
 courtroomlobby_8_B2:
@@ -978,10 +968,9 @@ courtroomlobby_8_B2:
 courtroomlobby_9:
 	BYTE	KEYSH   courtroomlobby_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   75
-	BYTE		VOL     44*courtroomlobby_mvl/mxv
+	BYTE		VOICE   73
+	BYTE		VOL     63*courtroomlobby_mvl/mxv
 	BYTE		PAN     c_v-20
-	BYTE		MOD     0
 	BYTE	W96
 courtroomlobby_9_B1:
 // 001   ----------------------------------------
@@ -1085,9 +1074,7 @@ courtroomlobby_10:
 	BYTE	KEYSH   courtroomlobby_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   73
-	BYTE		VOL     38*courtroomlobby_mvl/mxv
-	BYTE		PAN     c_v+30
-	BYTE		MOD     0
+	BYTE		VOL     19*courtroomlobby_mvl/mxv
 	BYTE	W96
 courtroomlobby_10_B1:
 // 001   ----------------------------------------
@@ -1163,7 +1150,10 @@ courtroomlobby_10_009:
 	BYTE	PATT
 	 POIN2	courtroomlobby_10_009
 // 012   ----------------------------------------
-	BYTE	W96
+	BYTE	W72
+	BYTE		PAN     c_v+30
+	BYTE		MOD     0
+	BYTE	W24
 // 013   ----------------------------------------
 	BYTE	W96
 // 014   ----------------------------------------

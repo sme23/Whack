@@ -1,5 +1,20 @@
 EventPointerTable(AceAttorneyEventsID, PointerList)
 
+//a few temp flag defs for starting off
+#define Testimony1ConsultFlag 7
+#define Testimony2ConsultFlag 8
+#define Testimony3ConsultFlag 9
+#define Testimony4ConsultFlag 10
+#define Testimony5ConsultFlag 11
+#define Testimony6ConsultFlag 12
+#define Testimony7ConsultFlag 13
+#define Testimony8ConsultFlag 14
+
+#define Testimony1PressFlag1 15
+#define Testimony1PressFlag2 16
+#define Testimony1PressFlag3 17
+#define Testimony1PressFlag4 18
+
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -13,9 +28,18 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,CrossExaminationTutorialEvent,0)
 END_MAIN
 
 CharacterBasedEvents:
+CharacterEventBothWays(Testimony1ConsultFlag,Testimony1ConsultEvent,Alm,Celica)
+//CharacterEventBothWays(Testimony2ConsultFlag,Testimony2ConsultEvent,Alm,Celica)
+//CharacterEventBothWays(Testimony3ConsultFlag,Testimony3ConsultEvent,Alm,Celica)
+//CharacterEventBothWays(Testimony4ConsultFlag,Testimony4ConsultEvent,Alm,Celica)
+//CharacterEventBothWays(Testimony5ConsultFlag,Testimony5ConsultEvent,Alm,Celica)
+//CharacterEventBothWays(Testimony6ConsultFlag,Testimony6ConsultEvent,Alm,Celica)
+//CharacterEventBothWays(Testimony7ConsultFlag,Testimony7ConsultEvent,Alm,Celica)
+//CharacterEventBothWays(Testimony8ConsultFlag,Testimony8ConsultEvent,Alm,Celica)
 END_MAIN
 
 LocationBasedEvents:
@@ -63,6 +87,7 @@ UNIT Forsyth 0 0 Level(1,NPC,0) [8,15] 0 0 1 REDA8R14 NoItems NeverMoveAI
 UNIT
 
 BeginningScene:
+EVBIT_MODIFY 4
 LOAD1 0 CourtroomStartGroup
 ENUN
 SetBackground(BlankBG)
@@ -110,10 +135,52 @@ Text(AAScene3Talk1)
 GiveItem(AutopsyReport,Alm)
 Text(AAScene3Talk2)
 
+LOAD1 0 Testimony1StatementGroup
+ENUN
+
+ENUT Testimony2ConsultFlag
+ENUT Testimony3ConsultFlag
+ENUT Testimony4ConsultFlag
+ENUT Testimony5ConsultFlag
+ENUT Testimony6ConsultFlag
+ENUT Testimony7ConsultFlag
+ENUT Testimony8ConsultFlag
+
+SetTestimony(0)
 
 NoFade
 ENDA
 
+Testimony1StatementGroup:
+UNIT Statement1 Soldier 0 Level(1,NPC,0) [6,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement2 Soldier 0 Level(1,NPC,0) [7,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement3 Soldier 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement4 Soldier 0 Level(1,NPC,0) [9,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT
+
+
+CrossExaminationTutorialEvent:
+EVBIT_MODIFY 4
+TEXTSTART
+TEXTSHOW AACrossExaminationTutorial1
+TEXTEND
+CUMO Statement1
+STAL 40
+CURE
+CUMO Statement2
+STAL 40
+CURE
+CUMO Statement3
+STAL 40
+CURE
+CUMO Statement4
+STAL 40
+CURE
+TEXTCONT
+TEXTEND
+REMA
+NoFade
+ENDA
 
 EndingScene:
 DISA Alm
@@ -121,4 +188,98 @@ DISA Alm
 MNC2 HubChID
 NoFade
 ENDA
+
+//testimony stuff time
+
+SetHearEvent(0,0,Testimony1Statement1HearEvent)
+SetHearEvent(0,1,Testimony1Statement2HearEvent)
+SetHearEvent(0,2,Testimony1Statement3HearEvent)
+SetHearEvent(0,3,Testimony1Statement4HearEvent)
+
+SetPressEvent(0,0,Testimony1Statement1PressEvent)
+SetPressEvent(0,1,Testimony1Statement1PressEvent)
+SetPressEvent(0,2,Testimony1Statement1PressEvent)
+SetPressEvent(0,3,Testimony1Statement1PressEvent)
+
+SetPresentEvent(0,0,TestimonyIncorrectPresentEvent)
+SetPresentEvent(0,1,TestimonyIncorrectPresentEvent)
+SetPresentEvent(0,2,TestimonyIncorrectPresentEvent)
+SetPresentEvent(0,3,TestimonyIncorrectPresentEvent)
+
+ALIGN 4
+TestimonyIncorrectPresentEvent:
+EVBIT_MODIFY 4
+Text(AAIncorrectPresent)
+NoFade
+ENDA
+
+
+ALIGN 4
+Testimony1Statement1HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Statement1)
+NoFade
+ENDA
+
+ALIGN 4
+Testimony1Statement2HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Statement2)
+NoFade
+ENDA
+
+ALIGN 4
+Testimony1Statement3HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Statement3)
+NoFade
+ENDA
+
+ALIGN 4
+Testimony1Statement4HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Statement4)
+NoFade
+ENDA
+
+
+ALIGN 4
+Testimony1Statement1PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Press1)
+ENUT Testimony1PressFlag1
+NoFade
+ENDA
+
+ALIGN 4
+Testimony1Statement2PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Press2)
+ENUT Testimony1PressFlag2
+NoFade
+ENDA
+
+ALIGN 4
+Testimony1Statement3PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Press3)
+ENUT Testimony1PressFlag3
+NoFade
+ENDA
+
+ALIGN 4
+Testimony1Statement4PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Press4)
+ENUT Testimony1PressFlag4
+NoFade
+ENDA
+
+Testimony1ConsultEvent:
+EVBIT_MODIFY 4
+Text(AATestimony1Consult)
+ENUF Testimony1ConsultFlag
+NoFade
+ENDA
+
 

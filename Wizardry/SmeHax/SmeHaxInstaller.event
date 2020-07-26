@@ -1,5 +1,6 @@
 #include "ASMCs/_ASMCInstaller.event"
 
+#include "AAStuff/AAStuff.event"
 #include "ModularChangingBattleBGM/ModularChangingBattleBGM.event"
 #include "NoCountering/NoCountering.event"
 #include "DenyStatScreenAccess/DenyStatScreen.event"
