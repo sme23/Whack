@@ -15,6 +15,8 @@ EventPointerTable(AceAttorneyEventsID, PointerList)
 #define Testimony1PressFlag3 17
 #define Testimony1PressFlag4 18
 
+#define Testimony1AllPressFlag 19
+
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -47,6 +49,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+AFEV Testimony1AllPressFlag AdvancePastFirstTestimonyEvent 0
 END_MAIN
 
 Dunno1:
@@ -292,4 +295,27 @@ ENUF Testimony1ConsultFlag
 NoFade
 ENDA
 
+
+
+ALIGN 4
+AdvancePastFirstTestimonyEvent:
+//check if all the press flags are set
+CHECK_EVENTID Testimony1PressFlag1
+BEQ 2 s0 sC
+CHECK_EVENTID Testimony1PressFlag2
+BEQ 2 s0 sC
+CHECK_EVENTID Testimony1PressFlag3
+BEQ 2 s0 sC
+CHECK_EVENTID Testimony1PressFlag4
+BEQ 2 s0 sC
+
+//do the things here
+
+
+GOTO 3
+LABEL 2
+ENUF Testimony1AllPressFlag
+LABEL 3
+NoFade
+ENDA
 
