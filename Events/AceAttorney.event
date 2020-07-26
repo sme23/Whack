@@ -28,7 +28,7 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0,CrossExaminationTutorialEvent,0)
+TurnEventPlayer(0,CrossExaminationTutorialEvent,1)
 END_MAIN
 
 CharacterBasedEvents:
@@ -99,26 +99,33 @@ TEXTEND
 
 MUSC CourtroomLobby
 SetBackground(AA_Lobby)
+EVBIT_MODIFY 4
 Text(AAScene1Talk1)
 GiveItem(Newspaper,Alm)
+EVBIT_MODIFY 4
 Text(AAScene1Talk2)
 SetBackground(BlankBG)
 STAL 40
+EVBIT_MODIFY 4
 Text(AAScene1Talk3)
 SetBackground(AA_Lobby)
 STAL 40
+EVBIT_MODIFY 4
 Text(AAScene1Talk4)
 EndConvo
 MUSC 0x7FFF
 
+EVBIT_MODIFY 4
 SVAL sB Coords(0xFFFF,95)
 SOLOTEXTBOXSTART
 TEXTSHOW AAScene2OpeningText
 TEXTEND
 REMA
 MUSC Trial
+EVBIT_MODIFY 4
 Text(AAScene2Talk1)
 GiveItem(MurderKnife,Alm)
+EVBIT_MODIFY 4
 TEXTSTART
 TEXTSHOW AAScene2Talk2
 TEXTEND
@@ -129,10 +136,13 @@ TEXTEND
 REMA
 
 MUSC Testimony
+EVBIT_MODIFY 4
 Text(AATestimony1)
 MUSC 0x7FFF
+EVBIT_MODIFY 4
 Text(AAScene3Talk1)
 GiveItem(AutopsyReport,Alm)
+EVBIT_MODIFY 4
 Text(AAScene3Talk2)
 
 LOAD1 0 Testimony1StatementGroup
@@ -197,9 +207,9 @@ SetHearEvent(0,2,Testimony1Statement3HearEvent)
 SetHearEvent(0,3,Testimony1Statement4HearEvent)
 
 SetPressEvent(0,0,Testimony1Statement1PressEvent)
-SetPressEvent(0,1,Testimony1Statement1PressEvent)
-SetPressEvent(0,2,Testimony1Statement1PressEvent)
-SetPressEvent(0,3,Testimony1Statement1PressEvent)
+SetPressEvent(0,1,Testimony1Statement2PressEvent)
+SetPressEvent(0,2,Testimony1Statement3PressEvent)
+SetPressEvent(0,3,Testimony1Statement4PressEvent)
 
 SetPresentEvent(0,0,TestimonyIncorrectPresentEvent)
 SetPresentEvent(0,1,TestimonyIncorrectPresentEvent)

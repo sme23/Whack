@@ -31,6 +31,9 @@
 .global TalkUsability
 .type TalkUsability, %function
 
+.global AlmNeverStopsMoving
+.type AlmNeverStopsMoving, %function
+
 .macro blh to,reg=r3
 	push {\reg}
 	ldr \reg,=\to
@@ -78,6 +81,7 @@ ldr r0,=#0x3004E50
 ldr r1,[r0]
 ldrb r0,[r1,#0x10]
 ldrb r1,[r1,#0x11]
+sub r1,#1
 
 ldr r2,=#0x202E4D8
 ldr r2,[r2]
@@ -114,8 +118,8 @@ bl CurrentTestimonyGetter
 mov r5,r0
 bl CurrentStatementGetter
 mov r3,r0
-lsl r0,r4,#5 @32-byte entries
-add r0,r5
+lsl r0,r5,#5 @32-byte entries
+add r0,r4
 lsl r1,r3,#2 @*4
 add r0,r1
 ldr r0,[r0]
@@ -240,5 +244,14 @@ mov r0,#3
 ConsultUsability_GoBack:
 pop {r1}
 bx r1
+
 .ltorg
 .align
+
+
+
+AlmNeverStopsMoving:
+
+
+
+
