@@ -311,3 +311,79 @@ a contradiction in this testimony.[A][N]
 Press him for more information,[N]
 and see where that gets us.[A][X]
 
+
+## AAPostTestimony1Scene1
+[OpenLeft][LoadNomah]
+I think the court has[N]
+heard quite enough.[A][N]
+If there are no further objections,[N]
+I'm ready to announce my verdict.[A]
+[LoadOverworldFaces] #music to Suspense
+[ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
+(This is bad...)[A][N]
+(At this rate, Tobin's[N]
+going to be found guilty!)[A][N]
+(Should I raise an objection?)[N][ToggleMouthMove]
+[Yes][X]
+
+## AAPostTestimony1Scene2No
+[OpenMidRight][LoadAlm][ToggleMouthMove]
+(It's no good...)[A][N]
+(I can't think of[N]
+anything to object to!)[A][ToggleMouthMove]
+[LoadOverworldFaces] #Objection!
+[ClearFace][OpenMidLeft][LoadBerkut]
+[.......]
+[ClearFace][OpenMidRight][LoadAlm]
+[.......]
+[ClearFace][OpenLeft][LoadNomah]
+[.......]
+[ClearFace][OpenRight][LoadForsyth]
+[.......]
+[ClearFace][OpenFarRight][LoadCelica]
+[.....]
+Your honor![N]
+The evidence presented is[N]
+circumstantial at best![A][N]
+We still can't definitively[N]
+place Tobin at the scene![A]
+[ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
+(Celica...!)[N]
+(You're right!)[A][ToggleMouthMove]
+[LoadOverworldFaces] #Objection!
+[ClearFace][OpenMidLeft][LoadBerkut]
+Do you seriously think I[N]
+didn't account for that?[A][N]
+Your honor, the prosecution would[N]
+like to call their next witness.[A]
+[ClearFace][OpenLeft][LoadNomah]
+Very well then.[A][N]
+Bailiff! Bring in the witness![A][X]
+
+
+## AAPostTestimony1Scene2Yes
+[OpenMidRight][LoadAlm][ToggleMouthMove]
+(There's one thing that's[N]
+been bothering me...)[A][N]
+(I should raise an[N]
+objection to [ToggleRed]that[ToggleRed]!)[A][N][ToggleMouthMove]
+[LoadOverworldFaces] @Objection!
+Your honor![A][N]
+The prosecution has not placed[N]
+Tobin at the scene of the crime![A][N]
+His fingerprints could have[N]
+been from another point in time![A]
+[LoadOverworldFaces] @Objection!
+[ClearFace][OpenMidLeft][LoadBerkut]
+Do you seriously think I[N]
+didn't account for that?[A][N]
+Your honor, the prosecution would[N]
+like to call their next witness.[A]
+[ClearFace][OpenLeft][LoadNomah]
+Very well then.[A][N]
+Bailiff! Bring in the witness![A][X]
+
+
+
+
+
