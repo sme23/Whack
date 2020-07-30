@@ -615,6 +615,7 @@ It was around 2:00 AM, and I[N]
 was on guard duty with Tobin.[A][X]
 
 ## AATestimony3Press1
+[OpenMidRight][LoadAlm]
 
 
 ## AATestimony3Statement2
@@ -642,6 +643,34 @@ stuck in my tower all night[Beat][A][X]
 
 
 
+## AATestimony3Consult
+[OpenFarRight][LoadCelica]
+Hmm[Beat][A][N]
+There seems to be[N]
+a contradiction here.[A][N]
+Perhaps that one piece of[N]
+evidence will uncover it?[A][X]
+
+
+## AATestimony3CorrectPresent
+[OpenMidRight][LoadAlm]
+You say that you couldn't see him.[N]
+But, that would only be natural, no?[A][N]
+[ClearFace][OpenLeft][LoadKliff]
+W-what do you mean?[A]
+[ClearFace][OpenMidRight][LoadAlm]
+I'd like to direct the[N]
+court's attention to this.[A]
+[ClearFace][OpenRight][LoadNomah]
+A-a newspaper?[N]
+This is hardly the time to[N]
+do a crossword puzzle, Mr. Alm![A][N]
+[ClearFace][OpenMidRight][LoadAlm]
+Don't worry, Your Honor.[N]
+That's not what it's for.[A][N]
+This is yesterday's newspaper.[A][N]
+I'd like to direct your[N]
+attention to the weather report:[A][N][ToggleRed]
 
 
 
