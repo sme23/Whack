@@ -671,6 +671,44 @@ That's not what it's for.[A][N]
 This is yesterday's newspaper.[A][N]
 I'd like to direct your[N]
 attention to the weather report:[A][N][ToggleRed]
+Very foggy and below[N]
+freezing through the night.[A][N][ToggleRed]
+[ClearFace][OpenMidLeft][LoadBerkut]
+![A]
+[ClearFace][OpenMidRight][LoadAlm]
+Visibility last night couldn't[N]
+have been more than 10 feet.[A][N]
+How, then, could you have seen[N]
+anything in the other tower!?
+[LoadOverworldFaces] @cornered
+[A]
+[ClearFace][OpenLeft][LoadKliff]
+N-N-N-NO WAAAAAAAAAAY![A][ClearFace]
+[LoadOverworldFaces] @chatter, gavel
+[OpenRight][LoadNomah]
+Witness! Have you been[N]
+lying to this court?[A]
+[OpenLeft][LoadKliff]
+No! I would never! I mean-[A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+You peasant of a guard![.....][N]
+You're useless![.....] Hopeless![.....][A]
+[ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
+(Yes! Finally, a foothold!)[A][ToggleMouthMove]
+[ClearFace][LoadOverworldFaces] @gavel
+[OpenRight][LoadNomah]
+Order![A][N]
+In light of the witness's lies,[A][N]
+I can no longer definitively[N]
+rule one way or the other.[A][N]
+So, to give you some time[N]
+to collect yourselves,[A][N]
+I am going to call a[N]
+10-minute recess.[A]
+#gavel, fade
+#To Be Continued...
+#Save screen
+[X]
 
 
 
