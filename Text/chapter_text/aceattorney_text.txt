@@ -156,11 +156,11 @@ Leave it to me![A][X]
 ## AATestimony1
 [OpenLeft][LoadForsyth]
 The victim was killed[N]
-with this knife.[A][N]
+with this knife.[A][2NL]
 The blood on the knife[N]
-belongs to the victim.[A][N]
+belongs to the victim.[A][2NL]
 The defendant's fingerprints[N]
-were found on the handle.[A][N]
+were found on the handle.[A][2NL]
 We think he was killed[N]
 near the village gates.[A]
 [X]
@@ -382,6 +382,265 @@ like to call their next witness.[A]
 [ClearFace][OpenLeft][LoadNomah]
 Very well then.[A][N]
 Bailiff! Bring in the witness![A][X]
+
+
+## AATestimony2Begin
+[OpenRight][LoadKliff]
+[Beat][A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+Witness, please state your name[N]
+and occupation for the court.[A]
+[ClearFace][OpenRight][LoadKliff]
+The name's Kliff,[N]
+and I'm a town guard.[A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+[Beat]Your full name.[A]
+[ClearFace][OpenRight][LoadKliff]
+Yeah, that's what I said.[A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+Your full name is "Kliff"?[A][N]
+Do you not have a last name?[A]
+[ClearFace][OpenRight][LoadKliff]
+Look buddy, there's like two[N]
+people with last names at all,[A][N]
+and they're both standing[N]
+at the defense bench.[A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+[CloseEyes][Beat][A]
+[ClearFace][OpenRight][LoadNomah]
+Very well then.[A}[N]
+Witness, please give[N]
+your testimony.[A][X]
+
+## AATestimony2All
+[OpenRight][LoadKliff]
+I was in a guard[N]
+tower last night.[A][2NL]
+Then, I heard a scream![A][2NL]
+Just after, I heard[N]
+Tobin's voice.[A][2NL]
+But I couldn't make[N]
+out what he said.[A][X]
+
+## AAPostTestimony2Scene1
+[OpenMidLeft][LoadBerkut]
+Do you see now, lawyer?[A][N]
+This line of attack is futile.[A]
+[ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
+(He may be right[Beat][N]
+but I won't back down!)[A]
+[ClearFace][OpenLeft][LoadNomah]
+The defense may now[N]
+cross-examine the witness.[A][X]
+
+## AATestimony2Statement1
+[OpenRight][LoadKliff]
+I was in a guard[N]
+tower last night.[A][X]
+
+## AATestimony2Press1
+[OpenMidRight][LoadAlm]
+Guard tower?[A][N]
+Oh, are that what the big towers at[N]
+the entrance to the village are for?[A]
+[ClearFace][OpenLeft][LoadKliff]
+That's right.[A][N]
+There are [ToggleRed]two guard towers[ToggleRed].[A][N]
+I was in the rightmost one.[A][X]
+
+## AATestimony2Statement2
+[OpenRight][LoadKliff]
+Then, I heard a scream![A][X]
+
+## AATestimony2Press2
+[OpenMidRight][LoadAlm]
+A scream?[A][N]
+Do you have an idea[N]
+of what time it was?[A]
+[ClearFace][OpenLeft][LoadKliff]
+Yeah, it was right[N]
+around 1:00 AM.[A]
+[ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
+(Hmm...that sounds important.)[A][N]
+(Should I have it added[N]
+to his testimony?)[A][N][ToggleMouthMove]
+[Yes][X]
+
+## AATestimony2Press2Yes
+[OpenMidRight][LoadAlm]
+This is vital information![N]
+Please add it to your testimony![A][X]
+
+## AATestimony2Press2No
+[OpenMidRight][LoadAlm][ToggleMouthMove]
+(No...it's probably nothing.[A][X]
+
+
+
+## AATestimony2Statement3
+[OpenRight][LoadKliff]
+Just after, I heard[N]
+Tobin's voice.[A][X]
+
+## AATestimony2Press3
+[OpenMidRight][LoadAlm]
+Y-you did[Beat]?[A]
+[ClearFace][OpenLeft][LoadKliff]
+That's right.[A][N]
+It was definitely[N]
+Tobin's voice.[A]
+[ClearFace][OpenMidRight][LoadAlm]
+Well, what did he say?[A]
+[ClearFace][OpenLeft][LoadKliff]
+Yeah, about that[Beat][A][X]
+
+
+## AATestimony2Statement4
+[OpenRight][LoadKliff]
+But I couldn't make[N]
+out what he said.[A][X]
+
+## AATestimony2Press4
+[OpenMidRight][LoadAlm]
+Oh[Beat][N]
+Then, that doesn't implicate[N]
+him in the crime![A]
+[LoadOverworldFaces] @Objection!
+[ClearFace][OpenMidLeft][LoadBerkut]
+It still places him[N]
+at the scene.[A]
+[ClearFace][OpenMidRight][LoadAlm]
+O-oh[Beat][A][X]
+
+## AATestimony2Statement5
+[OpenRight][LoadKliff]
+I heard the scream at[Beat][N]
+It was around 1:00 AM.[A][X]
+
+## AATestimony2Press5
+[OpenMidRight][LoadAlm]
+You're absolutely[N]
+sure it was 1:00 AM?[A]
+[ClearFace][OpenRight][LoadKliff]
+Absolutely.[A][N]
+Every night at exactly 1:00,[N]
+the nearby bandits have[N]
+a very loud celebration.[A][N]
+There's only so many times[N]
+they can scare you silly,[A][N]
+before you start knowing[N]
+when to prepare for the noise[Beat][A][X]
+
+## AATestimony2Consult1
+[OpenFarRight][LoadCelica]
+I don't see anything inconsistent[N]
+with his testimony at the moment.[A][N]
+Try pressing for more information.[N]
+You may uncover a contradiction.[A][X]
+
+## AATestimony2Consult2
+[OpenFarRight][LoadCelica]
+That new testimony[Beat][N]
+Something seems off about it.[A][N]
+Maybe we should look over[N]
+the evidence once more.[A][X]
+
+
+## AATestimony2PresentCorrect
+[OpenMidRight][LoadAlm]
+Kliff, you're definitely sure that[N]
+you heard the scream at 1:00 AM?[A]
+[ClearFace][OpenLeft][LoadKliff]
+Abolutely.[.....] Why?[A]
+[ClearFace][OpenMidRight][LoadAlm]
+Well, I'm afraid[N]
+that's impossible.[A][N]
+The victim wasn't killed until at least 2:00!
+[LoadOverworldFaces][A]
+[ClearFace][OpenLeft][LoadKliff]
+WH-WH-WHAAAAAAAT!?[A][ClearFace]
+[LoadOverworldFaces] @chatter, gavel
+[OpenRight][LoadNomah]
+Order![....] Order![A][N]
+Prosecution, is that true?[A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+[Beat][A]
+[ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
+(He looks so calm...)[A][N]
+(Oh no, did he expect this!?)[A]
+[ClearFace][OpenMidLeft][LoadBerkut]
+Yes, it's true.[A][N]
+The time of death and the time the[N]
+victim heard a scream are incongruent.[A][N][ToggleSmile]
+However, that's not the only way you[N]
+know the defendant is guilty, is it?[A][ToggleSmile]
+[ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
+![A][ToggleMouthMove]
+[ClearFace][OpenLeft][LoadKliff]
+O-oh yeah! That's right![A][N]
+There's also what I saw![A]
+[ClearFace][OpenMidRight][LoadAlm]
+S-SAW!?!?[A][ClearFace]
+[LoadOverworldFaces] @chatter, gavel
+[OpenRight][LoadNomah]
+Witness! This is vital testimony![A][N]
+Please tell the court what you saw.[A][X]
+
+
+
+## AATestimony3All
+[OpenLeft][LoadKliff]
+It was around 2:00 AM, and I[N]
+was on guard duty with Tobin.[A][2NL]
+Tobin was supposed to be[N]
+in the other guard tower.[A][2NL]
+But when I looked, I[N]
+couldn't see him there![A][2NL]
+He never came back, so I was[N]
+stuck in my tower all night[Beat][A][X]
+
+
+## AATestimony3PreExamination
+[OpenRight][LoadNomah]
+Well, this seems like quite conclusive[N]
+evidence of the defendant's guilt![A][N]
+Defense, you may now start[N]
+your cross-examination.[A][X]
+
+
+
+## AATestimony3Statement1
+[OpenLeft][LoadKliff]
+It was around 2:00 AM, and I[N]
+was on guard duty with Tobin.[A][X]
+
+## AATestimony3Press1
+
+
+## AATestimony3Statement2
+[OpenLeft][LoadKliff]
+Tobin was supposed to be[N]
+in the other guard tower.[A][X]
+
+## AATestimony3Press2
+
+
+## AATestimony3Statement3
+[OpenLeft][LoadKliff]
+But when I looked, I[N]
+couldn't see him there![A][X]
+
+## AATestimony3Press3
+
+
+## AATestimony3Statement4 
+[OpenLeft][LoadKliff]
+He never came back, so I was[N]
+stuck in my tower all night[Beat][A][X]
+
+## AATestimony3Press4
+
+
 
 
 
