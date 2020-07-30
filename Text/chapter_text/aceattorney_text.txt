@@ -367,13 +367,13 @@ Bailiff! Bring in the witness![A][X]
 been bothering me...)[A][N]
 (I should raise an[N]
 objection to [ToggleRed]that[ToggleRed]!)[A][N][ToggleMouthMove]
-[LoadOverworldFaces] @Objection!
+[LoadOverworldFaces] #Objection!
 Your honor![A][N]
 The prosecution has not placed[N]
 Tobin at the scene of the crime![A][N]
 His fingerprints could have[N]
 been from another point in time![A]
-[LoadOverworldFaces] @Objection!
+[LoadOverworldFaces] #Objection!
 [ClearFace][OpenMidLeft][LoadBerkut]
 Do you seriously think I[N]
 didn't account for that?[A][N]
@@ -505,7 +505,7 @@ out what he said.[A][X]
 Oh[Beat][N]
 Then, that doesn't implicate[N]
 him in the crime![A]
-[LoadOverworldFaces] @Objection!
+[LoadOverworldFaces] #Objection!
 [ClearFace][OpenMidLeft][LoadBerkut]
 It still places him[N]
 at the scene.[A]
@@ -559,7 +559,7 @@ The victim wasn't killed until at least 2:00!
 [LoadOverworldFaces][A]
 [ClearFace][OpenLeft][LoadKliff]
 WH-WH-WHAAAAAAAT!?[A][ClearFace]
-[LoadOverworldFaces] @chatter, gavel
+[LoadOverworldFaces] #chatter, gavel
 [OpenRight][LoadNomah]
 Order![....] Order![A][N]
 Prosecution, is that true?[A]
@@ -581,7 +581,7 @@ O-oh yeah! That's right![A][N]
 There's also what I saw![A]
 [ClearFace][OpenMidRight][LoadAlm]
 S-SAW!?!?[A][ClearFace]
-[LoadOverworldFaces] @chatter, gavel
+[LoadOverworldFaces] #chatter, gavel
 [OpenRight][LoadNomah]
 Witness! This is vital testimony![A][N]
 Please tell the court what you saw.[A][X]
@@ -680,11 +680,11 @@ Visibility last night couldn't[N]
 have been more than 10 feet.[A][N]
 How, then, could you have seen[N]
 anything in the other tower!?
-[LoadOverworldFaces] @cornered
+[LoadOverworldFaces] #cornered
 [A]
 [ClearFace][OpenLeft][LoadKliff]
 N-N-N-NO WAAAAAAAAAAY![A][ClearFace]
-[LoadOverworldFaces] @chatter, gavel
+[LoadOverworldFaces] #chatter, gavel
 [OpenRight][LoadNomah]
 Witness! Have you been[N]
 lying to this court?[A]
@@ -695,7 +695,7 @@ You peasant of a guard![.....][N]
 You're useless![.....] Hopeless![.....][A]
 [ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
 (Yes! Finally, a foothold!)[A][ToggleMouthMove]
-[ClearFace][LoadOverworldFaces] @gavel
+[ClearFace][LoadOverworldFaces] #gavel
 [OpenRight][LoadNomah]
 Order![A][N]
 In light of the witness's lies,[A][N]
