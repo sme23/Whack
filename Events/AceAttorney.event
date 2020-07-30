@@ -2,13 +2,13 @@ EventPointerTable(AceAttorneyEventsID, PointerList)
 
 //a few temp flag defs for starting off
 #define Testimony1ConsultFlag 7
-#define Testimony2ConsultFlag 8
-#define Testimony3ConsultFlag 9
-#define Testimony4ConsultFlag 10
-#define Testimony5ConsultFlag 11
-#define Testimony6ConsultFlag 12
-#define Testimony7ConsultFlag 13
-#define Testimony8ConsultFlag 14
+#define Testimony2ConsultFlag1 8
+#define Testimony2ConsultFlag2 9
+#define Testimony3ConsultFlag 10
+#define Testimony4ConsultFlag 11
+#define Testimony5ConsultFlag 12
+#define Testimony6ConsultFlag 13
+#define Testimony7ConsultFlag 14
 
 #define Testimony1PressFlag1 15
 #define Testimony1PressFlag2 16
@@ -35,7 +35,8 @@ END_MAIN
 
 CharacterBasedEvents:
 CharacterEventBothWays(Testimony1ConsultFlag,Testimony1ConsultEvent,Alm,Celica)
-//CharacterEventBothWays(Testimony2ConsultFlag,Testimony2ConsultEvent,Alm,Celica)
+CharacterEventBothWays(Testimony2ConsultFlag1,Testimony2ConsultEvent1,Alm,Celica)
+CharacterEventBothWays(Testimony2ConsultFlag2,Testimony2ConsultEvent2,Alm,Celica)
 //CharacterEventBothWays(Testimony3ConsultFlag,Testimony3ConsultEvent,Alm,Celica)
 //CharacterEventBothWays(Testimony4ConsultFlag,Testimony4ConsultEvent,Alm,Celica)
 //CharacterEventBothWays(Testimony5ConsultFlag,Testimony5ConsultEvent,Alm,Celica)
@@ -151,13 +152,13 @@ Text(AAScene3Talk2)
 LOAD1 0 Testimony1StatementGroup
 ENUN
 
-ENUT Testimony2ConsultFlag
+ENUT Testimony2ConsultFlag1
+ENUT Testimony2ConsultFlag2
 ENUT Testimony3ConsultFlag
 ENUT Testimony4ConsultFlag
 ENUT Testimony5ConsultFlag
 ENUT Testimony6ConsultFlag
 ENUT Testimony7ConsultFlag
-ENUT Testimony8ConsultFlag
 
 SetTestimony(0)
 
@@ -295,6 +296,11 @@ ENUF Testimony1ConsultFlag
 NoFade
 ENDA
 
+ALIGN 4
+KliffGroup:
+UNIT Kliff Mage 0 Level(1,NPC,0) [8,15] 0 0 1 REDA8R14 NoItems NoAI
+UNIT
+
 
 
 ALIGN 4
@@ -310,7 +316,84 @@ CHECK_EVENTID Testimony1PressFlag4
 BEQ 2 s0 sC
 
 //do the things here
+MUSC 0x7FFF
+EVBIT_MODIFY 4
+TEXTSTART
+TEXTSHOW AAPostTestimony1Scene1
+TEXTEND
+MUSC Suspense
+TEXTCONT
+TEXTEND
+REMA
 
+SVAL s1 1
+BNE 10 s1 sC
+EVBIT_MODIFY 4
+TEXTSTART
+TEXTSHOW AAPostTestimonyScene2Yes
+TEXTEND
+MUSC 0x7FFF
+SOUN SFX_Objection
+//Objection!
+TEXTCONT
+TEXTEND
+SOUN SFX_Objection
+//Objection!
+TEXTCONT
+TEXTEND
+
+REMA
+
+GOTO 11
+
+LABEL 10
+EVBIT_MODIFY 4
+TEXTSTART
+TEXTSHOW AAPostTestimonyScene2No
+TEXTEND
+MUSC 0x7FFF
+SOUN SFX_Objection
+//Objection!
+TEXTCONT
+TEXTEND
+SOUN SFX_Objection
+//Objection!
+TEXTCONT
+TEXTEND
+
+REMA
+
+LABEL 11
+
+FADI 10
+DISA Forsyth
+DISA Statement1
+DISA Statement2
+DISA Statement3
+DISA Statement4
+FADU 10
+
+MUSC Trial
+
+LOAD1 0 KliffGroup
+ENUN
+EVBIT_MODIFY 4
+Text(AATestimony2Begin)
+
+MUSC Testimony
+EVBIT_MODIFY 4
+Text(AATestimony2All)
+
+MUSC 0x7FFF
+EVBIT_MODIFY 4
+Text(AAPostTestimony2Scene1)
+
+LOAD1 0 Testimony2StatementsGroup
+ENUN
+
+SetTestimony(1)
+
+ENUF Testimony2ConsultFlag1
 
 GOTO 3
 LABEL 2
@@ -319,3 +402,131 @@ LABEL 3
 NoFade
 ENDA
 
+ALIGN 4
+Testimony2StatementsGroup:
+UNIT Statement1 Mage 0 Level(1,NPC,0) [6,11] 0 0 0 1 NoItems NoAI
+UNIT Statement2 Mage 0 Level(1,NPC,0) [7,11] 0 0 0 1 NoItems NoAI
+UNIT Statement3 Mage 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NoAI
+UNIT Statement4 Mage 0 Level(1,NPC,0) [9,11] 0 0 0 1 NoItems NoAI
+UNIT
+
+
+SetHearEvent(1,0,Testimony2Statement1HearEvent)
+SetHearEvent(1,1,Testimony2Statement2HearEvent)
+SetHearEvent(1,2,Testimony2Statement3HearEvent)
+SetHearEvent(1,3,Testimony2Statement4HearEvent)
+SetHearEvent(1,4,Testimony2Statement5HearEvent)
+
+SetPressEvent(1,0,Testimony2Statement1PressEvent)
+SetPressEvent(1,1,Testimony2Statement2PressEvent)
+SetPressEvent(1,2,Testimony2Statement3PressEvent)
+SetPressEvent(1,3,Testimony2Statement4PressEvent)
+SetPressEvent(1,4,Testimony2Statement5PressEvent)
+
+SetPresentEvent(1,0,TestimonyIncorrectPresentEvent)
+SetPresentEvent(1,1,TestimonyIncorrectPresentEvent)
+SetPresentEvent(1,2,TestimonyIncorrectPresentEvent)
+SetPresentEvent(1,3,TestimonyIncorrectPresentEvent)
+SetPresentEvent(1,4,Testimony2CorrectPresentEvent)
+
+ALIGN 4
+Testimony2ConsultEvent1:
+EVBIT_MODIFY 4
+Text(AATestimony2Consult1)
+ENUF Testimony2ConsultFlag1
+NoFade
+ENDA
+
+ALIGN 4
+Testimony2ConsultEvent2:
+EVBIT_MODIFY 4
+Text(AATestimony2Consult2)
+ENUF s
+ENDA
+
+Testimony2Statement1HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Statement1)
+NoFade
+ENDA
+
+Testimony2Statement2HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Statement2)
+NoFade
+ENDA
+
+Testimony2Statement3HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Statement3)
+NoFade
+ENDA
+
+Testimony2Statement4HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Statement4)
+NoFade
+ENDA
+
+Testimony2Statement5HearEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Statement5)
+NoFade
+ENDA
+
+
+Testimony2Statement1PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Press1)
+NoFade
+ENDA
+
+Testimony2Statement2PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Press2)
+
+SVAL s1 1
+BNE 1 s1 sC
+
+Text(AATestimony2Press2Yes)
+
+ENUT Testimony2ConsultFlag1
+ENUF Testimony2ConsultFlag2
+
+MOVE_1STEP 0 Statement4 Right
+ENUN
+MOVE_1STEP 0 Statement3 Right
+ENUN
+LOAD1 0 Testimony2ExtraStatementGroup
+ENUN
+GOTO 2
+LABEL 1
+
+Text(AATestimony2Press2No)
+
+LABEL 2
+NoFade
+ENDA
+
+
+Testimony2ExtraStatementGroup:
+UNIT Statement5 Mage 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NoAI
+UNIT
+
+Testimony2Statement3PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Press3)
+NoFade
+ENDA
+
+Testimony2Statement4PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Press4)
+NoFade
+ENDA
+
+Testimony2Statement5PressEvent:
+EVBIT_MODIFY 4
+Text(AATestimony2Press5)
+NoFade
+ENDA
