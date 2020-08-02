@@ -17,6 +17,12 @@ EventPointerTable(AceAttorneyEventsID, PointerList)
 
 #define Testimony1AllPressFlag 19
 
+
+//I Do not want these outside of this chapter
+#define ShowObjection "TEXTMODE 1; BACG AA_ObjectionBG; SOUN SFX_Objection; STAL 60; CLEAN"
+#define ShowHoldIt "TEXTMODE 1; BACG AA_HoldItBG; SOUN SFX_Objection; STAL 60; CLEAN"
+#define ShowTakeThat "TEXTMODE 1; BACG AA_TakeThatBG; SOUN SFX_Objection; STAL 60; CLEAN"
+
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -215,13 +221,14 @@ SetPressEvent(0,1,Testimony1Statement2PressEvent)
 SetPressEvent(0,2,Testimony1Statement3PressEvent)
 SetPressEvent(0,3,Testimony1Statement4PressEvent)
 
-SetPresentEvent(0,0,TestimonyIncorrectPresentEvent)
-SetPresentEvent(0,1,TestimonyIncorrectPresentEvent)
-SetPresentEvent(0,2,TestimonyIncorrectPresentEvent)
-SetPresentEvent(0,3,TestimonyIncorrectPresentEvent)
+SetPresentEvent(0,0,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(0,1,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(0,2,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(0,3,PresentMenu1NoCorrectAnswer)
 
 ALIGN 4
 TestimonyIncorrectPresentEvent:
+ShowObjection
 EVBIT_MODIFY 4
 Text(AAIncorrectPresent)
 NoFade
@@ -259,6 +266,7 @@ ENDA
 
 ALIGN 4
 Testimony1Statement1PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony1Press1)
 ENUT Testimony1PressFlag1
@@ -267,6 +275,7 @@ ENDA
 
 ALIGN 4
 Testimony1Statement2PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony1Press2)
 ENUT Testimony1PressFlag2
@@ -275,6 +284,7 @@ ENDA
 
 ALIGN 4
 Testimony1Statement3PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony1Press3)
 ENUT Testimony1PressFlag3
@@ -283,6 +293,7 @@ ENDA
 
 ALIGN 4
 Testimony1Statement4PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony1Press4)
 ENUT Testimony1PressFlag4
@@ -330,7 +341,7 @@ SVAL s1 1
 BNE 10 s1 sC
 EVBIT_MODIFY 4
 TEXTSTART
-TEXTSHOW AAPostTestimonyScene2Yes
+TEXTSHOW AAPostTestimony1Scene2Yes
 TEXTEND
 MUSC 0x7FFF
 SOUN SFX_Objection
@@ -349,7 +360,7 @@ GOTO 11
 LABEL 10
 EVBIT_MODIFY 4
 TEXTSTART
-TEXTSHOW AAPostTestimonyScene2No
+TEXTSHOW AAPostTestimony1Scene2No
 TEXTEND
 MUSC 0x7FFF
 SOUN SFX_Objection
@@ -423,11 +434,11 @@ SetPressEvent(1,2,Testimony2Statement3PressEvent)
 SetPressEvent(1,3,Testimony2Statement4PressEvent)
 SetPressEvent(1,4,Testimony2Statement5PressEvent)
 
-SetPresentEvent(1,0,TestimonyIncorrectPresentEvent)
-SetPresentEvent(1,1,TestimonyIncorrectPresentEvent)
-SetPresentEvent(1,2,TestimonyIncorrectPresentEvent)
-SetPresentEvent(1,3,TestimonyIncorrectPresentEvent)
-SetPresentEvent(1,4,Testimony2CorrectPresentEvent)
+SetPresentEvent(1,0,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(1,1,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(1,2,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(1,3,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(1,4,PresentMenu1Testimony2Answer)
 
 ALIGN 4
 Testimony2ConsultEvent1:
@@ -441,7 +452,7 @@ ALIGN 4
 Testimony2ConsultEvent2:
 EVBIT_MODIFY 4
 Text(AATestimony2Consult2)
-ENUF s
+ENUF Testimony2ConsultFlag2
 ENDA
 
 Testimony2Statement1HearEvent:
@@ -476,12 +487,14 @@ ENDA
 
 
 Testimony2Statement1PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony2Press1)
 NoFade
 ENDA
 
 Testimony2Statement2PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony2Press2)
 
@@ -514,19 +527,59 @@ UNIT Statement5 Mage 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NoAI
 UNIT
 
 Testimony2Statement3PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony2Press3)
 NoFade
 ENDA
 
 Testimony2Statement4PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony2Press4)
 NoFade
 ENDA
 
 Testimony2Statement5PressEvent:
+ShowHoldIt
 EVBIT_MODIFY 4
 Text(AATestimony2Press5)
 NoFade
 ENDA
+
+
+
+ALIGN 4
+PresentMenu1NoCorrectAnswer:
+EVBIT_MODIFY 4
+SVAL s1 PresentMenu1|IsPointer
+ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
+//all answers are wrong so we uncritically call an event for that case
+CALL TestimonyIncorrectPresentEvent
+NoFade
+ENDA
+
+ALIGN 4
+PresentMenu1Testimony2Answer:
+EVBIT_MODIFY 4
+SVAL s1 PresentMenu1|IsPointer
+ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
+//correct answer is 0
+BNE 1 s0 sC
+//if answer is entry 0, call this
+CALL Testimony2CorrectPresentEvent 
+GOTO 2
+LABEL 1
+//otherwise you got it wrong
+CALL TestimonyIncorrectPresentEvent
+LABEL 2
+NoFade
+ENDA
+
+
+
+ALIGN 4
+Testimony2CorrectPresentEvent:
+NoFade
+ENDA
+

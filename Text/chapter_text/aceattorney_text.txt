@@ -408,7 +408,7 @@ at the defense bench.[A]
 [ClearFace][OpenMidLeft][LoadBerkut]
 [CloseEyes][Beat][A]
 [ClearFace][OpenRight][LoadNomah]
-Very well then.[A}[N]
+Very well then.[A][N]
 Witness, please give[N]
 your testimony.[A][X]
 

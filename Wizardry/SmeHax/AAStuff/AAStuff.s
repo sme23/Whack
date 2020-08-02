@@ -160,7 +160,7 @@ push {r14}
 ldr r0,=PressEventPointerTable
 bl GetRelevantEventPointer
 @run event
-mov r1,#1
+mov r1,#2
 blh EventStart
 mov r0,#0x94
 pop {r1}
@@ -176,7 +176,7 @@ push {r14}
 ldr r0,=PresentEventPointerTable
 bl GetRelevantEventPointer
 @run event
-mov r1,#1
+mov r1,#2
 blh EventStart
 mov r0,#0x94
 pop {r1}

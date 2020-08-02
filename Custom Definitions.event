@@ -614,6 +614,6 @@
 #define AA_RightBench 0x3C
 #define AA_Witness 0x3D
 #define AA_Lobby 0x3E
-
-
-
+#define AA_ObjectionBG 0x3F
+#define AA_TakeThatBG 0x40
+#define AA_HoldItBG 0x41

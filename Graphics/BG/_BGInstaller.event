@@ -25,6 +25,10 @@ SetBG(AA_LeftBench,leftbench_img,leftbench_pal,leftbench_tsa)
 SetBG(AA_RightBench,rightbench_img,rightbench_pal,rightbench_tsa)
 SetBG(AA_Witness,witness_img,witness_pal,witness_tsa)
 SetBG(AA_Lobby,lobby_img,lobby_pal,lobby_tsa)
+SetBG(AA_ObjectionBG,ObjectionBG_img,ObjectionBG_pal,ObjectionBG_tsa)
+SetBG(AA_TakeThatBG,TakeThatBG_img,TakeThatBG_pal,TakeThatBG_tsa)
+SetBG(AA_HoldItBG,HoldItBG_img,HoldItBG_pal,HoldItBG_tsa)
+
 
 ALIGN 4
 consult_img:
@@ -128,4 +132,43 @@ lobby_pal:
 ALIGN 4
 lobby_tsa:
 #incbin "lobby_tsa.dmp"
+
+
+ALIGN 4
+ObjectionBG_img:
+#incbin "ObjectionBG_img.dmp"
+
+ALIGN 4
+ObjectionBG_pal:
+#incbin "ObjectionBG_pal.dmp"
+
+ALIGN 4
+ObjectionBG_tsa:
+#incbin "ObjectionBG_tsa.dmp"
+
+
+ALIGN 4
+TakeThatBG_img:
+#incbin "TakeThatBG_img.dmp"
+
+ALIGN 4
+TakeThatBG_pal:
+#incbin "TakeThatBG_pal.dmp"
+
+ALIGN 4
+TakeThatBG_tsa:
+#incbin "TakeThatBG_tsa.dmp"
+
+
+ALIGN 4
+HoldItBG_img:
+#incbin "HoldItBG_img.dmp"
+
+ALIGN 4
+HoldItBG_pal:
+#incbin "HoldItBG_pal.dmp"
+
+ALIGN 4
+HoldItBG_tsa:
+#incbin "HoldItBG_tsa.dmp"
 
