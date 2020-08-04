@@ -1,0 +1,49 @@
+SongTable(SFX_Lightbulb,sfx_lightbulb,6)
+
+    #define    loop_sfx_grp_sfx_lightbulb  sfx_lightbulb_map
+    #define    loop_sfx_pri_sfx_lightbulb  0
+    #define    loop_sfx_rev_sfx_lightbulb  0
+    #define    loop_sfx_mvl_sfx_lightbulb  127
+    #define    loop_sfx_key_sfx_lightbulb  0
+    #define    loop_sfx_tbs_sfx_lightbulb  1
+    #define    loop_sfx_exg_sfx_lightbulb  0
+    #define    loop_sfx_cmp_sfx_lightbulb  1
+
+    ALIGN 4
+
+loop_sfx_1:
+    BYTE        VOL     127*loop_sfx_mvl_sfx_lightbulb/mxv
+    BYTE    KEYSH   loop_sfx_key_sfx_lightbulb+0
+    BYTE        VOICE   0
+    BYTE        TIE     Cn3   v064
+    BYTE    W96
+loop_sfx_1_B1:
+    BYTE    W96
+    BYTE    W96
+    BYTE    GoTo
+     POIN2    loop_sfx_1_B1
+loop_sfx_1_B2:
+    BYTE    W06
+    BYTE        EOT     Cn3 
+    BYTE    FINE
+
+    ALIGN 4
+
+sfx_lightbulb:
+    BYTE    1    // NumTrks
+    BYTE    0    // NumBlks
+    BYTE    loop_sfx_pri_sfx_lightbulb    // Priority
+    BYTE    loop_sfx_rev_sfx_lightbulb    // Reverb.
+
+    POIN2    loop_sfx_grp_sfx_lightbulb
+
+    POIN2    loop_sfx_1
+
+    
+sfx_lightbulb_map:
+WORD $3c00
+POIN sfx_lightbulb_wav
+WORD $FF00FF
+
+sfx_lightbulb_wav:
+#incbin "sfx-lightbulb.bin"

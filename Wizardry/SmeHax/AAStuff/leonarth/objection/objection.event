@@ -25,7 +25,7 @@ ALIGN 4
 //WIDTH * HEIGHT must not be bigger than 372
 //edit the SHORT value to add sound effects
 objectionAnimation:
-BYTE 21 14; SHORT SFX_Objection; POIN objection00image objection00palette
+BYTE 18 12; SHORT SFX_Objection; POIN objection00image objection00palette
 waitFrame
 waitFrame
 waitFrame

@@ -28,7 +28,7 @@ ALIGN 4
 //WIDTH * HEIGHT must not be bigger than 372
 //edit the SHORT value to add sound effects
 holditAnimation:
-BYTE 21 14; SHORT SFX_Objection; POIN holdit00image holdit00palette
+BYTE 18 12; SHORT SFX_Objection; POIN holdit00image holdit00palette
 waitFrame
 waitFrame
 waitFrame

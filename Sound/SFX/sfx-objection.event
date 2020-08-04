@@ -1,0 +1,49 @@
+SongTable(SFX_Objection,sfx_objection,6)
+
+    #define    loop_sfx_grp_sfx_objection  sfx_objection_map
+    #define    loop_sfx_pri_sfx_objection  0
+    #define    loop_sfx_rev_sfx_objection  0
+    #define    loop_sfx_mvl_sfx_objection  127
+    #define    loop_sfx_key_sfx_objection  0
+    #define    loop_sfx_tbs_sfx_objection  1
+    #define    loop_sfx_exg_sfx_objection  0
+    #define    loop_sfx_cmp_sfx_objection  1
+
+    ALIGN 4
+
+loop_sfx_1:
+    BYTE        VOL     255
+    BYTE    KEYSH   loop_sfx_key_sfx_objection+0
+    BYTE        VOICE   0
+    BYTE        TIE     Cn3   v064
+    BYTE    W96
+loop_sfx_1_B1:
+    BYTE    W96
+    BYTE    W96
+    BYTE    GoTo
+     POIN2    loop_sfx_1_B1
+loop_sfx_1_B2:
+    BYTE    W06
+    BYTE        EOT     Cn3 
+    BYTE    FINE
+
+    ALIGN 4
+
+sfx_objection:
+    BYTE    1    // NumTrks
+    BYTE    0    // NumBlks
+    BYTE    loop_sfx_pri_sfx_objection    // Priority
+    BYTE    loop_sfx_rev_sfx_objection    // Reverb.
+
+    POIN2    loop_sfx_grp_sfx_objection
+
+    POIN2    loop_sfx_1
+
+    
+sfx_objection_map:
+WORD $3c00
+POIN sfx_objection_wav
+WORD $FF00FF
+
+sfx_objection_wav:
+#incbin "sfx-objection.bin"

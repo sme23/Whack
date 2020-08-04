@@ -15,14 +15,14 @@
 #define Env_CrowdCheer 0x8F
 #define Env_Sandstorm 0x95
 
-#define SFX_SlamDesk 0x58
-#define SFX_DramaPound 0x59
-#define SFX_Evidence 0x5D
-#define SFX_Gallery 0x5E
-#define SFX_Gavel 0x5F
-#define SFX_Lightbulb 0x62
-#define SFX_Objection 0x63
-#define SFX_Realization 0x64
+#define SFX_SlamDesk 0x58		//70
+#define SFX_Damage 0x59			//78
+#define SFX_Testimony 0x5D		//83
+#define SFX_Gallery 0x5E		//61
+#define SFX_Gavel 0x5F			//58
+#define SFX_Lightbulb 0x62		//33
+#define SFX_Objection 0x63		//72
+#define SFX_Realization 0x64	//17
 
 #define Allegro2001 0x92
 #define CourtroomLobby 0x93

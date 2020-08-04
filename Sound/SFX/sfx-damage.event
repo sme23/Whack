@@ -1,0 +1,49 @@
+SongTable(SFX_Damage,sfx_damage,6)
+
+    #define    loop_sfx_grp_sfx_damage  sfx_damage_map
+    #define    loop_sfx_pri_sfx_damage  0
+    #define    loop_sfx_rev_sfx_damage  0
+    #define    loop_sfx_mvl_sfx_damage  127
+    #define    loop_sfx_key_sfx_damage  0
+    #define    loop_sfx_tbs_sfx_damage  1
+    #define    loop_sfx_exg_sfx_damage  0
+    #define    loop_sfx_cmp_sfx_damage  1
+
+    ALIGN 4
+
+loop_sfx_1:
+    BYTE        VOL     127*loop_sfx_mvl_sfx_damage/mxv
+    BYTE    KEYSH   loop_sfx_key_sfx_damage+0
+    BYTE        VOICE   0
+    BYTE        TIE     Cn3   v064
+    BYTE    W96
+loop_sfx_1_B1:
+    BYTE    W96
+    BYTE    W96
+    BYTE    GoTo
+     POIN2    loop_sfx_1_B1
+loop_sfx_1_B2:
+    BYTE    W06
+    BYTE        EOT     Cn3 
+    BYTE    FINE
+
+    ALIGN 4
+
+sfx_damage:
+    BYTE    1    // NumTrks
+    BYTE    0    // NumBlks
+    BYTE    loop_sfx_pri_sfx_damage    // Priority
+    BYTE    loop_sfx_rev_sfx_damage    // Reverb.
+
+    POIN2    loop_sfx_grp_sfx_damage
+
+    POIN2    loop_sfx_1
+
+    
+sfx_damage_map:
+WORD $3c00
+POIN sfx_damage_wav
+WORD $FF00FF
+
+sfx_damage_wav:
+#incbin "sfx-damage.bin"

@@ -58,3 +58,28 @@ SongTable(Testimony,testimony,MapMusicGroup)
 SongTable(Trial,trial,MapMusicGroup)
 }
 
+
+{
+#include "SFX/sfx-damage.event"
+}
+{
+#include "SFX/sfx-gallery.event"
+}
+{
+#include "SFX/sfx-gavel.event"
+}
+{
+#include "SFX/sfx-lightbulb.event"
+}
+{
+#include "SFX/sfx-objection.event"
+}
+{
+#include "SFX/sfx-realization.event"
+}
+{
+#include "SFX/sfx-slamdesk.event"
+}
+{
+#include "SFX/sfx-testimony.event"
+}

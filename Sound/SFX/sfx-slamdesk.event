@@ -1,0 +1,49 @@
+SongTable(SFX_SlamDesk,sfx_slamdesk,6)
+
+    #define    loop_sfx_grp_sfx_slamdesk  sfx_slamdesk_map
+    #define    loop_sfx_pri_sfx_slamdesk  0
+    #define    loop_sfx_rev_sfx_slamdesk  0
+    #define    loop_sfx_mvl_sfx_slamdesk  127
+    #define    loop_sfx_key_sfx_slamdesk  0
+    #define    loop_sfx_tbs_sfx_slamdesk  1
+    #define    loop_sfx_exg_sfx_slamdesk  0
+    #define    loop_sfx_cmp_sfx_slamdesk  1
+
+    ALIGN 4
+
+loop_sfx_1:
+    BYTE        VOL     127*loop_sfx_mvl_sfx_slamdesk/mxv
+    BYTE    KEYSH   loop_sfx_key_sfx_slamdesk+0
+    BYTE        VOICE   0
+    BYTE        TIE     Cn3   v064
+    BYTE    W96
+loop_sfx_1_B1:
+    BYTE    W96
+    BYTE    W96
+    BYTE    GoTo
+     POIN2    loop_sfx_1_B1
+loop_sfx_1_B2:
+    BYTE    W06
+    BYTE        EOT     Cn3 
+    BYTE    FINE
+
+    ALIGN 4
+
+sfx_slamdesk:
+    BYTE    1    // NumTrks
+    BYTE    0    // NumBlks
+    BYTE    loop_sfx_pri_sfx_slamdesk    // Priority
+    BYTE    loop_sfx_rev_sfx_slamdesk    // Reverb.
+
+    POIN2    loop_sfx_grp_sfx_slamdesk
+
+    POIN2    loop_sfx_1
+
+    
+sfx_slamdesk_map:
+WORD $3c00
+POIN sfx_slamdesk_wav
+WORD $FF00FF
+
+sfx_slamdesk_wav:
+#incbin "sfx-slamdesk.bin"
