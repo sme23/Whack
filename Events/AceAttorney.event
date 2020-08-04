@@ -19,9 +19,9 @@ EventPointerTable(AceAttorneyEventsID, PointerList)
 
 
 //I Do not want these outside of this chapter
-#define ShowObjection "TEXTMODE 1; BACG AA_ObjectionBG; SOUN SFX_Objection; STAL 60; CLEAN"
+#define ShowObjection "SOUN SFX_Objection; ASMC showObjection|1"
 #define ShowHoldIt "SOUN SFX_Objection; ASMC showHoldIt|1"
-#define ShowTakeThat "TEXTMODE 1; BACG AA_TakeThatBG; SOUN SFX_Objection; STAL 60; CLEAN"
+#define ShowTakeThat "SOUN SFX_Objection; ASMC showTakeThat|1"
 
 PointerList:
 POIN TurnBasedEvents
