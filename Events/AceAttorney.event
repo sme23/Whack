@@ -20,7 +20,7 @@ EventPointerTable(AceAttorneyEventsID, PointerList)
 
 //I Do not want these outside of this chapter
 #define ShowObjection "TEXTMODE 1; BACG AA_ObjectionBG; SOUN SFX_Objection; STAL 60; CLEAN"
-#define ShowHoldIt "TEXTMODE 1; BACG AA_HoldItBG; SOUN SFX_Objection; STAL 60; CLEAN"
+#define ShowHoldIt "ASMC showHoldIt|1"
 #define ShowTakeThat "TEXTMODE 1; BACG AA_TakeThatBG; SOUN SFX_Objection; STAL 60; CLEAN"
 
 PointerList:

@@ -1,3 +1,5 @@
+#include "leonarth/leonarth.event"
+
 #include "AAStuff.lyn.event"
 
 #define SetPressEvent(testimonyID,statementID,eventPtr) "PUSH; ORG (PressEventPointerTable+(32*testimonyID)+(4*statementID)); POIN eventPtr; POP"
@@ -23,3 +25,5 @@ AceAttorneyChIDLink:
 BYTE AceAttorneyChID
 
 ALIGN 4
+
+#include "LeoImgDisplay.event"

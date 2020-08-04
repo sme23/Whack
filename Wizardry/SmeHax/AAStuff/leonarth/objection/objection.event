@@ -1,0 +1,41 @@
+
+
+objectionProc:
+_6C_CALL_ROUTINE(Objection_Setup|1)
+_6C_LOOP_ROUTINE(Objection_LoadFrames|1)
+_6C_CALL_ROUTINE(0x21668|1)
+_6C_END
+
+ALIGN 4
+
+Objection_LoadFrames:
+#incbin "looproutine.dmp"
+ALIGN 4
+
+Objection_Setup:
+#incbin "setup.dmp"
+POIN objectionAnimation
+
+showObjection:
+#incbin "startProc.dmp"
+POIN objectionProc
+
+ALIGN 4
+
+//WIDTH * HEIGHT must not be bigger than 372
+//edit the SHORT value to add sound effects
+objectionAnimation:
+BYTE 21 14; SHORT SFX_Objection; POIN objection00image objection00palette
+waitFrame
+waitFrame
+waitFrame
+terminatorFrame
+
+ALIGN 4
+objection00image:
+#incext Png2Dmp "Objection.png"
+
+ALIGN 4
+objection00palette:
+#incext Png2Dmp "Objection.png" --palette-only
+

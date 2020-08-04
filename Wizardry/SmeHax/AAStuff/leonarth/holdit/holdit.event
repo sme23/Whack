@@ -1,0 +1,95 @@
+ALIGN 4
+
+holditProc:
+_6C_CALL_ROUTINE(HoldIt_Setup|1)
+_6C_LOOP_ROUTINE(HoldIt_LoadFrames|1)
+_6C_CALL_ROUTINE(0x21668|1)
+_6C_END
+
+ALIGN 4
+
+HoldIt_LoadFrames:
+#incbin "looproutine.dmp"
+
+ALIGN 4
+
+HoldIt_Setup:
+#incbin "setup.dmp"
+POIN holditAnimation
+
+ALIGN 4
+
+showHoldIt:
+#incbin "startProc.dmp"
+POIN holditProc
+
+ALIGN 4
+
+//WIDTH * HEIGHT must not be bigger than 372
+//edit the SHORT value to add sound effects
+holditAnimation:
+BYTE 21 14; SHORT SFX_Objection; POIN holdit00image holdit00palette
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+waitFrame
+terminatorFrame
+
+ALIGN 4
+holdit00image:
+#incext Png2Dmp "HoldIt.png"
+
+ALIGN 4
+holdit00palette:
+#incext Png2Dmp "HoldIt.png" --palette-only
+

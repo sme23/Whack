@@ -1,0 +1,41 @@
+
+
+takethatProc:
+_6C_CALL_ROUTINE(TakeThat_Setup|1)
+_6C_LOOP_ROUTINE(TakeThat_LoadFrames|1)
+_6C_CALL_ROUTINE(0x21668|1)
+_6C_END
+
+ALIGN 4
+
+TakeThat_LoadFrames:
+#incbin "looproutine.dmp"
+ALIGN 4
+
+TakeThat_Setup:
+#incbin "setup.dmp"
+POIN takethatAnimation
+
+showTakeThat:
+#incbin "startProc.dmp"
+POIN takethatProc
+
+ALIGN 4
+
+//WIDTH * HEIGHT must not be bigger than 372
+//edit the SHORT value to add sound effects
+takethatAnimation:
+BYTE 21 14; SHORT SFX_Objection; POIN takethat00image takethat00palette
+waitFrame
+waitFrame
+waitFrame
+terminatorFrame
+
+ALIGN 4
+takethat00image:
+#incext Png2Dmp "TakeThat.png"
+
+ALIGN 4
+takethat00palette:
+#incext Png2Dmp "TakeThat.png" --palette-only
+
