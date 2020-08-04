@@ -97,7 +97,9 @@ UNIT Forsyth 0 0 Level(1,NPC,0) [8,15] 0 0 1 REDA8R14 NoItems NeverMoveAI
 UNIT
 
 BeginningScene:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 LOAD1 0 CourtroomStartGroup
 ENUN
 SetBackground(BlankBG)
@@ -109,33 +111,47 @@ TEXTEND
 
 MUSC CourtroomLobby
 SetBackground(AA_Lobby)
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAScene1Talk1)
 GiveItem(Newspaper,Alm)
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAScene1Talk2)
 SetBackground(BlankBG)
 STAL 40
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAScene1Talk3)
 SetBackground(AA_Lobby)
 STAL 40
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAScene1Talk4)
 EndConvo
 MUSC 0x7FFF
 
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 SVAL sB Coords(0xFFFF,95)
 SOLOTEXTBOXSTART
 TEXTSHOW AAScene2OpeningText
 TEXTEND
 REMA
 MUSC Trial
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAScene2Talk1)
 GiveItem(MurderKnife,Alm)
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 TEXTSTART
 TEXTSHOW AAScene2Talk2
 TEXTEND
@@ -146,13 +162,19 @@ TEXTEND
 REMA
 
 MUSC Testimony
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1)
 MUSC 0x7FFF
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAScene3Talk1)
 GiveItem(AutopsyReport,Alm)
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAScene3Talk2)
 
 LOAD1 0 Testimony1StatementGroup
@@ -167,7 +189,7 @@ ENUT Testimony6ConsultFlag
 ENUT Testimony7ConsultFlag
 
 SetTestimony(0)
-
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -180,7 +202,9 @@ UNIT
 
 
 CrossExaminationTutorialEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 TEXTSTART
 TEXTSHOW AACrossExaminationTutorial1
 TEXTEND
@@ -199,6 +223,7 @@ CURE
 TEXTCONT
 TEXTEND
 REMA
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -229,37 +254,52 @@ SetPresentEvent(0,3,PresentMenu1NoCorrectAnswer)
 ALIGN 4
 TestimonyIncorrectPresentEvent:
 ShowObjection
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAIncorrectPresent)
+MakeSuspendSave
 NoFade
 ENDA
 
 
 ALIGN 4
 Testimony1Statement1HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Statement1)
+MakeSuspendSave
 NoFade
 ENDA
 
 ALIGN 4
 Testimony1Statement2HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Statement2)
+MakeSuspendSave
 NoFade
 ENDA
 
 ALIGN 4
 Testimony1Statement3HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Statement3)
+MakeSuspendSave
 NoFade
 ENDA
 
 ALIGN 4
 Testimony1Statement4HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Statement4)
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -267,43 +307,58 @@ ENDA
 ALIGN 4
 Testimony1Statement1PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Press1)
 ENUT Testimony1PressFlag1
+MakeSuspendSave
 NoFade
 ENDA
 
 ALIGN 4
 Testimony1Statement2PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Press2)
 ENUT Testimony1PressFlag2
+MakeSuspendSave
 NoFade
 ENDA
 
 ALIGN 4
 Testimony1Statement3PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Press3)
 ENUT Testimony1PressFlag3
+MakeSuspendSave
 NoFade
 ENDA
 
 ALIGN 4
 Testimony1Statement4PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Press4)
 ENUT Testimony1PressFlag4
+MakeSuspendSave
 NoFade
 ENDA
 
 Testimony1ConsultEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony1Consult)
 ENUF Testimony1ConsultFlag
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -328,7 +383,9 @@ BEQ 2 s0 sC
 
 //do the things here
 MUSC 0x7FFF
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 TEXTSTART
 TEXTSHOW AAPostTestimony1Scene1
 TEXTEND
@@ -339,22 +396,38 @@ REMA
 
 SVAL s1 1
 BNE 10 s1 sC
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAPostTestimony1Scene2Yes1)
 MUSC 0x7FFF
 ShowObjection
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAPostTestimony1Scene2Yes2)
 ShowObjection
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAPostTestimony1Scene2Yes3)
 GOTO 11
 
 LABEL 10
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAPostTestimony1Scene2No1)
 MUSC 0x7FFF
 ShowObjection
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAPostTestimony1Scene2No2)
 ShowObjection
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAPostTestimony1Scene2No3)
 
 LABEL 11
@@ -370,15 +443,21 @@ MUSC Trial
 
 LOAD1 0 KliffGroup
 ENUN
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Begin)
 
 MUSC Testimony
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2All)
 
 MUSC 0x7FFF
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AAPostTestimony2Scene1)
 
 LOAD1 0 Testimony2StatementsGroup
@@ -392,6 +471,7 @@ GOTO 3
 LABEL 2
 ENUF Testimony1AllPressFlag
 LABEL 3
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -424,60 +504,86 @@ SetPresentEvent(1,4,PresentMenu1Testimony2Answer)
 
 ALIGN 4
 Testimony2ConsultEvent1:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Consult1)
 ENUF Testimony2ConsultFlag1
+MakeSuspendSave
 NoFade
 ENDA
 
 ALIGN 4
 Testimony2ConsultEvent2:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Consult2)
 ENUF Testimony2ConsultFlag2
+MakeSuspendSave
+NoFade
 ENDA
 
 Testimony2Statement1HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Statement1)
+MakeSuspendSave
 NoFade
 ENDA
 
 Testimony2Statement2HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Statement2)
 NoFade
 ENDA
 
 Testimony2Statement3HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Statement3)
+MakeSuspendSave
 NoFade
 ENDA
 
 Testimony2Statement4HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Statement4)
+MakeSuspendSave
 NoFade
 ENDA
 
 Testimony2Statement5HearEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Statement5)
+MakeSuspendSave
 NoFade
 ENDA
 
 
 Testimony2Statement1PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Press1)
+MakeSuspendSave
 NoFade
 ENDA
 
 Testimony2Statement2PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Press2)
 
 SVAL s1 1
@@ -500,6 +606,7 @@ LABEL 1
 Text(AATestimony2Press2No)
 
 LABEL 2
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -510,22 +617,31 @@ UNIT
 
 Testimony2Statement3PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Press3)
+MakeSuspendSave
 NoFade
 ENDA
 
 Testimony2Statement4PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Press4)
+MakeSuspendSave
 NoFade
 ENDA
 
 Testimony2Statement5PressEvent:
 ShowHoldIt
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2Press5)
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -533,17 +649,22 @@ ENDA
 
 ALIGN 4
 PresentMenu1NoCorrectAnswer:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 SVAL s1 PresentMenu1|IsPointer
 ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
 //all answers are wrong so we uncritically call an event for that case
 CALL TestimonyIncorrectPresentEvent
+MakeSuspendSave
 NoFade
 ENDA
 
 ALIGN 4
 PresentMenu1Testimony2Answer:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 SVAL s1 PresentMenu1|IsPointer
 ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
 //correct answer is 0
@@ -555,6 +676,7 @@ LABEL 1
 //otherwise you got it wrong
 CALL TestimonyIncorrectPresentEvent
 LABEL 2
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -563,6 +685,9 @@ ALIGN 4
 Testimony2CorrectPresentEvent:
 MUSC 0x7FFF
 ShowObjection
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
 TEXTSTART
 TEXTSHOW AATestimony2PresentCorrect
 TEXTEND
@@ -590,6 +715,7 @@ CLEAN
 TEXTCONT
 TEXTEND
 
+MakeSuspendSave
 NoFade
 ENDA
 
@@ -597,7 +723,9 @@ ENDA
 
 ALIGN 4
 ToBeContinuedSaveEvent:
+#ifndef __DEBUG__
 EVBIT_MODIFY 4
+#endif // __DEBUG__
 MUSC ToBeContinued
 Text(AA_ToBeContinuedSavePrompt)
 SVAL 1 1
