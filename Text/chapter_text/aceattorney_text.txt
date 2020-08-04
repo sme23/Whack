@@ -323,16 +323,19 @@ I'm ready to announce my verdict.[A]
 (This is bad...)[A][N]
 (At this rate, Tobin's[N]
 going to be found guilty!)[A][N]
-(Should I raise an objection?)[N][ToggleMouthMove]
+(Should I raise an objection?)[N] [ToggleMouthMove]
 [Yes][X]
 
-## AAPostTestimony1Scene2No
+## AAPostTestimony1Scene2No1
 [OpenMidRight][LoadAlm][ToggleMouthMove]
 (It's no good...)[A][N]
 (I can't think of[N]
-anything to object to!)[A][ToggleMouthMove]
-[LoadOverworldFaces] #Objection!
-[ClearFace][OpenMidLeft][LoadBerkut]
+anything to object to!)[A][ToggleMouthMove][CloseSpeechSlow]
+# Objection!
+[X]
+
+## AAPostTestimony1Scene2No2
+[OpenMidLeft][LoadBerkut]
 [.......]
 [ClearFace][OpenMidRight][LoadAlm]
 [.......]
@@ -349,8 +352,11 @@ We still can't definitively[N]
 place Tobin at the scene![A]
 [ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
 (Celica...!)[N]
-(You're right!)[A][ToggleMouthMove]
-[LoadOverworldFaces] #Objection!
+(You're right!)[A][ToggleMouthMove][CloseSpeechSlow]
+# Objection!
+[X]
+
+## AAPostTestimony1Scene2No3
 [ClearFace][OpenMidLeft][LoadBerkut]
 Do you seriously think I[N]
 didn't account for that?[A][N]
@@ -361,20 +367,27 @@ Very well then.[A][N]
 Bailiff! Bring in the witness![A][X]
 
 
-## AAPostTestimony1Scene2Yes
+## AAPostTestimony1Scene2Yes1
 [OpenMidRight][LoadAlm][ToggleMouthMove]
 (There's one thing that's[N]
 been bothering me...)[A][N]
 (I should raise an[N]
-objection to [ToggleRed]that[ToggleRed]!)[A][N][ToggleMouthMove]
-[LoadOverworldFaces] #Objection!
+objection to [ToggleRed]that[ToggleRed]!)[A][N][ToggleMouthMove][CloseSpeechSlow]
+# Objection!
+[X]
+
+## AAPostTestimony1Scene2Yes2
+[OpenMidRight][LoadAlm][ToggleMouthMove]
 Your honor![A][N]
 The prosecution has not placed[N]
 Tobin at the scene of the crime![A][N]
 His fingerprints could have[N]
-been from another point in time![A]
-[LoadOverworldFaces] #Objection!
-[ClearFace][OpenMidLeft][LoadBerkut]
+been from another point in time![A][CloseSpeechSlow]
+# Objection!
+[X]
+
+## AAPostTestimony1Scene2Yes3
+[OpenMidLeft][LoadBerkut]
 Do you seriously think I[N]
 didn't account for that?[A][N]
 Your honor, the prosecution would[N]
@@ -572,6 +585,7 @@ Prosecution, is that true?[A]
 Yes, it's true.[A][N]
 The time of death and the time the[N]
 victim heard a scream are incongruent.[A][N][ToggleSmile]
+[LoadOverworldFaces]
 However, that's not the only way you[N]
 know the defendant is guilty, is it?[A][ToggleSmile]
 [ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
@@ -711,5 +725,9 @@ I am going to call a[N]
 [X]
 
 
+
+## AA_ToBeContinuedSavePrompt
+Would you like to save the game?[A][N]
+[Yes][X]
 
 

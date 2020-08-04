@@ -18,35 +18,35 @@ ldr	r3,=#0x8001220	@FillBgMap
 @special effects
 
 @coefficients?
-mov	r0,#1
-mov	r1,#0x09
-mov	r2,#0x09
-ldr	r3,=#0x8001EA0
-mov	lr,r3
-mov	r3,#0
-.short	0xF800
+@mov	r0,#1
+@mov	r1,#0x09
+@mov	r2,#0x09
+@ldr	r3,=#0x8001EA0
+@mov	lr,r3
+@mov	r3,#0
+@.short	0xF800
 
 @set bg 0 for alpha?
-mov	r0,#0
-str	r0,[sp]
-mov	r0,#1
-mov	r1,#0
-mov	r2,#0
-ldr	r3,=#0x8001ED0
-mov	lr,r3
-mov	r3,#0
-.short	0xF800
+@mov	r0,#0
+@str	r0,[sp]
+@mov	r0,#1
+@mov	r1,#0
+@mov	r2,#0
+@ldr	r3,=#0x8001ED0
+@mov	lr,r3
+@mov	r3,#0
+@.short	0xF800
 
 @set the others to blend with?
-mov	r0,#1
-str	r0,[sp]
-mov	r0,#0
-mov	r1,#1
-mov	r2,#1
-ldr	r3,=#0x8001F0C
-mov	lr,r3
-mov	r3,#1
-.short	0xF800
+@mov	r0,#1
+@str	r0,[sp]
+@mov	r0,#0
+@mov	r1,#1
+@mov	r2,#1
+@ldr	r3,=#0x8001F0C
+@mov	lr,r3
+@mov	r3,#1
+@.short	0xF800
 
 ldr	r0,=#0x300309E
 ldrh	r1,[r0]

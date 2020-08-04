@@ -15,10 +15,6 @@ Boss Rush[X]
 #first text ID in the free block
 Learned  [X]
 
-#include "statscreen_text.txt"
-
-#include "unitmenu_text.txt"
-
 #0xd4c LikesText
 #first text ID in the free block
 Likes:[X]
@@ -284,7 +280,9 @@ A headpiece of Clair's.[N]
 Found by Tobin at the[N]
 scene of the crime.[X]
 
+#include "statscreen_text.txt"
 
+#include "unitmenu_text.txt"
 
 #include "char_text.txt"
 

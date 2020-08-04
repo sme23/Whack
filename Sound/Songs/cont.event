@@ -1,0 +1,283 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	cont_grp  MusicVoices
+	#define	cont_pri  0
+	#define	cont_rev  0
+	#define	cont_mvl  75
+	#define	cont_key  0
+	#define	cont_tbs  1
+	#define	cont_exg  0
+	#define	cont_cmp  1
+
+	// .rodata
+	//	cont
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+cont_1:
+	BYTE	KEYSH   cont_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   180*cont_tbs/2
+	BYTE		VOICE   24
+	BYTE		VOL     89*cont_mvl/mxv
+	BYTE		MOD     0
+	BYTE	W01
+	BYTE		PAN     c_v+0
+	BYTE	W44
+	BYTE	W03
+	BYTE		BEND    c_v-64
+	BYTE		N24     En3   v120
+	BYTE	W02
+	BYTE		BEND    c_v-32
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W20
+	BYTE		N12     Cn3 
+	BYTE	W12
+	BYTE		N06     Dn3 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		N24     Gn3 
+	BYTE	W24
+	BYTE		N56     En3 
+	BYTE	W60
+// 002   ----------------------------------------
+	BYTE	W48
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+cont_2:
+	BYTE	KEYSH   cont_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   80
+	BYTE	W05
+	BYTE		MOD     0
+	BYTE	W01
+	BYTE		VOL     40*cont_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W42
+	BYTE		N30     An2   v080
+	BYTE	W30
+	BYTE		N03     An2   v040
+	BYTE	W03
+	BYTE		        An2   v020
+	BYTE	W03
+	BYTE		N42     Bn2   v080
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W30
+	BYTE		N03     Bn2   v040
+	BYTE	W03
+	BYTE		        Bn2   v020
+	BYTE	W03
+	BYTE		N56     An2   v080
+	BYTE	W60
+// 002   ----------------------------------------
+	BYTE	W48
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+cont_3:
+	BYTE	KEYSH   cont_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   80
+	BYTE	W10
+	BYTE		MOD     0
+	BYTE	W01
+	BYTE		VOL     40*cont_mvl/mxv
+	BYTE		PAN     c_v+32
+	BYTE	W36
+	BYTE	W01
+	BYTE		N30     Cn3   v080
+	BYTE	W30
+	BYTE		N03     Cn3   v040
+	BYTE	W03
+	BYTE		        Cn3   v020
+	BYTE	W03
+	BYTE		N42     Dn3   v080
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W30
+	BYTE		N03     Dn3   v040
+	BYTE	W03
+	BYTE		        Dn3   v020
+	BYTE	W03
+	BYTE		N56     Gn3   v080
+	BYTE	W60
+// 002   ----------------------------------------
+	BYTE	W48
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+cont_4:
+	BYTE	KEYSH   cont_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   36
+	BYTE	W15
+	BYTE		MOD     0
+	BYTE	W01
+	BYTE		VOL     80*cont_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W01
+	BYTE		BENDR   12
+	BYTE	W30
+	BYTE	W01
+	BYTE		N30     Fn3   v120
+	BYTE	W36
+	BYTE		N48     En3 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W36
+	BYTE		N56     Fn3 
+	BYTE	W60
+// 002   ----------------------------------------
+	BYTE	W48
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+cont_5:
+	BYTE	KEYSH   cont_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   94
+	BYTE	W22
+	BYTE		MOD     0
+	BYTE		VOL     40*cont_mvl/mxv
+	BYTE	W01
+	BYTE		PAN     c_v+0
+	BYTE	W48
+	BYTE	W01
+	BYTE		VOL     0*cont_mvl/mxv
+	BYTE		TIE     Gn3   v080
+	BYTE		TIE     Cn4 
+	BYTE	W24
+// 001   ----------------------------------------
+	BYTE	W06
+	BYTE		VOL     1*cont_mvl/mxv
+	BYTE	W10
+	BYTE		        2*cont_mvl/mxv
+	BYTE	W06
+	BYTE		        3*cont_mvl/mxv
+	BYTE	W06
+	BYTE		        4*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        5*cont_mvl/mxv
+	BYTE	W04
+	BYTE		        6*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        7*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        8*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        9*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        10*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        11*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        13*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        15*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        16*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        18*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        21*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        23*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        26*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        30*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        33*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        37*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        42*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        47*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        52*cont_mvl/mxv
+	BYTE	W02
+	BYTE		        60*cont_mvl/mxv
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE	W01
+	BYTE		        58*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        55*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        53*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        50*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        48*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        45*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        43*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        40*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        38*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        35*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        33*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        30*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        28*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        25*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        23*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        20*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        18*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        15*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        13*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        10*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        8*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        5*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        3*cont_mvl/mxv
+	BYTE	W01
+	BYTE		        0*cont_mvl/mxv
+	BYTE	W24
+	BYTE		EOT     Gn3 
+	BYTE		        Cn4 
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+cont:
+	BYTE	5	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	cont_pri	// Priority
+	BYTE	cont_rev	// Reverb.
+
+	POIN2	cont_grp
+
+	POIN2	cont_1
+	POIN2	cont_2
+	POIN2	cont_3
+	POIN2	cont_4
+	POIN2	cont_5
+
+	

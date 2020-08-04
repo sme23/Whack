@@ -58,6 +58,11 @@ SongTable(Testimony,testimony,MapMusicGroup)
 SongTable(Trial,trial,MapMusicGroup)
 }
 
+{
+#include "Songs/cont.event"
+SongTable(ToBeContinued,cont,MapMusicGroup)
+}
+
 
 {
 #include "SFX/sfx-damage.event"

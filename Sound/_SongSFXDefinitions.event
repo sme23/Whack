@@ -24,16 +24,18 @@
 #define SFX_Objection 0x63		//72
 #define SFX_Realization 0x64	//17
 
+#define MapleLeafRag 0xAD
+#define MG1Outside 0xB2
+#define ThemeOfTara 0xC0
+#define TreasureTroveCove 0x94
+
 #define Allegro2001 0x92
 #define CourtroomLobby 0x93
-#define TreasureTroveCove 0x94
 #define LogicAndTrick 0xA8
 #define LyingColdly 0xA9
-#define MapleLeafRag 0xAD
 #define Objection2001 0xAE
-#define MG1Outside 0xB2
 #define Suspense 0xBB
-#define ThemeOfTara 0xC0
 #define Testimony 0xC1
 #define Trial 0xC2
+#define ToBeContinued 0xC3
 

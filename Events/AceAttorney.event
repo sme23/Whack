@@ -86,7 +86,7 @@ ENDTRAP
 ALIGN 4
 
 CourtroomStartGroup:
-UNIT Alm 0 0 Level(1,Ally,0) [14,13] 0 0 0 1 NoItems NoAI
+UNIT Alm 0 0 Level(1,Ally,0) [14,13] 0 0 0 1 NoItems NeverMoveAI
 UNIT Celica 0 0 Level(1,NPC,0) [14,12] 0 0 0 1 NoItems NeverMoveAI
 UNIT Berkut 0 0 Level(1,Enemy,0) [1,13] 0 0 0 1 NoItems NeverMoveAI
 UNIT Nomah 0 0 Level(1,NPC,0) [7,9] 0 0 0 1 NoItems NeverMoveAI
@@ -309,7 +309,7 @@ ENDA
 
 ALIGN 4
 KliffGroup:
-UNIT Kliff Mage 0 Level(1,NPC,0) [8,15] 0 0 1 REDA8R14 NoItems NoAI
+UNIT Kliff Mage 0 Level(1,NPC,0) [8,15] 0 0 1 REDA8R14 NoItems NeverMoveAI
 UNIT
 
 
@@ -340,42 +340,24 @@ REMA
 SVAL s1 1
 BNE 10 s1 sC
 EVBIT_MODIFY 4
-TEXTSTART
-TEXTSHOW AAPostTestimony1Scene2Yes
-TEXTEND
+Text(AAPostTestimony1Scene2Yes1)
 MUSC 0x7FFF
-SOUN SFX_Objection
-//Objection!
-TEXTCONT
-TEXTEND
-SOUN SFX_Objection
-//Objection!
-TEXTCONT
-TEXTEND
-
-REMA
-
+ShowObjection
+Text(AAPostTestimony1Scene2Yes2)
+ShowObjection
+Text(AAPostTestimony1Scene2Yes3)
 GOTO 11
 
 LABEL 10
 EVBIT_MODIFY 4
-TEXTSTART
-TEXTSHOW AAPostTestimony1Scene2No
-TEXTEND
+Text(AAPostTestimony1Scene2No1)
 MUSC 0x7FFF
-SOUN SFX_Objection
-//Objection!
-TEXTCONT
-TEXTEND
-SOUN SFX_Objection
-//Objection!
-TEXTCONT
-TEXTEND
-
-REMA
+ShowObjection
+Text(AAPostTestimony1Scene2No2)
+ShowObjection
+Text(AAPostTestimony1Scene2No3)
 
 LABEL 11
-
 FADI 10
 DISA Forsyth
 DISA Statement1
@@ -415,10 +397,10 @@ ENDA
 
 ALIGN 4
 Testimony2StatementsGroup:
-UNIT Statement1 Mage 0 Level(1,NPC,0) [6,11] 0 0 0 1 NoItems NoAI
-UNIT Statement2 Mage 0 Level(1,NPC,0) [7,11] 0 0 0 1 NoItems NoAI
-UNIT Statement3 Mage 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NoAI
-UNIT Statement4 Mage 0 Level(1,NPC,0) [9,11] 0 0 0 1 NoItems NoAI
+UNIT Statement1 Mage 0 Level(1,NPC,0) [6,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement2 Mage 0 Level(1,NPC,0) [7,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement3 Mage 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement4 Mage 0 Level(1,NPC,0) [9,11] 0 0 0 1 NoItems NeverMoveAI
 UNIT
 
 
@@ -523,7 +505,7 @@ ENDA
 
 
 Testimony2ExtraStatementGroup:
-UNIT Statement5 Mage 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NoAI
+UNIT Statement5 Mage 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NeverMoveAI
 UNIT
 
 Testimony2Statement3PressEvent:
@@ -577,9 +559,52 @@ NoFade
 ENDA
 
 
-
 ALIGN 4
 Testimony2CorrectPresentEvent:
+MUSC 0x7FFF
+ShowObjection
+TEXTSTART
+TEXTSHOW AATestimony2PresentCorrect
+TEXTEND
+MUSC Objection2001
+TEXTCONT
+TEXTEND
+SOUN SFX_Gallery
+STAL 20
+SOUN SFX_Gavel
+SetBackground(AA_Hammer)
+STAL 10
+CLEAN
+TEXTCONT
+TEXTEND
+MUSC 0x7FFF
+SOUN SFX_Lightbulb
+TEXTCONT
+TEXTEND
+SOUN SFX_Gallery
+STAL 20
+SOUN SFX_Gavel
+SetBackground(AA_Hammer)
+STAL 10
+CLEAN
+TEXTCONT
+TEXTEND
+
 NoFade
 ENDA
+
+
+
+ALIGN 4
+ToBeContinuedSaveEvent:
+EVBIT_MODIFY 4
+MUSC ToBeContinued
+Text(AA_ToBeContinuedSavePrompt)
+SVAL 1 1
+BNE 776 sC s1
+MakeSuspendSave
+LABEL 776
+NoFade
+ENDA
+
 

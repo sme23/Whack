@@ -36,7 +36,9 @@
 #define FadeOutMusic "MUSCMID 0x7FFF"
 #define ScrollBoxText(textID) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textID; TEXTEND; REMA"
 #define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
+#define MakeSuspendSave "ASMC 0xB5D5D"
 //End of useful macros
+
 
 #define Bowgun (GoldGem+1)
 
