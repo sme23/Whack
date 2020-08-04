@@ -46,6 +46,9 @@
 .equ EventStart,0x800D07C
 .equ VanillaTalkUsability,0x8023C80
 .equ MemorySlot2,0x30004C0
+.equ ClearActiveUnit,0x801d75c  
+.equ gActiveUnit, 0x3004E50
+
 
 @we could use flags for this but that's boring
 @the first entry of the debuff table always goes unused and is saved through suspendso we can poke at there
@@ -153,16 +156,22 @@ bx r1
 .ltorg
 .align
 
-
 PressEffect:
-push {r14}
+push {r4,r14}
+@call Wait effect lol
+ldr r0,=#0x8022739
+mov r14,r0
+.short 0xF800
+
 @get press event ptr for current testimony & statement
 ldr r0,=PressEventPointerTable
 bl GetRelevantEventPointer
 @run event
 mov r1,#2
 blh EventStart
+
 mov r0,#0x94
+pop {r4}
 pop {r1}
 bx r1
 
@@ -251,6 +260,56 @@ bx r1
 
 
 AlmNeverStopsMoving:
+bx r14
+
+.ltorg
+.align
+
+
+.global StopTheThingAAAAA
+.type StopTheThingAAAAA, %function
+
+StopTheThingAAAAA:
+@make the active unit visible
+push {r4,r14}
+ldr r0,=gActiveUnit
+ldr r4,[r0]
+
+ldr r1,[r4,#0xC]
+mov r0,#0x4B
+neg r0,r0
+and r1,r0
+str r1,[r4,#0xC]
+
+pop {r4}
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+.global TheOTherStopAAAAAAAAAAA
+.type TheOTherStopAAAAAAAAAAA, %function
+
+TheOTherStopAAAAAAAAAAA:
+@make the active unit invisible again
+push {r4,r14}
+ldr r0,=gActiveUnit
+ldr r4,[r0]
+
+ldr r1,[r4,#0xC]
+mov r0,#0x4B
+orr r1,r0
+str r1,[r4,#0xC]
+
+pop {r4}
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
 
 
 

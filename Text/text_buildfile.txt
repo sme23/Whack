@@ -221,7 +221,7 @@ have enough gold.[N]
 
 
 ## MorshuShopCannotBuyText
-Sorry bud, I can't give credit![A][2NL]
+Sorry, bud. I can't give credit![A][2NL]
 Come back when you're[N]
 a little, mmm... richer![A][X]
 
