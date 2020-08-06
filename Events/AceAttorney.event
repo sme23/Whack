@@ -371,6 +371,10 @@ UNIT Kliff Mage 0 Level(1,NPC,0) [8,15] 0 0 1 REDA8R14 NoItems NeverMoveAI
 UNIT
 
 
+ALIGN 4
+FuckItletsTryThisGroup:
+UNIT Gray Mercenary 0 Level(1,NPC,0) [0,0] 0 0 0 1 NoItems NeverMoveAI
+UNIT
 
 ALIGN 4
 AdvancePastFirstTestimonyEvent:
@@ -385,11 +389,12 @@ CHECK_EVENTID Testimony1PressFlag4
 BEQ 2 s0 sC
 
 //do the things here
-//FADI 10
+FADI 10
 //move alm back to spawn position [14,13] & stop active unit moving
 MOVE -1 Alm [14,13]
-ASMC 0x801d75c|1
-
+LOAD1 0 FuckItletsTryThisGroup
+ENUN
+SET_ACTIVE Gray
 
 FADU 10
 MUSC 0x7FFF
@@ -482,7 +487,9 @@ LABEL 2
 ENUF Testimony1AllPressFlag
 LABEL 3
 MakeSuspendSave
-NoFade
+MUSC Allegro2001
+SET_ACTIVE Alm
+DISA Gray
 ENDB
 
 ALIGN 4
