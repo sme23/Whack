@@ -68,9 +68,9 @@ bx r14
 
 SetCurrentTestimonyASMC:
 ldr r1,=MemorySlot2
-ldrb r1,[r1]
+ldr r1,[r1]
 ldr r0,=#0x203F106
-strb r1,[r1]
+strb r1,[r0]
 bx r14
 
 .ltorg
