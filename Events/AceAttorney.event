@@ -56,7 +56,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-AFEV Testimony1AllPressFlag AdvancePastFirstTestimonyEvent 0
+//AFEV Testimony1AllPressFlag AdvancePastFirstTestimonyEvent 0
 END_MAIN
 
 Dunno1:
@@ -312,6 +312,7 @@ EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Press1)
 ENUT Testimony1PressFlag1
+CALL AdvancePastFirstTestimonyEvent
 MakeSuspendSave
 NoFade
 ENDA
@@ -324,6 +325,7 @@ EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Press2)
 ENUT Testimony1PressFlag2
+CALL AdvancePastFirstTestimonyEvent
 MakeSuspendSave
 NoFade
 ENDA
@@ -336,6 +338,7 @@ EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Press3)
 ENUT Testimony1PressFlag3
+CALL AdvancePastFirstTestimonyEvent
 MakeSuspendSave
 NoFade
 ENDA
@@ -348,6 +351,7 @@ EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Press4)
 ENUT Testimony1PressFlag4
+CALL AdvancePastFirstTestimonyEvent
 MakeSuspendSave
 NoFade
 ENDA
@@ -358,7 +362,6 @@ EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Consult)
 ENUF Testimony1ConsultFlag
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -382,6 +385,13 @@ CHECK_EVENTID Testimony1PressFlag4
 BEQ 2 s0 sC
 
 //do the things here
+//FADI 10
+//move alm back to spawn position [14,13] & stop active unit moving
+MOVE -1 Alm [14,13]
+ASMC 0x801d75c|1
+
+
+FADU 10
 MUSC 0x7FFF
 #ifndef __DEBUG__
 EVBIT_MODIFY 4
@@ -473,7 +483,7 @@ ENUF Testimony1AllPressFlag
 LABEL 3
 MakeSuspendSave
 NoFade
-ENDA
+ENDB
 
 ALIGN 4
 Testimony2StatementsGroup:
@@ -509,7 +519,6 @@ EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony2Consult1)
 ENUF Testimony2ConsultFlag1
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -520,7 +529,6 @@ EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony2Consult2)
 ENUF Testimony2ConsultFlag2
-MakeSuspendSave
 NoFade
 ENDA
 
