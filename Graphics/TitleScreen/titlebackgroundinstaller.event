@@ -12,7 +12,7 @@
 	
 	titlebackgroundpalette:
 	//#incext png2dmp "titlebackgroundimage.png" --palette-only
-	#incbin "titlebackgroundimage_pal.dmp"
+	#incbin "titlebackgroundimage.pal.bin"
 	
 	ALIGN 4
 	
