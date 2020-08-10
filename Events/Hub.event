@@ -67,7 +67,7 @@ BeginningScene:
 
 //ok so recursive event calls are a bad idea because there's only room for like 8 events in the queue for that
 //time to restructure everything ig
-
+MNC2 MinesweeperChID
 FADU 10
 
 EVBIT_MODIFY 4
@@ -459,7 +459,7 @@ ScrollBoxText(HubMenuAceAttorneyConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
-MNC2 AceAttorneyChID
+MNC2 MinesweeperChID
 NoFade
 ENDB
 

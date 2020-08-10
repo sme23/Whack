@@ -23,4 +23,6 @@
 #include "TrapRework/TrapRework.event"
 #include "StatusExpansion/StatusExpansion.event"
 
+
 #include "Swarp/Swarp.event"
+#include "Minesweeper/Minesweeper.event"

@@ -8,6 +8,15 @@
 .global MS_GetTileValue
 .type MS_GetTileValue, %function
 
+.global MS_UncoverTileAtActiveUnitPos
+.type MS_UncoverTileAtActiveUnitPos, %function
+
+.global MS_UncoverTileAt
+.type MS_UncoverTileAt, %function
+
+.global MS_CommandUsability
+.type MS_CommandUsability, %function
+
 
 .macro blh to,reg=r3
 	push {\reg}
@@ -22,6 +31,10 @@
 .equ MapWidth, 0x202E4D4
 .equ MapHeight, 0x202E4D6
 .equ GetTrapAt, 0x802e1f0
+.equ gMapRawTiles, 0x859a9d4
+.equ gActiveUnit, 0x3004e50
+.equ CallEventEngine, 0x800d07C
+.equ gChapterData, 0x202bcf0
 
 MS_InitializeBombsASMC:
 push {r4-r7,r14}
@@ -183,6 +196,171 @@ bx r1
 .ltorg
 .align
 
+
+MS_UncoverTileAtActiveUnitPos: @this will be called as a unit menu command effect
+push {r14}
+
+@find the active unit pos
+ldr r0,=gActiveUnit
+ldr r0,[r0]
+ldrb r4,[r0,#0x10] @x coord
+ldrb r5,[r0,#0x11] @y coord
+
+bl MS_UncoverTileAt
+
+mov r0,#0x94
+pop {r1}
+bx r1
+
+.ltorg
+.align
+
+
+
+MS_UncoverTileAt:
+push {r4-r7,r14}
+
+mov r4,r0 @x coord
+mov r5,r1 @y coord
+
+@use these to index the tile map
+@we can't just use teq's outline for this verbatim
+@since tile map entries are 2 bytes instead of 1
+@same general idea tho
+
+ldr r2,=gMapRawTiles
+ldr r2,[r2]
+lsl r1,r5,#2 @*4
+add r2,r1
+ldr r2,[r2] @row pointer
+lsl r0,r4,#1 @*2
+add r2,r0
+
+@now let's hold onto this address for a bit
+mov r6,r2
+
+@is the value at this address anything other than the ID of the covered tile (0x0000)?
+ldrh r0,[r6]
+cmp r0,#0
+beq UncoverTile_GoBack
+
+@get the value of the tile
+mov r0,r4
+mov r1,r5
+bl MS_GetTileValue
+@if the value 0xFF?
+cmp r0,#0xFF
+beq UncoverTile_IsBomb
+@is the value 0?
+cmp r0,#0
+bne UncoverTile_DoTheUncovering
+@if so, then recursion :33333333333333
+
+mov r0,r4
+mov r1,r5
+sub r0,#1
+sub r1,#1
+bl MS_UncoverTileAt
+
+mov r0,r4
+mov r1,r5
+sub r1,#1
+bl MS_UncoverTileAt
+
+mov r0,r4
+mov r1,r5
+add r0,#1
+sub r1,#1
+bl MS_UncoverTileAt
+
+mov r0,r4
+mov r1,r5
+add r0,#1
+bl MS_UncoverTileAt
+
+mov r0,r4
+mov r1,r5
+add r0,#1
+add r1,#1
+bl MS_UncoverTileAt
+
+mov r0,r4
+mov r1,r5
+add r1,#1
+bl MS_UncoverTileAt
+
+mov r0,r4
+mov r1,r5
+sub r0,#1
+add r1,#1
+bl MS_UncoverTileAt
+
+mov r0,r4
+mov r1,r5
+sub r0,#1
+bl MS_UncoverTileAt
+
+@set current tile to 0x0004 and return
+mov r0,#4
+strh r0,[r6]
+b UncoverTile_GoBack
+
+UncoverTile_DoTheUncovering:
+@tile ID is 0x000C+(value*4)
+lsl r0,r0,#2 @*4
+mov r1,#0xC
+add r0,r1
+strh r0,[r6]
+b UncoverTile_GoBack
+
+UncoverTile_IsBomb:
+@first, uncover the tile
+mov r0,#0xC
+strh r0,[r6]
+
+
+
+@next, go boom
+ldr	r0,=CallEventEngine
+mov	lr, r0
+ldr	r0, =MinesweeperGoBoom
+mov	r1, #0x01
+.short	0xF800
+
+
+UncoverTile_GoBack:
+
+pop {r4-r7}
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+
+
+MS_CommandUsability:
+push {r14}
+@is current chapter ID correct?
+ldr r0,=gChapterData
+ldrb r0,[r0,#0xE]
+ldr r1,=MinesweeperChIDLink
+ldrb r1,[r1]
+cmp r0,r1
+bne Command_RetFalse
+mov r0,#1
+b Command_GoBack
+
+Command_RetFalse:
+mov r0,#3
+
+Command_GoBack:
+pop {r1}
+bx r1
+
+.ltorg
+.align
 
 
 
