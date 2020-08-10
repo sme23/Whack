@@ -271,7 +271,6 @@ Testimony1Statement1HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Statement1)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -281,7 +280,6 @@ Testimony1Statement2HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Statement2)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -291,7 +289,6 @@ Testimony1Statement3HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Statement3)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -301,7 +298,6 @@ Testimony1Statement4HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony1Statement4)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -546,7 +542,6 @@ Testimony2Statement1HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony2Statement1)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -563,7 +558,6 @@ Testimony2Statement3HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony2Statement3)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -572,7 +566,6 @@ Testimony2Statement4HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony2Statement4)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -581,7 +574,6 @@ Testimony2Statement5HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony2Statement5)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -805,17 +797,14 @@ Testimony3Statement1HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony3Statement1)
-MakeSuspendSave
 NoFade
 ENDA
-
 
 Testimony3Statement2HearEvent:
 #ifndef __DEBUG__
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony3Statement2)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -824,7 +813,6 @@ Testimony3Statement3HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony3Statement3)
-MakeSuspendSave
 NoFade
 ENDA
 
@@ -833,9 +821,9 @@ Testimony3Statement4HearEvent:
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 Text(AATestimony3Statement4)
-MakeSuspendSave
 NoFade
 ENDA
+
 
 Testimony3Statement1PressEvent:
 #ifndef __DEBUG__

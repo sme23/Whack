@@ -634,7 +634,13 @@ was on guard duty with Tobin.[A][X]
 
 ## AATestimony3Press1
 [OpenMidRight][LoadAlm]
-[X]
+Tobin was on guard duty too?[A]
+[ClearFace][OpenLeft][LoadKliff]
+Yeah. He drew the short straw.[A][N]
+[ClearFace][OpenMidRight][LoadAlm]
+I see[Beat][A][N]
+Where was he in[N]
+relation to you?[A][X]
 
 ## AATestimony3Statement2
 [OpenLeft][LoadKliff]
@@ -642,6 +648,10 @@ Tobin was supposed to be[N]
 in the other guard tower.[A][X]
 
 ## AATestimony3Press2
+[OpenMidRight][LoadAlm]
+"Supposed to be"?[A]
+[ClearFace][OpenLeft][LoadKliff]
+Yeah, but[Beat][A]
 [X]
 
 ## AATestimony3Statement3
@@ -651,7 +661,14 @@ couldn't see him there![A][X]
 
 ## AATestimony3Press3
 [OpenMidRight][LoadAlm]
-[X]
+There's on thing that's[N]
+been bothering me.[A][N]
+You were at the[N]
+scene of the time,[A][N]
+right when it happened.[A][N]
+Do you have an alibi for this?[A]
+[ClearFace][OpenLeft][LoadKliff]
+Of course![A][X]
 
 ## AATestimony3Statement4 
 [OpenLeft][LoadKliff]
@@ -660,7 +677,12 @@ stuck in my tower all night[Beat][A][X]
 
 ## AATestimony3Press4
 [OpenMidRight][LoadAlm]
-[X]
+So you never left[N]
+your tower?[A]
+[ClearFace][OpenLeft][LoadKliff]
+Not until morning, no.[A][N]
+By the time I came down,[N]
+they had already found the body.[A][X]
 
 
 ## AATestimony3Consult
