@@ -740,5 +740,21 @@ Court is adjourned![A]
 ## AA_ToBeContinuedSavePrompt
 Would you like to save the game?[N]
  [Yes][X]
+ 
+ 
+ 
+## AADemoHubGotoText
+Hello![A][N]
+This hack contains a[N]
+number of chapters.[A][N]
+In this demo version,[A][N]
+you will be taken directly[N]
+to the one on display,[A][N]
+[ToggleRed]Ace Attorney[ToggleRed].[A][N]
+Enjoy![A][X]
 
+
+## AADemoPostEndText
+You've reached the end of this demo.[A][N]
+Thanks for playing![A][X]
 

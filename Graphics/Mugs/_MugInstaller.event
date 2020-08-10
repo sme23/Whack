@@ -37,10 +37,36 @@ DaeinSoldierPortrait:
 
 
 
-//setMugEntry(AlmMug,AlmPortrait,3,5,3,3)
-//ALIGN 4
-//AlmPortrait:
-//#incext PortraitFormatter "alm.png"
+setMugEntry(AlmMug,AlmPortrait,3,8,3,6)
+ALIGN 4
+AlmPortrait:
+#incext PortraitFormatter "alm.png"
+
+setMugEntry(BerkutMug,BerkutPortrait,2,7,3,5)
+ALIGN 4
+BerkutPortrait:
+#incext PortraitFormatter "berkut.png"
+
+setMugEntry(TobinMug,TobinPortrait,4,6,4,4)
+ALIGN 4
+TobinPortrait:
+#incext PortraitFormatter "tobin.png"
+
+setMugEntry(CelicaMug,CelicaPortrait,6,6,5,4)
+ALIGN 4
+CelicaPortrait:
+#incext PortraitFormatter "celica.png"
+
+setMugEntry(NomahMug,NomahPortrait,4,6,4,4)
+ALIGN 4
+NomahPortrait:
+#incext PortraitFormatter "nomah.png"
+
+setMugEntry(ForsythMug,ForsythPortrait,3,7,3,4)
+ALIGN 4
+ForsythPortrait:
+#incext PortraitFormatter "forsyth.png"
+
 
 
 

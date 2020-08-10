@@ -52,6 +52,16 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+FADU 10
+CenterTutorialTextBox
+TUTORIALTEXTBOXSTART
+TEXTSHOW AADemoHubGotoText
+TEXTEND
+REMA
+MNC2 AceAttorneyChID
+NoFade
+ENDA
+
 //this is going to be a chapter select hub
 //referencing stan stuff we can do it with route split boxes
 //but should have variable text?
