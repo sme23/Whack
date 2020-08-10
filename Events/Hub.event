@@ -459,7 +459,7 @@ ScrollBoxText(HubMenuAceAttorneyConfirm)
 SVAL s1 1 //identifier for Yes
 BNE 0 s1 sC
 
-MNC2 MinesweeperChID
+MNC2 AceAttorneyChID
 NoFade
 ENDB
 

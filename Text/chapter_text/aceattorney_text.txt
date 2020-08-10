@@ -477,7 +477,7 @@ around 1:00 AM.[A]
 (Hmm...that sounds important.)[A][N]
 (Should I have it added[N]
 to his testimony?)[A][N][ToggleMouthMove]
-[Yes][X]
+ [Yes][X]
 
 ## AATestimony2Press2Yes
 [OpenMidRight][LoadAlm]
@@ -486,7 +486,7 @@ Please add it to your testimony![A][X]
 
 ## AATestimony2Press2No
 [OpenMidRight][LoadAlm][ToggleMouthMove]
-(No...it's probably nothing.[A][X]
+(No...it's probably nothing.)[A][X]
 
 
 
@@ -559,7 +559,7 @@ Maybe we should look over[N]
 the evidence once more.[A][X]
 
 
-## AATestimony2PresentCorrect
+## AATestimony2PresentCorrect1
 [OpenMidRight][LoadAlm]
 Kliff, you're definitely sure that[N]
 you heard the scream at 1:00 AM?[A]
@@ -572,7 +572,9 @@ The victim wasn't killed until at least 2:00!
 [LoadOverworldFaces][A]
 [ClearFace][OpenLeft][LoadKliff]
 WH-WH-WHAAAAAAAT!?[A][ClearFace]
-[LoadOverworldFaces] #chatter, gavel
+[X]
+
+## AATestimony2PresentCorrect2
 [OpenRight][LoadNomah]
 Order![....] Order![A][N]
 Prosecution, is that true?[A]
@@ -580,7 +582,7 @@ Prosecution, is that true?[A]
 [Beat][A]
 [ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
 (He looks so calm...)[A][N]
-(Oh no, did he expect this!?)[A]
+(Oh no, did he expect this!?)[A][ToggleMouthMove]
 [ClearFace][OpenMidLeft][LoadBerkut]
 Yes, it's true.[A][N]
 The time of death and the time the[N]
@@ -595,7 +597,9 @@ O-oh yeah! That's right![A][N]
 There's also what I saw![A]
 [ClearFace][OpenMidRight][LoadAlm]
 S-SAW!?!?[A][ClearFace]
-[LoadOverworldFaces] #chatter, gavel
+[X]
+
+## AATestimony2PresentCorrect3
 [OpenRight][LoadNomah]
 Witness! This is vital testimony![A][N]
 Please tell the court what you saw.[A][X]

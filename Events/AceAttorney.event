@@ -682,9 +682,10 @@ EVBIT_MODIFY 4
 #endif // __DEBUG__
 SVAL s1 PresentMenu1|IsPointer
 ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
-//correct answer is 0
-BNE 1 s0 sC
-//if answer is entry 0, call this
+//correct answer is 2
+SVAL s1 2
+BNE 1 s1 sC
+//if answer is entry 2, call this
 CALL Testimony2CorrectPresentEvent 
 GOTO 2
 LABEL 1
@@ -704,33 +705,33 @@ ShowObjection
 EVBIT_MODIFY 4
 #endif // __DEBUG__
 TEXTSTART
-TEXTSHOW AATestimony2PresentCorrect
+TEXTSHOW AATestimony2PresentCorrect1
 TEXTEND
 MUSC Objection2001
 TEXTCONT
 TEXTEND
 SOUN SFX_Gallery
-STAL 20
+STAL 120
 SOUN SFX_Gavel
-SetBackground(AA_Hammer)
-STAL 10
+TEXTMODE 1
+BACG AA_Hammer
+STAL 40
 CLEAN
-TEXTCONT
+TEXTSTART
+TEXTSHOW AATestimony2PresentCorrect2
 TEXTEND
 MUSC 0x7FFF
 SOUN SFX_Lightbulb
 TEXTCONT
 TEXTEND
 SOUN SFX_Gallery
-STAL 20
+STAL 80
 SOUN SFX_Gavel
-SetBackground(AA_Hammer)
-STAL 10
+TEXTMODE 1
+BACG AA_Hammer
+STAL 20
 CLEAN
-TEXTCONT
-TEXTEND
-
-MakeSuspendSave
+Text(AATestimony2PresentCorrect3)
 NoFade
 ENDA
 
