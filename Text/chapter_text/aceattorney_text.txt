@@ -634,7 +634,7 @@ was on guard duty with Tobin.[A][X]
 
 ## AATestimony3Press1
 [OpenMidRight][LoadAlm]
-
+[X]
 
 ## AATestimony3Statement2
 [OpenLeft][LoadKliff]
@@ -642,7 +642,7 @@ Tobin was supposed to be[N]
 in the other guard tower.[A][X]
 
 ## AATestimony3Press2
-
+[X]
 
 ## AATestimony3Statement3
 [OpenLeft][LoadKliff]
@@ -650,7 +650,8 @@ But when I looked, I[N]
 couldn't see him there![A][X]
 
 ## AATestimony3Press3
-
+[OpenMidRight][LoadAlm]
+[X]
 
 ## AATestimony3Statement4 
 [OpenLeft][LoadKliff]
@@ -658,7 +659,8 @@ He never came back, so I was[N]
 stuck in my tower all night[Beat][A][X]
 
 ## AATestimony3Press4
-
+[OpenMidRight][LoadAlm]
+[X]
 
 
 ## AATestimony3Consult
@@ -670,7 +672,7 @@ Perhaps that one piece of[N]
 evidence will uncover it?[A][X]
 
 
-## AATestimony3CorrectPresent
+## AATestimony3CorrectPresent1
 [OpenMidRight][LoadAlm]
 You say that you couldn't see him.[N]
 But, that would only be natural, no?[A][N]
@@ -680,7 +682,7 @@ W-what do you mean?[A]
 I'd like to direct the[N]
 court's attention to this.[A]
 [ClearFace][OpenRight][LoadNomah]
-A-a newspaper?[N]
+A-a newspaper?[A][N]
 This is hardly the time to[N]
 do a crossword puzzle, Mr. Alm![A][N]
 [ClearFace][OpenMidRight][LoadAlm]
@@ -690,7 +692,7 @@ This is yesterday's newspaper.[A][N]
 I'd like to direct your[N]
 attention to the weather report:[A][N][ToggleRed]
 Very foggy and below[N]
-freezing through the night.[A][N][ToggleRed]
+freezing through the night.[A][ToggleRed]
 [ClearFace][OpenMidLeft][LoadBerkut]
 ![A]
 [ClearFace][OpenMidRight][LoadAlm]
@@ -702,18 +704,22 @@ anything in the other tower!?
 [A]
 [ClearFace][OpenLeft][LoadKliff]
 N-N-N-NO WAAAAAAAAAAY![A][ClearFace]
-[LoadOverworldFaces] #chatter, gavel
+[X]
+
+## AATestimony3CorrectPresent2
 [OpenRight][LoadNomah]
 Witness! Have you been[N]
 lying to this court?[A]
-[OpenLeft][LoadKliff]
+[ClearFace][OpenLeft][LoadKliff]
 No! I would never! I mean-[A]
 [ClearFace][OpenMidLeft][LoadBerkut]
 You peasant of a guard![.....][N]
 You're useless![.....] Hopeless![.....][A]
 [ClearFace][OpenMidRight][LoadAlm][ToggleMouthMove]
-(Yes! Finally, a foothold!)[A][ToggleMouthMove]
-[ClearFace][LoadOverworldFaces] #gavel
+(Yes! Finally, a foothold!)[A][ToggleMouthMove][ClearFace]
+[X]
+
+## AATestimony3CorrectPresent3
 [OpenRight][LoadNomah]
 Order![A][N]
 In light of the witness's lies,[A][N]
@@ -722,7 +728,8 @@ rule one way or the other.[A][N]
 So, to give you some time[N]
 to collect yourselves,[A][N]
 I am going to call a[N]
-10-minute recess.[A]
+10-minute recess.[A][N]
+Court is adjourned![A]
 #gavel, fade
 #To Be Continued...
 #Save screen
@@ -731,7 +738,7 @@ I am going to call a[N]
 
 
 ## AA_ToBeContinuedSavePrompt
-Would you like to save the game?[A][N]
-[Yes][X]
+Would you like to save the game?[N]
+ [Yes][X]
 
 

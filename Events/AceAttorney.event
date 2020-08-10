@@ -22,6 +22,8 @@ EventPointerTable(AceAttorneyEventsID, PointerList)
 #define ShowObjection "SOUN SFX_Objection; ASMC showObjection|1"
 #define ShowHoldIt "SOUN SFX_Objection; ASMC showHoldIt|1"
 #define ShowTakeThat "SOUN SFX_Objection; ASMC showTakeThat|1"
+#define ShowGavel "SOUN SFX_Gavel; TEXTMODE 1; BACG AA_Hammer; STAL 40; CLEAN"
+
 
 PointerList:
 POIN TurnBasedEvents
@@ -43,7 +45,7 @@ CharacterBasedEvents:
 CharacterEventBothWays(Testimony1ConsultFlag,Testimony1ConsultEvent,Alm,Celica)
 CharacterEventBothWays(Testimony2ConsultFlag1,Testimony2ConsultEvent1,Alm,Celica)
 CharacterEventBothWays(Testimony2ConsultFlag2,Testimony2ConsultEvent2,Alm,Celica)
-//CharacterEventBothWays(Testimony3ConsultFlag,Testimony3ConsultEvent,Alm,Celica)
+CharacterEventBothWays(Testimony3ConsultFlag,Testimony3ConsultEvent,Alm,Celica)
 //CharacterEventBothWays(Testimony4ConsultFlag,Testimony4ConsultEvent,Alm,Celica)
 //CharacterEventBothWays(Testimony5ConsultFlag,Testimony5ConsultEvent,Alm,Celica)
 //CharacterEventBothWays(Testimony6ConsultFlag,Testimony6ConsultEvent,Alm,Celica)
@@ -710,13 +712,13 @@ TEXTEND
 MUSC Objection2001
 TEXTCONT
 TEXTEND
+REMA
 SOUN SFX_Gallery
 STAL 120
-SOUN SFX_Gavel
-TEXTMODE 1
-BACG AA_Hammer
-STAL 40
-CLEAN
+ShowGavel
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
 TEXTSTART
 TEXTSHOW AATestimony2PresentCorrect2
 TEXTEND
@@ -724,16 +726,217 @@ MUSC 0x7FFF
 SOUN SFX_Lightbulb
 TEXTCONT
 TEXTEND
+REMA
 SOUN SFX_Gallery
-STAL 80
-SOUN SFX_Gavel
-TEXTMODE 1
-BACG AA_Hammer
-STAL 20
-CLEAN
+STAL 120
+ShowGavel
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
 Text(AATestimony2PresentCorrect3)
+
+FADI 10
+DISA Statement1
+DISA Statement2
+DISA Statement3
+DISA Statement4
+DISA Statement5
+
+//move alm back to spawn position [14,13] & stop active unit moving
+MOVE -1 Alm [14,13]
+LOAD1 0 FuckItletsTryThisGroup
+ENUN
+SET_ACTIVE Gray
+FADU 10
+
+//testimony 3 start
+MUSC Testimony
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3All)
+
+MUSC 0x7FFF
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3PreExamination)
+
+LOAD1 0 Testimony3StatementGroup
+ENUN
+
+SetTestimony(2)
+ENUF Testimony3ConsultFlag
+
+MakeSuspendSave
+
+MUSC Allegro2001
+
+SET_ACTIVE Alm
+DISA Gray
+
+//fade here is necessary for reasons
+ENDA
+
+Testimony3StatementGroup:
+UNIT Statement1 Mage 0 Level(1,NPC,0) [6,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement2 Mage 0 Level(1,NPC,0) [7,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement3 Mage 0 Level(1,NPC,0) [8,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT Statement4 Mage 0 Level(1,NPC,0) [9,11] 0 0 0 1 NoItems NeverMoveAI
+UNIT
+
+SetHearEvent(2,0,Testimony3Statement1HearEvent)
+SetHearEvent(2,1,Testimony3Statement2HearEvent)
+SetHearEvent(2,2,Testimony3Statement3HearEvent)
+SetHearEvent(2,3,Testimony3Statement4HearEvent)
+
+SetPressEvent(2,0,Testimony3Statement1PressEvent)
+SetPressEvent(2,1,Testimony3Statement2PressEvent)
+SetPressEvent(2,2,Testimony3Statement3PressEvent)
+SetPressEvent(2,3,Testimony3Statement4PressEvent)
+
+SetPresentEvent(2,0,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(2,1,PresentMenu1NoCorrectAnswer)
+SetPresentEvent(2,2,PresentMenu1Testimony3Answer)
+SetPresentEvent(2,3,PresentMenu1NoCorrectAnswer)
+
+Testimony3Statement1HearEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Statement1)
+MakeSuspendSave
 NoFade
 ENDA
+
+
+Testimony3Statement2HearEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Statement2)
+MakeSuspendSave
+NoFade
+ENDA
+
+Testimony3Statement3HearEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Statement3)
+MakeSuspendSave
+NoFade
+ENDA
+
+Testimony3Statement4HearEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Statement4)
+MakeSuspendSave
+NoFade
+ENDA
+
+Testimony3Statement1PressEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Press1)
+MakeSuspendSave
+NoFade
+ENDA
+
+Testimony3Statement2PressEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Press2)
+MakeSuspendSave
+NoFade
+ENDA
+
+Testimony3Statement3PressEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Press3)
+MakeSuspendSave
+NoFade
+ENDA
+
+Testimony3Statement4PressEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Press4)
+MakeSuspendSave
+NoFade
+ENDA
+
+
+PresentMenu1Testimony3Answer:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+SVAL s1 PresentMenu1|IsPointer
+ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
+//correct answer is 0
+BNE 1 s0 sC
+//if answer is entry 0, call this
+CALL Testimony3CorrectPresentEvent 
+GOTO 2
+LABEL 1
+//otherwise you got it wrong
+CALL TestimonyIncorrectPresentEvent
+LABEL 2
+MakeSuspendSave
+NoFade
+ENDA
+
+Testimony3ConsultEvent:
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+Text(AATestimony3Consult)
+ENUF Testimony3ConsultFlag
+NoFade
+ENDA
+
+Testimony3CorrectPresentEvent:
+MUSC 0x7FFF
+ShowObjection
+#ifndef __DEBUG__
+EVBIT_MODIFY 4
+#endif // __DEBUG__
+TEXTSTART
+TEXTSHOW AATestimony3CorrectPresent1
+TEXTEND
+MUSC LyingColdly
+TEXTCONT
+TEXTEND
+SOUN SFX_Gallery
+STAL 120
+ShowGavel
+Text(AATestimony3CorrectPresent2)
+ShowGavel
+Text(AATestimony3CorrectPresent3)
+SOUN SFX_Gavel; TEXTMODE 1; BACG AA_Hammer //just the first part of ShowGavel
+STAL 60
+FADI 20
+//move alm back to spawn position [14,13] & stop active unit moving
+MOVE -1 Alm [14,13]
+LOAD1 0 FuckItletsTryThisGroup
+ENUN
+SET_ACTIVE Gray
+
+CALL ToBeContinuedSaveEvent
+
+SET_ACTIVE Alm
+DISA Gray
+
+//fade here is necessary for reasons
+ENDA
+
 
 
 
@@ -742,12 +945,20 @@ ToBeContinuedSaveEvent:
 #ifndef __DEBUG__
 EVBIT_MODIFY 4
 #endif // __DEBUG__
+SetBackground(BlankBG)
+FADU 10
 MUSC ToBeContinued
-Text(AA_ToBeContinuedSavePrompt)
+STAL 80
+SVAL sB 0xFFFFFFFF
+TUTORIALTEXTBOXSTART
+TEXTSHOW AA_ToBeContinuedSavePrompt
+TEXTEND
 SVAL 1 1
 BNE 776 sC s1
-MakeSuspendSave
+//MakeSuspendSave
 LABEL 776
+REMA
+EndConvo
 NoFade
 ENDA
 
