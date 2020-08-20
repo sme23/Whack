@@ -39,3 +39,5 @@
 #define Trial 0xC2
 #define ToBeContinued 0xC3
 
+#define TeamChaotix 0xC4
+

@@ -66,8 +66,10 @@ SongTable(ToBeContinued,cont,MapMusicGroup)
 #include "Songs/bstown.event"
 SongTable(0x43,bstown,MapMusicGroup)
 }
-
-
+{
+#include "Songs/tcox_noecho.event"
+SongTable(TeamChaotix,tcox_noecho,MapMusicGroup)
+}
 
 {
 #include "SFX/sfx-damage.event"
