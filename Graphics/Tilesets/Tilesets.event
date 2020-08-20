@@ -16,3 +16,18 @@ CourtroomTiles:
 EventPointerTable(CourtroomObjType, CourtroomObj)
 EventPointerTable(CourtroomPalette1, CourtroomPal)
 EventPointerTable(CourtroomTileConfig, CourtroomTiles)
+
+ALIGN 4
+MinesweeperObj:
+#incbin "minesweeper.dmp"
+
+ALIGN 4
+MinesweeperPal:
+#incbin "minesweeper_pal.dmp"
+
+MinesweeperTiles:
+#incbin "minesweeper_comp.dmp"
+
+EventPointerTable(MinesweeperObjType, MinesweeperObj)
+EventPointerTable(MinesweeperPalette1, MinesweeperPal)
+EventPointerTable(MinesweeperTileConfig, MinesweeperTiles)

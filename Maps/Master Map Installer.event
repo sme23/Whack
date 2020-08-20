@@ -16,5 +16,8 @@
 #include "hub.event"
 }
 {
+#include "Minesweeper.event"
+}
+{
 #include "SkirmishInGallia.event"
 }

@@ -78,4 +78,6 @@
 {
 #include "AceAttorney.event"
 }
-
+{
+#include "Minesweeper.event"
+}

@@ -1,0 +1,19 @@
+#include "Minesweeper.lyn.event"
+
+#include "explosion/explosion.event"
+
+ALIGN 4
+MinesweeperGoBoom:
+EARTHQUAKE 0 True
+ASMC explosiveEnding|1
+STAL 60
+EARTHQUAKE_END
+ASMC 0x00D391 //game over
+MNTS 0x1 //if the ASMC doesnt
+NoFade
+ENDA
+
+ALIGN 4
+MinesweeperChIDLink:
+BYTE MinesweeperChID
+ALIGN 4

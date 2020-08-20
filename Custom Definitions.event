@@ -1,4 +1,4 @@
-#define FreeSpace 0xb2a610
+#define FreeSpace 0x1000000
 #define FreeSpaceBLRange 0x1c1ec0
 
 #define ChapterTileset(chapter, object, palette, config) "PUSH; ORG 0x8b0890 + (148* chapter) + 4; SHORT object; BYTE palette config; POP"
@@ -26,7 +26,7 @@
 #include "Wizardry/SkillSystem/skill_definitions.event"
 #include "Sound/_SoundDefinitions.event"
 
- #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
 //Useful macros
 #define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"
@@ -288,6 +288,7 @@
 #define MerchantMadnessChID 7
 #define DemonBloodChID 8
 #define AceAttorneyChID 9
+#define MinesweeperChID 10
 
 #define MiniThracia1ChID 30
 #define MiniThracia2ChID 31
@@ -320,6 +321,7 @@
 #define FatesRNModifierFlag 195 //8 scenarios beaten
 
 #define AceAttorneyBeatenFlag 196
+#define MinesweeperBeatenFlag 197
 
 
 //event ptr table defs
@@ -368,6 +370,9 @@
 #define AceAttorneyMapID  0x28
 #define AceAttorneyMapChangesID 0x29
 #define AceAttorneyEventsID 0x2A
+#define MinesweeperMapID 0x2B
+#define MinesweeperMapChangesID 0x2C
+#define MinesweeperEventsID 0x2D
 
 //this is probably the third time i've done these with the thought of "oh I only have to do this once then I'll have them whenever I need them in the future"
 
@@ -454,6 +459,10 @@
 #define CourtroomObjType 0xE9
 #define CourtroomTileConfig 0xEA
 #define CourtroomPalette1 0xEB
+
+#define MinesweeperObjType 0xEC
+#define MinesweeperTileConfig 0xED
+#define MinesweeperPalette1 0xEE
 
 
 //class defs

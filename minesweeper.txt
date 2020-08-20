@@ -1,0 +1,41 @@
+conditionally based on ch ID, make EMS do suspend differently
+Over NPC and enemies in save data put the tile map (is there a tile map? doesnt seem to be with the rest if so) as well as a map for the state of the board underneath the covers, as it were
+then, you are going to get to, while controlling a unit on the map, either Check or Flag each tile
+if you Flag a tile, change the tile there in the tile map to the flag tile
+if you Check the tile, change the tile there to the one at the same location in the minesweeper map
+	if the tile is a Bomb, then explode & game over
+	if the tile is a blank, then reveal each adjacent tile as well; repeat blank behavior as necessary
+once there are no more covered tiles left (flagged tiles dont count towards this), you win
+
+Actually given bomb locations we could calculate on the fly what a given tile's number is
+if the number is 0 we do the same check with adjacent tiles
+if the number is 1-8 we set that tile to show as the relevant metatile for that number
+
+Bombs could be stored in trap data as they only need coordinates and not anything else fancy; give them some unused ID
+player's progress would still need to be saved so the tile map would need to be saved as well
+
+initializing bombs can just be an ASMC
+
+get random number of bombs from 20-40
+get random values from 0-14 for X, 0-9 for Y for each bomb's location when initialized
+use a loop to initialize bombs and use the number of bombs rand for number of times to loop
+
+function that takes X and Y coords as arguments and returns the number for that location
+initialize the number to 0
+iterate through each of the 8 adjacent tiles, checking for a trap at those coordinates
+for each that exist, add 1 to the number
+if the final number is 0, iterate through each adjacent tile's coords calling the current function
+otherwise, return the number
+
+what tile to display at a given map coordinate is based solely on the result of this function; some base value + however much to get the metatile index, since they're all in a row numerically
+
+steal leo's bomb thing asmc again this time for when you check a mine lol
+doesnt even need new graphics
+
+tile changes cannot be used for this because A. the smallest board is 15x10 and 150 is well beyond the 50 simultaneous limit on tile changes and B. active tile changes are stored in trap data, for which there may not be enough room and also C. the map data isnt static because randomly generated layouts
+
+
+
+
+
+
