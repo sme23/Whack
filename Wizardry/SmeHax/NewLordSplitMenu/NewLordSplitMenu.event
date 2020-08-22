@@ -107,7 +107,7 @@ ALIGN 4
 	HubMenuPage3_Commands:
 		EventMenuCommand(HubMenuBack)
 		EventMenuCommand(HubMenuDemonBlood,CommandUsability_DemonBlood,CommandEffect_DemonBlood)
-		EventMenuCommand(HubMenuAceAttorney,CommandUsability_AceAttorney,CommandEffect_AceAttorney)
+		EventMenuCommand(HubMenuBonusMenu)
 		EventMenuCommand(HubMenuModifiers)
 		EventMenuCommand(HubMenuCredits)
 		EventMenuCommand(HubMenuNext)
@@ -128,5 +128,21 @@ ALIGN 4
 	EventMenuCommandEnd
 
 
+	
+ALIGN 4
+	BonusMenu:
+	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
+	WORD 1                  // style (change it if u want)
+	POIN BonusMenu_Commands // Command Definitions
+	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
+
+ALIGN 4
+	BonusMenu_Commands:
+		EventMenuCommand(HubMenuAceAttorney,CommandUsability_AceAttorney,CommandEffect_AceAttorney)
+		EventMenuCommand(HubMenuMinesweeper)
+		EventMenuCommand(HubMenuBack)
+	EventMenuCommandEnd
+
+	
 	
 	

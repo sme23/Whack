@@ -52,15 +52,6 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-FADU 10
-CenterTutorialTextBox
-TUTORIALTEXTBOXSTART
-TEXTSHOW AADemoHubGotoText
-TEXTEND
-REMA
-MNC2 AceAttorneyChID
-NoFade
-ENDA
 
 //this is going to be a chapter select hub
 //referencing stan stuff we can do it with route split boxes
@@ -77,7 +68,6 @@ ENDA
 
 //ok so recursive event calls are a bad idea because there's only room for like 8 events in the queue for that
 //time to restructure everything ig
-MNC2 MinesweeperChID
 FADU 10
 
 EVBIT_MODIFY 4
@@ -120,6 +110,7 @@ ENDA
 #define FirstMenuStartLabel 666
 #define SecondMenuStartLabel 420
 #define ThirdMenuStartLabel 69
+#define BonusMenuStartLabel 7889
 
 ALIGN 4
 CallFirstMenu:
@@ -260,8 +251,7 @@ SVAL s1 2
 BNE 22 s1 sC
 
 //confirm for gameplay modifiers
-CALL AceAttorney_Start
-GOTO ThirdMenuStartLabel
+GOTO BonusMenuStartLabel
 
 LABEL 22
 SVAL s1 3
@@ -292,6 +282,34 @@ LABEL 25
 ScrollBoxText(HubMenu3ErrorText)
 
 GOTO ThirdMenuStartLabel //recursion bad
+
+
+
+LABEL BonusMenuStartLabel
+CLEAN
+
+SVAL s1 BonusMenu|IsPointer
+ASMC CallEventMenuASMC|1 //returns number based on entry # in list that was selected, 0-indexed
+
+BNE 26 s0 sC
+CALL AceAttorney_Start
+GOTO BonusMenuStartLabel
+
+LABEL 26
+SVAL s1 1
+BNE 27 s1 sC
+CALL Minesweeper_Start
+GOTO BonusMenuStartLabel
+
+LABEL 27
+SVAL s1 2
+BNE 28 s1 sC
+GOTO ThirdMenuStartLabel
+
+LABEL 28
+
+Text(BonusMenuErrorText)
+GOTO BonusMenuStartLabel
 
 NoFade
 ENDA
@@ -476,6 +494,24 @@ ENDB
 LABEL 0
 NoFade
 ENDA
+
+ALIGN 4
+Minesweeper_Start:
+ScrollBoxText(HubMenuMinesweeperConfirm)
+SVAL s1 1 //identifier for Yes
+BNE 0 s1 sC
+
+MNC2 MinesweeperChID
+NoFade
+ENDB
+
+LABEL 0
+NoFade
+ENDA
+
+
+
+
 
 ALIGN 4
 GameplayModifiers_Start:

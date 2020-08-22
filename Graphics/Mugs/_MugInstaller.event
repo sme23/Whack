@@ -67,6 +67,10 @@ ALIGN 4
 ForsythPortrait:
 #incext PortraitFormatter "forsyth.png"
 
+setMugEntry(KliffMug,KliffPortrait,4,6,4,4)
+ALIGN 4
+KliffPortrait:
+#incext PortraitFormatter "kliff.png"
 
 
 
@@ -79,4 +83,5 @@ setMugEntry(MorshuShopMug,MorshuShopPortrait,4,3,2,0)
 ALIGN 4
 MorshuShopPortrait:
 #incext PortraitFormatter "MorshuShop.png"
+
 

@@ -51,6 +51,12 @@ Credits[X]
 ## HubMenuUnknown
 ???[X]
 
+## HubMenuMinesweeper
+Minesweeper[X]
+
+## HubMenuBonusMenu
+Bonus Chapters[X]
+
 ## HubMenu1ErrorText
 ERROR![A][N]
 Menu 1 has returned[N]
@@ -72,6 +78,12 @@ an invalid value.[A][N]
 Let's try again,[N]
 shall we?[A][X]
 
+## BonusMenuErrorText
+ERROR![A][N]
+Bonus Menu has returned[N]
+an invalid value.[A][N]
+Let's try again,[N]
+shall we?[A][X]
 
 
 ## HubMenuSkirmishInGalliaConfirm
@@ -123,8 +135,13 @@ Play the scenario,[N]
 [Yes][X]
 
 ## HubMenuAceAttorneyConfirm
-Play the scenario,[N]
+Play the courtroom thriller,[N]
 [ToggleRed]Ace Attorney[ToggleRed]?[A][N]
+[Yes][X]
+
+## HubMenuMinesweeperConfirm
+Play the classic timewaster,[N]
+[ToggleRed]Minesweeper[ToggleRed]?[A][N]
 [Yes][X]
 
 ## HubMenuGameplayModifiersConfirm
