@@ -18,4 +18,4 @@ SetChapterName(MiniThracia2ChID,MiniThracia2ChName)
 SetChapterName(MiniThracia2xChID,MiniThracia2xChName)
 SetChapterName(MiniThracia3ChID,MiniThracia3ChName)
 SetChapterName(AceAttorneyChID,AceAttorneyChName)
-
+SetChapterName(MinesweeperChID,MinesweeperChName)

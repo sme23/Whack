@@ -19,14 +19,18 @@ EventPointerTable(CourtroomTileConfig, CourtroomTiles)
 
 ALIGN 4
 MinesweeperObj:
-#incbin "minesweeper.dmp"
+//#incbin "minesweeper.dmp"
+#incext Png2Dmp "minesweeper.png" --lz77
 
 ALIGN 4
 MinesweeperPal:
-#incbin "minesweeper_pal.dmp"
+//#incbin "minesweeper_pal.dmp"
+#incext Png2Dmp "minesweeper.png" --palette-only
 
+ALIGN 4
 MinesweeperTiles:
-#incbin "minesweeper_comp.dmp"
+//#incbin "minesweeper_comp.dmp"
+#incext compress "minesweeper.mapchip_config"
 
 EventPointerTable(MinesweeperObjType, MinesweeperObj)
 EventPointerTable(MinesweeperPalette1, MinesweeperPal)

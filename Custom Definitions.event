@@ -456,13 +456,13 @@
 
 #define ValniPalette1 0x89
 
-#define CourtroomObjType 0xE9
-#define CourtroomTileConfig 0xEA
-#define CourtroomPalette1 0xEB
+#define CourtroomObjType 0x8B
+#define CourtroomTileConfig 0x8C
+#define CourtroomPalette1 0x8D
 
-#define MinesweeperObjType 0xEC
-#define MinesweeperTileConfig 0xED
-#define MinesweeperPalette1 0xEE
+#define MinesweeperObjType 0x8E
+#define MinesweeperTileConfig 0x8F
+#define MinesweeperPalette1 0x90
 
 
 //class defs

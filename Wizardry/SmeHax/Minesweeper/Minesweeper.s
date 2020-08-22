@@ -17,6 +17,9 @@
 .global MS_CommandUsability
 .type MS_CommandUsability, %function
 
+.global NextRN_19
+.type NextRN_19, %function
+
 
 .macro blh to,reg=r3
 	push {\reg}
@@ -26,7 +29,7 @@
 	.short 0xF800
 .endm
 
-.equ Roll1RN,0x8000ca0
+.equ RandNext,0x8000B88
 .equ AddTrap, 0x802e2b8
 .equ MapWidth, 0x202E4D4
 .equ MapHeight, 0x202E4D6
@@ -35,6 +38,26 @@
 .equ gActiveUnit, 0x3004e50
 .equ CallEventEngine, 0x800d07C
 .equ gChapterData, 0x202bcf0
+.equ RefreshTilesMaybe, 0x8019624
+
+
+NextRN_19:
+push {r14}
+blh RandNext
+mov r1,#19
+mul r0,r1
+cmp r0,#0
+bge NextRN_19_skip
+ldr r1,=#0xFFFF
+add r0,r1
+NextRN_19_skip:
+asr r0,r0,#0x10
+pop {r1}
+bx r1
+
+.ltorg
+.align
+
 
 MS_InitializeBombsASMC:
 push {r4-r7,r14}
@@ -42,7 +65,7 @@ push {r4-r7,r14}
 @get a random number from 0-19, then add 21 to it
 
 mov r0,#19
-blh Roll1RN
+blh NextRN_19
 add r0,#21
 
 @this will be the number of times to run the following loop
@@ -56,7 +79,7 @@ beq InitBombs_LoopExit
 ldr r0,=MapWidth
 ldrh r0,[r0]
 sub r0,#1
-blh Roll1RN
+blh NextRN_19
 @store in a not-scratch register
 mov r5,r0 
 
@@ -64,7 +87,7 @@ mov r5,r0
 ldr r0,=MapHeight
 ldrh r0,[r0]
 sub r0,#1
-blh Roll1RN
+blh NextRN_19
 @store in a not-scratch register
 mov r6,r0
 
@@ -184,7 +207,7 @@ mov r1,r5
 sub r0,#1
 blh GetTrapAt
 cmp r0,#0
-beq GetTileValue_CheckLeft
+beq GetTileValue_GoBack
 add r6,#1
 
 GetTileValue_GoBack:
@@ -203,8 +226,9 @@ push {r14}
 @find the active unit pos
 ldr r0,=gActiveUnit
 ldr r0,[r0]
-ldrb r4,[r0,#0x10] @x coord
-ldrb r5,[r0,#0x11] @y coord
+ldrb r1,[r0,#0x11] @y coord
+ldrb r0,[r0,#0x10] @x coord
+
 
 bl MS_UncoverTileAt
 
@@ -242,7 +266,7 @@ mov r6,r2
 @is the value at this address anything other than the ID of the covered tile (0x0000)?
 ldrh r0,[r6]
 cmp r0,#0
-beq UncoverTile_GoBack
+bne UncoverTile_GoBack
 
 @get the value of the tile
 mov r0,r4
@@ -255,51 +279,80 @@ beq UncoverTile_IsBomb
 cmp r0,#0
 bne UncoverTile_DoTheUncovering
 @if so, then recursion :33333333333333
+ldr r7,=#0xFFFFFFFF
 
+UncoverTileAt_Recursion1:
 mov r0,r4
 mov r1,r5
 sub r0,#1
 sub r1,#1
+cmp r0,r7
+beq UncoverTileAt_Recursion2
+cmp r1,r7
+beq UncoverTileAt_Recursion2
 bl MS_UncoverTileAt
 
+UncoverTileAt_Recursion2:
 mov r0,r4
 mov r1,r5
 sub r1,#1
+cmp r1,r7
+beq UncoverTileAt_Recursion3
 bl MS_UncoverTileAt
 
+
+UncoverTileAt_Recursion3:
 mov r0,r4
 mov r1,r5
 add r0,#1
 sub r1,#1
+cmp r1,r7
+beq UncoverTileAt_Recursion4
 bl MS_UncoverTileAt
 
+
+UncoverTileAt_Recursion4:
 mov r0,r4
 mov r1,r5
 add r0,#1
 bl MS_UncoverTileAt
 
+
+UncoverTileAt_Recursion5:
 mov r0,r4
 mov r1,r5
 add r0,#1
 add r1,#1
 bl MS_UncoverTileAt
 
+
+UncoverTileAt_Recursion6:
 mov r0,r4
 mov r1,r5
 add r1,#1
 bl MS_UncoverTileAt
 
+
+UncoverTileAt_Recursion7:
 mov r0,r4
 mov r1,r5
 sub r0,#1
 add r1,#1
+cmp r0,r7
+beq UncoverTileAt_Recursion8
 bl MS_UncoverTileAt
 
+
+UncoverTileAt_Recursion8:
 mov r0,r4
 mov r1,r5
 sub r0,#1
+cmp r0,r7
+beq UncoverTileAt_RecursionEnd
 bl MS_UncoverTileAt
 
+
+UncoverTileAt_RecursionEnd:
 @set current tile to 0x0004 and return
 mov r0,#4
 strh r0,[r6]
@@ -329,6 +382,8 @@ mov	r1, #0x01
 
 
 UncoverTile_GoBack:
+@refresh from buffer
+blh RefreshTilesMaybe
 
 pop {r4-r7}
 pop {r0}

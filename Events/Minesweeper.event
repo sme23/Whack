@@ -38,7 +38,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Giffca 0 0 Level(1,Ally,0) [0,0] 0 0 0 1 NoItems NoAI
+UNIT Alm 0 0 Level(1,Ally,0) [0,0] 0 0 0 1 NoItems NoAI
 UNIT
 
 EnemyUnits:
@@ -59,11 +59,13 @@ ENUN
 LOAD1 0 EnemyUnits
 ENUN
 ASMC MS_InitializeBombsASMC
+REMU Celica
 NoFade
 ENDA
 
 EndingScene:
 DISA Alm
+DISA Celica
 MNC2 HubChID
 NoFade
 ENDA
