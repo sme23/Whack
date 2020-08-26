@@ -313,3 +313,5 @@
 #define ManaketeUndeadAnimID 201
 
 
+#define TransporterWagonAnimID 202
+

@@ -75,3 +75,9 @@ Halberdier[X]
 A promoted soldier[N]
 proficient in lances.[X]
 
+## TransporterName
+Transporter[X]
+
+## TransporterDesc
+A conveyor of goods and[N]
+items. Lacks combat skills.[X]

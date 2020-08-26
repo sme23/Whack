@@ -84,12 +84,12 @@ ALIGN 4
 MorshuShopPortrait:
 #incext PortraitFormatter "MorshuShop.png"
 
-setMugEntry(AnnaMug,AnnaPortrait,0,0,0,0)
+setMugEntry(AnnaMug,AnnaPortrait,2,6,3,4)
 ALIGN 4
 AnnaPortrait:
 #incext PortraitFormatter "Anna.png"
 
-setMugEntry(AnnaShopMug,AnnaShopPortrait,0,0,0,0)
+setMugEntry(AnnaShopMug,AnnaShopPortrait,3,3,2,0)
 ALIGN 4
 AnnaShopPortrait:
 #incext PortraitFormatter "AnnaShop.png"
@@ -99,7 +99,7 @@ ALIGN 4
 ArenaPortrait:
 #incext PortraitFormatter "Arena.png"
 
-setMugEntry(ArenaShopMug,ArenaShopPortrait,0,0,0,0)
+setMugEntry(ArenaShopMug,ArenaShopPortrait,3,2,2,0)
 ALIGN 4
 ArenaShopPortrait:
 #incext PortraitFormatter "ArenaShop.png"
@@ -109,59 +109,59 @@ ALIGN 4
 ArmoryPortrait:
 #incext PortraitFormatter "Armory.png"
 
-setMugEntry(ArmoryShopMug,ArmoryShopPortrait,0,0,0,0)
+setMugEntry(ArmoryShopMug,ArmoryShopPortrait,3,2,2,0)
 ALIGN 4
 ArmoryShopPortrait:
 #incext PortraitFormatter "ArmoryShop.png"
 
-setMugEntry(DudeMug,DudePortrait,0,0,0,0)
+setMugEntry(DudeMug,DudePortrait,3,5,3,3)
 ALIGN 4
 DudePortrait:
 #incext PortraitFormatter "Dude.png"
 
-setMugEntry(DudeShopMug,DudeShopPortrait,0,0,0,0)
+setMugEntry(DudeShopMug,DudeShopPortrait,0,0,2,0)
 ALIGN 4
 DudeShopPortrait:
 #incext PortraitFormatter "DudeShop.png"
 
-setMugEntry(VendorMug,VendorPortrait,0,0,0,0)
+setMugEntry(VendorMug,VendorPortrait,4,2,4,0)
 ALIGN 4
 VendorPortrait:
 #incext PortraitFormatter "Vendor.png"
 
-setMugEntry(VendorShopMug,VendorShopPortrait,0,0,0,0)
+setMugEntry(VendorShopMug,VendorShopPortrait,3,3,2,0)
 ALIGN 4
 VendorShopPortrait:
 #incext PortraitFormatter "VendorShop.png"
 
 
 
-setMugEntry(LeifMug,LeifPortrait,0,0,0,0)
+setMugEntry(LeifMug,LeifPortrait,3,6,3,4)
 ALIGN 4
 LeifPortrait:
 #incext PortraitFormatter "leif.png"
 
-setMugEntry(NannaMug,NannaPortrait,0,0,0,0)
+setMugEntry(NannaMug,NannaPortrait,3,6,3,4)
 ALIGN 4
 NannaPortrait:
 #incext PortraitFormatter "nanna.png"
 
-setMugEntry(EyvelMug,EyvelPortrait,0,0,0,0)
+setMugEntry(EyvelMug,EyvelPortrait,3,7,3,4)
 ALIGN 4
 EyvelPortrait:
 #incext PortraitFormatter "eyvel.png"
 
-setMugEntry(FinnMug,FinnPortrait,0,0,0,0)
+setMugEntry(FinnMug,FinnPortrait,3,6,3,4)
 ALIGN 4
 FinnPortrait:
 #incext PortraitFormatter "finn.png"
 
-setMugEntry(DagdarMug,DagdarPortrait,0,0,0,0)
+setMugEntry(DagdarMug,DagdarPortrait,3,6,3,4)
 ALIGN 4
 DagdarPortrait:
 #incext PortraitFormatter "dagdar.png"
 
-setMugEntry(MartyMug,MartyPortrait,0,0,0,0)
+setMugEntry(MartyMug,MartyPortrait,3,6,4,4)
 ALIGN 4
 MartyPortrait:
 #incext PortraitFormatter "marty.png"

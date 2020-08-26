@@ -113,3 +113,93 @@ Statement[X]
 ## StatementDesc
 Representation of a[N]
 witness's statement.[X]
+
+## LeifName
+Leif[X]
+
+## LeifDesc
+=NO DESCRIPTION FOUND=[X]
+
+## NannaName
+Nanna[X]
+
+## NannaDesc
+=NO DESCRIPTION FOUND=[X]
+
+## EyvelName
+Eyvel[X]
+
+## EyvelDesc
+=NO DESCRIPTION FOUND=[X]
+
+## FinnName
+Finn[X]
+
+## FinnDesc
+=NO DESCRIPTION FOUND=[X]
+
+## DagdarName
+Dagdar[X]
+
+## DagdarDesc
+=NO DESCRIPTION FOUND=[X]
+
+## MartyName
+Marty[X]
+
+## MartyDesc
+Desc
+=NO DESCRIPTION FOUND=[X]
+
+## OsianName
+Osian[X]
+
+## OsianDesc
+=NO DESCRIPTION FOUND=[X]
+
+## RonanName
+Ronan[X]
+
+## RonanDesc
+=NO DESCRIPTION FOUND=[X]
+
+## AnnaName
+Anna[X]
+
+## AnnaDesc
+A resourceful shopkeeper.[X]
+
+## ArenaManName
+Arenaman[X]
+
+## ArenaManDesc
+The man in charge of[N]
+running the arena.[X]
+
+## ArmoryManName
+Armorer[X]
+
+## ArmoryManDesc
+Keeper of the armory.[X]
+
+## DudeName
+Dude[X]
+
+## DudeDesc
+A stranger that shows up[N]
+in the most unusual places.[X]
+
+## VendorGirlName
+Vendor[X]
+
+## VendorGirlDesc
+The woman who[N]
+runs the vendor.[X]
+
+## BanditName
+Bandit[X]
+
+## BanditDesc
+A ruthless vagabond,[N]
+intent on pillaging.[X]
+

@@ -1,1 +1,5 @@
 //for AA anim installer
+
+{
+#include "Anims/TransporterAnim.event"
+}

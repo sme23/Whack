@@ -42,7 +42,12 @@ UNIT Giffca 1 1 Level(1,Ally,0) [0,0] 0 0 0 1 NoItems NoAI
 UNIT
 
 NPCUnits:
-UNIT Morshu 1 1 Level(1,NPC,0) [0,1] 0 0 0 1 NoItems NoAI
+UNIT Morshu TransporterWagon 1 Level(10,NPC,0) [0,1] 0 0 0 1 NoItems NoAI
+UNIT Anna TransporterWagon 1 Level(10,NPC,0) [0,2] 0 0 0 1 NoItems NoAI
+UNIT Dude TransporterWagon 1 Level(10,NPC,0) [0,3] 0 0 0 1 NoItems NoAI
+UNIT VendorGirl TransporterWagon 1 Level(10,NPC,0) [0,4] 0 0 0 1 NoItems NoAI
+UNIT ArmoryMan TransporterWagon 1 Level(10,NPC,0) [0,5] 0 0 0 1 NoItems NoAI
+UNIT ArenaMan TransporterWagon 1 Level(10,NPC,0) [0,6] 0 0 0 1 NoItems NoAI
 UNIT
 
 EnemyUnits:

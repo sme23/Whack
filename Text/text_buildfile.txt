@@ -280,6 +280,27 @@ A headpiece of Clair's.[N]
 Found by Tobin at the[N]
 scene of the crime.[X]
 
+## MineName
+Mine[X]
+
+## MineDesc
+A trap that damages units[N]
+that step on it.[X]
+
+## MineUseDesc
+Units that enter[N]
+spaces where these[N]
+are take damage.[X]
+
+## LightRuneDesc
+A device that blocks units[N]
+from entering spaces.[X]
+
+## LightRuneUseDesc
+Units cannot enter[N]
+spaces where these[N]
+have been placed.[X]
+
 #include "statscreen_text.txt"
 
 #include "unitmenu_text.txt"

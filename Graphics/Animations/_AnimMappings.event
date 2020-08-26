@@ -755,3 +755,9 @@ HalberdierFAnims:
 LanceAnim(SoldierLanceAnimID)
 UnarmedAnim(SoldierUnarmedAnimID)
 EndAnim
+
+ALIGN 4
+TransporterAnims:
+UnarmedAnim(TransporterWagonAnimID)
+EndAnim
+

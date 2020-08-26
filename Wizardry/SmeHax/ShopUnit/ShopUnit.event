@@ -31,12 +31,48 @@ ShopUnitTargetSelectionStruct:
 
 ALIGN 4
 ShopUnitList:
-ShopUnitListEntry(Morshu,3,MorshuShopList)
+ShopUnitListEntry(Morshu,MorshuShopType,MorshuShopList)
+ShopUnitListEntry(Dude,DudeShopType,DudeShopList)
+ShopUnitListEntry(ArmoryMan,ArmoryShopType,ArmoryManShopList)
+ShopUnitListEntry(Anna,SecretShopType,AnnaShopList)
+ShopUnitListEntry(VendorGirl,VendorShopType,VendorGirlShopList)
+ShopUnitListEntry(ArenaMan,ArenaShopType,ArenaManShopList)
 ShopUnitListEnd
+
 
 ALIGN 4
 MorshuShopList:
-SHLI Fire Vulnerary IronBow
+SHLI Torch DelphiShield Mine
+ALIGN 4
+
+
+ALIGN 4
+DudeShopList:
+SHLI KillingEdge KillerBow BraveLance BraveAxe
+ALIGN 4
+
+
+ALIGN 4
+ArmoryManShopList:
+SHLI SteelSword SteelLance SteelAxe SteelBow KillerLance KillerBow Lancereaver Swordslayer
+ALIGN 4
+
+
+ALIGN 4
+VendorGirlShopList:
+SHLI Fire Thunder Heal Mend Vulnerary PureWater Elixir
+ALIGN 4
+
+
+ALIGN 4
+AnnaShopList:
+SHLI HeroCrest KnightCrest OrionsBolt ElysianWhip GuidingRing OceanSeal AngelicRobe EnergyRing SecretBook Speedwings GoddessIcon Dracoshield Talisman BodyRing
+ALIGN 4
+
+
+ALIGN 4
+ArenaManShopList:
+SHLI IronSword IronLance IronAxe IronBow Fire Lightning Flux
 ALIGN 4
 
 

@@ -528,6 +528,8 @@
 #define Halberdier 180
 #define Halberdier_F 181
 
+#define TransporterWagon 182
+
 
 //char defs
 
@@ -542,6 +544,15 @@
 
 #define Alm 7
 
+#define Leif 8
+#define Nanna 9
+#define Eyvel 10
+#define Finn 11
+#define Dagdar 12
+#define Marty 13
+#define Osian 14
+#define Ronan 15
+
 //bosses
 
 
@@ -551,6 +562,12 @@
 
 //neutrals
 #define Morshu 162
+#define Anna 163
+#define ArenaMan 164
+#define VendorWoman 165
+#define VendorGirl VendorWoman //alias
+#define ArmoryMan 166
+#define Dude 167
 
 //AA stuff
 #define Celica 200
@@ -596,6 +613,25 @@
 
 #define MorshuMug 19
 #define MorshuShopMug 20
+#define AnnaMug 21
+#define AnnaShopMug 22
+#define ArenaMug 23
+#define ArenaShopMug 24
+#define ArmoryMug 25
+#define ArmoryShopMug 26
+#define DudeMug 27
+#define DudeShopMug 28
+#define VendorMug 29
+#define VendorShopMug 30
+
+#define LeifMug 31
+#define NannaMug 32
+#define EyvelMug 33
+#define FinnMug 34
+#define DagdarMug 35
+#define MartyMug 36
+#define OsianMug 37
+#define RonanMug 38
 
 //items
 

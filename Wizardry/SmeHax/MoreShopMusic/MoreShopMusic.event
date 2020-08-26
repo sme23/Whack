@@ -18,10 +18,6 @@ POP
 #define SetShopSong(songTable,shopType,songID) "PUSH; ORG (songTable+shopType); BYTE songID; POP"
 #define SetSongChapterPointer(chapterID,songTable) "PUSH; ORG (ShopChapterPointerTable+(chapterID*4)); POIN songTable; POP"
 
-#define ArmoryShopType 0
-#define VendorShopType 1
-#define SecretShopType 2
-
 
 ShopChapterPointerTable:
 InitializeshopChapterPointerTable
