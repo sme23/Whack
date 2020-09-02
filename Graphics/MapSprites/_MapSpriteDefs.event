@@ -124,56 +124,58 @@
 
 
 //and now the new ones
-#define GroundLaguzUntransformedStandingMapSpriteID 107
-#define GroundLaguzFUntransformedStandingMapSpriteID 108
+#define GroundLaguzUntransformedStandingMapSpriteID 108
+#define GroundLaguzFUntransformedStandingMapSpriteID 109
 
-#define FlyingLaguzUntransformedStandingMapSpriteID 109
-#define FlyingLaguzFUntransformedStandingMapSpriteID 110
+#define FlyingLaguzUntransformedStandingMapSpriteID 110
+#define FlyingLaguzFUntransformedStandingMapSpriteID 111
 
-#define DragonLaguzUntransformedStandingMapSpriteID 111
-#define DragonLaguzFUntransformedStandingMapSpriteID 112
+#define DragonLaguzUntransformedStandingMapSpriteID 112
+#define DragonLaguzFUntransformedStandingMapSpriteID 113
 
-#define CatLaguzTransformedStandingMapSpriteID 113
-#define CatLaguzFTransformedStandingMapSpriteID 114
+#define CatLaguzTransformedStandingMapSpriteID 114
+#define CatLaguzFTransformedStandingMapSpriteID 115
 
-#define TigerLaguzTransformedStandingMapSpriteID 115
-#define TigerLaguzFTransformedStandingMapSpriteID 116
+#define TigerLaguzTransformedStandingMapSpriteID 116
+#define TigerLaguzFTransformedStandingMapSpriteID 117
 
-#define LionLaguzTransformedStandingMapSpriteID 117
-#define LionLaguzFTransformedStandingMapSpriteID 118
+#define LionLaguzTransformedStandingMapSpriteID 118
+#define LionLaguzFTransformedStandingMapSpriteID 119
 
-#define WolfLaguzTransformedStandingMapSpriteID 119
-#define WolfLaguzFTransformedStandingMapSpriteID 120
+#define WolfLaguzTransformedStandingMapSpriteID 120
+#define WolfLaguzFTransformedStandingMapSpriteID 121
 
-#define HawkLaguzTransformedStandingMapSpriteID 121
-#define HawkLaguzFTransformedStandingMapSpriteID 122
+#define HawkLaguzTransformedStandingMapSpriteID 122
+#define HawkLaguzFTransformedStandingMapSpriteID 123
 
-#define RavenLaguzTransformedStandingMapSpriteID 123
-#define RavenLaguzFTransformedStandingMapSpriteID 124
+#define RavenLaguzTransformedStandingMapSpriteID 124
+#define RavenLaguzFTransformedStandingMapSpriteID 125
 
-#define HeronLaguzTransformedStandingMapSpriteID 125
-#define HeronLaguzFTransformedStandingMapSpriteID 126
+#define HeronLaguzTransformedStandingMapSpriteID 126
+#define HeronLaguzFTransformedStandingMapSpriteID 127
 
-#define RedDragonTransformedStandingMapSpriteID 127
-#define RedDragonFTransformedStandingMapSpriteID 128
+#define RedDragonTransformedStandingMapSpriteID 128
+#define RedDragonFTransformedStandingMapSpriteID 129
 
-#define WhiteDragonTransformedStandingMapSpriteID 129
-#define WhiteDragonFTransformedStandingMapSpriteID 130
+#define WhiteDragonTransformedStandingMapSpriteID 130
+#define WhiteDragonFTransformedStandingMapSpriteID 131
 
-#define BlackDragonTransformedStandingMapSpriteID 131
-#define BlackDragonFTransformedStandingMapSpriteID 132
+#define BlackDragonTransformedStandingMapSpriteID 132
+#define BlackDragonFTransformedStandingMapSpriteID 133
 
-#define DivineDragonUntransformedStandingMapSpriteID 133
-#define EarthDragonUntransformedStandingMapSpriteID 134
-#define IceDragonUntransformedStandingMapSpriteID 135
-#define MageDragonUntransformedStandingMapSpriteID 136
-#define WyvernUntransformedStandingMapSpriteID 137
+#define DivineDragonUntransformedStandingMapSpriteID 134
+#define EarthDragonUntransformedStandingMapSpriteID 135
+#define IceDragonUntransformedStandingMapSpriteID 136
+#define MageDragonUntransformedStandingMapSpriteID 137
+#define WyvernUntransformedStandingMapSpriteID 138
 
-#define DivineDragonTransformedStandingMapSpriteID 138
-#define EarthDragonTransformedStandingMapSpriteID 139
-#define IceDragonTransformedStandingMapSpriteID 140
-#define MageDragonTransformedStandingMapSpriteID 141
-#define WyvernTransformedStandingMapSpriteID 142
+#define DivineDragonTransformedStandingMapSpriteID 139
+#define EarthDragonTransformedStandingMapSpriteID 140
+#define IceDragonTransformedStandingMapSpriteID 141
+#define MageDragonTransformedStandingMapSpriteID 142
+#define WyvernTransformedStandingMapSpriteID 143
 
-#define FireDragonUntransformedStandingMapSpriteID 143
-#define FireDragonTransformedStandingMapSpriteID 144
+#define FireDragonUntransformedStandingMapSpriteID 144
+#define FireDragonTransformedStandingMapSpriteID 145
+
+#define TransporterWagonStandingMapSpriteID 107

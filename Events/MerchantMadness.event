@@ -37,20 +37,35 @@ END_MAIN
 Tutorial:
 END_MAIN
 
+// Extensions/AI Assembly.txt is broken so let's just define what we need here
+#define InjectAi1(aId, aScr) "PUSH; ORG 0x5A9184+(4*(aId)); POIN (aScr); POP"
+#define InjectAi2(aId, aScr) "PUSH; ORG 0x5A9138+(4*(aId)); POIN (aScr); POP"
+
+#define AiMoveTowardsPoint(aX, aY) "BYTE 0x0C (aX) 0xFF (aY); WORD 0 0 0"
+#define AiRestart "BYTE 0x03 0 0xFF 0; WORD 0 0 0"
+
+InjectAi2(0x10 /* your Ai2 id here */, AiScrMoveToPoint)
+
+ALIGN 4
+AiScrMoveToPoint:
+    AiMoveTowardsPoint(19, 0)
+    AiRestart
+
+
 PlayerUnits:
 UNIT Vanessa PegasusKnight 1 Level(1,Ally,0) [0,0] 0 0 0 1 [IronLance,Javelin,Vulnerary] NoAI
-UNIT Moulder Priest 1 Level(1,Ally,0) [1,0] 0 0 0 1 [] NoAI
-UNIT Gilliam Knight 1 Level(1,Ally,0) [2,0] 0 0 0 1 NoItems NoAI
-UNIT Syrene Falcoknight 1 Level(1,Ally,0) [3,0] 0 0 0 1 NoItems NoAI
+UNIT Moulder Priest 1 Level(1,Ally,0) [1,0] 0 0 0 1 [Heal,Vulnerary] NoAI
+UNIT Gilliam Knight 1 Level(1,Ally,0) [2,0] 0 0 0 1 [] NoAI
+UNIT Syrene Falcoknight 1 Level(1,Ally,0) [3,0] 0 0 0 1 [SteelLance] NoAI
 UNIT
 
 NPCUnits:
 UNIT Morshu TransporterWagon 1 Level(10,NPC,0) [0,1] 0 0 0 1 NoItems NoAI
-UNIT Anna TransporterWagon 1 Level(10,NPC,0) [0,2] 0 0 0 1 NoItems NoAI
-UNIT Dude TransporterWagon 1 Level(10,NPC,0) [0,3] 0 0 0 1 NoItems NoAI
-UNIT VendorGirl TransporterWagon 1 Level(10,NPC,0) [0,4] 0 0 0 1 NoItems NoAI
-UNIT ArmoryMan TransporterWagon 1 Level(10,NPC,0) [0,5] 0 0 0 1 NoItems NoAI
-UNIT ArenaMan TransporterWagon 1 Level(10,NPC,0) [0,6] 0 0 0 1 NoItems NoAI
+UNIT Anna TransporterWagon 1 Level(10,NPC,0) [1,1] 0 0 0 1 NoItems NoAI
+UNIT Dude TransporterWagon 1 Level(10,NPC,0) [2,1] 0 0 0 1 NoItems NoAI
+UNIT VendorGirl TransporterWagon 1 Level(10,NPC,0) [3,1] 0 0 0 1 NoItems NoAI
+UNIT ArmoryMan TransporterWagon 1 Level(10,NPC,0) [4,1] 0 0 0 1 NoItems NoAI
+UNIT ArenaMan TransporterWagon 1 Level(10,NPC,0) [5,1] 0 0 0 1 NoItems NoAI
 UNIT
 
 EnemyUnits:

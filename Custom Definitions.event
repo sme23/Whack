@@ -530,6 +530,8 @@
 
 #define TransporterWagon 182
 
+#define Falcoknight FalcoKnight
+
 
 //char defs
 
@@ -637,6 +639,11 @@
 #define MartyMug 36
 #define OsianMug 37
 #define RonanMug 38
+
+#define VanessaMug 39
+#define MoulderMug 40
+#define GilliamMug 41
+#define SyreneMug 42
 
 //items
 

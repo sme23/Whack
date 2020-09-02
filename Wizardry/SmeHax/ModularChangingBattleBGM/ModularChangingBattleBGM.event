@@ -12,7 +12,7 @@ ModularChangingBattleBGM:
 POIN ChangingBGMList
 
 ChangingBGMList:
-BYTE Fomortiis 0x55 //the vanilla one
+//BYTE Fomortiis 0x55 //the vanilla one
 BYTE 0xFF 0xFF //terminator
 
 #endif // USE_CHANGING_BATTLE_BGM

@@ -203,3 +203,31 @@ Bandit[X]
 A ruthless vagabond,[N]
 intent on pillaging.[X]
 
+## VanessaName
+Vanessa[X]
+
+## VanessaDesc
+A sincere, honest, and honorable[N]
+pegasus knight of Frelia.[X]
+
+## MoulderName
+Moulder[X]
+
+## MoulderDesc
+A mature priest of Frelia. He's[N]
+gentle and reassuring.[X]
+
+## GilliamName
+Gilliam[X]
+
+## GilliamDesc
+An armored knight of Frelia.[N]
+He's quiet yet dependable.[X]
+
+## SyreneName
+Syrene[X]
+
+## SyreneDesc
+The dutiful commander of the 3rd[N]
+battalion of Frelia's pegasus knights.[X]
+

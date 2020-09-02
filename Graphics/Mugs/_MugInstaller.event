@@ -94,7 +94,7 @@ ALIGN 4
 AnnaShopPortrait:
 #incext PortraitFormatter "AnnaShop.png"
 
-setMugEntry(ArenaMug,ArenaPortrait,0,0,0,0)
+setMugEntry(ArenaMug,ArenaPortrait,2,5,3,3)
 ALIGN 4
 ArenaPortrait:
 #incext PortraitFormatter "Arena.png"
@@ -104,7 +104,7 @@ ALIGN 4
 ArenaShopPortrait:
 #incext PortraitFormatter "ArenaShop.png"
 
-setMugEntry(ArmoryMug,ArmoryPortrait,0,0,0,0)
+setMugEntry(ArmoryMug,ArmoryPortrait,2,5,3,3)
 ALIGN 4
 ArmoryPortrait:
 #incext PortraitFormatter "Armory.png"
@@ -119,12 +119,12 @@ ALIGN 4
 DudePortrait:
 #incext PortraitFormatter "Dude.png"
 
-setMugEntry(DudeShopMug,DudeShopPortrait,0,0,2,0)
+setMugEntry(DudeShopMug,DudeShopPortrait,4,2,4,0)
 ALIGN 4
 DudeShopPortrait:
 #incext PortraitFormatter "DudeShop.png"
 
-setMugEntry(VendorMug,VendorPortrait,4,2,4,0)
+setMugEntry(VendorMug,VendorPortrait,2,5,3,3)
 ALIGN 4
 VendorPortrait:
 #incext PortraitFormatter "Vendor.png"
@@ -175,3 +175,25 @@ setMugEntry(RonanMug,RonanPortrait,0,0,0,0)
 ALIGN 4
 RonanPortrait:
 #incext PortraitFormatter "ronan.png"
+
+
+setMugEntry(MoulderMug,MoulderPortrait,2,5,3,3)
+ALIGN 4
+MoulderPortrait:
+#incext PortraitFormatter "Moulder.png"
+
+setMugEntry(GilliamMug,GilliamPortrait,2,5,3,3)
+ALIGN 4
+GilliamPortrait:
+#incext PortraitFormatter "Gilliam.png"
+
+setMugEntry(VanessaMug,VanessaPortrait,2,6,3,4)
+ALIGN 4
+VanessaPortrait:
+#incext PortraitFormatter "Vanessa.png"
+
+setMugEntry(SyreneMug,SyrenePortrait,2,5,3,3)
+ALIGN 4
+SyrenePortrait:
+#incext PortraitFormatter "Syrene.png"
+

@@ -62,7 +62,9 @@ InitializeShopSongTable
 SetShopSong(ShopSongTable,ArmoryShopType,Armories)
 SetShopSong(ShopSongTable,VendorShopType,Shops)
 SetShopSong(ShopSongTable,SecretShopType,Shops)
-SetShopSong(ShopSongTable,3,Comrades)
+SetShopSong(ShopSongTable,MorshuShopType,Comrades)
+SetShopSong(ShopSongTable,DudeShopType,Comrades)
+SetShopSong(ShopSongTable,ArenaShopType,Armories)
 
 
 #endif // MORE_SHOP_MUSIC_INSTALLED

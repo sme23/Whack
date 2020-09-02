@@ -121,3 +121,15 @@ MovingMapSprite(FireDragonTransformed, $81E2F34, $81E21E0)
 MovingMapSprite(Halberdier, $81EDBC4, $81ED418)
 MovingMapSprite(Halberdier_F, $81EDBC4, $81ED418)
 
+
+StandingMapSprite(TransporterWagonStandingMapSpriteID,MapSprite16x32,TransporterWagonStandingMapSprite)
+MovingMapSprite(TransporterWagon,$81C692C,TransporterWagonMovingMapSprite)
+
+
+ALIGN 4
+TransporterWagonStandingMapSprite:
+#incext Png2Dmp "TransporterWagon.png" --lz77
+
+ALIGN 4
+TransporterWagonMovingMapSprite:
+#incext Png2Dmp "TransporterWagonMov.png" --lz77
