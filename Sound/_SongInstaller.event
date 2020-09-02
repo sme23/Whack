@@ -70,6 +70,11 @@ SongTable(0x43,bstown,MapMusicGroup)
 #include "Songs/tcox_noecho.event"
 SongTable(TeamChaotix,tcox_noecho,MapMusicGroup)
 }
+{
+#include "Songs/pyrite.event"
+SongTable(PyriteTown,pyrite,MapMusicGroup)
+}
+
 
 {
 #include "SFX/sfx-damage.event"

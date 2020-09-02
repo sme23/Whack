@@ -39,3 +39,7 @@ To Be Continued[X]
 
 ## SongName_TeamChaotix
 Team Chaotix[X]
+
+## SongName_PyriteTown
+Pyrite Town[X]
+

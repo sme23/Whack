@@ -42,7 +42,7 @@ ShopUnitListEnd
 
 ALIGN 4
 MorshuShopList:
-SHLI Torch DelphiShield Mine
+SHLI Elixir ElysianWhip Mine
 ALIGN 4
 
 

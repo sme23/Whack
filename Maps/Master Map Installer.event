@@ -16,6 +16,9 @@
 #include "hub.event"
 }
 {
+#include "MerchantMadness.event"
+}
+{
 #include "Minesweeper.event"
 }
 {

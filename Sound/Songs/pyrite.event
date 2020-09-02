@@ -1,0 +1,3019 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	pyrite_grp  MusicVoices
+	#define	pyrite_pri  0
+	#define	pyrite_rev  0
+	#define	pyrite_mvl  75
+	#define	pyrite_key  0
+	#define	pyrite_tbs  1
+	#define	pyrite_exg  0
+	#define	pyrite_cmp  1
+
+	// .rodata
+	//	pyrite
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+pyrite_1:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   124*pyrite_tbs/2
+	BYTE		VOICE   34
+	BYTE		VOL     75*pyrite_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+pyrite_1_002:
+	BYTE		N08     Cn2   v127
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N06     Cn2 
+	BYTE	W24
+	BYTE		N24     As1 
+	BYTE	W24
+	BYTE		N08     Gn1 
+	BYTE	W08
+	BYTE	PEND
+// 003   ----------------------------------------
+pyrite_1_003:
+	BYTE		N08     Cn2   v127
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N06     Cn2 
+	BYTE	W24
+	BYTE		N08     Ds2 
+	BYTE	W08
+	BYTE		N16     Fn2 
+	BYTE	W16
+	BYTE		N08     Gn2 
+	BYTE	W08
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+pyrite_1_B1:
+// 012   ----------------------------------------
+pyrite_1_012:
+	BYTE		N06     Cn2   v127
+	BYTE	W48
+	BYTE		N06   
+	BYTE	W48
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N08     Cn2 
+	BYTE	W08
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N08     Fn2 
+	BYTE	W22
+	BYTE		N32     Gn2 
+	BYTE	W32
+	BYTE	W01
+	BYTE		N06     Cn2 
+	BYTE	W01
+// 014   ----------------------------------------
+	BYTE	W44
+	BYTE	W03
+	BYTE		N06   
+	BYTE	W48
+	BYTE		N16     Ds2 
+	BYTE	W01
+// 015   ----------------------------------------
+	BYTE	W15
+	BYTE		N08     Cn2 
+	BYTE	W08
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N08     Fn2 
+	BYTE	W23
+	BYTE		N30     Gn2 
+	BYTE	W32
+	BYTE	W02
+// 016   ----------------------------------------
+	BYTE	W23
+	BYTE		N24   
+	BYTE	W24
+	BYTE		        As2 
+	BYTE	W24
+	BYTE		N16     An2 
+	BYTE	W16
+	BYTE		N24     Fn2 
+	BYTE	W09
+// 017   ----------------------------------------
+	BYTE	W15
+	BYTE		N08     Gn2 
+	BYTE	W08
+	BYTE		N48     Cn2 
+	BYTE	W48
+	BYTE		N16     As1 
+	BYTE	W16
+	BYTE		N08     Bn1 
+	BYTE	W08
+	BYTE		N12     Cn2 
+	BYTE	W01
+// 018   ----------------------------------------
+pyrite_1_018:
+	BYTE	W44
+	BYTE	W03
+	BYTE		N12     Cn2   v127
+	BYTE	W48
+	BYTE	W01
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	W13
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N48   
+	BYTE	W56
+	BYTE	W02
+	BYTE		N12   
+	BYTE	W01
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_018
+// 021   ----------------------------------------
+	BYTE	W13
+	BYTE		N12     Cn2   v127
+	BYTE	W24
+	BYTE		N48   
+	BYTE	W56
+	BYTE	W02
+	BYTE		N24     Cn2   v104
+	BYTE	W01
+// 022   ----------------------------------------
+	BYTE	W23
+	BYTE		        Gn2   v127
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+	BYTE		N16     Gn2 
+	BYTE	W16
+	BYTE		N32     Cn2 
+	BYTE	W09
+// 023   ----------------------------------------
+	BYTE	W23
+	BYTE		N24     Gn2 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+	BYTE		N16     Gn2 
+	BYTE	W16
+	BYTE		N24     Fn2 
+	BYTE	W09
+// 024   ----------------------------------------
+	BYTE	W24
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE		N16     Gn2 
+	BYTE	W16
+	BYTE		N24     Fn2 
+	BYTE	W08
+// 025   ----------------------------------------
+	BYTE	W24
+	BYTE	W01
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE		        Fn2 
+	BYTE	W23
+// 026   ----------------------------------------
+	BYTE	W02
+	BYTE		        Gs2 
+	BYTE	W24
+	BYTE		        Ds2 
+	BYTE	W24
+	BYTE		        Gs2 
+	BYTE	W24
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N28     As2 
+	BYTE	W06
+// 027   ----------------------------------------
+	BYTE	W24
+	BYTE	W02
+	BYTE		N24     Fn2 
+	BYTE	W24
+	BYTE		        As2 
+	BYTE	W24
+	BYTE		N16     Fn2 
+	BYTE	W16
+	BYTE		N30     Gn2 
+	BYTE	W06
+// 028   ----------------------------------------
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+	BYTE		N16     Gn2 
+	BYTE	W16
+	BYTE		N24     Cn3 
+	BYTE	W08
+// 029   ----------------------------------------
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N24     Gn2 
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE		N16     As1 
+	BYTE	W16
+	BYTE		N08     Bn1 
+	BYTE	W08
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_002
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_003
+	BYTE	GoTo
+	 POIN2	pyrite_1_B1
+pyrite_1_B2:
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_012
+// 041   ----------------------------------------
+	BYTE		N16     Ds2   v127
+	BYTE	W16
+	BYTE		N08     Cn2 
+	BYTE	W08
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N08     Fn2 
+	BYTE	W23
+	BYTE		N32     Gn2 
+	BYTE	W32
+	BYTE	W01
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_012
+// 043   ----------------------------------------
+	BYTE		N16     Ds2   v127
+	BYTE	W16
+	BYTE		N08     Cn2 
+	BYTE	W08
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N08     Fn2 
+	BYTE	W23
+	BYTE		N30     Gn2 
+	BYTE	W30
+	BYTE		N24   
+	BYTE	W03
+// 044   ----------------------------------------
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		        As2 
+	BYTE	W24
+	BYTE		N16     An2 
+	BYTE	W16
+	BYTE		N24     Fn2 
+	BYTE	W08
+// 045   ----------------------------------------
+	BYTE	W16
+	BYTE		N08     Gn2 
+	BYTE	W08
+	BYTE		N48     Cn2 
+	BYTE	W48
+	BYTE		N16     As1 
+	BYTE	W16
+	BYTE		N08     Bn1 
+	BYTE	W08
+// 046   ----------------------------------------
+pyrite_1_046:
+	BYTE		N12     Cn2   v127
+	BYTE	W48
+	BYTE		N12   
+	BYTE	W48
+	BYTE	PEND
+// 047   ----------------------------------------
+pyrite_1_047:
+	BYTE	W14
+	BYTE		N12     Cn2   v127
+	BYTE	W24
+	BYTE		N48   
+	BYTE	W56
+	BYTE	W02
+	BYTE	PEND
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_046
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_1_047
+// 050   ----------------------------------------
+	BYTE		N24     Cn2   v104
+	BYTE	W24
+	BYTE		        Gn2   v127
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+	BYTE		N16     Gn2 
+	BYTE	W16
+	BYTE		N32     Cn2 
+	BYTE	W08
+// 051   ----------------------------------------
+	BYTE	W24
+	BYTE		N24     Gn2 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+	BYTE		N16     Gn2 
+	BYTE	W16
+	BYTE		N54     Cn2 
+	BYTE		N24     Fn2 
+	BYTE	W08
+// 052   ----------------------------------------
+	BYTE	W22
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE		N16     Gn2 
+	BYTE	W16
+	BYTE		N24     Fn2 
+	BYTE	W10
+// 053   ----------------------------------------
+	BYTE	W23
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE	W01
+// 054   ----------------------------------------
+	BYTE		        Gs2 
+	BYTE	W24
+	BYTE		        Ds2 
+	BYTE	W24
+	BYTE		        Gs2 
+	BYTE	W24
+	BYTE		N16     Ds2 
+	BYTE	W16
+	BYTE		N28     As2 
+	BYTE	W08
+// 055   ----------------------------------------
+	BYTE	W24
+	BYTE		N24     Fn2 
+	BYTE	W24
+	BYTE		        As2 
+	BYTE	W24
+	BYTE		N16     Fn2 
+	BYTE	W16
+	BYTE		N30     Gn2 
+	BYTE	W08
+// 056   ----------------------------------------
+	BYTE	W22
+	BYTE		N24   
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+	BYTE		N16     Gn2 
+	BYTE	W16
+	BYTE		N24     Cn3 
+	BYTE	W10
+// 057   ----------------------------------------
+	BYTE	W14
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N24     Gn2 
+	BYTE	W24
+	BYTE		N48     Cn2 
+	BYTE	W48
+	BYTE	W02
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+pyrite_2:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   0
+	BYTE		VOL     101*pyrite_mvl/mxv
+	BYTE		PAN     c_v-37
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+pyrite_2_006:
+	BYTE		TIE     Fn2   v127
+	BYTE		TIE     As2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Ds3 
+	BYTE	W96
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W14
+	BYTE		N12     Gn3   v092
+	BYTE		N12     As3 
+	BYTE		N12     Cn4 
+	BYTE		N12     Gn4 
+	BYTE		N12     As4 
+	BYTE		N12     Cn5 
+	BYTE	W32
+	BYTE	W02
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+pyrite_2_010:
+	BYTE	W60
+	BYTE	W03
+	BYTE		N12     Gn3   v092
+	BYTE		N12     As3 
+	BYTE		N12     Cn4 
+	BYTE		N12     Gn4 
+	BYTE		N12     As4 
+	BYTE		N12     Cn5 
+	BYTE	W32
+	BYTE	W01
+	BYTE	PEND
+// 011   ----------------------------------------
+	BYTE	W96
+pyrite_2_B1:
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_006
+// 017   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+pyrite_2_019:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N08     Cn4   v048
+	BYTE	W08
+	BYTE		        Ds4 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Fn4   v096
+	BYTE	W01
+	BYTE	PEND
+// 020   ----------------------------------------
+pyrite_2_020:
+	BYTE	W07
+	BYTE		N08     Fs4   v096
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		        Ds4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W56
+	BYTE	W01
+	BYTE	PEND
+// 021   ----------------------------------------
+pyrite_2_021:
+	BYTE	W23
+	BYTE		N08     Gn3   v096
+	BYTE	W08
+	BYTE		        Fs3 
+	BYTE	W08
+	BYTE		N16     Fn3 
+	BYTE	W24
+	BYTE		N32     Ds3 
+	BYTE	W32
+	BYTE	W01
+	BYTE	PEND
+// 022   ----------------------------------------
+pyrite_2_022:
+	BYTE		TIE     Fn2   v004
+	BYTE		TIE     As2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Ds3 
+	BYTE	W96
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 024   ----------------------------------------
+	BYTE		TIE     Gs2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Fn3 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Gs2 
+	BYTE		        Cn3 
+	BYTE		        Fn3 
+// 026   ----------------------------------------
+	BYTE		N96     Gn2 
+	BYTE		N96     As2 
+	BYTE		N96     Dn3 
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_022
+// 029   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_006
+// 035   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W14
+	BYTE		N12     Gn3   v092
+	BYTE		N12     As3 
+	BYTE		N12     Cn4 
+	BYTE		N12     Gn4 
+	BYTE		N12     As4 
+	BYTE		N12     Cn5 
+	BYTE	W32
+	BYTE	W02
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_010
+// 039   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	pyrite_2_B1
+pyrite_2_B2:
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_006
+// 045   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_019
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_020
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_021
+// 050   ----------------------------------------
+pyrite_2_050:
+	BYTE		TIE     Fn2   v064
+	BYTE		TIE     As2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Ds3 
+	BYTE	W96
+	BYTE	PEND
+// 051   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 052   ----------------------------------------
+	BYTE		TIE     Gs2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Fn3 
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Gs2 
+	BYTE		        Cn3 
+	BYTE		        Fn3 
+// 054   ----------------------------------------
+	BYTE		N96     Gn2 
+	BYTE		N96     As2 
+	BYTE		N96     Dn3 
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_2_050
+// 057   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+pyrite_3:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   60
+	BYTE		VOL     114*pyrite_mvl/mxv
+	BYTE		PAN     c_v-39
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+pyrite_3_007:
+	BYTE	W72
+	BYTE		N12     Cn3   v127
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE		N36     Fs3 
+	BYTE	W36
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		N12     Cn3   v116
+	BYTE	W08
+	BYTE		N16     As2 
+	BYTE	W04
+// 009   ----------------------------------------
+pyrite_3_009:
+	BYTE	W12
+	BYTE		N54     Cn3   v116
+	BYTE	W56
+	BYTE	W02
+	BYTE		N12     Gn2   v127
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W09
+	BYTE		N96     Cn3   v116
+	BYTE	W01
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE		N08     Cn4   v127
+	BYTE	W01
+pyrite_3_B1:
+// 012   ----------------------------------------
+pyrite_3_012:
+	BYTE		N08     Gn3   v127
+	BYTE	W44
+	BYTE	W03
+	BYTE		N06     Cn4 
+	BYTE	W01
+	BYTE		N08     Gn3 
+	BYTE	W44
+	BYTE	W03
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W15
+	BYTE		N08     Cn4 
+	BYTE	W01
+	BYTE		        Gn3 
+	BYTE	W07
+	BYTE		        Ds4 
+	BYTE	W01
+	BYTE		N16     As3 
+	BYTE	W15
+	BYTE		N08     Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W32
+	BYTE	W01
+	BYTE		N06     Cn4 
+	BYTE	W01
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_012
+// 015   ----------------------------------------
+pyrite_3_015:
+	BYTE		N16     As3   v127
+	BYTE	W15
+	BYTE		N08     Cn4 
+	BYTE	W01
+	BYTE		N04     Gn3 
+	BYTE	W07
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE		        As3 
+	BYTE	W15
+	BYTE		N08     Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W32
+	BYTE	W02
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+pyrite_3_021:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N12     Gn3   v127
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Ds4 
+	BYTE	W08
+	BYTE		N24     Fs4 
+	BYTE	W01
+	BYTE	PEND
+// 022   ----------------------------------------
+pyrite_3_022:
+	BYTE	W23
+	BYTE		N16     Fn4   v127
+	BYTE	W16
+	BYTE		N12     Ds4 
+	BYTE	W24
+	BYTE		N24     Cn4 
+	BYTE	W24
+	BYTE		N08     As3 
+	BYTE	W08
+	BYTE		N48     Cn4 
+	BYTE	W01
+	BYTE	PEND
+// 023   ----------------------------------------
+pyrite_3_023:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N16     Ds4   v127
+	BYTE	W16
+	BYTE		N56     Cn4 
+	BYTE	W09
+	BYTE	PEND
+// 024   ----------------------------------------
+pyrite_3_024:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N16     As3   v127
+	BYTE	W16
+	BYTE		N56     Cn4 
+	BYTE	W09
+	BYTE	PEND
+// 025   ----------------------------------------
+pyrite_3_025:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N12     Gn3   v127
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W09
+	BYTE	PEND
+// 026   ----------------------------------------
+pyrite_3_026:
+	BYTE		N24     Ds4   v127
+	BYTE	W24
+	BYTE		N16     Cn4 
+	BYTE	W16
+	BYTE		N12     Ds4 
+	BYTE	W24
+	BYTE		N24     Fn4 
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE	PEND
+// 027   ----------------------------------------
+pyrite_3_027:
+	BYTE	W16
+	BYTE		N24     As3   v127
+	BYTE	W24
+	BYTE		        Fn3 
+	BYTE	W24
+	BYTE		        As3 
+	BYTE	W24
+	BYTE		TIE     Gn3 
+	BYTE	W08
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT   
+	BYTE	W48
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_007
+// 036   ----------------------------------------
+	BYTE		N36     Fs3   v127
+	BYTE	W36
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		N08     Cn3   v116
+	BYTE	W08
+	BYTE		N16     As2 
+	BYTE	W04
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_009
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE		N06     Cn4   v127
+	BYTE	W01
+	BYTE	GoTo
+	 POIN2	pyrite_3_B1
+pyrite_3_B2:
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_012
+// 041   ----------------------------------------
+	BYTE		N16     As3   v127
+	BYTE	W15
+	BYTE		N08     Cn4 
+	BYTE	W01
+	BYTE		N04     Gn3 
+	BYTE	W07
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE		        As3 
+	BYTE	W15
+	BYTE		N08     Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W32
+	BYTE	W01
+	BYTE		N06     Cn4 
+	BYTE	W01
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_012
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_015
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_021
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_022
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_023
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_024
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_025
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_026
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_3_027
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Gn3 
+	BYTE	W48
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+pyrite_4:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		VOL     95*pyrite_mvl/mxv
+	BYTE	W24
+	BYTE		N06     Cs1   v100
+	BYTE		N06     Ds4 
+	BYTE	W48
+	BYTE		        Cs1 
+	BYTE		N06     Ds4 
+	BYTE	W24
+// 001   ----------------------------------------
+pyrite_4_001:
+	BYTE	W24
+	BYTE		N06     Cs1   v100
+	BYTE		N06     Ds4 
+	BYTE	W48
+	BYTE		        Cs1 
+	BYTE		N06     Ds4 
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_001
+// 006   ----------------------------------------
+pyrite_4_006:
+	BYTE		N06     Gs1   v100
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Gs1 
+	BYTE		N06     Ds4 
+	BYTE	W24
+	BYTE		        Gs1 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Gs1 
+	BYTE		N06     Ds4 
+	BYTE	W24
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+pyrite_4_B1:
+// 012   ----------------------------------------
+pyrite_4_012:
+	BYTE		N06     Fs1   v100
+	BYTE		N06     Gs1 
+	BYTE	W07
+	BYTE		        Fs1 
+	BYTE		N06     Gs1 
+	BYTE	W08
+	BYTE		        Fs1 
+	BYTE		N06     Gs1 
+	BYTE	W09
+	BYTE		        Cs1 
+	BYTE		N06     Fs1 
+	BYTE		N06     Gs1 
+	BYTE		N24     As1 
+	BYTE		N06     Ds4 
+	BYTE	W24
+	BYTE		        Fs1 
+	BYTE		N06     Gs1 
+	BYTE	W07
+	BYTE		        Fs1 
+	BYTE		N06     Gs1 
+	BYTE	W08
+	BYTE		        Fs1 
+	BYTE		N06     Gs1 
+	BYTE	W09
+	BYTE		        Cs1 
+	BYTE		N06     Fs1 
+	BYTE		N06     Gs1 
+	BYTE		N24     As1 
+	BYTE		N06     Ds4 
+	BYTE	W24
+	BYTE	PEND
+// 013   ----------------------------------------
+pyrite_4_013:
+	BYTE		N06     Fs1   v100
+	BYTE		N06     Gs1 
+	BYTE	W07
+	BYTE		        Fs1 
+	BYTE		N06     Gs1 
+	BYTE	W08
+	BYTE		        Fs1 
+	BYTE		N06     Gs1 
+	BYTE	W09
+	BYTE		        Cs1 
+	BYTE		N06     Fs1 
+	BYTE		N06     Gs1 
+	BYTE		N24     As1 
+	BYTE		N06     Ds4 
+	BYTE	W48
+	BYTE		        Cs1 
+	BYTE		N24     As1 
+	BYTE		N06     Ds4 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_012
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_013
+// 016   ----------------------------------------
+pyrite_4_016:
+	BYTE		N06     As1   v100
+	BYTE		N06     Ds2 
+	BYTE		N06     Bn2 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Ds2 
+	BYTE		N06     Ds4 
+	BYTE	W15
+	BYTE		        Ds2 
+	BYTE	W09
+	BYTE		N06   
+	BYTE		N06     Bn2 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Ds2 
+	BYTE		N06     Ds4 
+	BYTE	W15
+	BYTE		        Ds2 
+	BYTE	W09
+	BYTE	PEND
+// 017   ----------------------------------------
+pyrite_4_017:
+	BYTE		N06     Ds2   v100
+	BYTE		N06     Bn2 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Ds2 
+	BYTE		N06     Ds4 
+	BYTE	W15
+	BYTE		        Ds2 
+	BYTE	W09
+	BYTE		N06   
+	BYTE		N06     Bn2 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Ds2 
+	BYTE		N06     Ds4 
+	BYTE	W15
+	BYTE		        Ds2 
+	BYTE	W09
+	BYTE	PEND
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 029   ----------------------------------------
+	BYTE		N06     Ds2   v100
+	BYTE		N06     Bn2 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Ds2 
+	BYTE		N06     Ds4 
+	BYTE	W15
+	BYTE		        Ds2 
+	BYTE	W09
+	BYTE		N06   
+	BYTE		N06     Bn2 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Ds2 
+	BYTE		N06     Ds4 
+	BYTE	W24
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_001
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_001
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_001
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_001
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+	BYTE	GoTo
+	 POIN2	pyrite_4_B1
+pyrite_4_B2:
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_012
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_013
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_012
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_013
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_016
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_006
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_4_017
+// 057   ----------------------------------------
+	BYTE		N06     Ds2   v100
+	BYTE		N06     Bn2 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N06     Ds2 
+	BYTE		N06     Ds4 
+	BYTE	W15
+	BYTE		        Ds2 
+	BYTE	W09
+	BYTE		N06   
+	BYTE		N06     Bn2 
+	BYTE	W48
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+pyrite_5:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   61
+	BYTE		VOL     91*pyrite_mvl/mxv
+	BYTE		PAN     c_v+39
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+pyrite_5_B1:
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE		N96     Cn2   v127
+	BYTE	W96
+// 023   ----------------------------------------
+pyrite_5_023:
+	BYTE	W24
+	BYTE		N16     Cn3   v127
+	BYTE	W16
+	BYTE		N08     As2 
+	BYTE	W24
+	BYTE	W01
+	BYTE		N12     Gn2 
+	BYTE	W24
+	BYTE		N54     Fn2 
+	BYTE	W07
+	BYTE	PEND
+// 024   ----------------------------------------
+pyrite_5_024:
+	BYTE	W72
+	BYTE		N16     As1   v127
+	BYTE	W16
+	BYTE		N12     Cn2 
+	BYTE	W08
+	BYTE	PEND
+// 025   ----------------------------------------
+pyrite_5_025:
+	BYTE	W16
+	BYTE		N12     Ds2   v127
+	BYTE	W24
+	BYTE		N56     Fn2 
+	BYTE	W56
+	BYTE	PEND
+// 026   ----------------------------------------
+pyrite_5_026:
+	BYTE	W24
+	BYTE		N16     Gs2   v127
+	BYTE	W16
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N24     As2 
+	BYTE	W08
+	BYTE	PEND
+// 027   ----------------------------------------
+	BYTE	W16
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        Ds2 
+	BYTE	W24
+	BYTE		TIE     Cn2 
+	BYTE		TIE     En2   v096
+	BYTE	W08
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W40
+	BYTE		EOT   
+	BYTE	W08
+	BYTE		EOT     Cn2 
+	BYTE	W48
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	pyrite_5_B1
+pyrite_5_B2:
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE		N96     Cn2   v127
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_5_023
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_5_024
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_5_025
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_5_026
+// 055   ----------------------------------------
+	BYTE	W16
+	BYTE		N24     Fn2   v127
+	BYTE	W24
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        Ds2 
+	BYTE	W24
+	BYTE		TIE     Cn2 
+	BYTE	W08
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT   
+	BYTE	W48
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+pyrite_6:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   4
+	BYTE		VOL     83*pyrite_mvl/mxv
+	BYTE		PAN     c_v+26
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+pyrite_6_B1:
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+pyrite_6_015:
+	BYTE	W72
+	BYTE		N03     Fs5   v127
+	BYTE	W03
+	BYTE		        Fn5 
+	BYTE	W03
+	BYTE		        En5 
+	BYTE	W03
+	BYTE		        Cn5 
+	BYTE	W03
+	BYTE		        Bn4 
+	BYTE	W03
+	BYTE		        Gn4 
+	BYTE	W03
+	BYTE		        Fn4 
+	BYTE	W03
+	BYTE		        Dn4 
+	BYTE	W03
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+pyrite_6_018:
+	BYTE		N16     Cn4   v127
+	BYTE	W16
+	BYTE		N08     Ds4 
+	BYTE	W08
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		N03     Fn4 
+	BYTE	W03
+	BYTE		N24     Fs4 
+	BYTE	W24
+	BYTE		N08     Fn4 
+	BYTE	W08
+	BYTE		N16     Ds4 
+	BYTE	W16
+	BYTE		N08     Cn4 
+	BYTE	W08
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE	PEND
+// 019   ----------------------------------------
+pyrite_6_019:
+	BYTE	W15
+	BYTE		N16     Fn4   v127
+	BYTE	W22
+	BYTE		N24     Gn4 
+	BYTE	W24
+	BYTE	W01
+	BYTE		N40     Cn5 
+	BYTE	W32
+	BYTE	W02
+	BYTE	PEND
+// 020   ----------------------------------------
+pyrite_6_020:
+	BYTE	W20
+	BYTE		N03     Dn5   v127
+	BYTE	W03
+	BYTE		N16     Ds5 
+	BYTE	W16
+	BYTE		N09     Cn5 
+	BYTE	W24
+	BYTE		N24     As4 
+	BYTE	W24
+	BYTE		N08     Gn4 
+	BYTE	W08
+	BYTE		N12     As4 
+	BYTE	W01
+	BYTE	PEND
+// 021   ----------------------------------------
+pyrite_6_021:
+	BYTE	W15
+	BYTE		N08     Gn4   v127
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        Fs4 
+	BYTE	W08
+	BYTE		N16     Fn4 
+	BYTE	W24
+	BYTE		N32     Ds4 
+	BYTE	W32
+	BYTE	W01
+	BYTE	PEND
+// 022   ----------------------------------------
+pyrite_6_022:
+	BYTE	W40
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Ds4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Ds4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Ds4 
+	BYTE	W08
+	BYTE	PEND
+// 023   ----------------------------------------
+pyrite_6_023:
+	BYTE	W16
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Ds4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Ds4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Ds4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Ds4 
+	BYTE	W08
+	BYTE	PEND
+// 024   ----------------------------------------
+pyrite_6_024:
+	BYTE	W40
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Fn4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Fn4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Fn4 
+	BYTE	W08
+	BYTE	PEND
+// 025   ----------------------------------------
+pyrite_6_025:
+	BYTE	W16
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Fn4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Fn4 
+	BYTE	W56
+	BYTE	PEND
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_022
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_023
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	pyrite_6_B1
+pyrite_6_B2:
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_015
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_018
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_019
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_020
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_021
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_022
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_023
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_024
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_025
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_022
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_6_023
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+pyrite_7:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   49
+	BYTE		VOL     81*pyrite_mvl/mxv
+	BYTE		PAN     c_v+26
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+pyrite_7_007:
+	BYTE	W72
+	BYTE		N08     Cn3   v127
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE	PEND
+// 008   ----------------------------------------
+pyrite_7_008:
+	BYTE		N36     Fs3   v127
+	BYTE	W36
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		N08     Cn3   v116
+	BYTE	W08
+	BYTE		N16     As2 
+	BYTE	W04
+	BYTE	PEND
+// 009   ----------------------------------------
+pyrite_7_009:
+	BYTE	W12
+	BYTE		N54     Cn3   v116
+	BYTE	W56
+	BYTE	W02
+	BYTE		N08     Gn2   v127
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W09
+	BYTE		N96     Cn3   v116
+	BYTE	W01
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+pyrite_7_011:
+	BYTE	W92
+	BYTE	W03
+	BYTE		N06     Cn4   v127
+	BYTE	W01
+	BYTE	PEND
+pyrite_7_B1:
+// 012   ----------------------------------------
+pyrite_7_012:
+	BYTE		N08     Gn3   v127
+	BYTE	W44
+	BYTE	W03
+	BYTE		N06     Cn4 
+	BYTE	W01
+	BYTE		N08     Gn3 
+	BYTE	W44
+	BYTE	W03
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE	PEND
+// 013   ----------------------------------------
+pyrite_7_013:
+	BYTE		N08     As3   v127
+	BYTE	W15
+	BYTE		        Cn4 
+	BYTE	W01
+	BYTE		N04     Gn3 
+	BYTE	W07
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE		N08     As3 
+	BYTE	W15
+	BYTE		        Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W32
+	BYTE	W01
+	BYTE		N06     Cn4 
+	BYTE	W01
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_012
+// 015   ----------------------------------------
+pyrite_7_015:
+	BYTE		N08     As3   v127
+	BYTE	W15
+	BYTE		        Cn4 
+	BYTE	W01
+	BYTE		N04     Gn3 
+	BYTE	W07
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE		N08     As3 
+	BYTE	W15
+	BYTE		        Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W10
+	BYTE		N03     Fs5 
+	BYTE	W03
+	BYTE		        Fn5 
+	BYTE	W03
+	BYTE		        En5 
+	BYTE	W03
+	BYTE		        Cn5 
+	BYTE	W03
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE		N16     Cn3 
+	BYTE		N16     Cn4 
+	BYTE	W16
+	BYTE		N08     Ds3 
+	BYTE		N08     Ds4 
+	BYTE	W08
+	BYTE		N12     Cn3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		N03     Fn3 
+	BYTE		N03     Fn4 
+	BYTE	W03
+	BYTE		N24     Fs3 
+	BYTE		N24     Fs4 
+	BYTE	W24
+	BYTE		N08     Fn3 
+	BYTE		N08     Fn4 
+	BYTE	W08
+	BYTE		N16     Ds3 
+	BYTE		N16     Ds4 
+	BYTE	W16
+	BYTE		N08     Cn3 
+	BYTE		N08     Cn4 
+	BYTE	W08
+	BYTE		N16     Ds3 
+	BYTE		N16     Ds4 
+	BYTE	W01
+// 019   ----------------------------------------
+	BYTE	W15
+	BYTE		        Fn3 
+	BYTE		N16     Fn4 
+	BYTE	W22
+	BYTE		N24     Gn3 
+	BYTE		N24     Gn4 
+	BYTE	W24
+	BYTE	W01
+	BYTE		N40     Cn4 
+	BYTE		N40     Cn5 
+	BYTE	W32
+	BYTE	W02
+// 020   ----------------------------------------
+	BYTE	W20
+	BYTE		N03     Dn4 
+	BYTE		N03     Dn5 
+	BYTE	W03
+	BYTE		N16     Ds4 
+	BYTE		N16     Ds5 
+	BYTE	W16
+	BYTE		N09     Cn4 
+	BYTE		N09     Cn5 
+	BYTE	W24
+	BYTE		N24     As3 
+	BYTE		N24     As4 
+	BYTE	W24
+	BYTE		N08     Gn3 
+	BYTE		N08     Gn4 
+	BYTE	W08
+	BYTE		N12     As3 
+	BYTE		N12     As4 
+	BYTE	W01
+// 021   ----------------------------------------
+	BYTE	W15
+	BYTE		N08     Gn3 
+	BYTE		N08     Gn4 
+	BYTE	W08
+	BYTE		        Gn3 
+	BYTE		N08     Gn4 
+	BYTE	W08
+	BYTE		        Fs3 
+	BYTE		N08     Fs4 
+	BYTE	W08
+	BYTE		N16     Fn3 
+	BYTE		N16     Fn4 
+	BYTE	W32
+	BYTE		N08     Gn3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Ds4 
+	BYTE	W08
+	BYTE		N24     Fs4 
+	BYTE	W01
+// 022   ----------------------------------------
+pyrite_7_022:
+	BYTE	W23
+	BYTE		N16     Fn4   v127
+	BYTE	W16
+	BYTE		N12     Ds4 
+	BYTE	W01
+	BYTE		N08     Cn4   v088
+	BYTE	W23
+	BYTE		N24     Cn4   v127
+	BYTE	W01
+	BYTE		N08     Ds4   v088
+	BYTE	W23
+	BYTE		        As3   v127
+	BYTE	W01
+	BYTE		        Ds4   v088
+	BYTE	W07
+	BYTE		N48     Cn4   v127
+	BYTE	W01
+	BYTE	PEND
+// 023   ----------------------------------------
+pyrite_7_023:
+	BYTE	W16
+	BYTE		N08     Ds4   v088
+	BYTE	W24
+	BYTE		N08   
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W07
+	BYTE		N16     Ds4   v127
+	BYTE	W16
+	BYTE		N56     Cn4 
+	BYTE	W01
+	BYTE		N08     Ds4   v088
+	BYTE	W08
+	BYTE	PEND
+// 024   ----------------------------------------
+pyrite_7_024:
+	BYTE	W40
+	BYTE		N08     Fn4   v088
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE		N08     Fn4 
+	BYTE	W07
+	BYTE		N16     As3   v127
+	BYTE	W16
+	BYTE		N56     Cn4 
+	BYTE	W01
+	BYTE		N08     Fn4   v088
+	BYTE	W08
+	BYTE	PEND
+// 025   ----------------------------------------
+pyrite_7_025:
+	BYTE	W16
+	BYTE		N08     Fn4   v088
+	BYTE	W24
+	BYTE		N08   
+	BYTE	W30
+	BYTE	W01
+	BYTE		        Gn3   v127
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W09
+	BYTE	PEND
+// 026   ----------------------------------------
+pyrite_7_026:
+	BYTE		N24     Ds4   v127
+	BYTE	W24
+	BYTE		N16     Cn4 
+	BYTE	W16
+	BYTE		N08     Cn4   v088
+	BYTE		N12     Ds4   v127
+	BYTE	W24
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Ds4 
+	BYTE		N24     Fn4   v127
+	BYTE	W24
+	BYTE		N08     Cn4   v088
+	BYTE		N24     Dn4   v127
+	BYTE		N08     Ds4   v088
+	BYTE	W08
+	BYTE	PEND
+// 027   ----------------------------------------
+pyrite_7_027:
+	BYTE	W16
+	BYTE		N24     As3   v127
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Ds4 
+	BYTE	W24
+	BYTE		N24     Fn3   v127
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Ds4 
+	BYTE	W24
+	BYTE		N24     As3   v127
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Ds4 
+	BYTE	W24
+	BYTE		TIE     Gn3   v127
+	BYTE		N08     Cn4   v088
+	BYTE		N08     Ds4 
+	BYTE	W08
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Gn3 
+	BYTE	W48
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_007
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_008
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_009
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_011
+	BYTE	GoTo
+	 POIN2	pyrite_7_B1
+pyrite_7_B2:
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_012
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_013
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_012
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_015
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE		N16     Cn4   v127
+	BYTE	W16
+	BYTE		N08     Ds4 
+	BYTE	W08
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		N03     Fn4 
+	BYTE	W03
+	BYTE		N24     Fs4 
+	BYTE	W24
+	BYTE		N08     Fn4 
+	BYTE	W08
+	BYTE		N16     Ds4 
+	BYTE	W16
+	BYTE		N08     Cn4 
+	BYTE	W08
+	BYTE		N16     Ds4 
+	BYTE	W01
+// 047   ----------------------------------------
+	BYTE	W15
+	BYTE		        Fn4 
+	BYTE	W22
+	BYTE		N24     Gn4 
+	BYTE	W24
+	BYTE	W01
+	BYTE		N40     Cn5 
+	BYTE	W32
+	BYTE	W02
+// 048   ----------------------------------------
+	BYTE	W20
+	BYTE		N03     Dn5 
+	BYTE	W03
+	BYTE		N16     Ds5 
+	BYTE	W16
+	BYTE		N09     Cn5 
+	BYTE	W24
+	BYTE		N24     As4 
+	BYTE	W24
+	BYTE		N08     Gn4 
+	BYTE	W08
+	BYTE		N12     As4 
+	BYTE	W01
+// 049   ----------------------------------------
+	BYTE	W15
+	BYTE		N08     Gn4 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        Fs4 
+	BYTE	W08
+	BYTE		N16     Fn4 
+	BYTE	W24
+	BYTE		N32     Ds4 
+	BYTE	W08
+	BYTE		N08     Gn3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        As3 
+	BYTE	W08
+	BYTE		N24     Fs4 
+	BYTE	W01
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_022
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_023
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_024
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_025
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_026
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_7_027
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Gn3 
+	BYTE	W48
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+pyrite_8:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		VOL     83*pyrite_mvl/mxv
+	BYTE		PAN     c_v+29
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+pyrite_8_B1:
+// 012   ----------------------------------------
+pyrite_8_012:
+	BYTE		N08     Gn3   v127
+	BYTE	W48
+	BYTE		N08   
+	BYTE	W48
+	BYTE	PEND
+// 013   ----------------------------------------
+pyrite_8_013:
+	BYTE		N08     As3   v127
+	BYTE	W16
+	BYTE		N04     Gn3 
+	BYTE	W08
+	BYTE		N08     As3 
+	BYTE	W16
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE	W32
+	BYTE	W02
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_8_012
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_8_013
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	pyrite_8_B1
+pyrite_8_B2:
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_8_012
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_8_013
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_8_012
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_8_013
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.9) ****************//
+
+pyrite_9:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   46
+	BYTE		VOL     72*pyrite_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+pyrite_9_B1:
+// 012   ----------------------------------------
+pyrite_9_012:
+	BYTE		TIE     Ds3   v064
+	BYTE		TIE     Gn3 
+	BYTE	W96
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Ds3 
+	BYTE		        Gn3 
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_9_012
+// 015   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Ds3 
+	BYTE		        Gn3 
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+pyrite_9_022:
+	BYTE		TIE     Fn2   v072
+	BYTE		TIE     As2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Ds3 
+	BYTE	W96
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 024   ----------------------------------------
+	BYTE		TIE     Gs2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Fn3 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Gs2 
+	BYTE		        Cn3 
+	BYTE		        Fn3 
+// 026   ----------------------------------------
+	BYTE		N96     Gn2 
+	BYTE		N96     As2 
+	BYTE		N96     Dn3 
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_9_022
+// 029   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	pyrite_9_B1
+pyrite_9_B2:
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_9_012
+// 041   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Ds3 
+	BYTE		        Gn3 
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_9_012
+// 043   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Ds3 
+	BYTE		        Gn3 
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+pyrite_9_050:
+	BYTE		TIE     Fn2   v064
+	BYTE		TIE     As2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Ds3 
+	BYTE	W96
+	BYTE	PEND
+// 051   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 052   ----------------------------------------
+	BYTE		TIE     Gs2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Fn3 
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Gs2 
+	BYTE		        Cn3 
+	BYTE		        Fn3 
+// 054   ----------------------------------------
+	BYTE		N96     Gn2 
+	BYTE		N96     As2 
+	BYTE		N96     Dn3 
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_9_050
+// 057   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Fn2 
+	BYTE		        As2 
+	BYTE		        Cn3 
+	BYTE		        Ds3 
+	BYTE	W48
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 10 (Midi-Chn.11) ****************//
+
+pyrite_10:
+	BYTE	KEYSH   pyrite_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   13
+	BYTE		VOL     79*pyrite_mvl/mxv
+	BYTE		PAN     c_v+37
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+pyrite_10_007:
+	BYTE	W72
+	BYTE		N12     Cn3   v127
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE		N36     Fs3 
+	BYTE	W36
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		N12     Cn3   v116
+	BYTE	W08
+	BYTE		N16     As2 
+	BYTE	W04
+// 009   ----------------------------------------
+pyrite_10_009:
+	BYTE	W12
+	BYTE		N54     Cn3   v116
+	BYTE	W56
+	BYTE	W02
+	BYTE		N12     Gn2   v127
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W09
+	BYTE		N96     Cn3   v116
+	BYTE	W01
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE		N08     Cn4   v127
+	BYTE	W01
+pyrite_10_B1:
+// 012   ----------------------------------------
+pyrite_10_012:
+	BYTE		N08     Gn3   v127
+	BYTE	W44
+	BYTE	W03
+	BYTE		N06     Cn4 
+	BYTE	W01
+	BYTE		N08     Gn3 
+	BYTE	W44
+	BYTE	W03
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W15
+	BYTE		N08     Cn4 
+	BYTE	W01
+	BYTE		        Gn3 
+	BYTE	W07
+	BYTE		        Ds4 
+	BYTE	W01
+	BYTE		N16     As3 
+	BYTE	W15
+	BYTE		N08     Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W32
+	BYTE	W01
+	BYTE		N06     Cn4 
+	BYTE	W01
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_012
+// 015   ----------------------------------------
+	BYTE		N16     As3   v127
+	BYTE	W15
+	BYTE		N08     Cn4 
+	BYTE	W01
+	BYTE		N04     Gn3 
+	BYTE	W07
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE		        As3 
+	BYTE	W15
+	BYTE		N08     Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W32
+	BYTE	W02
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+pyrite_10_021:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N12     Gn3   v127
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Ds4 
+	BYTE	W08
+	BYTE		N24     Fs4 
+	BYTE	W01
+	BYTE	PEND
+// 022   ----------------------------------------
+pyrite_10_022:
+	BYTE	W23
+	BYTE		N16     Fn4   v127
+	BYTE	W16
+	BYTE		N12     Ds4 
+	BYTE	W24
+	BYTE		N24     Cn4 
+	BYTE	W24
+	BYTE		N08     As3 
+	BYTE	W08
+	BYTE		N48     Cn4 
+	BYTE	W01
+	BYTE	PEND
+// 023   ----------------------------------------
+pyrite_10_023:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N16     Ds4   v127
+	BYTE	W16
+	BYTE		N56     Cn4 
+	BYTE	W09
+	BYTE	PEND
+// 024   ----------------------------------------
+pyrite_10_024:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N16     As3   v127
+	BYTE	W16
+	BYTE		N56     Cn4 
+	BYTE	W09
+	BYTE	PEND
+// 025   ----------------------------------------
+pyrite_10_025:
+	BYTE	W68
+	BYTE	W03
+	BYTE		N12     Gn3   v127
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W09
+	BYTE	PEND
+// 026   ----------------------------------------
+pyrite_10_026:
+	BYTE		N24     Ds4   v127
+	BYTE	W24
+	BYTE		N16     Cn4 
+	BYTE	W16
+	BYTE		N12     Ds4 
+	BYTE	W24
+	BYTE		N24     Fn4 
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE	PEND
+// 027   ----------------------------------------
+pyrite_10_027:
+	BYTE	W16
+	BYTE		N24     As3   v127
+	BYTE	W24
+	BYTE		        Fn3 
+	BYTE	W24
+	BYTE		        As3 
+	BYTE	W24
+	BYTE		TIE     Gn3 
+	BYTE	W08
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT   
+	BYTE	W48
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_007
+// 036   ----------------------------------------
+	BYTE		N36     Fs3   v127
+	BYTE	W36
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		N08     Cn3   v116
+	BYTE	W08
+	BYTE		N16     As2 
+	BYTE	W04
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_009
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE		N06     Cn4   v127
+	BYTE	W01
+	BYTE	GoTo
+	 POIN2	pyrite_10_B1
+pyrite_10_B2:
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_012
+// 041   ----------------------------------------
+	BYTE		N08     As3   v127
+	BYTE	W15
+	BYTE		        Cn4 
+	BYTE	W01
+	BYTE		N04     Gn3 
+	BYTE	W07
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE		N08     As3 
+	BYTE	W15
+	BYTE		        Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W32
+	BYTE	W01
+	BYTE		N06     Cn4 
+	BYTE	W01
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_012
+// 043   ----------------------------------------
+	BYTE		N08     As3   v127
+	BYTE	W15
+	BYTE		        Cn4 
+	BYTE	W01
+	BYTE		N04     Gn3 
+	BYTE	W07
+	BYTE		N16     Ds4 
+	BYTE	W01
+	BYTE		N08     As3 
+	BYTE	W15
+	BYTE		        Fn4 
+	BYTE	W01
+	BYTE		        Cn4 
+	BYTE	W22
+	BYTE		N32     Dn4 
+	BYTE		N32     Gn4 
+	BYTE	W32
+	BYTE	W02
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_021
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_022
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_023
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_024
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_025
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_026
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pyrite_10_027
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Gn3 
+	BYTE	W48
+// 058   ----------------------------------------
+	BYTE	W10
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+pyrite:
+	BYTE	10	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	pyrite_pri	// Priority
+	BYTE	pyrite_rev	// Reverb.
+
+	POIN2	pyrite_grp
+
+	POIN2	pyrite_1
+	POIN2	pyrite_2
+	POIN2	pyrite_3
+	POIN2	pyrite_4
+	POIN2	pyrite_5
+	POIN2	pyrite_6
+	POIN2	pyrite_7
+	POIN2	pyrite_8
+	POIN2	pyrite_9
+	POIN2	pyrite_10
+
+	
