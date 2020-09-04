@@ -231,3 +231,15 @@ Syrene[X]
 The dutiful commander of the 3rd[N]
 battalion of Frelia's pegasus knights.[X]
 
+## BazbasName
+Bazba's[X]
+
+## BazbasDesc
+A member of Bazba's Bandits, who[N]
+roam this region.[X]
+
+## BazbaName
+Bazba[X]
+
+## BazbaDesc
+The leader of Bazba's Bandits.[X]

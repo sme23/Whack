@@ -429,6 +429,7 @@
 #define LavaAnims2 0x54
 
 #define LavaPalette1 0x51
+#define LavaPalette2 0x91
 
 #define TempleObjType 0x5F
 #define TempleTileConfig 0x61
@@ -463,6 +464,7 @@
 #define MinesweeperObjType 0x8E
 #define MinesweeperTileConfig 0x8F
 #define MinesweeperPalette1 0x90
+
 
 
 //class defs
@@ -532,6 +534,7 @@
 
 #define Falcoknight FalcoKnight
 
+#define Templar 183
 
 //char defs
 
@@ -561,11 +564,11 @@
 #define Syrene 19
 
 //bosses
-
+#define Bazba 71
 
 //generics
-#define DaeinGeneric 0x70
-
+#define DaeinGeneric 112
+#define Bazbas 113
 
 //neutrals
 #define Morshu 162
@@ -644,6 +647,8 @@
 #define MoulderMug 40
 #define GilliamMug 41
 #define SyreneMug 42
+
+#define BazbaMug 43
 
 //items
 

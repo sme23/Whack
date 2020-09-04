@@ -35,3 +35,9 @@ MinesweeperTiles:
 EventPointerTable(MinesweeperObjType, MinesweeperObj)
 EventPointerTable(MinesweeperPalette1, MinesweeperPal)
 EventPointerTable(MinesweeperTileConfig, MinesweeperTiles)
+
+ALIGN 4
+ColdVolcanoPal:
+#incbin "LavaButCold.bin"
+
+EventPointerTable(LavaPalette2, ColdVolcanoPal)

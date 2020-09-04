@@ -19,6 +19,11 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Village(7,Village1Event,5,1)
+Village(8,Village2Event,1,14)
+Village(9,Village3Event,19,14)
+Village(10,Village4Event,10,9)
+Village(11,Village5Event,14,1)
 END_MAIN
 
 MiscBasedEvents:
@@ -53,23 +58,43 @@ AiScrMoveToPoint:
 
 
 PlayerUnits:
-UNIT Vanessa PegasusKnight 1 Level(1,Ally,0) [0,0] 0 0 0 1 [IronLance,Javelin,Vulnerary] NoAI
-UNIT Moulder Priest 1 Level(1,Ally,0) [1,0] 0 0 0 1 [Heal,Vulnerary] NoAI
-UNIT Gilliam Knight 1 Level(1,Ally,0) [2,0] 0 0 0 1 [] NoAI
-UNIT Syrene Falcoknight 1 Level(1,Ally,0) [3,0] 0 0 0 1 [SteelLance] NoAI
+UNIT Vanessa Falcoknight 1 Level(1,Ally,0) [2,3] 0 0 0 1 [IronLance,Vulnerary] NoAI
+UNIT Moulder Templar 1 Level(1,Ally,0) [4,4] 0 0 0 1 [Heal] NoAI
+UNIT Gilliam GreatKnight 1 Level(1,Ally,0) [5,3] 0 0 0 1 [IronLance] NoAI
+UNIT Syrene Falcoknight 1 Level(1,Ally,0) [3,4] 0 0 0 1 [Javelin] NoAI
 UNIT
 
 NPCUnits:
-UNIT Morshu TransporterWagon 1 Level(10,NPC,0) [0,1] 0 0 0 1 NoItems NoAI
-UNIT Anna TransporterWagon 1 Level(10,NPC,0) [1,1] 0 0 0 1 NoItems NoAI
-UNIT Dude TransporterWagon 1 Level(10,NPC,0) [2,1] 0 0 0 1 NoItems NoAI
-UNIT VendorGirl TransporterWagon 1 Level(10,NPC,0) [3,1] 0 0 0 1 NoItems NoAI
-UNIT ArmoryMan TransporterWagon 1 Level(10,NPC,0) [4,1] 0 0 0 1 NoItems NoAI
-UNIT ArenaMan TransporterWagon 1 Level(10,NPC,0) [5,1] 0 0 0 1 NoItems NoAI
+UNIT Morshu TransporterWagon 1 Level(10,NPC,0) [0,0] 0 0 0 1 NoItems [0,0x10,4,0]
+UNIT Anna TransporterWagon 1 Level(10,NPC,0) [3,0] 0 0 0 1 NoItems [0,0x10,4,0]
+UNIT Dude TransporterWagon 1 Level(10,NPC,0) [2,1] 0 0 0 1 NoItems [0,0x10,4,0]
+UNIT VendorGirl TransporterWagon 1 Level(10,NPC,0) [0,1] 0 0 0 1 NoItems [0,0x10,4,0]
+UNIT ArmoryMan TransporterWagon 1 Level(10,NPC,0) [1,2] 0 0 0 1 NoItems [0,0x10,4,0]
+UNIT ArenaMan TransporterWagon 1 Level(10,NPC,0) [4,2] 0 0 0 1 NoItems [0,0x10,4,0]
 UNIT
 
 EnemyUnits:
-UNIT DaeinGeneric 1 1 Level(1,Enemy,0) [14,9] 0 0 0 1 NoItems NoAI
+UNIT Bazba Fighter 1 Level(15,Enemy,0) [17,2] 0 0 0 1 [Swordreaver,Tomahawk] AttackInRangeAI
+UNIT Bazbas Brigand 1 Level(10,Enemy,1) [3,6] 0 0 0 1 [IronAxe] AttackInRangeAI
+UNIT Bazbas Mercenary 1 Level(10,Enemy,1) [5,7] 0 0 0 1 [SteelBlade] AttackInRangeAI
+UNIT Bazbas Brigand 1 Level(10,Enemy,1) [0,8] 0 0 0 1 [IronAxe] AttackInRangeAI
+UNIT Bazbas Cavalier 1 Level(11,Enemy,1) [3,9] 0 0 0 1 [SteelLance] AttackInRangeAI
+UNIT Bazbas Fighter 1 Level(11,Enemy,1) [3,15] 0 0 0 1 [SteelAxe] AttackInRangeAI
+UNIT Bazbas Brigand 1 Level(12,Enemy,1) [11,13] 0 0 0 1 [HandAxe] AttackInRangeAI
+UNIT Bazbas Myrmidon 1 Level(11,Enemy,1) [15,15] 0 0 0 1 [KillingEdge] AttackInRangeAI
+UNIT Bazbas Brigand 1 Level(12,Enemy,1) [18,11] 0 0 0 1 [HandAxe] AttackInRangeAI
+UNIT Bazbas Thief 1 Level(12,Enemy,1) [19,1] 0 0 0 1 [SlimSword] [0x10,0,0,8] //steal from inventories
+UNIT Bazbas Cavalier 1 Level(13,Enemy,1) [12,10] 0 0 0 1 [SteelLance,IronSword] AttackInRangeAI
+UNIT Bazbas Brigand 1 Level(13,Enemy,1) [16,7] 0 0 0 1 [SteelAxe] AttackInRangeAI
+UNIT Bazbas Berserker 1 Level(1,Enemy,1) [7,14] 0 0 0 1 [SteelAxe,HandAxe] AttackInRangeAI
+UNIT Bazbas Fighter 1 Level(14,Enemy,1) [8,8] 0 0 0 1 [SteelAxe] AttackInRangeAI
+UNIT Bazbas Hero 1 Level(1,Enemy,1) [9,4] 0 0 0 1 [SteelSword,HandAxe] AttackInRangeAI
+UNIT Bazbas Brigand 1 Level(14,Enemy,1) [9,6] 0 0 0 1 [SteelAxe] AttackInRangeAI
+UNIT Bazbas Mercenary 1 Level(15,Enemy,1) [11,2] 0 0 0 1 [SteelSword] AttackInRangeAI
+UNIT Bazbas Brigand 1 Level(14,Enemy,1) [15,4] 0 0 0 1 [HandAxe] AttackInRangeAI
+UNIT Bazbas Mercenary 1 Level(14,Enemy,1) [8,3] 0 0 0 1 [SteelSword] AttackInRangeAI
+UNIT Bazbas Cavalier 1 Level(15,Enemy,1) [12,4] 0 0 0 1 [Javelin] AttackInRangeAI
+UNIT Bazbas Archer 1 Level(15,Enemy,1) [14,1] 0 0 0 1 [KillerBow] AttackInRangeAI
 UNIT
 
 Traps1:
@@ -87,6 +112,7 @@ LOAD1 0 NPCUnits
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
+GiveGold(20000)
 NoFade
 ENDA
 
@@ -112,9 +138,34 @@ ENDA
 // - ???
 
 EndingScene:
-
+DISA Vanessa
+DISA Gilliam
+DISA Moulder
+DISA Syrene
 
 MNC2 HubChID
 NoFade
 ENDA
+
+
+Village1Event:
+NoFade
+ENDA
+
+Village2Event:
+NoFade
+ENDA
+
+Village3Event:
+NoFade
+ENDA
+
+Village4Event:
+NoFade
+ENDA
+
+Village5Event:
+NoFade
+ENDA
+
 

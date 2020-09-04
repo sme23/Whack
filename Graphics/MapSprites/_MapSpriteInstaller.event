@@ -126,6 +126,8 @@ StandingMapSprite(TransporterWagonStandingMapSpriteID,MapSprite16x32,Transporter
 MovingMapSprite(TransporterWagon,$81C692C,TransporterWagonMovingMapSprite)
 
 
+MovingMapSprite(Templar, $81EC4FC, $81EBAF4)
+
 ALIGN 4
 TransporterWagonStandingMapSprite:
 #incext Png2Dmp "TransporterWagon.png" --lz77

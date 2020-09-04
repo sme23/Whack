@@ -44,3 +44,4 @@ global feature ideas
 - Refuge
 - str/mag split (to show off some things mag-related)
 - all the default qol stuff
+
