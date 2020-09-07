@@ -74,7 +74,7 @@ UNIT ArenaMan TransporterWagon 1 Level(10,NPC,0) [4,2] 0 0 0 1 NoItems [0,0x10,4
 UNIT
 
 EnemyUnits:
-UNIT Bazba Fighter 1 Level(15,Enemy,0) [17,2] 0 0 0 1 [Swordreaver,Tomahawk] AttackInRangeAI
+UNIT Bazba Warrior 1 Level(15,Enemy,0) [17,2] 0 0 0 1 [Swordreaver,Tomahawk] AttackInRangeAI
 UNIT Bazbas Brigand 1 Level(10,Enemy,1) [3,6] 0 0 0 1 [IronAxe] AttackInRangeAI
 UNIT Bazbas Mercenary 1 Level(10,Enemy,1) [5,7] 0 0 0 1 [SteelBlade] AttackInRangeAI
 UNIT Bazbas Brigand 1 Level(10,Enemy,1) [0,8] 0 0 0 1 [IronAxe] AttackInRangeAI
@@ -112,6 +112,7 @@ LOAD1 0 NPCUnits
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
+FADU 10
 GiveGold(20000)
 NoFade
 ENDA
