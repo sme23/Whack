@@ -74,6 +74,10 @@ SongTable(TeamChaotix,tcox_noecho,MapMusicGroup)
 #include "Songs/pyrite.event"
 SongTable(PyriteTown,pyrite,MapMusicGroup)
 }
+{
+#include "Songs/harrier.event"
+SongTable(SpaceHarrier,harrier,MapMusicGroup)
+}
 
 
 {

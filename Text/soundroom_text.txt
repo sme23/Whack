@@ -43,3 +43,5 @@ Team Chaotix[X]
 ## SongName_PyriteTown
 Pyrite Town[X]
 
+## SongName_SpaceHarrier
+Space Harrier[X]

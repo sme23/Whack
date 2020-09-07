@@ -1,3 +1,5 @@
+#include "drumfix_fe8.event"
+
 MusicVoices:
 //0 acoustic grand - G2-C4
 VoiceMulti(MusicVoices,0x0,PianoTable,PianoChart)

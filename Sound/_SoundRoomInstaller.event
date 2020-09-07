@@ -43,5 +43,5 @@ SoundRoomEntry(Trial,0,SongName_Trial)
 SoundRoomEntry(ToBeContinued,0,SongName_ToBeContinued)
 SoundRoomEntry(TeamChaotix,0,SongName_TeamChaotix)
 SoundRoomEntry(PyriteTown,0,SongName_PyriteTown)
+SoundRoomEntry(SpaceHarrier,0,SongName_SpaceHarrier)
 SoundRoomTerminator
-
