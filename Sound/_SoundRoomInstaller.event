@@ -45,3 +45,27 @@ SoundRoomEntry(TeamChaotix,0,SongName_TeamChaotix)
 SoundRoomEntry(PyriteTown,0,SongName_PyriteTown)
 SoundRoomEntry(SpaceHarrier,0,SongName_SpaceHarrier)
 SoundRoomTerminator
+
+//expand sound room cap
+PUSH
+ORG $AED76
+SHORT 0x2148 //change 0x36 offset to 0x48? this may break more things but let's see
+ORG $AED80
+SHORT 0x6010 //write for size
+ORG $AEE1C
+SHORT 0x1A89 //read for size
+ORG $AF4B6
+SHORT 0x3048 //add r0,#0x48
+SHORT 0x6800 //ldr r0,[r0]
+ORG $AF33C
+SHORT 0x3048 //add r0,#0x48
+SHORT 0x6800 //ldr r0,[r0]
+ORG $AF92E
+SHORT 0x3148 //add r1,#0x48
+SHORT 0x6809 //ldr r1,[r1]
+ORG $AF3A6
+SHORT 0x3048 //add r0,#0x48
+SHORT 0x6800 //ldr r0,[r0]
+POP
+
+
