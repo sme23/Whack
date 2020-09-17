@@ -28,6 +28,7 @@ POP
 
 ALIGN 4
 SoundRoomList:
+SoundRoomEntry(BSTown,0,SongName_BSTown)
 SoundRoomEntry(Allegro2001,0,SongName_Allegro2001)
 SoundRoomEntry(CourtroomLobby,0,SongName_CourtroomLobby)
 SoundRoomEntry(TreasureTroveCove,0,SongName_TreasureTroveCove)
@@ -44,8 +45,10 @@ SoundRoomEntry(ToBeContinued,0,SongName_ToBeContinued)
 SoundRoomEntry(TeamChaotix,0,SongName_TeamChaotix)
 SoundRoomEntry(PyriteTown,0,SongName_PyriteTown)
 SoundRoomEntry(SpaceHarrier,0,SongName_SpaceHarrier)
+SoundRoomEntry(ThisOnesStronger,0,SongName_ThisOnesStronger)
 SoundRoomTerminator
 
+/*
 //expand sound room cap
 PUSH
 ORG $AED76
@@ -67,5 +70,4 @@ ORG $AF3A6
 SHORT 0x3048 //add r0,#0x48
 SHORT 0x6800 //ldr r0,[r0]
 POP
-
-
+*/

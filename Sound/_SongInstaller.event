@@ -64,7 +64,7 @@ SongTable(ToBeContinued,cont,MapMusicGroup)
 }
 {
 #include "Songs/bstown.event"
-SongTable(0x43,bstown,MapMusicGroup)
+SongTable(BSTown,bstown,MapMusicGroup)
 }
 {
 #include "Songs/tcox_noecho.event"
@@ -78,7 +78,10 @@ SongTable(PyriteTown,pyrite,MapMusicGroup)
 #include "Songs/harrier.event"
 SongTable(SpaceHarrier,harrier,MapMusicGroup)
 }
-
+{
+#include "Songs/stronger.event"
+SongTable(ThisOnesStronger,stronger,BattleMusicGroup)
+}
 
 {
 #include "SFX/sfx-damage.event"

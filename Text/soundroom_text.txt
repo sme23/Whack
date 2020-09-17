@@ -45,3 +45,9 @@ Pyrite Town[X]
 
 ## SongName_SpaceHarrier
 Space Harrier[X]
+
+## SongName_BSTown
+Town Whose Name Was Stolen[X]
+
+## SongName_ThisOnesStronger
+Team, This One's Stronger![X]
