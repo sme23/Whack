@@ -154,10 +154,27 @@ bx r0
 
 
 
+
+
+
+
+
+
+
+
+
 FreeMovement_MainLoop:
 push {r4-r7,r14}
 
-mov r6,r0 @r6 = parent proc
+mov r7,r0 @r7 = parent proc
+
+
+@set active unit to first player unit
+ldr r0,=#0x202BE4C
+ldr r1,=#0x3004E50
+str r0,[r1]
+
+mov r0,r7
 bl HandleUnitMovement @in place of the cursor movement function, same general idea
 
 pop {r4-r7}
@@ -172,6 +189,10 @@ bx r0
 .equ gGameState,0x202BCB0
 .equ MoveCameraByStepMaybe,0x8015838
 .equ SomeFunc,0x801588C
+
+
+
+
 
 
 CheckDirectionalButtonPress:
@@ -224,11 +245,24 @@ bx r1
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .equ MoveUnit,0x807A015 @r0 = unit struct, r1 = x coord, r1 = y coord, r3 = some constant (always 1? is this speed?)
 .equ GetSomeEventEngineMoveRelatedBitfield,0x800FCD9
 .equ CenterCameraOntoPosition,0x8015D85
 .equ TryPrepareEventUnitMovement,0x800FC91
 .equ CanUnitCrossTerrain,0x801949D
+.equ GetUnit,0x8019431
 
 .global HandleUnitMovement
 .type HandleUnitMovement, %function
@@ -246,15 +280,13 @@ push {r4-r7,r14}
 @3. once direction is found, if B is being pressed move the unit 2 steps in that direction
 @otherwise, only move them 1 step
 
-blh GetSomeEventEngineMoveRelatedBitfield
 mov r7,r0
+
 
 @check for directional button press
 bl CheckDirectionalButtonPress
 cmp r0,#0
-beq HandleUnitMovement_GoBack
-
-push {r6}
+beq CheckAPress
 
 @now we uhhh index a jump table ig
 
@@ -342,10 +374,23 @@ blh CanUnitCrossTerrain
 cmp r0,#0
 beq SkipMovingUnit
 
+
+@check if a unit exists at the target location
+ldr r2,=#0x202E4D8 @unit map
+ldr r2,[r2]
+lsl r1,r6,#2
+add r2,r1
+ldr r2,[r2]
+add r2,r5
+ldrb r1,[r2]
+cmp r1,#0
+bne SkipMovingUnit
+
+
 mov r0,r4
 mov r1,r5
 mov r2,r6
-mov r3,r7 @redundant some of the time but not always
+mov r3,#0 @redundant some of the time but not always
 blh MoveUnit
 
 @do fancy graphical thing here for moving map sprites
@@ -354,13 +399,18 @@ blh MoveUnit
 SkipMovingUnit:
 
 @make the camera follow your movement
-mov r0,r7
+mov r0,#0
 mov r1,r5
 mov r2,r6
 blh CenterCameraOntoPosition
 
+@make suspend save
+
+@run MiscBasedEvents
+bl RunMiscBasedEvents
+
 @pause for some number of frames defined in proc sleeps via goto
-pop {r0}
+mov r0,r7
 
 @check if B is being pressed
 ldr r1,=gpKeyState
@@ -379,6 +429,54 @@ GotoGivenSleepProcLabel:
 blh GotoProcLabel
 
 
+CheckAPress:
+
+@check if A is pressed
+ldr r0,=gpKeyState
+ldr r0,[r0]
+ldrh r0,[r0,#0x4]
+mov r1,#0x1
+and r0,r1
+cmp r0,#0
+beq NoAPress
+
+@check for various map objects at current location
+cmp r5,#0xFF
+ble CallDoMapEvents
+ldr r4,=#0x202BE4C @first player unit
+ldrb r0,[r4,#0x10]
+ldrb r1,[r4,#0x11]
+b DoMapEventsCall
+
+.ltorg
+.align
+
+CallDoMapEvents:
+mov r0,r5
+mov r1,r6
+mov r2,r7
+DoMapEventsCall:
+bl FreeMove_RunMapEvents
+
+@check for talk events with unit at coords
+ldr r2,=#0x202E4D8 @unit map
+ldr r2,[r2]
+lsl r1,r6,#2
+add r2,r1
+ldr r2,[r2]
+add r2,r5
+ldrb r0,[r2]
+cmp r0,#0
+beq HandleUnitMovement_GoBack
+blh GetUnit
+@r0 = unit we're checking
+mov r1,r7 @r1 = parent proc
+bl FreeMove_RunTalkEvents
+
+NoAPress:
+
+
+
 HandleUnitMovement_GoBack:
 pop {r4-r7}
 pop {r0}
@@ -389,61 +487,211 @@ bx r0
 
 
 
-ldr r2,=gpKeyState
-ldr r3,[r2]
-ldrh r1,[r3,#4] @load currently pressed keys halfword
-mov r0,#2		@check if B is pressed
-and r0,r1
+
+
+
+
+
+
+
+
+.equ gChapterData,0x0202bcf0
+.equ GetChapterEventDataPointer,0x080346b1
+.equ CheckEventDefinition,0x08082ec5
+.equ ClearActiveEventRegistry,0x080845a5
+.equ CallEventDefinition,0x08082e81
+.equ CheckNextEventDefinition,0x08082f29
+.equ RunLocationEvents,0x080840C5
+
+RunMiscBasedEvents:
+push {r14}
+sub sp,#0x1C
+ldr r0,=gChapterData
+ldrb r0,[r0,#0xE]
+blh GetChapterEventDataPointer
+ldr r0,[r0,#0xC]
+str r0,[sp]
+mov r1,sp
+ldr r2,=#0x202BE4C
+ldrb r0,[r2,#0x10]
+strb r0,[r1,#0x18]
+ldrb r0,[r2,#0x11]
+strb r0,[r1,#0x19]
+mov r0,r13
+blh CheckEventDefinition
 cmp r0,#0
-beq HandleUnitMovement_StandardMoveSpeed @if not, move normal speed
+beq ExitMiscBasedLoop
+blh ClearActiveEventRegistry
+EventCallLoop:
+mov r0,r13
+mov r1,#1
+blh CallEventDefinition
+mov r0,r13
+blh CheckNextEventDefinition
+cmp r0,#0
+bne EventCallLoop
 
-@this is checking cursor display coordinates; repurposing these for current unit display coordinates as well (need to find current displayed map area and work from there)
+ExitMiscBasedLoop:
+add sp,#0x1C
 
-@ldr r0,=gGameState
-@ldr r0,[r0,#0x20] 
-@ldr r1,=#0x70007
-@and r0,r1
-@cmp r0,#0
-@bne StandardMoveSpeed
-
-@move twice as fast if B is [b]eing pressed
-@ldrh r0,[r3,#0x10]
-@bl HandleCursorMovement @think this is just the visual part of moving the cursor actually; replace with our own for moving the unit?
-mov r0,#8
-blh MoveCameraByStepMaybe @This is directly related to cursor position data
-mov r0,#8
-blh SomeFunc @investigate
-b HandleUnitMovement_PostMoveSpeed
+pop {r0}
+bx r0
 
 .ltorg
 .align
 
-HandleUnitMovement_StandardMoveSpeed:
-@ldr r0,[r2]
-@ldrh r0,[r0,#6]
-@bl HandleCursorMovement @think this is just the visual part of moving the cursor actually; replace with our own for moving the unit?
-mov r0,#4
-blh MoveCameraByStepMaybe
-mov r0,#4
-blh SomeFunc @investigate
-
-HandleUnitMovement_PostMoveSpeed:
-
-@theres a check here for cursor display coordinates so we're going to not
-@actually lets understand what cursor is doing better first
-
-
-
-@sets keys newly pressed this frame to
-@Start|Right|Left|Up|Down|10|11|12|13|14|15
-ldr r0,=gpKeyState
-ldr r2,[r0]
-ldrh r1,[r2,#8]
-ldr r0,=#0xFcF4
-and r0,r1
-strh r0,[r2,#8]
 
 
 
 
+
+
+
+
+
+
+.global FreeMove_RunMapEvents
+.type FreeMove_RunMapEvents, %function
+
+
+.equ CanUseLockpicks,0x8028EF9
+.equ GetUnitItemSlot,0x8018AE5
+.equ GetLocationEventCommandAt,0x8084079
+.equ ActionStaffDoorChestUseItem,0x0802fc49
+.equ ChestEvent,0x8591FA8
+
+
+FreeMove_RunMapEvents:
+push {r4-r7,r14}
+
+mov r5,r0 @x coord
+mov r6,r1 @y coord
+mov r7,r2 @parent proc
+ldr r4,=#0x202BE4C
+
+@check for map events at current position
+mov r0,r5
+mov r1,r6
+blh GetLocationEventCommandAt @returns identifier for thing, chest is 0x14
+
+cmp r0,#0x14 
+beq OpenChest
+cmp r0,#0x12
+beq OpenDoor
+cmp r0,#0x10
+beq DoVisit
+cmp r0,#0x11
+beq DoEndChapter
+b MapEv_GoBack
+
+.ltorg
+.align
+
+OpenChest:
+@there is a chest at our current position, so let's open it
+mov r0,r5
+mov r1,r6
+blh RunLocationEvents
+
+b MapEv_GoBack
+
+.ltorg
+.align
+
+OpenDoor:
+mov r0,r5
+mov r1,r6
+blh RunLocationEvents
+
+b MapEv_GoBack
+
+.ltorg
+.align
+
+DoVisit:
+mov r0,r5
+mov r1,r6
+blh RunLocationEvents
+
+b MapEv_GoBack
+
+.ltorg
+.align
+
+DoEndChapter:
+mov r0,r5
+mov r1,r6
+blh RunLocationEvents
+
+b MapEv_GoBack
+
+.ltorg
+.align
+
+MapEv_GoBack:
+pop {r4-r7}
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+
+
+.equ CallMapEventEngine,0x800D07D
+.equ StartMapEventEngine,0x0800d0b1
+
+.global FreeMove_RunTalkEvents
+.type FreeMove_RunTalkEvents, %function
+
+FreeMove_RunTalkEvents:
+push {r4-r7,r14}
+mov r4,r0 @r4 = unit we're checking for
+mov r5,r1 @r5 = parent proc
+
+@get chapter events
+ldr r0,=gChapterData
+ldrb r0,[r0,#0xE]
+blh GetChapterEventDataPointer
+
+@get talk events
+ldr r0,[r0,#4]
+
+@get char ID of unit passed into function
+ldr r1,[r4]
+ldrb r1,[r1,#4]
+
+@compare to the value at talk event +0x9; if that value is 0, end
+
+Talk_LoopStart:
+ldrb r2,[r0,#9]
+cmp r2,#0
+beq Talk_GoBack
+cmp r2,r1
+beq Talk_LoopEnd
+
+Talk_LoopRestart:
+add r0,#16
+b Talk_LoopStart
+
+.ltorg
+.align
+
+Talk_LoopEnd:
+@r0 = the entry we're using
+@event at +0x4
+ldr r0,[r0,#4]
+@run this event
+mov r1,#1
+blh CallMapEventEngine
+
+Talk_GoBack:
+
+pop {r4-r7}
+pop {r0}
+bx r0
+
+.ltorg
+.align
 

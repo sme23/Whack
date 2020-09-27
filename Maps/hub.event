@@ -2,6 +2,31 @@
 
 #include eastdlib.event
 
-SetChapterData(HubChID,ValniObjType,0,ValniPalette1,ValniTileConfig,HubMapID,Map,ValniAnims,0,0)
+SetChapterData(HubChID,ValniObjType,0,ValniPalette1,ValniTileConfig,HubMapID,Map,ValniAnims,0,HubMapChangesID)
+EventPointerTable(HubMapChangesID, MapChanges)
 Map:
 #incbin "hub_data.dmp"
+
+MapChanges:
+TileMap(0,4,4,1,1,Tile_Layer_2)
+TileMap(1,11,5,1,1,Tile_Layer_3)
+TileMap(2,11,7,1,1,Tile_Layer_4)
+TileMap(3,5,2,1,1,Tile_Layer_5)
+TileMapEnd
+
+Tile_Layer_2:
+SHORT 0x110 
+ALIGN 4
+
+Tile_Layer_3:
+SHORT 0x3c0 
+ALIGN 4
+
+Tile_Layer_4:
+SHORT 0x3c0 
+ALIGN 4
+
+Tile_Layer_5:
+SHORT 0x110 
+ALIGN 4
+

@@ -67,3 +67,9 @@
 [LoadKliff] = [LoadFace][0xF][0x1]
 [LoadForsyth] = [LoadFace][0x10][0x1]
 [LoadFayeBreakdown] = [LoadFace][0x11][0x1]
+
+[LoadBazba] = [LoadFace][0x2B][0x1]
+[LoadGilliam] = [LoadFace][0x29][0x1]
+[LoadVanessa] = [LoadFace][0x27][0x1]
+[LoadSyrene] = [LoadFace][0x2A][0x1]
+[LoadMoulder] = [LoadFace][0x28][0x1]

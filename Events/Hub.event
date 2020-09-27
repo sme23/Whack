@@ -1,5 +1,6 @@
 EventPointerTable(HubEventsID, PointerList)
 
+ALIGN 4
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -16,13 +17,27 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
+CharacterEvent(0,VanessaTalk,Moulder,Vanessa)
+CharacterEvent(0,GilliamTalk,Moulder,Gilliam)
+CharacterEvent(0,BazbaTalk,Moulder,Bazba)
 END_MAIN
 
+#define Chest(id,item,x,y) "CHES id item [x,y] 0x14"
+#define Door(id,x,y) "DOOR id [x,y] 0x12"
+
+ALIGN 4
 LocationBasedEvents:
+CHES 7 Vulnerary [4,4] 0x14 
+CHES 8 Elixir [5,2] 0x14
+Door(9,11,5)
+Door(10,11,7)
+House(0,secretshoptest,11,6)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+//AFEV 0 TestAfev 0
+AREA 0 TestAfev [4,9] [4,9]
 END_MAIN
 
 Dunno1:
@@ -51,8 +66,43 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
+VanessaTalk:
+Text(TestVanessaTalk)
+NoFade
+ENDA
+
+BazbaTalk:
+Text(TestBazbaTalk)
+NoFade
+ENDA
+
+GilliamTalk:
+Text(TestGilliamTalk)
+NoFade
+ENDA
+
+TestAfev:
+Text(TestFreeMoveText)
+NoFade
+ENDA
+
+secretshoptest:
+SVAL s1 Moulder
+SVAL s2 testshop|IsPointer
+SVAL s3 2
+ASMC MakeShopASMC
+NoFade
+ENDA
+
+testshop:
+SHLI PureWater
+ALIGN 4
+
 AntiBorkUnit:
 UNIT Moulder Priest 0 Level(1,Ally,0) [0,0] 0 0 0 1 NoItems NoAI
+UNIT Vanessa PegasusKnight 0 Level(1,Ally,0) [15,9] 0 0 0 1 NoItems NoAI
+UNIT Bazba Fighter 0 Level(1,Enemy,0) [16,3] 0 0 0 1 NoItems NoAI
+UNIT Gilliam Knight 0 Level(1,NPC,0) [17,1] 0 0 0 1 NoItems NoAI
 UNIT
 
 BeginningScene:

@@ -301,6 +301,25 @@ Units cannot enter[N]
 spaces where these[N]
 have been placed.[X]
 
+## TestFreeMoveText
+[OpenMidRight][LoadFace][CurrentPortrait]
+This event runs every[N]
+time you step here.[A][X]
+
+## TestBazbaTalk
+[OpenMidRight][LoadBazba]
+Oi m8[A][X]
+
+## TestGilliamTalk
+[OpenMidRight][LoadGilliam]
+why do they call it an oven[A][N]
+when you ov in the cold[N]
+food ov out hot eat the food?[A][X]
+
+## TestVanessaTalk
+[OpenMidRight][LoadVanessa]
+Epic![A][X]
+
 #include "statscreen_text.txt"
 
 #include "unitmenu_text.txt"
