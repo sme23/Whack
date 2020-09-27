@@ -51,6 +51,10 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
+AntiBorkUnit:
+UNIT Moulder Priest 0 Level(1,Ally,0) [0,0] 0 0 0 1 NoItems NoAI
+UNIT
+
 BeginningScene:
 
 //this is going to be a chapter select hub
@@ -70,7 +74,23 @@ BeginningScene:
 //time to restructure everything ig
 FADU 10
 
+EnableFreeMovement
+
+LOAD1 0 AntiBorkUnit
+ENUN
+
+NoFade
+ENDA
+
+
 EVBIT_MODIFY 4
+
+ScrollBoxText(AADemoHubGotoText)
+MNC2 AceAttorneyChID
+
+NoFade
+ENDA
+
 
 CHECK_EVENTID OpeningViewedFlag
 BNE 0 s0 sC

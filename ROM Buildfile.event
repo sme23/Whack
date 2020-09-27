@@ -36,6 +36,10 @@
     #include "Events/_MasterEventInstaller.event"
     
     MESSAGE Used free space ends at currentOffset
+
+WORD 0 0 0 0 0 0 0 0 0 0 0 0
+
+
 #else
     ERROR You are not assembling FE8 events!
 #endif

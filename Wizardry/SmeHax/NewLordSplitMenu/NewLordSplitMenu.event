@@ -61,7 +61,7 @@ SHORT LockedScenarioText_AceAttorney
 ALIGN 4
 	HubMenuPage1:
 	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
-	WORD 0                  // style (change it if u want)
+	WORD 3                  // style (change it if u want)
 	POIN HubMenuPage1_Commands // Command Definitions
 	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
 
@@ -80,7 +80,7 @@ ALIGN 4
 ALIGN 4
 	HubMenuPage2:
 	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
-	WORD 0                  // style (change it if u want)
+	WORD 3                  // style (change it if u want)
 	POIN HubMenuPage2_Commands // Command Definitions
 	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
 	
@@ -99,7 +99,7 @@ ALIGN 4
 ALIGN 4
 	HubMenuPage3:
 	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
-	WORD 0                  // style (change it if u want)
+	WORD 3                  // style (change it if u want)
 	POIN HubMenuPage3_Commands // Command Definitions
 	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
 
@@ -132,7 +132,7 @@ ALIGN 4
 ALIGN 4
 	BonusMenu:
 	BYTE 4 4 22 0           // Geometry, order: X, Y, Width, Height (Height doesn't matter)
-	WORD 1                  // style (change it if u want)
+	WORD 3                  // style (change it if u want)
 	POIN BonusMenu_Commands // Command Definitions
 	WORD 0 0 0 0 0 0        // No routines to handle B press/R press/construction/etc
 

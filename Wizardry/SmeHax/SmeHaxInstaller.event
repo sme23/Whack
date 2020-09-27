@@ -26,3 +26,4 @@
 
 #include "Swarp/Swarp.event"
 #include "Minesweeper/Minesweeper.event"
+#include "FreeMovement/FreeMovement.event"
