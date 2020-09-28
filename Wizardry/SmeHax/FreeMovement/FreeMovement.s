@@ -38,8 +38,8 @@ ldrb r1,[r0]		@load a byte
 mov r2,#0x1			@this is the mask for the flag
 orr r1,r2			@set the flag if not already set
 strb r1,[r0]		@store back the byte
-mov r0,r4
-bl NewPlayerPhaseEvaluationFunc @needed to make it actually immediately change mode
+@mov r0,r4
+@bl NewPlayerPhaseEvaluationFunc @needed to make it actually immediately change mode
 pop {r4}
 pop {r0}
 bx r0				@return
@@ -167,8 +167,8 @@ bx r0
 
 
 
-
-
+.equ MU_IsAnyActive,0x8078739
+.equ MU_Exists,0x8078721
 
 
 
@@ -179,6 +179,10 @@ push {r4-r7,r14}
 
 mov r7,r0 @r7 = parent proc
 
+@if MU proc exists, skip unit movement
+blh MU_Exists
+cmp r0,#1
+beq SkipUnitMovement
 
 @set active unit to first player unit
 ldr r0,=#0x202BE4C
@@ -188,6 +192,7 @@ str r0,[r1]
 mov r0,r7
 bl HandleUnitMovement @in place of the cursor movement function, same general idea
 
+SkipUnitMovement:
 pop {r4-r7}
 pop {r0}
 bx r0
@@ -274,6 +279,10 @@ bx r1
 .equ TryPrepareEventUnitMovement,0x800FC91
 .equ CanUnitCrossTerrain,0x801949D
 .equ GetUnit,0x8019431
+.equ MuCtr_CreateWithReda,0x800FEF5 @r0 = char struct, target x coord, target y coord
+.equ EnsureCameraOntoPosition,0x08015e0d
+
+
 
 .global HandleUnitMovement
 .type HandleUnitMovement, %function
@@ -297,7 +306,7 @@ mov r7,r0
 @check for directional button press
 bl CheckDirectionalButtonPress
 cmp r0,#0
-beq CheckAPress
+beq CheckAPressLadder
 
 @now we uhhh index a jump table ig
 
@@ -365,6 +374,9 @@ beq MoveReconvene
 add r1,#1
 b MoveReconvene
 
+CheckAPressLadder:
+b CheckAPress
+
 @this probably needs rewritten, look int MuCtr stuff to do so (structure a REDA in RAM and have it read that as the instruction?)
 
 MoveReconvene:
@@ -397,12 +409,28 @@ ldrb r1,[r2]
 cmp r1,#0
 bne SkipMovingUnit
 
+@make the camera follow your movement
+mov r0,#0
+mov r1,r5
+mov r2,r6
+blh EnsureCameraOntoPosition
 
+sub sp,#0x1C
+mov r0,#0
+str r0,[sp]
+str r0,[sp,#0x4]
+str r0,[sp,#0x8]
+str r0,[sp,#0xC]
+str r0,[sp,#0x10]
+str r0,[sp,#0x14]
+str r0,[sp,#0x18]
+str r0,[sp,#0x1C]
 mov r0,r4
 mov r1,r5
 mov r2,r6
 mov r3,#0 @redundant some of the time but not always
-blh MoveUnit
+blh MuCtr_CreateWithReda
+add sp,#0x1C
 
 @do fancy graphical thing here for moving map sprites
 
@@ -413,9 +441,13 @@ SkipMovingUnit:
 mov r0,#0
 mov r1,r5
 mov r2,r6
-blh CenterCameraOntoPosition
+blh EnsureCameraOntoPosition
+
+b DoEventsAndStuff
 
 @make suspend save
+
+DoEventsAndStuff:
 
 @run MiscBasedEvents
 bl RunMiscBasedEvents
@@ -705,4 +737,13 @@ bx r0
 
 .ltorg
 .align
+
+
+
+.equ TryPrepareEventUnitMovement,0x800FC90
+@ r0 = parent proc (expects this to be the event engine I think)
+@ can manipulate by storing 0x80 << 2 at +0x3C
+@ r1 = x coord of target location
+@ r2 = y coord of target location
+
 

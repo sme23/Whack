@@ -50,7 +50,7 @@ END_MAIN
 MiscBasedEvents:
 CauseGameOverIfLordDies
 //AFEV 0 TestAfev 0
-AREA 0 TestAfev [4,9] [4,9]
+//AREA 0 TestAfev [4,9] [4,9]
 END_MAIN
 
 Dunno1:
@@ -125,7 +125,7 @@ NoFade
 ENDA
 
 Arena10:
-CALL _Start
+Text(EmptyHouseText)
 NoFade
 ENDA
 
@@ -215,17 +215,30 @@ BeginningScene:
 LOAD1 0 FreeMoveUnits
 ENUN
 
-FADU 10
+CAM1 Eirika
 
-EnableFreeMovement
+FADU 10
 
 CHECK_EVENTID OpeningViewedFlag
 BNE 0 s0 sC
 ScrollBoxText(HubFreeMoveTutorial)
 LABEL 0
 
+MOVE 0 Eirika [21,5]
+ENUN
+
+EnableFreeMovement
+
 NoFade
 ENDA
+
+
+
+
+
+
+
+
 
 
 EVBIT_MODIFY 4
@@ -256,11 +269,27 @@ CALL CallFirstMenu
 NoFade
 ENDA
 
+
+
+
+
+
+
+
+
 ALIGN 4
 EndingScene:
 MNC2 HubChID
 NoFade
 ENDA
+
+
+
+
+
+
+
+
 
 ALIGN 4
 FirstTimeOpeningEvent:

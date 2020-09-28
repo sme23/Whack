@@ -6,3 +6,12 @@ SetChapterData(HubChID,BetterVillageObjType,0,BetterVillagePalette1,BetterVillag
 EventPointerTable(HubMapChangesID, MapChanges)
 Map:
 #incbin "hub_data.dmp"
+
+MapChanges:
+TileMap(0,0,0,1,1,Tile_Layer_2)
+TileMapEnd
+
+Tile_Layer_2:
+SHORT 0x0 
+ALIGN 4
+

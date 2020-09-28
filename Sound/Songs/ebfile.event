@@ -1,0 +1,1457 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	ebfile_grp  MusicVoices
+	#define	ebfile_pri  0
+	#define	ebfile_rev  0
+	#define	ebfile_mvl  85
+	#define	ebfile_key  0
+	#define	ebfile_tbs  1
+	#define	ebfile_exg  0
+	#define	ebfile_cmp  1
+
+	// .rodata
+	//	ebfile
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.5) ****************//
+
+ebfile_1:
+	BYTE	KEYSH   ebfile_key+0
+ebfile_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   140*ebfile_tbs/2
+	BYTE		VOICE   127
+	BYTE		VOL     127*ebfile_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     127*ebfile_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     127*ebfile_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N11     Dn1   v092
+	BYTE		N42     Gn1   v112
+	BYTE	W12
+	BYTE		N11     Dn1   v060
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W03
+	BYTE		        Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N42     Dn2   v112
+	BYTE	W12
+	BYTE		N02     Dn1   v060
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N05     Dn1   v076
+	BYTE	W06
+	BYTE		N11     Dn1   v060
+	BYTE	W12
+	BYTE		        Dn1   v048
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE		        Dn1   v076
+	BYTE	W12
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11   
+	BYTE		N20     Gn1   v112
+	BYTE	W12
+	BYTE		N11     Dn1   v060
+	BYTE	W12
+	BYTE		N02   
+	BYTE		N32     Dn2   v112
+	BYTE	W03
+	BYTE		N02     Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W03
+	BYTE		        Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v076
+	BYTE		N11     Gn1   v112
+	BYTE	W06
+	BYTE		N05     Dn1   v076
+	BYTE	W06
+// 002   ----------------------------------------
+	BYTE		N11     Dn1   v092
+	BYTE		N42     Gn1   v112
+	BYTE	W12
+	BYTE		N11     Dn1   v060
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W03
+	BYTE		        Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N42     Dn2   v112
+	BYTE	W12
+	BYTE		N02     Dn1   v060
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N05     Dn1   v076
+	BYTE	W06
+	BYTE		N11     Dn1   v060
+	BYTE	W12
+	BYTE		        Dn1   v048
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE		        Dn1   v076
+	BYTE		N11     Gn1   v112
+	BYTE	W12
+	BYTE		N05     Dn1   v060
+	BYTE		N20     Gn1   v112
+	BYTE	W06
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N02   
+	BYTE		N20     Dn2   v112
+	BYTE	W03
+	BYTE		N02     Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N02   
+	BYTE		N20     Gn1   v112
+	BYTE	W03
+	BYTE		N02     Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v076
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+// 004   ----------------------------------------
+	BYTE		N90     Gn1   v112
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W48
+	BYTE		N11     Dn2 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N20   
+	BYTE	W24
+// 006   ----------------------------------------
+ebfile_1_006:
+	BYTE		N42     Gn1   v112
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N42     Dn2   v112
+	BYTE	W12
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+ebfile_1_007:
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		N20     Gn1   v112
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N32     Dn2   v112
+	BYTE	W12
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gn1   v112
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 009   ----------------------------------------
+ebfile_1_009:
+	BYTE		N11     Gn1   v112
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N20     Gn1   v112
+	BYTE		N11     As1   v108
+	BYTE	W12
+	BYTE		        Gs1 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N20     Dn2   v112
+	BYTE	W12
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N20     Gn1   v112
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE		N42     Gn1   v112
+	BYTE	W48
+	BYTE		        Dn2 
+	BYTE	W48
+// 011   ----------------------------------------
+	BYTE	W24
+	BYTE		N20     Gn1 
+	BYTE	W24
+	BYTE		        Dn2 
+	BYTE	W48
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_007
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_009
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 017   ----------------------------------------
+ebfile_1_017:
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N20     Gn1   v112
+	BYTE		N11     As1   v108
+	BYTE	W12
+	BYTE		        Gs1 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N32     Dn2   v112
+	BYTE	W12
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gn1   v112
+	BYTE		N11     Gs1   v108
+	BYTE	W12
+	BYTE	PEND
+// 018   ----------------------------------------
+ebfile_1_018:
+	BYTE		N11     Dn1   v092
+	BYTE		N42     Gn1   v112
+	BYTE		N11     Gs1 
+	BYTE	W12
+	BYTE		        Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		N02     Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE	W03
+	BYTE		N02     Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		        Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE		N42     Dn2 
+	BYTE	W12
+	BYTE		N02     Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE	W03
+	BYTE		N02     Dn1   v060
+	BYTE	W03
+	BYTE		N05     Dn1   v076
+	BYTE	W06
+	BYTE		N11     Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		        Dn1   v048
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE	PEND
+// 019   ----------------------------------------
+ebfile_1_019:
+	BYTE		N11     Dn1   v076
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		N05     Dn1   v060
+	BYTE		N11     As1   v112
+	BYTE	W06
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE		N20     Gn1   v112
+	BYTE		N11     Gs1 
+	BYTE	W12
+	BYTE		        Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		N02     Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE		N32     Dn2 
+	BYTE	W03
+	BYTE		N02     Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		N02     Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE	W03
+	BYTE		N02     Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v076
+	BYTE		N11     Gn1   v112
+	BYTE		N11     Gs1 
+	BYTE	W06
+	BYTE		N05     Dn1   v076
+	BYTE	W06
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_018
+// 021   ----------------------------------------
+ebfile_1_021:
+	BYTE		N11     Dn1   v076
+	BYTE		N11     Gn1   v112
+	BYTE		N11     Gs1 
+	BYTE	W12
+	BYTE		N05     Dn1   v060
+	BYTE		N20     Gn1   v112
+	BYTE		N11     As1 
+	BYTE	W06
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		        Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		N02     Dn1   v060
+	BYTE		N11     Gs1   v112
+	BYTE		N20     Dn2 
+	BYTE	W03
+	BYTE		N02     Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		N11   
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		N02     Dn1   v060
+	BYTE		N20     Gn1   v112
+	BYTE		N11     Gs1 
+	BYTE	W03
+	BYTE		N02     Dn1   v048
+	BYTE	W03
+	BYTE		N05     Dn1   v060
+	BYTE	W06
+	BYTE		        Dn1   v076
+	BYTE		N11     Gs1   v112
+	BYTE	W06
+	BYTE		N05     Dn1   v076
+	BYTE	W06
+	BYTE	PEND
+// 022   ----------------------------------------
+ebfile_1_022:
+	BYTE		N42     Gn1   v112
+	BYTE		N11     Gs1 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N42     Dn2 
+	BYTE	W12
+	BYTE		N11     Gs1 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 023   ----------------------------------------
+ebfile_1_023:
+	BYTE		N11     Gs1   v112
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		N20     Gn1 
+	BYTE		N11     Gs1 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N32     Dn2 
+	BYTE	W12
+	BYTE		N11     Gs1 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE		N11     Gs1 
+	BYTE	W12
+	BYTE	PEND
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_007
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_009
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_017
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_018
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_019
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_018
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_021
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_022
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_023
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_007
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_009
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_017
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_018
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_019
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_018
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_021
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_007
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_009
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_006
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_017
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_018
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_019
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_018
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_021
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_022
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_1_023
+	BYTE	GoTo
+	 POIN2	ebfile_1_B1
+ebfile_1_B2:
+// 060   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.11) ****************//
+
+ebfile_2:
+	BYTE	KEYSH   ebfile_key+0
+ebfile_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   81
+	BYTE		VOL     127*ebfile_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		N32     An2   v076
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N32     Fs2 
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+// 005   ----------------------------------------
+	BYTE		N32     Bn2 
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N20     En2 
+	BYTE	W24
+	BYTE		        Dn2 
+	BYTE	W24
+// 006   ----------------------------------------
+ebfile_2_006:
+	BYTE		N32     An1   v076
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N42     Fs1 
+	BYTE	W48
+	BYTE	PEND
+// 007   ----------------------------------------
+ebfile_2_007:
+	BYTE	W12
+	BYTE		N32     Bn1   v076
+	BYTE	W36
+	BYTE		N20     En1 
+	BYTE	W24
+	BYTE		        Gn1 
+	BYTE	W24
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 022   ----------------------------------------
+ebfile_2_022:
+	BYTE		N32     An1   v032
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N42     Fs1 
+	BYTE	W48
+	BYTE	PEND
+// 023   ----------------------------------------
+ebfile_2_023:
+	BYTE	W12
+	BYTE		N32     Bn1   v032
+	BYTE	W36
+	BYTE		N20     En1 
+	BYTE	W24
+	BYTE		        Gn1 
+	BYTE	W24
+	BYTE	PEND
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_022
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_023
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_006
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_007
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_022
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_2_023
+	BYTE	GoTo
+	 POIN2	ebfile_2_B1
+ebfile_2_B2:
+// 060   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.12) ****************//
+
+ebfile_3:
+	BYTE	KEYSH   ebfile_key+0
+ebfile_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   80
+	BYTE		VOL     127*ebfile_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N04     En4   v076
+	BYTE	W36
+	BYTE		N04   
+	BYTE	W36
+	BYTE		N04   
+	BYTE	W24
+// 001   ----------------------------------------
+ebfile_3_001:
+	BYTE	W24
+	BYTE		N04     En4   v076
+	BYTE	W24
+	BYTE		N04   
+	BYTE	W48
+	BYTE	PEND
+// 002   ----------------------------------------
+ebfile_3_002:
+	BYTE		N04     En4   v076
+	BYTE	W36
+	BYTE		N04   
+	BYTE	W36
+	BYTE		N04   
+	BYTE	W24
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_002
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_3_001
+	BYTE	GoTo
+	 POIN2	ebfile_3_B1
+ebfile_3_B2:
+// 060   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.13) ****************//
+
+ebfile_4:
+	BYTE	KEYSH   ebfile_key+0
+ebfile_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   80
+	BYTE		VOL     127*ebfile_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+ebfile_4_006:
+	BYTE		N04     An2   v076
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		N06     En3 
+	BYTE	W24
+	BYTE		N04     An2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		N16     Ds3 
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	W12
+	BYTE		N04     An2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		N06     Dn3 
+	BYTE	W24
+	BYTE		N04     An2 
+	BYTE	W12
+	BYTE		N06     Fs2 
+	BYTE	W24
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_006
+// 009   ----------------------------------------
+	BYTE	W12
+	BYTE		N04     An2   v076
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		N06     Dn3 
+	BYTE	W24
+	BYTE		N04     An2 
+	BYTE	W12
+	BYTE		N06     Fs2 
+	BYTE	W18
+	BYTE		N05     Fs2   v060
+	BYTE	W06
+// 010   ----------------------------------------
+ebfile_4_010:
+	BYTE	W12
+	BYTE		N05     Fs2   v048
+	BYTE	W18
+	BYTE		        Fs2   v032
+	BYTE	W18
+	BYTE		        Fs2   v012
+	BYTE	W48
+	BYTE	PEND
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+ebfile_4_012:
+	BYTE		N04     An2   v092
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		N06     En3 
+	BYTE	W24
+	BYTE		N04     An2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		N16     Ds3 
+	BYTE	W12
+	BYTE	PEND
+// 013   ----------------------------------------
+ebfile_4_013:
+	BYTE	W12
+	BYTE		N04     An2   v092
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		N06     Dn3 
+	BYTE	W24
+	BYTE		N04     An2 
+	BYTE	W12
+	BYTE		N06     Fs2 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_012
+// 015   ----------------------------------------
+ebfile_4_015:
+	BYTE	W12
+	BYTE		N04     An2   v092
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		N06     Dn3 
+	BYTE	W24
+	BYTE		N04     An2 
+	BYTE	W12
+	BYTE		N06     Fs2 
+	BYTE	W18
+	BYTE		N05     Fs2   v060
+	BYTE	W06
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_010
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_012
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_012
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_015
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_010
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_012
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_013
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_012
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_015
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_010
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_012
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_013
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_012
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_015
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_4_010
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	ebfile_4_B1
+ebfile_4_B2:
+// 060   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.14) ****************//
+
+ebfile_5:
+	BYTE	KEYSH   ebfile_key+0
+ebfile_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   34
+	BYTE		VOL     127*ebfile_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		N32     An2   v060
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N32     Fs2 
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+// 005   ----------------------------------------
+	BYTE		N32     Bn2 
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N20     En2 
+	BYTE	W24
+	BYTE		        Dn2 
+	BYTE	W24
+// 006   ----------------------------------------
+ebfile_5_006:
+	BYTE		N32     An1   v060
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N42     Fs1 
+	BYTE	W48
+	BYTE	PEND
+// 007   ----------------------------------------
+ebfile_5_007:
+	BYTE	W12
+	BYTE		N32     Bn1   v060
+	BYTE	W36
+	BYTE		N20     En1 
+	BYTE	W24
+	BYTE		        Gn1 
+	BYTE	W24
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_006
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_007
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+ebfile_5_012:
+	BYTE		N32     An1   v076
+	BYTE	W36
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N42     Fs1 
+	BYTE	W48
+	BYTE	PEND
+// 013   ----------------------------------------
+ebfile_5_013:
+	BYTE	W12
+	BYTE		N32     Bn1   v076
+	BYTE	W36
+	BYTE		N20     En1 
+	BYTE	W24
+	BYTE		        Gn1 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_012
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ebfile_5_013
+	BYTE	GoTo
+	 POIN2	ebfile_5_B1
+ebfile_5_B2:
+// 060   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+ebfile:
+	BYTE	5	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	ebfile_pri	// Priority
+	BYTE	ebfile_rev	// Reverb.
+
+	POIN2	ebfile_grp
+
+	POIN2	ebfile_1
+	POIN2	ebfile_2
+	POIN2	ebfile_3
+	POIN2	ebfile_4
+	POIN2	ebfile_5
+
+	

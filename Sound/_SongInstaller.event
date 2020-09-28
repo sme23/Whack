@@ -82,6 +82,10 @@ SongTable(SpaceHarrier,harrier,MapMusicGroup)
 #include "Songs/stronger.event"
 SongTable(ThisOnesStronger,stronger,BattleMusicGroup)
 }
+{
+#include "Songs/ebfile.event"
+SongTable(EBFileSelect,ebfile,MapMusicGroup)
+}
 
 {
 #include "SFX/sfx-damage.event"

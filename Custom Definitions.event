@@ -656,6 +656,8 @@
 
 #define BazbaMug 43
 
+#define EirikaMug 44
+
 //items
 
 #define ClawCatLaguz Bowgun+1

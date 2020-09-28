@@ -46,6 +46,7 @@ SoundRoomEntry(TeamChaotix,0,SongName_TeamChaotix)
 SoundRoomEntry(PyriteTown,0,SongName_PyriteTown)
 SoundRoomEntry(SpaceHarrier,0,SongName_SpaceHarrier)
 SoundRoomEntry(ThisOnesStronger,0,SongName_ThisOnesStronger)
+SoundRoomEntry(EBFileSelect,0,SongName_EBFileSelect)
 SoundRoomTerminator
 
 /*
