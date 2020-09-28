@@ -87,6 +87,10 @@ This unit must escape last.[X]
 ## Mov_Text_ID
 Mov[X]
 
+## EmptyHouseText
+[OpenMidRight][LoadFace][CurrentPortrait]
+Nothing here[Beat][A][X]
+
 ## PrepScreenUseSkillScroll
  Skill learned[X]
 
