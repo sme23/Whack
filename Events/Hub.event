@@ -145,27 +145,27 @@ NoFade
 ENDA
 
 Vendor14:
-CALL _Start
+Text(EmptyHouseText)
 NoFade
 ENDA
 
 Vendor15:
-CALL _Start
+Text(EmptyHouseText)
 NoFade
 ENDA
 
 Armory16:
-CALL _Start
+Text(EmptyHouseText)
 NoFade
 ENDA
 
 Armory17:
-CALL _Start
+Text(EmptyHouseText)
 NoFade
 ENDA
 
 Tavern18:
-CALL _Start
+Text(EmptyHouseText)
 NoFade
 ENDA
 
