@@ -180,10 +180,12 @@ push {r4-r7,r14}
 mov r7,r0 @r7 = parent proc
 
 @if MU proc exists, skip unit movement
-@blh MU_Exists
-@cmp r0,#1
-@beq SkipUnitMovement
+blh MU_Exists
+cmp r0,#1
+beq SkipUnitMovement
 
+
+DoNormalThing:
 @set active unit to first player unit
 ldr r0,=#0x202BE4C
 ldr r1,=#0x3004E50
@@ -191,14 +193,8 @@ str r0,[r1]
 
 mov r0,r7
 bl HandleUnitMovement @in place of the cursor movement function, same general idea
-b EndUnitMovement
 
-HandleUnitReMovement:
-
-
-
-
-EndUnitMovement:
+SkipUnitMovement:
 pop {r4-r7}
 pop {r0}
 bx r0
@@ -421,6 +417,7 @@ mov r1,r5
 mov r2,r6
 blh EnsureCameraOntoPosition
 
+
 sub sp,#0x1C
 mov r0,#0
 str r0,[sp]
@@ -443,6 +440,10 @@ add sp,#0x1C
 
 SkipMovingUnit:
 
+
+
+
+
 @make the camera follow your movement
 mov r0,#0
 mov r1,r5
@@ -460,22 +461,6 @@ bl RunMiscBasedEvents
 
 @pause for some number of frames defined in proc sleeps via goto
 mov r0,r7
-
-@check if B is being pressed
-ldr r1,=gpKeyState
-ldr r1,[r1]
-ldr r1,[r1,#4]
-
-mov r2,#0x2 @B button
-and r1,r2
-cmp r1,#0
-beq SlowerProc
-mov r1,#8
-b GotoGivenSleepProcLabel
-SlowerProc:
-mov r1,#16
-GotoGivenSleepProcLabel:
-blh GotoProcLabel
 
 
 CheckAPress:
@@ -524,7 +509,9 @@ bl FreeMove_RunTalkEvents
 
 NoAPress:
 
-
+@do proc label 8 if none yet (this won't work if movement is in effect)
+@mov r1,#8
+@blh GotoProcLabel
 
 HandleUnitMovement_GoBack:
 pop {r4-r7}
