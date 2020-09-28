@@ -41,3 +41,21 @@ ColdVolcanoPal:
 #incbin "LavaButCold.bin"
 
 EventPointerTable(LavaPalette2, ColdVolcanoPal)
+
+
+ALIGN 4
+BetterVillageObj:
+#incext Png2Dmp "villagepal.png" --lz77
+
+ALIGN 4
+BetterVillagePal:
+#incext Png2Dmp "villagepal.png" --palette-only
+
+ALIGN 4
+BetterVillageTiles:
+#incext compress "village.mapchip_config"
+
+EventPointerTable(BetterVillageObjType, BetterVillageObj)
+EventPointerTable(BetterVillagePalette1, BetterVillagePal)
+EventPointerTable(BetterVillageTileConfig, BetterVillageTiles)
+

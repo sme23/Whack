@@ -243,3 +243,9 @@ Bazba[X]
 
 ## BazbaDesc
 The leader of Bazba's Bandits.[X]
+
+## EirikaName
+Eirika[X]
+
+## EirikaDesc
+DUMMY[X]

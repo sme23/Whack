@@ -203,3 +203,7 @@ BazbaPortrait:
 #incext PortraitFormatter "Bazba.png"
 
 
+setMugEntry(EirikaMug,EirikaPortrait,2,6,3,4)
+ALIGN 4
+EirikaPortrait:
+#incext PortraitFormatter "Eirika.png"

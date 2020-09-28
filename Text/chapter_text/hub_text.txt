@@ -1,4 +1,18 @@
 
+## HubFreeMoveTutorial
+This map has [ToggleRed]free movement[ToggleRed].[A][N]
+Use the D-pad to move around.[N]
+Holding the B button will[N]
+let you move faster.[A][N]
+The A button interacts[N]
+with the environment.[A][N]
+If you hold a direction on the[N]
+D-pad against a wall or unit,[A][N]
+pressing the A button[N]
+will interact with[N]
+the tile next to you[N]
+in that direction.[A][X]
+
 ## HubPreMenuText
 Please select a chapter.[A][X]
 

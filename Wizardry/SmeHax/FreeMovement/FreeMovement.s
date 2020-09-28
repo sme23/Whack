@@ -31,24 +31,35 @@
 
 
 EnableFreeMovementASMC:
+push {r4,r14}
+mov r4,r0
 ldr r0,=#0x203F2B0	@location of flag
 ldrb r1,[r0]		@load a byte
 mov r2,#0x1			@this is the mask for the flag
 orr r1,r2			@set the flag if not already set
 strb r1,[r0]		@store back the byte
-bx r14				@return
+mov r0,r4
+bl NewPlayerPhaseEvaluationFunc @needed to make it actually immediately change mode
+pop {r4}
+pop {r0}
+bx r0				@return
 
 .ltorg
 .align
 
 DisableFreeMovementASMC:
+push {r4,r14}
+mov r4,r0
 ldr r0,=#0x203F2B0	@location of flag
 ldrb r1,[r0]		@load a byte
 mov r2,#0x1			@this is the mask for the flag
 neg r2,r2			@invert it since we want to disable this
 and r1,r2			@this now gives everything that we loaded except for the flag
 strb r1,[r0]		@store back the byte
-bx r14				@return
+mov r0,r4
+bl NewPlayerPhaseEvaluationFunc @needed to make it actually immediately change mode
+pop {r0}
+bx r0				@return
 
 .ltorg
 .align

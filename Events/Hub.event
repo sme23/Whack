@@ -27,11 +27,24 @@ END_MAIN
 
 ALIGN 4
 LocationBasedEvents:
-CHES 7 Vulnerary [4,4] 0x14 
-CHES 8 Elixir [5,2] 0x14
-Door(9,11,5)
-Door(10,11,7)
-House(0,secretshoptest,11,6)
+House(0,RedHouse1,12,1)
+House(0,TanHouse2,19,1)
+House(0,RedHouse3,36,7)
+House(0,RedHouse4,38,7)
+House(0,TanHouse5,1,7)
+House(0,RedHouse6,7,7)
+House(0,TanHouse7,12,7)
+House(0,RedHouse8,8,12)
+House(0,RedHouse9,36,13)
+House(0,Arena10,1,27)
+House(0,Vendor11,14,22)
+House(0,Tavern12,19,20)
+House(0,Tavern13,25,20)
+House(0,Vendor14,19,10)
+House(0,Vendor15,19,13)
+House(0,Armory16,24,10)
+House(0,Armory17,24,13)
+House(0,Tavern18,31,10)
 END_MAIN
 
 MiscBasedEvents:
@@ -66,6 +79,132 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
+RedHouse1:
+
+CALL
+
+NoFade
+ENDA
+
+TanHouse2:
+
+CALL
+
+NoFade
+ENDA
+
+RedHouse3:
+
+CALL
+
+NoFade
+ENDA
+
+RedHouse4:
+
+CALL
+
+NoFade
+ENDA
+
+TanHouse5:
+
+CALL
+
+NoFade
+ENDA
+
+RedHouse6:
+
+CALL
+
+NoFade
+ENDA
+
+TanHouse7:
+
+CALL
+
+NoFade
+ENDA
+
+RedHouse8:
+
+CALL
+
+NoFade
+ENDA
+
+RedHouse9:
+
+CALL
+
+NoFade
+ENDA
+
+Arena10:
+
+CALL
+
+NoFade
+ENDA
+
+Vendor11: //Merchant Madness
+
+CALL
+
+NoFade
+ENDA
+
+Tavern12:
+
+CALL
+
+NoFade
+ENDA
+
+Tavern13:
+
+CALL
+
+NoFade
+ENDA
+
+Vendor14:
+
+CALL
+
+NoFade
+ENDA
+
+Vendor15:
+
+CALL
+
+NoFade
+ENDA
+
+Armory16:
+
+CALL
+
+NoFade
+ENDA
+
+Armory17:
+
+CALL
+
+NoFade
+ENDA
+
+Tavern18:
+
+CALL
+
+NoFade
+ENDA
+
 VanessaTalk:
 Text(TestVanessaTalk)
 NoFade
@@ -81,28 +220,11 @@ Text(TestGilliamTalk)
 NoFade
 ENDA
 
-TestAfev:
-Text(TestFreeMoveText)
-NoFade
-ENDA
-
-secretshoptest:
-SVAL s1 Moulder
-SVAL s2 testshop|IsPointer
-SVAL s3 2
-ASMC MakeShopASMC
-NoFade
-ENDA
-
-testshop:
-SHLI PureWater
-ALIGN 4
-
-AntiBorkUnit:
-UNIT Moulder Priest 0 Level(1,Ally,0) [0,0] 0 0 0 1 NoItems NoAI
-UNIT Vanessa PegasusKnight 0 Level(1,Ally,0) [15,9] 0 0 0 1 NoItems NoAI
-UNIT Bazba Fighter 0 Level(1,Enemy,0) [16,3] 0 0 0 1 NoItems NoAI
-UNIT Gilliam Knight 0 Level(1,NPC,0) [17,1] 0 0 0 1 NoItems NoAI
+FreeMoveUnits:
+UNIT Eirika EirikaLord 0 Level(1,Ally,0) [21,7] 0 0 0 1 NoItems NoAI
+UNIT Vanessa PegasusKnight 0 Level(1,Ally,0) [32,30] 0 0 0 1 NoItems NoAI
+UNIT Bazba Fighter 0 Level(1,Enemy,0) [34,3] 0 0 0 1 NoItems NoAI
+UNIT Gilliam Knight 0 Level(1,NPC,0) [5,16] 0 0 0 1 NoItems NoAI
 UNIT
 
 BeginningScene:
@@ -122,12 +244,18 @@ BeginningScene:
 
 //ok so recursive event calls are a bad idea because there's only room for like 8 events in the queue for that
 //time to restructure everything ig
+
+
+//made free movement which obsoleted the menus lol
+
+LOAD1 0 FreeMoveUnits
+ENUN
+
 FADU 10
 
 EnableFreeMovement
 
-LOAD1 0 AntiBorkUnit
-ENUN
+ScrollBoxText(HubFreeMoveTutorial)
 
 NoFade
 ENDA
