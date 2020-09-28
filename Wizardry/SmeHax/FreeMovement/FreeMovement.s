@@ -180,9 +180,9 @@ push {r4-r7,r14}
 mov r7,r0 @r7 = parent proc
 
 @if MU proc exists, skip unit movement
-blh MU_Exists
-cmp r0,#1
-beq SkipUnitMovement
+@blh MU_Exists
+@cmp r0,#1
+@beq SkipUnitMovement
 
 @set active unit to first player unit
 ldr r0,=#0x202BE4C
@@ -191,8 +191,14 @@ str r0,[r1]
 
 mov r0,r7
 bl HandleUnitMovement @in place of the cursor movement function, same general idea
+b EndUnitMovement
 
-SkipUnitMovement:
+HandleUnitReMovement:
+
+
+
+
+EndUnitMovement:
 pop {r4-r7}
 pop {r0}
 bx r0
