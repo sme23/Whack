@@ -80,128 +80,92 @@ ENDTRAP
 ALIGN 4
 
 RedHouse1:
-
-CALL
-
+CALL SkirmishInGallia_Start
 NoFade
 ENDA
 
 TanHouse2:
-
-CALL
-
+CALL ManaketeMayhem_Start
 NoFade
 ENDA
 
 RedHouse3:
-
-CALL
-
+CALL FatedRevelations_Start
 NoFade
 ENDA
 
 RedHouse4:
-
-CALL
-
+CALL BloodFeud_Start
 NoFade
 ENDA
 
 TanHouse5:
-
-CALL
-
+CALL StatusSanctuary_Start
 NoFade
 ENDA
 
 RedHouse6:
-
-CALL
-
+CALL FromTheDarkness_Start
 NoFade
 ENDA
 
 TanHouse7:
-
-CALL
-
+CALL DemonBlood_Start
 NoFade
 ENDA
 
 RedHouse8:
-
-CALL
-
+CALL AceAttorney_Start
 NoFade
 ENDA
 
 RedHouse9:
-
-CALL
-
+CALL Minesweeper_Start
 NoFade
 ENDA
 
 Arena10:
-
-CALL
-
+CALL _Start
 NoFade
 ENDA
 
 Vendor11: //Merchant Madness
-
-CALL
-
+CALL MerchantMadness_Start
 NoFade
 ENDA
 
 Tavern12:
-
-CALL
-
+CALL GameplayModifiers_Start
 NoFade
 ENDA
 
 Tavern13:
-
-CALL
-
+CALL Credits_Start
 NoFade
 ENDA
 
 Vendor14:
-
-CALL
-
+CALL _Start
 NoFade
 ENDA
 
 Vendor15:
-
-CALL
-
+CALL _Start
 NoFade
 ENDA
 
 Armory16:
-
-CALL
-
+CALL _Start
 NoFade
 ENDA
 
 Armory17:
-
-CALL
-
+CALL _Start
 NoFade
 ENDA
 
 Tavern18:
-
-CALL
-
+CALL _Start
 NoFade
 ENDA
 
@@ -255,7 +219,10 @@ FADU 10
 
 EnableFreeMovement
 
+CHECK_EVENTID OpeningViewedFlag
+BNE 0 s0 sC
 ScrollBoxText(HubFreeMoveTutorial)
+LABEL 0
 
 NoFade
 ENDA
