@@ -93,14 +93,14 @@
 #define NoAffinity 0
 #define FireAffinity 1
 #define ThunderAffinity 2
-#define WindAffinity 3
+#define WaterAffinity 3
 #define IceAffinity 4
-#define DarkAffinity 5
-#define LightAffinity 6
+#define WindAffinity 5
+#define EarthAffinity 6
 #define AnimaAffinity 7
-#define EarthAffinity 8
-#define HeavenAffinity 9
-#define WaterAffinity 10
+#define LightAffinity 8
+#define DarkAffinity 9
+#define HeavenAffinity 10
 
 //Generic minimugs
 #define MinimugDefault 0

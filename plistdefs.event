@@ -1,0 +1,94 @@
+//this is probably the third time i've done these with the thought of "oh I only have to do this once then I'll have them whenever I need them in the future"
+
+#define PlainsObjType 0x1
+#define PlainsTileConfig 0x3
+#define PlainsAnims 0x5
+
+#define PlainsPalette1 0x2
+#define PlainsPalette2 0x38
+#define PlainsPalette3 0x4C
+#define PlainsPalette4 0x5B
+
+#define VillageObjType 0xE
+#define VillageTileConfig 0x10
+#define VillageAnims 0x12
+
+#define VillagePalette1 0xF
+#define VillagePalette2 0x72
+#define VillagePalette3 0xEA
+
+#define CastleObjType 0x18
+#define CastleTileConfig 0x1A
+#define CastleAnims 0x1C
+
+#define CastlePalette1 0x19
+#define CastlePalette2 0x48
+#define CastlePalette3 0x57
+#define CastlePalette4 0xB9
+
+#define FieldsObjType 0x2E
+#define FieldsTileConfig 0x30
+#define FieldsAnims 0x5
+
+#define FieldsPalette1 0x2F
+#define FieldsPalette2 0x34
+
+#define FortObjType 0x3C
+#define FortTileConfig 0x3E
+#define FortAnims 0x0
+
+#define FortPalette1 0x3D
+#define FortPalette2 0x68
+#define FortPalette3 0xCE
+
+#define DesertObjType 0x42
+#define DesertTileConfig 0x44
+#define DesertAnims 0x5
+
+#define DesertPalette1 0x43
+
+#define LavaObjType 0x50
+#define LavaTileConfig 0x52
+#define LavaAnims 0x0
+#define LavaAnims2 0x54
+
+#define LavaPalette1 0x51
+#define LavaPalette2 0x91
+
+#define TempleObjType 0x5F
+#define TempleTileConfig 0x61
+#define TempleAnims 0x0
+
+#define TemplePalette1 0x60
+
+#define StrongholdObjType 0x79
+#define StrongholdTileConfig 0x7B
+#define StrongholdAnims 0x7D
+
+#define StrongholdPalette1 0x7A
+#define StrongholdPalette2 0xE6
+
+#define MountainousObjType 0x6C
+#define MountainousTileConfig 0x6E
+#define MountainousAnims 0x5
+
+#define MountainousPalette1 0x6D
+#define MountainousPalette2 0xA3
+
+#define ValniObjType 0x88
+#define ValniTileConfig 0x8A
+#define ValniAnims 0x0
+
+#define ValniPalette1 0x89
+
+#define CourtroomObjType 0x8B
+#define CourtroomTileConfig 0x8C
+#define CourtroomPalette1 0x8D
+
+#define MinesweeperObjType 0x8E
+#define MinesweeperTileConfig 0x8F
+#define MinesweeperPalette1 0x90
+
+#define BetterVillageObjType 0x91
+#define BetterVillageTileConfig 0x92
+#define BetterVillagePalette1 0x93
