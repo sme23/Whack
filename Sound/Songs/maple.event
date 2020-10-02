@@ -4,7 +4,7 @@
 	#define	maple_grp  MusicVoices
 	#define	maple_pri  0
 	#define	maple_rev  0
-	#define	maple_mvl  75
+	#define	maple_mvl  90
 	#define	maple_key  0
 	#define	maple_tbs  1
 	#define	maple_exg  0

@@ -4,7 +4,7 @@
 	#define	stronger_grp  MusicVoices
 	#define	stronger_pri  0
 	#define	stronger_rev  0
-	#define	stronger_mvl  75
+	#define	stronger_mvl  85
 	#define	stronger_key  0
 	#define	stronger_tbs  1
 	#define	stronger_exg  0

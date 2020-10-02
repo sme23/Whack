@@ -4,7 +4,7 @@
 	#define	tcox_noecho_grp  MusicVoices
 	#define	tcox_noecho_pri  0
 	#define	tcox_noecho_rev  0
-	#define	tcox_noecho_mvl  75
+	#define	tcox_noecho_mvl  85
 	#define	tcox_noecho_key  0
 	#define	tcox_noecho_tbs  1
 	#define	tcox_noecho_exg  0

@@ -4,7 +4,7 @@
 	#define	cove2_grp  MusicVoices
 	#define	cove2_pri  0
 	#define	cove2_rev  0
-	#define	cove2_mvl  75
+	#define	cove2_mvl  90
 	#define	cove2_key  0
 	#define	cove2_tbs  1
 	#define	cove2_exg  0
