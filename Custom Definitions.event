@@ -12,6 +12,8 @@
 #define LunarBrace MoonBracelet
 #define SolarBrace SunBracelet
 
+#define SkillScroll BlackGem
+
 // Attribute for defining items with passive stat bonuses
 #define PASSIVE_ITEM_BOOSTS_ATTR 0x00800000
 
@@ -26,7 +28,7 @@
 #include "Wizardry/SkillSystem/skill_definitions.event"
 #include "Sound/_SoundDefinitions.event"
 
-// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+ #define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
 //Useful macros
 #define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"

@@ -220,11 +220,16 @@ BeginningScene:
 
 //made free movement which obsoleted the menus lol
 
-LOAD1 0 FreeMoveUnits
-ENUN
+//LOAD1 0 FreeMoveUnits
+//ENUN
 
 
-CAM1 Eirika
+//CAM1 Eirika
+
+MNC2 SkirmishInGalliaChID
+
+NoFade
+ENDA
 
 FADU 10
 
@@ -233,15 +238,15 @@ GiveGold(10000)
 CHECK_EVENTID OpeningViewedFlag
 BNE 0 s0 sC
 ScrollBoxText(HubFreeMoveTutorial)
+ENUT OpeningViewedFlag
 LABEL 0
 
-MOVE 0 Eirika [21,5]
+
 ENUN
 
-EnableFreeMovement
+//EnableFreeMovement
 
-NoFade
-ENDA
+
 
 
 
@@ -255,6 +260,7 @@ ENDA
 EVBIT_MODIFY 4
 
 ScrollBoxText(AADemoHubGotoText)
+//ASMC DisableFreeMovementASMC
 MNC2 AceAttorneyChID
 
 NoFade

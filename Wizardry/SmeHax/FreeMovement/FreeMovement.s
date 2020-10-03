@@ -56,8 +56,8 @@ mov r2,#0x1			@this is the mask for the flag
 neg r2,r2			@invert it since we want to disable this
 and r1,r2			@this now gives everything that we loaded except for the flag
 strb r1,[r0]		@store back the byte
-mov r0,r4
-bl NewPlayerPhaseEvaluationFunc @needed to make it actually immediately change mode
+@mov r0,r4
+@bl NewPlayerPhaseEvaluationFunc @needed to make it actually immediately change mode
 pop {r0}
 bx r0				@return
 

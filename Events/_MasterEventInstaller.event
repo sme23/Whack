@@ -8,9 +8,9 @@
 }
 
 //hub map (probably a series of menus, rather than the EN approach)
-
+{
 #include "Hub.event"
-
+}
 
 
 //this can double as a chapter idea list ig
