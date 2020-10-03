@@ -36,6 +36,8 @@ ORG FreeSpaceBLRange //defined in custom definitions
 
   //Hold L to toggle Anims
   #include "QualityOfLife/LToggle/LToggle.event"
+  
+  #include "ShopDurability.event"
 
   //negative wt/crit
   #include "QualityOfLife/NegativeWStatDisplay/NegativeDisplay.event"

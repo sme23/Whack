@@ -144,8 +144,16 @@ CALL Credits_Start
 NoFade
 ENDA
 
+VendorShopList:
+BYTE IronSword 10 IronSword 40 IronSword 95 IronLance 10 IronLance 40 IronLance 95 0 0
+
+ALIGN 4
 Vendor14:
-Text(EmptyHouseText)
+GiveItem(BlueGem,0xFFFF)
+SVAL s1 Eirika //temp, this should be doable with active unit but that requires rewriting the asmc slightly
+SVAL s2 VendorShopList|IsPointer
+SVAL s3 1 //vendor shop type
+ASMC MakeShopASMC
 NoFade
 ENDA
 
@@ -185,7 +193,7 @@ NoFade
 ENDA
 
 FreeMoveUnits:
-UNIT Eirika EirikaLord 0 Level(1,Ally,0) [21,7] 0 0 0 1 NoItems NoAI
+UNIT Eirika EirikaLord 0 Level(1,Ally,0) [21,7] 0 0 0 1 [BlueGem] NoAI
 UNIT Vanessa PegasusKnight 0 Level(1,Ally,0) [32,30] 0 0 0 1 NoItems NoAI
 UNIT Bazba Fighter 0 Level(1,Enemy,0) [34,3] 0 0 0 1 NoItems NoAI
 UNIT Gilliam Knight 0 Level(1,NPC,0) [5,16] 0 0 0 1 NoItems NoAI
@@ -215,9 +223,12 @@ BeginningScene:
 LOAD1 0 FreeMoveUnits
 ENUN
 
+
 CAM1 Eirika
 
 FADU 10
+
+GiveGold(10000)
 
 CHECK_EVENTID OpeningViewedFlag
 BNE 0 s0 sC

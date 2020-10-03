@@ -19,10 +19,8 @@
 
 MakeShopASMC:
 push {r4-r7,r14}
-mov r7,r0 @r7 = parent proc
-ldr r0,=MemorySlot1
-ldr r0,[r0] 
-blh GetUnitByCharId
+ldr r0,=#0x3004E50
+ldr r0,[r0]
 mov r4,r0 @r4 = unit ptr
 ldr r0,=MemorySlot2
 ldr r5,[r0] @r5 = shop list
