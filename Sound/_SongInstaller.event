@@ -90,6 +90,10 @@ SongTable(EBFileSelect,ebfile,MapMusicGroup)
 #include "Songs/bistitle.event"
 SongTable(BiSTitle,bistitle,MapMusicGroup)
 }
+{
+#include "Songs/bisend.event"
+SongTable(BiSTheEnd,bisend,MapMusicGroup)
+}
 
 {
 #include "SFX/sfx-damage.event"

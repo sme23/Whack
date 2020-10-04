@@ -24,6 +24,7 @@ POIN SoundRoomList
 POP
 
 #define SoundRoomEntry(songID,songLength,nameTextID) "WORD songID songLength 0 nameTextID"
+#define SoundRoomConditionalEntry(songID,songLength,functionPointer,nameTextID) "WORD songID songLength; POIN functionPointer; WORD nameTextID"
 #define SoundRoomTerminator "WORD 0xFFFFFFFF 0 0 0"
 
 ALIGN 4
@@ -61,6 +62,8 @@ SoundRoomEntry(Suspense,0,SongName_Suspense)
 SoundRoomEntry(ToBeContinued,0,SongName_ToBeContinued)
 
 //Misc music
+
+SoundRoomConditionalEntry(BiSTheEnd,0,SoundRoomPostgameUnlock,SongName_BiSTheEnd)
 
 SoundRoomTerminator
 
