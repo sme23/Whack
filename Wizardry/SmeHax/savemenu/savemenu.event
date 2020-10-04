@@ -122,8 +122,8 @@ PROC_CALL_ROUTINE($AA1BD) //called when returning to menu from sound room
 PROC_LABEL(21)
 PROC_YIELD
 
-PROC_LABEL(18) // EXIT TO TITLE
-PROC_CALL_ROUTINE_ARG(PlaySongByProcArg,TitleScreenMusic)
+PROC_LABEL(18) // EXIT TO TITLE // Exit in general
+//PROC_CALL_ROUTINE_ARG(PlaySongByProcArg,TitleScreenMusic)
 PROC_CALL_ROUTINE_ARG($AE2F5,4) //NewFadeOut
 PROC_WHILE_ROUTINE($AE2B9) //FadeOutExists
 PROC_GOTO(15)

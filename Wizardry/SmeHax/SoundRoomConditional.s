@@ -15,5 +15,3 @@ bx r1
 
 .ltorg
 .align
-
-

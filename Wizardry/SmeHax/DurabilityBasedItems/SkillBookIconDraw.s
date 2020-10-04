@@ -44,6 +44,7 @@ b Loop1Start
 Loop1Exit:
 
 @get icon based on durability of item; item halfword is in r9
+
 mov r1,r9
 lsr r1,r1,#8
 
@@ -51,7 +52,13 @@ ldrb r2,[r2,#1]
 lsl r2,r2,#8 		@shifted 8 bits left
 orr r1,r2
 
+b SkipForReturn1
+
 IsItemIcon:
+
+ldrb r1,[r6,#0x1D]
+
+SkipForReturn1:
 mov r2,#0x80
 lsl r2,r2,#7
 mov r0,r7
@@ -86,15 +93,18 @@ b Loop2Start
 
 Loop2Exit:
 
-@get icon based on durability of item; item halfword is in r5
+@get icon based on durability of item; item halfword is in r6
 mov r1,r5
 lsr r1,r1,#8
 
 ldrb r2,[r2,#1]
 lsl r2,r2,#8 		@shifted 8 bits left
 orr r1,r2
+b SkipForReturn2
 IsItemIcon_1:
+mov r1,r3
 
+SkipForReturn2:
 mov r0,r10
 mov r2,#0x80
 lsl r2,r2,#7
@@ -136,7 +146,19 @@ lsr r1,r1,#8
 ldrb r2,[r2,#1]
 lsl r2,r2,#8 		@shifted 8 bits left
 orr r1,r2
+b SkipLine3
+
 IsItemIcon_2:
+mov r0,r6
+mov r1,#0xFF
+and r0,r1
+mov r1,#36
+mul r0,r1
+ldr r1,=ItemTable
+add r0,r1
+ldrb r1,[r0,#0x1D]
+
+SkipLine3:
 
 mov r0,r8
 mov r2,#0x80
@@ -178,8 +200,19 @@ lsr r1,r1,#8
 ldrb r2,[r2,#1]
 lsl r2,r2,#8 		@shifted 8 bits left
 orr r1,r2
-IsItemIcon_3:
+b SkipLine4
 
+IsItemIcon_3:
+mov r0,r6
+mov r1,#0xFF
+and r0,r1
+mov r1,#36
+mul r0,r1
+ldr r1,=ItemTable
+add r0,r1
+ldrb r1,[r0,#0x1D]
+
+SkipLine4:
 mov r2,#0x80
 lsl r2,r2,#7
 mov r0,r7
