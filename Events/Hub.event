@@ -220,16 +220,11 @@ BeginningScene:
 
 //made free movement which obsoleted the menus lol
 
-//LOAD1 0 FreeMoveUnits
-//ENUN
+LOAD1 0 FreeMoveUnits
+ENUN
 
 
-//CAM1 Eirika
-
-MNC2 SkirmishInGalliaChID
-
-NoFade
-ENDA
+CAM1 Eirika
 
 FADU 10
 
@@ -241,20 +236,12 @@ ScrollBoxText(HubFreeMoveTutorial)
 ENUT OpeningViewedFlag
 LABEL 0
 
+GiveItemWithDurability(SkillScroll,27,Eirika)
 
-ENUN
+EnableFreeMovement
 
-//EnableFreeMovement
-
-
-
-
-
-
-
-
-
-
+NoFade
+ENDA
 
 
 EVBIT_MODIFY 4

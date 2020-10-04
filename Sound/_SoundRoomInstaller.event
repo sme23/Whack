@@ -28,25 +28,40 @@ POP
 
 ALIGN 4
 SoundRoomList:
+//menu music
+SoundRoomEntry(BiSTitle,0,SongName_BiSTitle)
+SoundRoomEntry(EBFileSelect,0,SongName_EBFileSelect)
+
+//hub music
 SoundRoomEntry(BSTown,0,SongName_BSTown)
-SoundRoomEntry(Allegro2001,0,SongName_Allegro2001)
-SoundRoomEntry(CourtroomLobby,0,SongName_CourtroomLobby)
+
+//map music
 SoundRoomEntry(TreasureTroveCove,0,SongName_TreasureTroveCove)
-SoundRoomEntry(LogicAndTrick,0,SongName_LogicAndTrick)
-SoundRoomEntry(LyingColdly,0,SongName_LyingColdly)
-SoundRoomEntry(MapleLeafRag,0,SongName_MapleLeafRag)
-SoundRoomEntry(Objection2001,0,SongName_Objection2001)
 SoundRoomEntry(MG1Outside,0,SongName_MG1Outside)
-SoundRoomEntry(Suspense,0,SongName_Suspense)
-SoundRoomEntry(ThemeOfTara,0,SongName_ThemeOfTara)
-SoundRoomEntry(Testimony,0,SongName_Testimony)
-SoundRoomEntry(Trial,0,SongName_Trial)
-SoundRoomEntry(ToBeContinued,0,SongName_ToBeContinued)
-SoundRoomEntry(TeamChaotix,0,SongName_TeamChaotix)
 SoundRoomEntry(PyriteTown,0,SongName_PyriteTown)
 SoundRoomEntry(SpaceHarrier,0,SongName_SpaceHarrier)
+
+//battle music
 SoundRoomEntry(ThisOnesStronger,0,SongName_ThisOnesStronger)
-SoundRoomEntry(EBFileSelect,0,SongName_EBFileSelect)
+
+//cutscene music
+SoundRoomEntry(MapleLeafRag,0,SongName_MapleLeafRag)
+SoundRoomEntry(ThemeOfTara,0,SongName_ThemeOfTara)
+SoundRoomEntry(TeamChaotix,0,SongName_TeamChaotix)
+
+//AA music
+SoundRoomEntry(CourtroomLobby,0,SongName_CourtroomLobby)
+SoundRoomEntry(Trial,0,SongName_Trial)
+SoundRoomEntry(Testimony,0,SongName_Testimony)
+SoundRoomEntry(Allegro2001,0,SongName_Allegro2001)
+SoundRoomEntry(LogicAndTrick,0,SongName_LogicAndTrick)
+SoundRoomEntry(Objection2001,0,SongName_Objection2001)
+SoundRoomEntry(LyingColdly,0,SongName_LyingColdly)
+SoundRoomEntry(Suspense,0,SongName_Suspense)
+SoundRoomEntry(ToBeContinued,0,SongName_ToBeContinued)
+
+//Misc music
+
 SoundRoomTerminator
 
 /*

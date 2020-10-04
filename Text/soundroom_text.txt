@@ -54,3 +54,6 @@ Team, This One's Stronger![X]
 
 ## SongName_EBFileSelect
 File Select[X]
+
+## SongName_BiSTitle
+Title[X]

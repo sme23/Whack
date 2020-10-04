@@ -86,6 +86,10 @@ SongTable(ThisOnesStronger,stronger,BattleMusicGroup)
 #include "Songs/ebfile.event"
 SongTable(EBFileSelect,ebfile,MapMusicGroup)
 }
+{
+#include "Songs/bistitle.event"
+SongTable(BiSTitle,bistitle,MapMusicGroup)
+}
 
 {
 #include "SFX/sfx-damage.event"

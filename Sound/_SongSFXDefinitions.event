@@ -48,11 +48,11 @@
 #define ThisOnesStronger 0xD9
 
 #define EBFileSelect 0xDB
+#define BiSTitle 0xE0
 
 /*
 free:
 
-0xE0
 0xE1
 0xE4
 0xE8

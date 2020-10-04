@@ -238,4 +238,4 @@ POP
 
   #endif // USE_SAVE_EXPANSION
 
-
+#include "DurabilityChest/Installer.event"

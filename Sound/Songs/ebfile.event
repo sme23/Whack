@@ -4,7 +4,7 @@
 	#define	ebfile_grp  MusicVoices
 	#define	ebfile_pri  0
 	#define	ebfile_rev  0
-	#define	ebfile_mvl  85
+	#define	ebfile_mvl  75
 	#define	ebfile_key  0
 	#define	ebfile_tbs  1
 	#define	ebfile_exg  0
@@ -28,6 +28,7 @@ ebfile_1_B1:
 	BYTE		PAN     c_v+0
 	BYTE		VOL     127*ebfile_mvl/mxv
 	BYTE		PAN     c_v+0
+	//    c_v+24
 	BYTE		N11     Dn1   v092
 	BYTE		N42     Gn1   v112
 	BYTE	W12
@@ -567,6 +568,7 @@ ebfile_2_B1:
 	BYTE		PAN     c_v+0
 	BYTE	W96
 // 001   ----------------------------------------
+	//     64
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W96
@@ -783,7 +785,7 @@ ebfile_3_B1:
 	BYTE		VOICE   80
 	BYTE		VOL     127*ebfile_mvl/mxv
 	BYTE		PAN     c_v+0
-	BYTE		N04     En4   v076
+	BYTE		N04     Gn4   v076
 	BYTE	W36
 	BYTE		N04   
 	BYTE	W36
@@ -792,14 +794,14 @@ ebfile_3_B1:
 // 001   ----------------------------------------
 ebfile_3_001:
 	BYTE	W24
-	BYTE		N04     En4   v076
+	BYTE		N04     Gn4   v076
 	BYTE	W24
 	BYTE		N04   
 	BYTE	W48
 	BYTE	PEND
 // 002   ----------------------------------------
 ebfile_3_002:
-	BYTE		N04     En4   v076
+	BYTE		N04     Gn4   v076
 	BYTE	W36
 	BYTE		N04   
 	BYTE	W36
@@ -1230,6 +1232,7 @@ ebfile_5_B1:
 	BYTE		PAN     c_v+0
 	BYTE	W96
 // 001   ----------------------------------------
+	//     64
 	BYTE	W96
 // 002   ----------------------------------------
 	BYTE	W96

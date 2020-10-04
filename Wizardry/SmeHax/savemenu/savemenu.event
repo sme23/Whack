@@ -1,7 +1,7 @@
 
 #include "savemenu.lyn.event"
 
-#define TitleScreenMusic 0x43
+#define TitleScreenMusic BiSTitle
 #define MainMenuMusic EBFileSelect
 
 PUSH
