@@ -40,6 +40,9 @@ PUSH
 	ORG $9CD54
 		jumpToHack(CheckIfSkillBookIcon_Use)
 
+	ORG $17700
+		jumpToHack(CheckIfSkillBookIcon_Generic)
+
 POP
 
 
@@ -50,6 +53,8 @@ POP
 #define DurabilityTextEnd "WORD 0 0"
 #define DurabilityItem(itemID) "BYTE itemID"
 #define DurabilityItemEnd "BYTE 0"
+#define DurabilityIcon(itemID,iconSheetID) "BYTE itemID iconSheetID"
+#define DurabilityIconEnd "SHORT 0"
 
 
 ALIGN 4
@@ -59,11 +64,24 @@ DurabilityTextEnd
 
 ALIGN 4
 DurabilityBasedItemDescList: //used for item desc
-DurabilityTextEntry(0xFFFF,True,SkillDescTable)
+DurabilityTextEntry(0xFFFF,False,SkillDescTable)
 DurabilityTextEnd
 
 ALIGN 4
 DurabilityItemList: //used for durability
 DurabilityItem(SkillScroll)
 DurabilityItemEnd
+
+DurabilityBasedItemIconList: //used for icons
+DurabilityIcon(SkillScroll,5)
+DurabilityIconEnd
+
+/*
+checklist
+Y - Durability 
+Y - Name
+Y - Desc
+N - Use Desc
+N - Icon
+*/
 

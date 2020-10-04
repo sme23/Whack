@@ -28,7 +28,7 @@
 
 GetItemNameString: @hook at 174F8
 
-push {r4}
+push {r4-r7}
 mov r4,r0
 
 @get ID from item table
@@ -43,14 +43,21 @@ ldrh r0,[r1]
 
 @r0 = name ID string
 
-ldrh r1,=#0xFFFF @comparator string
+ldr r5,=DurabilityBasedItemNameList
 
+Loop1Start:
+ldrh r1,[r5]
+cmp r1,#0
+beq VanillaFunc1
 cmp r0,r1
-bne VanillaFunc1
+beq Loop1Exit
+add r5,#8
+b Loop1Start
 
-@we want to get the skill desc text ID for this, then make a string that's just that text up to the colon and return that as the name string
+Loop1Exit:
 
-ldr r1,=SkillDescTable
+
+ldr r1,[r5,#4]
 
 mov r0,r4
 lsr r0,r0,#8 @just durability
@@ -59,7 +66,13 @@ lsl r0,r0,#1 @*2
 add r0,r1
 ldrh r0,[r0] @r0 = text ID for skill desc text for current item
 
+
+
 blh String_GetFromIndex
+
+ldrh r1,[r5,#2] @boolean
+cmp r1,#0
+beq SkipDoingColonTerminaton
 
 @string is now loaded in memory to gCurrentTextString, now we go through and look for a colon (0x3A) byte by byte
 
@@ -79,14 +92,15 @@ FoundColon:
 mov r1,#0
 strb r1,[r0]
 
+SkipDoingColonTerminaton:
 LoopExit:
-pop {r4}
+pop {r4-r7}
 ldr r3,=ReturnPoint2
 bx r3
 
 
 VanillaFunc1:
-pop {r4}
+pop {r4-r7}
 ldr r3,=ReturnPoint1
 bx r3
 
@@ -106,14 +120,21 @@ ldrh r0,[r6]
 
 @r0 = name ID string
 
-ldrh r1,=#0xFFFF @comparator string
+ldr r3,=DurabilityBasedItemNameList
 
+Loop2Start:
+ldrh r1,[r3]
+cmp r1,#0
+beq VanillaFunc2
 cmp r0,r1
-bne VanillaFunc2
+beq Loop2Exit
+add r3,#8
+b Loop2Start
 
-@we want to get the skill desc text ID for this, then make a string that's just that text up to the colon and return that as the name string
 
-ldr r1,=SkillDescTable
+Loop2Exit:
+
+ldr r1,[r3,#4]
 
 mov r0,r9
 lsr r0,r0,#8 @just durability
@@ -123,6 +144,10 @@ add r0,r1
 ldrh r0,[r0] @r0 = text ID for skill desc text for current item
 
 blh String_GetFromIndex
+
+ldrh r0,[r3,#2]
+cmp r0,#0
+beq SkipColonTermination2
 
 @string is now loaded in memory to gCurrentTextString, now we go through and look for a colon (0x3A) byte by byte
 
@@ -142,6 +167,7 @@ FoundColon2:
 mov r1,#0
 strb r1,[r0]
 
+SkipColonTermination2:
 LoopExit2:
 ldr r3,=ReturnPoint3
 bx r3
@@ -166,14 +192,20 @@ ldrh r0,[r4]
 
 @r0 = name ID string
 
-ldrh r1,=#0xFFFF @comparator string
+ldr r3,=DurabilityBasedItemNameList
 
+Loop3Start:
+ldrh r1,[r3]
+cmp r1,#0
+beq VanillaFunc3
 cmp r0,r1
-bne VanillaFunc3
+beq Loop3Exit
+add r3,#8
+b Loop3Start
 
-@we want to get the skill desc text ID for this, then make a string that's just that text up to the colon and return that as the name string
+Loop3Exit:
 
-ldr r1,=SkillDescTable
+ldr r1,[r3,#4]
 
 mov r0,r6
 lsr r0,r0,#8 @just durability
@@ -183,6 +215,10 @@ add r0,r1
 ldrh r0,[r0] @r0 = text ID for skill desc text for current item
 
 blh String_GetFromIndex
+
+ldrh r1,[r3,#2]
+cmp r1,#0
+beq SkipColonTermination3
 
 @string is now loaded in memory to gCurrentTextString, now we go through and look for a colon (0x3A) byte by byte
 
@@ -202,6 +238,7 @@ FoundColon3:
 mov r1,#0
 strb r1,[r0]
 
+SkipColonTermination3:
 LoopExit3:
 ldr r3,=ReturnPoint4
 bx r3
@@ -239,15 +276,22 @@ ldr r0,=ItemTable
 add r1,r0
 ldrh r0,[r1,#2] @r0 = desc ID
 
-ldr r1,=#0xFFFF
+ldr r2,=DurabilityBasedItemDescList
+DescLoopStart:
+ldrh r1,[r2]
+cmp r1,#0
+beq GoBack
 cmp r0,r1
-bne GoBack
+beq DescLoopExit
+add r2,#8
+b DescLoopStart
 
+DescLoopExit:
 mov r0,r4
 lsr r0,r0,#8
 lsl r0,r0,#1 @*2
 
-ldr r1,=SkillDescTable
+ldr r1,[r2,#4]
 add r0,r1
 ldrh r0,[r0]
 

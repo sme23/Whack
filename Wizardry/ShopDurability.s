@@ -29,13 +29,13 @@ mov r1,#36
 mul r0,r1
 ldr r1,=ItemTable
 add r2,r0,r1
-ldr r1,[r3,#8]
+ldr r1,[r2,#8]
 mov r0,#8
-and r0,r1
-mov r1,#0xFF
+and r1,r0
+mov r0,#0xFF
 cmp r1,#0
 beq IsUnbreakable
-ldrb r0,[r3,#0x14]
+ldrb r0,[r2,#0x14]
 b AddDurability
 
 IsUnbreakable:
@@ -46,7 +46,7 @@ lsl r1,r0,#8
 mov r0,r4
 mov r2,#0xFF
 and r0,r2
-and r0,r1
+orr r0,r1
 
 GoBack:
 pop {r4}
