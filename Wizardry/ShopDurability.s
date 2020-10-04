@@ -34,7 +34,7 @@ mov r0,#8
 and r1,r0
 mov r0,#0xFF
 cmp r1,#0
-beq IsUnbreakable
+bne IsUnbreakable
 ldrb r0,[r2,#0x14]
 b AddDurability
 
