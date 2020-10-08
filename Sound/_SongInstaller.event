@@ -87,12 +87,12 @@ SongTable(ThisOnesStronger,stronger,BattleMusicGroup)
 SongTable(EBFileSelect,ebfile,MapMusicGroup)
 }
 {
-#include "Songs/bistitle.event"
-SongTable(BiSTitle,bistitle,MapMusicGroup)
+#include "Songs/pititle.event"
+SongTable(BiSTitle,pititle,MapMusicGroup)
 }
 {
-#include "Songs/bisend.event"
-SongTable(BiSTheEnd,bisend,MapMusicGroup)
+#include "Songs/pithend.event"
+SongTable(BiSTheEnd,pithend,MapMusicGroup)
 }
 
 {

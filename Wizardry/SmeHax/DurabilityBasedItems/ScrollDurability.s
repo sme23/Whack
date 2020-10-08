@@ -10,6 +10,9 @@
 .global ScrollDurabilityGetter_UnitMenu
 .type ScrollDurabilityGetter_UnitMenu, %function
 
+.global ScrollDurabilityGetter_DropItem
+.type ScrollDurabilityGetter_DropItem, %function
+
 
 ScrollDurabilityGetter: @hook at 17594
 
@@ -165,3 +168,52 @@ bx r3
 
 .ltorg
 .align
+
+
+
+.equ DropItemReturnPoint, 0x8016A01
+
+ScrollDurabilityGetter_DropItem: @r0 hook @ 169F0
+
+@check if unbreakable
+ldr r0,[r5,#8]
+mov r1,#8
+and r0,r1
+cmp r0,#0
+bne ItemIsUnbreakable4
+
+@check if durability should be fixed to 1
+ldr r2,=DurabilityItemList
+mov r0,r6
+mov r1,#0xFF
+and r0,r1
+
+DropLoopStart:
+ldrb r1,[r2]
+cmp r1,#0
+beq DropItemUseNormalDurability
+cmp r0,r1
+beq DropLoopExit
+add r2,#1
+b DropLoopStart
+
+DropLoopExit:
+mov r2,#1
+b DropItem_GoBack
+
+DropItemUseNormalDurability:
+lsr r2,r6,#8
+b DropItem_GoBack
+
+ItemIsUnbreakable4:
+mov r2,#0xFF
+
+DropItem_GoBack:
+mov r0,r8
+ldr r1,=DropItemReturnPoint
+bx r1
+
+.ltorg
+.align
+
+

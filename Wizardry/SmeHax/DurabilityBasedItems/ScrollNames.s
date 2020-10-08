@@ -15,6 +15,9 @@
 .global NewItemNameGetter2
 .type NewItemNameGetter2, %function
 
+.global NewItemNameGetter3
+.type NewItemNameGetter3, %function
+
 
 .macro blh to, reg=r3
   ldr \reg, =\to
@@ -302,4 +305,76 @@ bx r14
 .ltorg
 .align
 
+
+
+
+.equ ReturnPointDelta,0x80169CB
+.equ ReturnPointBravo,0x80169CF
+
+NewItemNameGetter3: @r6 = item halfword
+mov r0,#0xFF
+and r0,r6
+mov r1,#36
+mul r0,r1
+ldr r1,=ItemTable
+add r5,r0,r1
+ldrh r0,[r5]
+
+ldr r3,=DurabilityBasedItemNameList
+
+LoopDeltaStart:
+ldrh r1,[r3]
+cmp r1,#0
+beq LoopDeltaUseID
+cmp r0,r1
+beq LoopDeltaExit
+add r3,#8
+b LoopDeltaStart
+
+LoopDeltaExit:
+
+ldr r1,[r3,#4]
+
+mov r0,r6
+lsr r0,r0,#8 @just durability
+lsl r0,r0,#1 @*2
+
+add r0,r1
+ldrh r0,[r0] @r0 = text ID for skill desc text for current item
+
+blh String_GetFromIndex
+
+ldrh r1,[r3,#2] @boolean
+cmp r1,#0
+beq SkipDoingColonTerminatonDelta
+
+@string is now loaded in memory to gCurrentTextString, now we go through and look for a colon (0x3A) byte by byte
+
+ldr r0,=gCurrentTextString
+
+LoopStartDelta:
+ldrb r1,[r0]
+cmp r1,#0
+beq SkipDoingColonTerminatonDelta
+cmp r1,#0x3A @ ":"
+beq FoundColonDelta
+add r0,#1
+b LoopStartDelta
+
+FoundColonDelta:
+@address in r0
+mov r1,#0
+strb r1,[r0]
+
+SkipDoingColonTerminatonDelta:
+ldr r0,=gCurrentTextString
+ldr r3,=ReturnPointBravo
+bx r3
+
+LoopDeltaUseID:
+ldr r3,=ReturnPointDelta
+bx r3
+
+.ltorg
+.align
 

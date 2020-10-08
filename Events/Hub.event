@@ -49,8 +49,6 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-//AFEV 0 TestAfev 0
-//AREA 0 TestAfev [4,9] [4,9]
 END_MAIN
 
 Dunno1:
@@ -149,7 +147,6 @@ BYTE IronSword 10 IronSword 40 IronSword 95 IronLance 10 IronLance 40 IronLance 
 
 ALIGN 4
 Vendor14:
-GiveItem(BlueGem,0xFFFF)
 SVAL s1 Eirika //temp, this should be doable with active unit but that requires rewriting the asmc slightly
 SVAL s2 VendorShopList|IsPointer
 SVAL s3 1 //vendor shop type
@@ -228,15 +225,11 @@ CAM1 Eirika
 
 FADU 10
 
-GiveGold(10000)
-
 CHECK_EVENTID OpeningViewedFlag
 BNE 0 s0 sC
 ScrollBoxText(HubFreeMoveTutorial)
 ENUT OpeningViewedFlag
 LABEL 0
-
-GiveItemWithDurability(SkillScroll,27,Eirika)
 
 EnableFreeMovement
 

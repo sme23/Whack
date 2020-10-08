@@ -19,6 +19,9 @@
 .global CheckIfSkillBookIcon_Generic
 .type CheckIfSkillBookIcon_Generic, %function
 
+.global CheckIfSkillBookIcon_DropItem
+.type CheckIfSkillBookIcon_DropItem, %function
+
 
 .equ ReturnPoint,0x8016ADD
 
@@ -333,4 +336,44 @@ bx r1
 .ltorg
 .align
 
+
+.equ DropItemReturnPoint,0x8016A1D
+
+CheckIfSkillBookIcon_DropItem:
+mov r0,r6
+mov r1,#0xFF
+and r0,r1
+ldr r2,=DurabilityBasedItemIconList
+
+DropItemLoopStart:
+ldrb r1,[r2]
+cmp r1,#0
+beq DropItemUseItemIcon
+cmp r0,r1
+beq DropItemLoopExit
+add r2,#2
+b DropItemLoopStart
+
+DropItemLoopExit:
+@icon is durability | r2+1 <<8
+@item halfword in r6
+mov r0,r6
+lsr r0,r0,#8
+ldrb r1,[r2,#1]
+lsl r1,r1,#8
+orr r1,r0
+b DropItemGoBack
+
+DropItemUseItemIcon:
+ldrb r1,[r5,#0x1D]
+
+DropItemGoBack:
+mov r2,#0x80
+lsl r2,r2,#7
+mov r0,r7
+ldr r3,=DropItemReturnPoint
+bx r3
+
+.ltorg
+.align
 

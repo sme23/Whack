@@ -44,8 +44,8 @@ strb r0, [r1]
 
 // now store the item id
 ldrh r0, [r3, #0x4]
-mov r1, #0xFF
-and r0, r1
+//mov r1, #0xFF
+//and r0, r1
 str r0, [r2, #0x14] // item id (0x77 for gold)
 
 ldrh r0, [r3, #0x6]

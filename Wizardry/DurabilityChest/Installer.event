@@ -5,6 +5,8 @@ ORG 0x11538
 jumpToHack(ItemGot_GotLeItem)
 POP
 
+#include "FixDurabilityChestPopup.lyn.event"
+
 ALIGN 4
 CheckCHES:
 #incbin "CheckCHES.dmp"
@@ -20,3 +22,30 @@ GiveItemWithDurability:
 #define DurabilityChest(item,durability,chestX,chestY) "CHES 0 item|(durability<<8) [chestX,chestY] 0x14"
 
 #define GiveItemWithDurability(Item,Durability,Character) "SVAL 0xC Durability; ASMC GiveItemWithDurability|1; CALL $591F40; SMOV 0x3 (Durability<<8)|Item ; GIVEITEMTO Character"
+
+
+PUSH
+ORG $D2F8
+POIN NewChestGiveItemEvent
+POP
+ALIGN 4
+NewChestGiveItemEvent:
+    // s3 is item id or gold amt
+
+    EVBIT_MODIFY 1
+    TILECHANGE 0xFFFD
+
+	ASMC FixDurabilityChestPopupASMC //sets a boolean in s7
+
+    BNE 0 s0 s7
+
+    GIVEITEMTO 0xFFFF
+
+    GOTO 1
+
+LABEL 0
+    GIVEITEMTOMAIN 0xFFFF
+
+LABEL 1
+    ENDA
+

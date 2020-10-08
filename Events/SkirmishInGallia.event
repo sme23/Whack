@@ -28,7 +28,6 @@ House(0,HouseEvent1,5,7)
 House(0,HouseEvent2,2,8)
 House(0,HouseEvent3,1,10)
 House(0,HouseEvent4,4,11)
-DurabilityChest(SkillScroll,69,13,12)
 END_MAIN
 
 MiscBasedEvents:
@@ -49,7 +48,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [12,12] 0 0 0 1 [ClawLionLaguz,SkillScroll,ChestKey,IronSword] NoAI
+UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [12,12] 0 0 0 1 [ClawLionLaguz] NoAI
 UNIT Lyre CatLaguzFUntransformed 0 Level(10,Ally,0) [9,11] 0 0 0 1 [ClawCatLaguz] NoAI
 UNIT Ranulf CatLaguzUntransformed 0 Level(10,Ally,0) [11,11] 0 0 0 1 [ClawCatLaguz] NoAI
 UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [9,12] 0 0 0 1 [ClawTigerLaguz,OliviGrass] NoAI
@@ -90,8 +89,6 @@ LOAD1 0 EnemyUnits
 ENUN
 CAM1 Ranulf
 EndConvo
-
-GotoPrepScreen
 
 //MUSC Tension
 //Text(SkirmishInGallia_Opening2)

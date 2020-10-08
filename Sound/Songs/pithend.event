@@ -1,0 +1,257 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	pithend_grp  MusicVoices
+	#define	pithend_pri  0
+	#define	pithend_rev  0
+	#define	pithend_mvl  75
+	#define	pithend_key  0
+	#define	pithend_tbs  1
+	#define	pithend_exg  0
+	#define	pithend_cmp  1
+
+	// .rodata
+	//	pithend
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+pithend_1:
+	BYTE	KEYSH   pithend_key+0
+pithend_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   44*pithend_tbs/2
+	BYTE		VOICE   10
+	BYTE		VOL     91*pithend_mvl/mxv
+	BYTE		N05     Fn3   v080
+	BYTE	W01
+	BYTE		        An3   v100
+	BYTE	W11
+	BYTE		N05   
+	BYTE	W11
+	BYTE		        Gn3   v068
+	BYTE	W01
+	BYTE		        As3   v108
+	BYTE	W17
+	BYTE		        En3   v068
+	BYTE	W01
+	BYTE		        Gn3   v100
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		        As3 
+	BYTE	W05
+	BYTE		        Fn3   v080
+	BYTE	W01
+	BYTE		        An3   v100
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Fn4 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE		        Fn3   v080
+	BYTE	W01
+	BYTE		        An3   v100
+	BYTE	W11
+	BYTE		N05   
+	BYTE	W11
+	BYTE		        Gn3   v068
+	BYTE	W01
+	BYTE		        As3   v108
+	BYTE	W17
+	BYTE		        En3   v068
+	BYTE	W01
+	BYTE		        Gn3   v100
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		        As3 
+	BYTE	W05
+	BYTE		        Fn3   v080
+	BYTE	W01
+	BYTE		        An3   v100
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+// 002   ----------------------------------------
+pithend_1_002:
+	BYTE		N23     Cn4   v088
+	BYTE	W01
+	BYTE		N05     An4   v096
+	BYTE	W05
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W05
+	BYTE		N17     Fn4   v088
+	BYTE	W02
+	BYTE		N05     Cn5   v096
+	BYTE	W05
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N11     En4   v076
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE		N17     Cn4   v088
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W05
+	BYTE		N01     Cn4   v076
+	BYTE	W01
+	BYTE		N11     An4   v096
+	BYTE	W06
+	BYTE		N17     An3   v076
+	BYTE	W06
+	BYTE		N05     Fn4   v096
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+pithend_1_003:
+	BYTE		N23     Cn4   v088
+	BYTE	W01
+	BYTE		N05     An4   v096
+	BYTE	W05
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W05
+	BYTE		N17     Fn4   v088
+	BYTE	W02
+	BYTE		N05     Cn5   v096
+	BYTE	W05
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N11     En4   v076
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE		N17     Cn4   v088
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W05
+	BYTE		N01     Cn4   v076
+	BYTE	W01
+	BYTE		N11     Fn4   v096
+	BYTE	W06
+	BYTE		N17     An3   v068
+	BYTE	W18
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pithend_1_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pithend_1_003
+	BYTE	GoTo
+	 POIN2	pithend_1_B1
+pithend_1_B2:
+// 006   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+pithend_2:
+	BYTE	KEYSH   pithend_key+0
+pithend_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   10
+	BYTE		PAN     c_v+7
+	BYTE		VOL     64*pithend_mvl/mxv
+	BYTE		N40     Fn2   v080
+	BYTE	W42
+	BYTE		N52   
+	BYTE	W12
+	BYTE		N40     Cn3   v076
+	BYTE	W42
+// 001   ----------------------------------------
+	BYTE		N17     Fn2   v080
+	BYTE	W18
+	BYTE		N23     Fn2   v068
+	BYTE	W06
+	BYTE		N17     Cn3   v056
+	BYTE	W18
+	BYTE		N28     Fn2   v076
+	BYTE	W12
+	BYTE		N40     Cn3   v072
+	BYTE	W18
+	BYTE		N23     Fn2   v076
+	BYTE	W24
+// 002   ----------------------------------------
+pithend_2_002:
+	BYTE		N44     Fn2   v080
+	BYTE	W12
+	BYTE		N32     Cn3   v076
+	BYTE	W06
+	BYTE		N28     An3 
+	BYTE	W30
+	BYTE		N23     En2   v080
+	BYTE	W06
+	BYTE		N17     Gn2 
+	BYTE	W06
+	BYTE		N11     Cn3   v076
+	BYTE	W06
+	BYTE		N05     Gn3   v068
+	BYTE	W06
+	BYTE		N23     Fn2   v080
+	BYTE	W12
+	BYTE		N11     Cn3   v076
+	BYTE	W06
+	BYTE		N05     Cn2   v068
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+pithend_2_003:
+	BYTE		N44     Fn2   v080
+	BYTE	W12
+	BYTE		N32     Cn3   v076
+	BYTE	W06
+	BYTE		N28     An3 
+	BYTE	W30
+	BYTE		N23     En2   v080
+	BYTE	W06
+	BYTE		N17     Gn2 
+	BYTE	W06
+	BYTE		N11     Cn3   v076
+	BYTE	W06
+	BYTE		N05     Gn3   v068
+	BYTE	W06
+	BYTE		N23     Fn2   v080
+	BYTE	W06
+	BYTE		N11     Cn3   v076
+	BYTE	W12
+	BYTE		N05     Cn3   v068
+	BYTE	W06
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pithend_2_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	pithend_2_003
+	BYTE	GoTo
+	 POIN2	pithend_2_B1
+pithend_2_B2:
+// 006   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+pithend:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	pithend_pri	// Priority
+	BYTE	pithend_rev	// Reverb.
+
+	POIN2	pithend_grp
+
+	POIN2	pithend_1
+	POIN2	pithend_2
+
+	

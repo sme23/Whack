@@ -30,5 +30,4 @@
 #include "savemenu/savemenu.event"
 #include "DurabilityBasedItems/DurabilityBasedItems.event"
 
-
-#include "SoundRoomConditional.lyn.event"
+#include "SoundRoomConditional/SoundRoomConditional.event"

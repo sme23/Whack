@@ -43,6 +43,15 @@ PUSH
 	ORG $17700
 		jumpToHack(CheckIfSkillBookIcon_Generic)
 
+	ORG $169BC
+		jumpToHack(NewItemNameGetter3)
+		
+	ORG $169F0
+		callHack_r0(ScrollDurabilityGetter_DropItem)
+		
+	ORG $16A14
+		jumpToHack(CheckIfSkillBookIcon_DropItem)
+
 POP
 
 
@@ -81,7 +90,6 @@ checklist
 Y - Durability 
 Y - Name
 Y - Desc
-N - Use Desc
-N - Icon
+Y - Icon
 */
 
