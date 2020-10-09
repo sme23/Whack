@@ -283,7 +283,7 @@ bx r1
 .equ GetUnit,0x8019431
 .equ MuCtr_CreateWithReda,0x800FEF5 @r0 = char struct, target x coord, target y coord
 .equ EnsureCameraOntoPosition,0x08015e0d
-
+.equ StartMenuAdjusted,0x804EB98
 
 
 .global HandleUnitMovement
@@ -501,7 +501,7 @@ ldr r2,[r2]
 add r2,r5
 ldrb r0,[r2]
 cmp r0,#0
-beq HandleUnitMovement_GoBack
+beq NoAPress
 blh GetUnit
 @r0 = unit we're checking
 mov r1,r7 @r1 = parent proc
@@ -509,9 +509,21 @@ bl FreeMove_RunTalkEvents
 
 NoAPress:
 
-@do proc label 8 if none yet (this won't work if movement is in effect)
-@mov r1,#8
-@blh GotoProcLabel
+@check if L button is pressed
+ldr r0,=gpKeyState
+ldr r0,[r0]
+ldrh r0,[r0,#0x4]
+mov r1,#0x2
+lsl r1,r1,#8
+and r0,r1
+cmp r0,#0
+beq NoLPress @if 0, key is not pressed
+
+@open a menu
+ldr r0,=FreeMovementLMenu
+blh StartMenuAdjusted
+
+NoLPress:
 
 HandleUnitMovement_GoBack:
 pop {r4-r7}
@@ -523,12 +535,23 @@ bx r0
 
 
 
+.global FreeMovementMenuOnBPress
+.type FreeMovementMenuOnBPress, %function
 
+FreeMovementMenuOnBPress:
+push {r4,r14}
+@call the normal one
+blh #0x804F455
+mov r4,r0
+@now clear graphics
+blh #0x80311A9
+mov r0,r4
+pop {r4}
+pop {r1}
+bx r1
 
-
-
-
-
+.ltorg
+.align
 
 
 .equ gChapterData,0x0202bcf0
