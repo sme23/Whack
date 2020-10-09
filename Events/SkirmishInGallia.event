@@ -48,7 +48,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [12,12] 0 0 0 1 [ClawLionLaguz,SkillScroll] NoAI
+UNIT Giffca LionLaguzUntransformed 0 Level(10,Ally,0) [12,12] 0 0 0 1 [ClawLionLaguz] NoAI
 UNIT Lyre CatLaguzFUntransformed 0 Level(10,Ally,0) [9,11] 0 0 0 1 [ClawCatLaguz] NoAI
 UNIT Ranulf CatLaguzUntransformed 0 Level(10,Ally,0) [11,11] 0 0 0 1 [ClawCatLaguz] NoAI
 UNIT Kyza TigerLaguzUntransformed 0 Level(10,Ally,0) [9,12] 0 0 0 1 [ClawTigerLaguz,OliviGrass] NoAI
