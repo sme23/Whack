@@ -1,0 +1,40 @@
+# [ASM] Free Movement (FE8)
+
+This allows you to freely control a character on a map in lieu of traditional cursor-based gameplay.
+
+https://cdn.discordapp.com/attachments/535891396033249330/764965230429470751/xnSVPkiaxc.gif
+
+Of course, if the only thing you could do is move around it would be pretty useless. You can also interact with the map using the A button.
+
+https://cdn.discordapp.com/attachments/535891396033249330/764965808765534218/uo5jejz1EG.gif
+
+This means you can do shops as well.
+
+https://cdn.discordapp.com/attachments/725478895226191892/763971424041304084/Q5ZaAiVz7t.gif
+
+Shops aren't the only thing you can interact with. Interacting with a door or chest will open it.
+
+https://cdn.discordapp.com/attachments/535891396033249330/764965244693905458/4JX0JIQ9Jz.gif
+
+You can also have events that run when you enter a certain area or every time you take a step.
+
+<gif of "this only runs when you step here" event>
+
+You can also interact with other units on the map.
+
+https://cdn.discordapp.com/attachments/725478895226191892/763971983883894834/n6E2anxgyX.gif
+
+Lastly, you have a menu, which you can do anything you want with content-wise. By default, it contains some map menu commands ~~specifically the ones that I tested and didn't crash the game~~.
+
+https://cdn.discordapp.com/attachments/725478895226191892/763981385852911626/FC9QzVMv8M.gif
+
+Movement collision is based upon whether or not the tile is passable by the unit you're controlling, or if there is a unit in the space you're attempting to move onto. You are always in control of the first player unit (to let the player choose who this is, make a prep screen with 1 deploy slot; otherwise, this will usually be your lord if they are force-deployed on every map). Move around with the D-pad as you would expect, and press A to interact with the tile you're standing on. If you hold a direction and press A, you interact with the tile next to you in that direction; standing next to a unit, holding towards them, and pressing A will interact with them. The L button opens the menu.
+
+Events for this are set up largely the same way that you would normally do events for a chapter. AFEVs and AREAs will run the step after the condition to run them is met, largely analagous to them running after each unit's action in normal gameplay. Chests and doors are defined the same way as they are normally, but you don't need a key/lockpick/etc to open them in free movement mode. You can place chest events anywhere, but note that if there is not a tilechange at that position the chest won't work properly (the tilechange can be a single tile of the tile that denotes "don't change this tile"). Talk events are defined in the same place as normal, but note that the only thing read is the second character and the event pointer, so you can't have multiple talk events with one unit from different initiators set up in the normal way. You *can* do checks within the event called by talking to determine character-specific interactions, however. There's an input for char ID that lets you use the first player unit, but the unit you're controlling is set to the active unit as well for ease of use.
+
+To enable Free Movement mode, call the `EnableFreeMovementASMC`. This comes with the definition `EnableFreeMovement` for ease of use. As this works by hijacking the phase controller, this will only go into effect at the next phase change. As such, the ideal place for this is in a chapter start event. There's no way to normally end phase while already in Free Movement mode, and enabling it mid-chapter can lead to some weirdness. There's also a `DisableFreeMovementASMC`, but as before there's no way to normally end phase while in free movement mode and disabling it mid-chapter will break things, so I would not recommend using this. Note that the game does not suspend automatically while in Free Movement mode. You can call the make suspend save ASMC `ASMC 0xB5D5D` to make one at points within your events that you want to save the player's progress. Of course, manual suspend saves from the menu do function as well.
+
+### [Download](https://drive.google.com/file/d/1lx8Dlem-3y1MxtTmvD7CLBdj1Vjq8wYA/view?usp=sharing)
+ 
+Installing is just `#include`ing `FreeMovement.event`. To save the state of being in Free Movement mode through suspend, you'll need Expanded Modular Save (its default configuration should be fine). The command list for the menu is near the bottom of `FreeMovement.event`. This will conflict with anything that affects the phase controller function, as it rewrites it. 
+ 

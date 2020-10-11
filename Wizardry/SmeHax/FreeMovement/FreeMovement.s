@@ -417,6 +417,10 @@ mov r1,r5
 mov r2,r6
 blh EnsureCameraOntoPosition
 
+@run MiscBasedEvents
+mov r0,r5
+mov r1,r6
+bl RunMiscBasedEvents
 
 sub sp,#0x1C
 mov r0,#0
@@ -456,8 +460,7 @@ b DoEventsAndStuff
 
 DoEventsAndStuff:
 
-@run MiscBasedEvents
-bl RunMiscBasedEvents
+
 
 @pause for some number of frames defined in proc sleeps via goto
 mov r0,r7
@@ -563,19 +566,18 @@ bx r1
 .equ RunLocationEvents,0x080840C5
 
 RunMiscBasedEvents:
-push {r14}
+push {r4-r5,r14}
 sub sp,#0x1C
+mov r4,r0
+mov r5,r1
 ldr r0,=gChapterData
 ldrb r0,[r0,#0xE]
 blh GetChapterEventDataPointer
 ldr r0,[r0,#0xC]
 str r0,[sp]
 mov r1,sp
-ldr r2,=#0x202BE4C
-ldrb r0,[r2,#0x10]
-strb r0,[r1,#0x18]
-ldrb r0,[r2,#0x11]
-strb r0,[r1,#0x19]
+strb r4,[r1,#0x18]
+strb r5,[r1,#0x19]
 mov r0,r13
 blh CheckEventDefinition
 cmp r0,#0
@@ -593,6 +595,7 @@ bne EventCallLoop
 ExitMiscBasedLoop:
 add sp,#0x1C
 
+pop {r4-r5}
 pop {r0}
 bx r0
 

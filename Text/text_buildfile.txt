@@ -307,8 +307,8 @@ have been placed.[X]
 
 ## TestFreeMoveText
 [OpenMidRight][LoadFace][CurrentPortrait]
-This event runs every[N]
-time you step here.[A][X]
+This event runs every time[N]
+you step off of this tile.[A][X]
 
 ## TestBazbaTalk
 [OpenMidRight][LoadBazba]

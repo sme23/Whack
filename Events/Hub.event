@@ -45,11 +45,20 @@ House(0,Vendor15,19,13)
 House(0,Armory16,24,10)
 House(0,Armory17,24,13)
 House(0,Tavern18,31,10)
+Door(18,21,8)
+Door(19,22,8)
+Chest(20,Elixir,22,14)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+AREA 0 TestAreaEvent [24,6] [24,6]
 END_MAIN
+
+TestAreaEvent:
+Text(TestFreeMoveText)
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
