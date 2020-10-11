@@ -35,8 +35,6 @@ gfx things by
 - Monkeybard 
 - Black Mage 
 - Blaze 
-
-hub map by zoramine
 - vlak 
 - Pikmin1211 
 - Zaim 
@@ -44,5 +42,7 @@ hub map by zoramine
 - 2WB
 - Nuramon
 - LordGlenn
+
+hub map by zoramine
 
 The Whack Whose Name Was Stolen
