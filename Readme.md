@@ -1,6 +1,4 @@
-idk what i'm gonna do with this yet
-
-anthology shit
+The Hack Whose Name Was Stolen
 
 
 beeg mechanical asm things that are focal to chapters here by 
@@ -37,6 +35,8 @@ gfx things by
 - Monkeybard 
 - Black Mage 
 - Blaze 
+
+hub map by zoramine
 - vlak 
 - Pikmin1211 
 - Zaim 
