@@ -1,6 +1,4 @@
-idk what i'm gonna do with this yet
-
-anthology shit
+The Hack Whose Name Was Stolen
 
 
 beeg mechanical asm things that are focal to chapters here by 
@@ -44,5 +42,7 @@ gfx things by
 - 2WB
 - Nuramon
 - LordGlenn
+
+hub map by zoramine
 
 The Whack Whose Name Was Stolen
