@@ -29,6 +29,7 @@
 .equ NewBlockingProc, 0x8002CE1
 .equ GotoProcLabel, 0x8002F25
 .equ BreakProcLoop, 0x8002E95
+.equ gUnitMoveBuffer,0x2033efc 
 
 
 EnableFreeMovementASMC:
@@ -180,22 +181,29 @@ push {r4-r7,r14}
 
 mov r7,r0 @r7 = parent proc
 
-@if MU proc exists, skip unit movement
+@if MU proc exists, skip normal unit movement and do the other thing
 blh MU_Exists
 cmp r0,#1
 beq SkipUnitMovement
 
 
 DoNormalThing:
-@set active unit to first player unit
-ldr r0,=#0x202BE4C
+@set active unit to first player unit //this has been made a separate function called on init, we should change how this works
+@ldr r0,=#0x202BE4C
+ldr r0,=#0x203F2B4
+ldr r0,[r0]
 ldr r1,=#0x3004E50
 str r0,[r1]
 
 mov r0,r7
 bl HandleUnitMovement @in place of the cursor movement function, same general idea
+b MainLoop_GoBack
 
 SkipUnitMovement:
+mov r0,r7
+bl HandleContinuedMovement
+
+MainLoop_GoBack:
 pop {r4-r7}
 pop {r0}
 bx r0
@@ -208,6 +216,77 @@ bx r0
 .equ gGameState,0x202BCB0
 .equ MoveCameraByStepMaybe,0x8015838
 .equ SomeFunc,0x801588C
+
+
+.global HandleContinuedMovement
+.type HandleContinuedMovement, %function
+
+HandleContinuedMovement:
+push {r4-r7,r14}
+mov r7,r0 @r7 = parent proc
+@check for button input
+bl CheckDirectionalButtonPress
+cmp r0,#0
+beq ContinuedMovement_NoMore
+
+@construct the second(?) thing in the move buffer to be a new movement in the returned direction
+@the only problem is the directions used there and the directions we returned are different
+@it wants left-right-up-down indexed 0-3, we have up-left-down-right indexed 1-4
+
+cmp r0,#1
+beq CorrectUpMovement
+cmp r0,#2
+beq CorrectLeftMovement
+cmp r0,#3
+beq CorrectDownMovement
+
+CorrectRightMovement:
+mov r0,#1
+b PostMovementCorrection
+
+CorrectUpMovement:
+
+
+CorrectLeftMovement:
+
+CorrectDownMovement:
+
+
+
+PostMovementCorrection:
+ldr r1,=gUnitMoveBuffer
+strb r0,[r1,#4]
+
+
+
+
+ContinuedMovement_NoMore:
+@sleep another 5 frames
+mov r0,r7
+mov r1,#8
+blh GotoProcLabel
+b ContinuedMovement_GoBack
+
+
+ContinuedMovement_GoBack:
+pop {r4-r7}
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -318,7 +397,8 @@ ldr r1,=jpt_UnitDirection
 add r0,r1
 ldr r0,[r0]
 
-ldr r1,=#0x202BE4C @first player unit
+ldr r1,=#0x3004E50
+ldr r1,[r1]
 mov r4,r1
 ldrb r6,[r4,#0x11]
 ldrb r5,[r4,#0x10]
@@ -376,6 +456,11 @@ cmp r1,r3
 beq MoveReconvene
 add r1,#1
 b MoveReconvene
+
+.ltorg
+.align
+
+
 
 CheckAPressLadder:
 b CheckAPress
@@ -440,6 +525,12 @@ mov r3,#0 @redundant some of the time but not always
 blh MuCtr_CreateWithReda
 add sp,#0x1C
 
+@now proc_goto(8)
+mov r0,r7
+mov r1,#8
+blh GotoProcLabel
+
+
 @do fancy graphical thing here for moving map sprites
 
 
@@ -481,7 +572,8 @@ beq NoAPress
 @check for various map objects at current location
 cmp r5,#0xFF
 ble CallDoMapEvents
-ldr r4,=#0x202BE4C @first player unit
+ldr r4,=#0x3004E50
+ldr r4,[r4]
 ldrb r0,[r4,#0x10]
 ldrb r1,[r4,#0x11]
 b DoMapEventsCall
@@ -630,7 +722,8 @@ push {r4-r7,r14}
 mov r5,r0 @x coord
 mov r6,r1 @y coord
 mov r7,r2 @parent proc
-ldr r4,=#0x202BE4C
+ldr r4,=#0x3004E50
+ldr r4,[r4]
 
 @check for map events at current position
 mov r0,r5
@@ -793,7 +886,18 @@ bx r0
 
 
 FreeMovement_InitActiveUnit:
+
+ldr r1,=#0x203F2B4 @used to determine who the actively controlled unit is, written to active unit each frame during main loop
+ldr r0,[r1]
+cmp r0,#0
+beq InitActiveUnit_AlsoInitControlledUnit
+b InitActiveUnit_Cont
+
+InitActiveUnit_AlsoInitControlledUnit:
 ldr r0,=#0x202BE4C
+str r0,[r1]
+
+InitActiveUnit_Cont:
 ldr r1,=#0x3004E50
 str r0,[r1]
 bx r14

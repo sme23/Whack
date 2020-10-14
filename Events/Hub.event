@@ -240,6 +240,25 @@ ScrollBoxText(HubFreeMoveTutorial)
 ENUT OpeningViewedFlag
 LABEL 0
 
+MOVE 1 Eirika [19,7]
+
+// MOVE 7 Eirika [21,4] (up 3)
+//first byte is direction?
+//0 Left - 1 Right - 2 Up - 3 Down
+// 02 03 03 04
+
+//MOVE 1 Eirika [21,4] (up 3)
+// 03 03 03 04
+
+//MOVE 20 Eirika [21,4] (up 3)
+// 03 03 03 04
+
+//MOVE 1 Eirika [20,7] (left 1)
+// 00 04 00 00
+
+//MOVE 1 Eirika [19,7] (left 2)
+// 
+
 EnableFreeMovement
 
 NoFade

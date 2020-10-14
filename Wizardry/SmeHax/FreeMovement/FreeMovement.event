@@ -55,11 +55,11 @@
 	PROC_LOOP_ROUTINE(FreeMovement_MainLoop)
 	
 	PROC_LABEL(16)
-	PROC_SLEEP(5)
+	PROC_SLEEP(9)
 	PROC_GOTO(9)
 	
 	PROC_LABEL(8)
-	PROC_SLEEP(2)
+	PROC_SLEEP(5)
 	PROC_GOTO(9)
 	
 	PROC_END //unsure if this will ever get run actually but w/e better safe than sorry and also lets us end free movement just by killing the proc loop
