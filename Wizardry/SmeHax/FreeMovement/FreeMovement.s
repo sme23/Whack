@@ -16,6 +16,8 @@
 .global FreeMovement_MainLoop
 .type FreeMovement_MainLoop, %function
 
+.global ChangeControlledUnitASMC
+.type ChangeControlledUnitASMC, %function
 
 
 .macro blh to,reg=r3
@@ -76,6 +78,32 @@ bx r14				@return
 
 .ltorg
 .align
+
+.equ GetUnitStructFromEventParameter,0x800BC51
+.equ MemorySlot1,0x30004BC
+
+ChangeControlledUnitASMC:
+push {r14}
+ldr r0,=MemorySlot1 @contains event unit parameter
+ldr r0,[r0]
+blh GetUnitStructFromEventParameter
+mov r1,r0
+ldr r0,=#0x203F2B4
+str r1,[r0]
+mov r0,#0
+ldrb r2,[r1,#0x11]
+ldrb r1,[r1,#0x10]
+blh EnsureCameraOntoPosition
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+
+
+
 
 
 NewPlayerPhaseEvaluationFunc:
@@ -184,8 +212,8 @@ mov r7,r0 @r7 = parent proc
 @if MU proc exists, skip normal unit movement and do the other thing
 blh MU_Exists
 cmp r0,#1
-beq SkipUnitMovement
-
+@beq SkipUnitMovement
+beq MainLoop_GoBack
 
 DoNormalThing:
 @set active unit to first player unit //this has been made a separate function called on init, we should change how this works
@@ -526,9 +554,9 @@ blh MuCtr_CreateWithReda
 add sp,#0x1C
 
 @now proc_goto(8)
-mov r0,r7
-mov r1,#8
-blh GotoProcLabel
+@mov r0,r7
+@mov r1,#8
+@blh GotoProcLabel
 
 
 @do fancy graphical thing here for moving map sprites

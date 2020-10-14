@@ -156,10 +156,11 @@ BYTE IronSword 10 IronSword 40 IronSword 95 IronLance 10 IronLance 40 IronLance 
 
 ALIGN 4
 Vendor14:
-SVAL s1 Eirika //temp, this should be doable with active unit but that requires rewriting the asmc slightly
-SVAL s2 VendorShopList|IsPointer
-SVAL s3 1 //vendor shop type
-ASMC MakeShopASMC
+SVAL s1 Moulder //temp, this should be doable with active unit but that requires rewriting the asmc slightly
+//SVAL s2 VendorShopList|IsPointer
+//SVAL s3 1 //vendor shop type
+//ASMC MakeShopASMC
+ASMC ChangeControlledUnitASMC
 NoFade
 ENDA
 
@@ -201,6 +202,7 @@ ENDA
 FreeMoveUnits:
 UNIT Eirika EirikaLord 0 Level(1,Ally,0) [21,7] 0 0 0 1 [BlueGem] NoAI
 UNIT Vanessa PegasusKnight 0 Level(1,Ally,0) [32,30] 0 0 0 1 NoItems NoAI
+UNIT Moulder Priest 0 Level(1,Ally,0) [32,3] 0 0 0 1 NoItems NoAI
 UNIT Bazba Fighter 0 Level(1,Enemy,0) [34,3] 0 0 0 1 NoItems NoAI
 UNIT Gilliam Knight 0 Level(1,NPC,0) [5,16] 0 0 0 1 NoItems NoAI
 UNIT
@@ -257,7 +259,7 @@ MOVE 1 Eirika [19,7]
 // 00 04 00 00
 
 //MOVE 1 Eirika [19,7] (left 2)
-// 
+// 00 00 04 00
 
 EnableFreeMovement
 
