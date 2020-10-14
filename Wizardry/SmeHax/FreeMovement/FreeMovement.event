@@ -49,6 +49,9 @@
 	//PROC_CALL_ROUTINE($808D13D) // start player phase interface proc
 	PROC_CALL_ROUTINE($8027A41) // reset map sprite hover timer
 	
+	PROC_CALL_ROUTINE(FreeMovement_InitActiveUnit)
+	PROC_CALL_ROUTINE(FreeMovement_CorrectCameraPosition)
+	
 	PROC_LOOP_ROUTINE(FreeMovement_MainLoop)
 	
 	PROC_LABEL(16)

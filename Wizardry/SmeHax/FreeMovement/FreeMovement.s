@@ -17,6 +17,7 @@
 .type FreeMovement_MainLoop, %function
 
 
+
 .macro blh to,reg=r3
 	push {\reg}
 	ldr \reg,=\to
@@ -765,4 +766,38 @@ bx r0
 @ r1 = x coord of target location
 @ r2 = y coord of target location
 
+
+
+.global FreeMovement_CorrectCameraPosition
+.type FreeMovement_CorrectCameraPosition, %function
+
+.global FreeMovement_InitActiveUnit
+.type FreeMovement_InitActiveUnit, %function
+
+
+FreeMovement_CorrectCameraPosition:
+push {r14}
+@set camera on active unit
+mov r0,#0
+ldr r2,=#0x3004E50
+ldr r2,[r2]
+ldrb r1,[r2,#0x10]
+ldrb r2,[r2,#0x11]
+blh EnsureCameraOntoPosition
+
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+FreeMovement_InitActiveUnit:
+ldr r0,=#0x202BE4C
+ldr r1,=#0x3004E50
+str r0,[r1]
+bx r14
+
+.ltorg
+.align
 
