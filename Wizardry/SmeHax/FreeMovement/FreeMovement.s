@@ -195,12 +195,16 @@ bx r0
 
 
 
+.equ MU_EndAll,0x80790A5
 
 
 .equ MU_IsAnyActive,0x8078739
 .equ MU_Exists,0x8078721
+.equ MU_EnableAttractCamera,0x80784E5
+.equ ProcFind,0x8002e9c 
+.equ Proc_MU,0x89A2C48
 
-
+.equ MakeMoveunitForActiveUnit,0x801D70D
 
 
 
@@ -209,13 +213,6 @@ push {r4-r7,r14}
 
 mov r7,r0 @r7 = parent proc
 
-@if MU proc exists, skip normal unit movement and do the other thing
-blh MU_Exists
-cmp r0,#1
-@beq SkipUnitMovement
-beq MainLoop_GoBack
-
-DoNormalThing:
 @set active unit to first player unit //this has been made a separate function called on init, we should change how this works
 @ldr r0,=#0x202BE4C
 ldr r0,=#0x203F2B4
@@ -223,13 +220,69 @@ ldr r0,[r0]
 ldr r1,=#0x3004E50
 str r0,[r1]
 
+@if MU proc does not exist, check if a direction is being pressed and init it if so
+blh MU_Exists
+cmp r0,#1
+bne MainLoop_InitMU
+
+@okay, so it does exist; do we need to kill any existing instances of it if a button is no longer being pressed AND we are no longer moving?
+bl CheckDirectionalButtonPress
+cmp r0,#0 @if 0, no buttons are being pressed
+bne DoNormalThing
+@check flag that we'll set because we need to wait 1 frame
+ldr r0,=#0x203F2B1
+ldrb r0,[r0]
+cmp r0,#2
+beq DecrementFlagByOne
+cmp r0,#1
+beq DoKillMUProcs
+
+@one more check here for if the proc is waiting
+ldr r0,=Proc_MU
+blh ProcFind
+cmp r0,#0
+beq DoNormalThing @error checking
+add r0,#0x3F
+ldrb r1,[r0] 
+cmp r1,#1
+bne DoNormalThing
+@set a flag in RAM that will denote if we are waiting for 2 frames here
+
+ldr r0,=#0x203F2B1
+mov r1,#2
+strb r1,[r0]
+
+b DoNormalThing
+
+
+DoKillMUProcs:
+ldr r0,=#0x203F2B1
+mov r1,#0
+strb r1,[r0]
+blh MU_EndAll
+b DoNormalThing
+
+
+DecrementFlagByOne:
+sub r1,#1
+strb r1,[r0]
+b DoNormalThing
+
+
+MainLoop_InitMU:
+@are any directional buttons being pressed?
+bl CheckDirectionalButtonPress
+cmp r0,#0
+beq DoNormalThing @if not, don't do the thing
+blh MakeMoveunitForActiveUnit
+blh MU_EnableAttractCamera @now we don't have to do manual camera stuff
+
+
+DoNormalThing: @we still need to do this part even if no MU exists so it goes after all the other things; if it exists AND we are moving, THEN we skip this
 mov r0,r7
 bl HandleUnitMovement @in place of the cursor movement function, same general idea
 b MainLoop_GoBack
 
-SkipUnitMovement:
-mov r0,r7
-bl HandleContinuedMovement
 
 MainLoop_GoBack:
 pop {r4-r7}
@@ -246,63 +299,6 @@ bx r0
 .equ SomeFunc,0x801588C
 
 
-.global HandleContinuedMovement
-.type HandleContinuedMovement, %function
-
-HandleContinuedMovement:
-push {r4-r7,r14}
-mov r7,r0 @r7 = parent proc
-@check for button input
-bl CheckDirectionalButtonPress
-cmp r0,#0
-beq ContinuedMovement_NoMore
-
-@construct the second(?) thing in the move buffer to be a new movement in the returned direction
-@the only problem is the directions used there and the directions we returned are different
-@it wants left-right-up-down indexed 0-3, we have up-left-down-right indexed 1-4
-
-cmp r0,#1
-beq CorrectUpMovement
-cmp r0,#2
-beq CorrectLeftMovement
-cmp r0,#3
-beq CorrectDownMovement
-
-CorrectRightMovement:
-mov r0,#1
-b PostMovementCorrection
-
-CorrectUpMovement:
-
-
-CorrectLeftMovement:
-
-CorrectDownMovement:
-
-
-
-PostMovementCorrection:
-ldr r1,=gUnitMoveBuffer
-strb r0,[r1,#4]
-
-
-
-
-ContinuedMovement_NoMore:
-@sleep another 5 frames
-mov r0,r7
-mov r1,#8
-blh GotoProcLabel
-b ContinuedMovement_GoBack
-
-
-ContinuedMovement_GoBack:
-pop {r4-r7}
-pop {r0}
-bx r0
-
-.ltorg
-.align
 
 
 
@@ -377,7 +373,7 @@ bx r1
 
 
 
-
+.equ MU_StartMoveScript_Auto,0x8078701
 
 
 
@@ -499,6 +495,9 @@ MoveReconvene:
 mov r5,r1
 mov r6,r2
 
+@set facing direction of MU; should be so whether or not you can move in a given direction
+
+
 @check if the tile we're trying to move to is impassable
 @get terrain at that tile
 ldr r2,=#0x202E4DC @terrain map
@@ -536,22 +535,56 @@ mov r0,r5
 mov r1,r6
 bl RunMiscBasedEvents
 
-sub sp,#0x1C
-mov r0,#0
-str r0,[sp]
-str r0,[sp,#0x4]
-str r0,[sp,#0x8]
-str r0,[sp,#0xC]
-str r0,[sp,#0x10]
-str r0,[sp,#0x14]
-str r0,[sp,#0x18]
-str r0,[sp,#0x1C]
+
+
+
+
+@do the movement!
 mov r0,r4
 mov r1,r5
 mov r2,r6
-mov r3,#0 @redundant some of the time but not always
-blh MuCtr_CreateWithReda
-add sp,#0x1C
+bl FreeMove_ProcessUnitMovement
+
+strb r5,[r4,#0x10]
+strb r6,[r4,#0x11]
+
+
+
+
+@sub sp,#0x1C
+@mov r0,#0
+@str r0,[sp]
+@str r0,[sp,#0x4]
+@str r0,[sp,#0x8]
+@str r0,[sp,#0xC]
+@str r0,[sp,#0x10]
+@str r0,[sp,#0x14]
+@str r0,[sp,#0x18]
+@str r0,[sp,#0x1C]
+@mov r0,r4
+@mov r1,r5
+@mov r2,r6
+@mov r3,#0 @redundant some of the time but not always
+@we are going to need to change this part to however we tell a preexisting MU proc to do a move
+@blh MuCtr_CreateWithReda
+@add sp,#0x1C
+
+@ok now how the fuck do we make an existing MU move
+@MU_ManualUpdate?
+@MU_CreateScripted? @this seems like it would make a brand-new MU proc tho
+@MU_StartMoveScript?
+
+@MU_StartMoveScript gets called for moving a unit to a destination as a preexisting MU proc thing, but how specifically
+
+@MU_StartMoveScript_Auto
+
+@PlayerPhase_DisplayUnitMovement
+
+@which gets called probably from the proc this replaces
+
+@ProcessUnitMovement may be the necessary thing here, looks to use action data to make a move script
+@and MU_StartMoveScript_Auto takes the move buffer in r0
+
 
 @now proc_goto(8)
 @mov r0,r7
@@ -676,6 +709,92 @@ bx r1
 
 .ltorg
 .align
+
+
+.equ ProcessUnitMovement,0x801A82D
+
+
+
+.global FreeMove_ProcessUnitMovement
+.type FreeMove_ProcessUnitMovement, %function
+
+
+FreeMove_ProcessUnitMovement:
+push {r4-r7,r14}
+mov r4,r0 @unit to move
+mov r5,r1 @x coord to move to
+mov r6,r2 @y coord to move to
+
+@this was going to be a different function before but now it's the one at 32C88 but without movement arrow data as the impetus
+
+@okay we seriously need to find how the move buffer data works since in vanilla, the path you take with is based on how you move the cursor and that is what gets taken for each entry in the buffer
+
+@at least it can give insight on how the data is structured
+
+@looks like
+@+0x0 - Byte - something? (facing direction?)
+@+0x1 - Byte - x coord
+@+0x2 - Byte - y coord
+
+@right so, let's just 
+@spoof the cursor position data to be 1 in whatever direction
+
+ldr r0,=#0x859DBA0 @location of pointer to movement arrow data
+ldr r7,[r0]
+
+@reinit the data
+mov r0,r7
+add r0,#0x29
+ldrb r1,[r4,#0x10]
+strb r5,[r0]
+ldrb r1,[r4,#0x11]
+strb r6,[r0,#1]
+
+@value at +0x2B is irrelevant so let's set to 0
+mov r1,#0
+strb r1,[r0,#2]
+
+@+0x2C is the number of movement instructions, which is always going to be 1
+mov r1,#1
+strb r1,[r0,#3]
+
+@now we have arrays of x and y coords (and move costs, but we don't care about those for this)
+
+@put x and y coords into these arrays then
+mov r1,#0
+mov r0,r7
+add r0,#0x2D
+strb r5,[r0]
+strb r1,[r0,#1]
+mov r0,r7
+add r0,#0x41
+strb r6,[r0]
+strb r1,[r0,#1]
+
+@now call the thing to use this to generate movement path
+blh #0x8032C89
+
+@should be good then? (spoilers, this was not good)
+
+
+@now get active unit & their current coords
+
+mov r0,r4
+ldrb r1,[r4,#0x10]
+ldrb r2,[r4,#0x11]
+
+blh ProcessUnitMovement
+ldr r0,=gUnitMoveBuffer
+blh MU_StartMoveScript_Auto
+
+
+pop {r4-r7}
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
 
 
 .equ gChapterData,0x0202bcf0
