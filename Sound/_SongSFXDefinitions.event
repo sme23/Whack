@@ -51,6 +51,8 @@
 #define BiSTitle 0xE0
 #define BiSTheEnd 0xE1
 
+#define PhantasyStar2Battle 0xE4
+
 /*
 free:
 

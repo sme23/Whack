@@ -94,6 +94,11 @@ SongTable(BiSTitle,pititle,MapMusicGroup)
 #include "Songs/pithend.event"
 SongTable(BiSTheEnd,pithend,MapMusicGroup)
 }
+{
+#include "Songs/ps2battle.event"
+SongTable(PhantasyStar2Battle,ps2battle,BattleMusicGroup)
+}
+
 
 {
 #include "SFX/sfx-damage.event"

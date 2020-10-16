@@ -43,6 +43,7 @@ SoundRoomEntry(PyriteTown,0,SongName_PyriteTown)
 SoundRoomEntry(SpaceHarrier,0,SongName_SpaceHarrier)
 
 //battle music
+SoundRoomEntry(PhantasyStar2Battle,0,SongName_PS2Battle)
 SoundRoomEntry(ThisOnesStronger,0,SongName_ThisOnesStronger)
 
 //cutscene music
