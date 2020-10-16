@@ -24,6 +24,8 @@ Village(8,Village2Event,1,14)
 Village(9,Village3Event,19,14)
 Village(10,Village4Event,10,9)
 Village(11,Village5Event,14,1)
+DurabilityChest(SkillScroll,BoonID,16,4)
+Chest(Dragonshield,17,4)
 END_MAIN
 
 MiscBasedEvents:
@@ -58,7 +60,7 @@ AiScrMoveToPoint:
 
 
 PlayerUnits:
-UNIT Vanessa Falcoknight 1 Level(1,Ally,0) [2,3] 0 0 0 1 [IronLance,Vulnerary] NoAI
+UNIT Vanessa Falcoknight 1 Level(1,Ally,0) [16,4] 0 0 0 1 [IronLance,Vulnerary] NoAI
 UNIT Moulder Templar 1 Level(1,Ally,0) [4,4] 0 0 0 1 [Heal] NoAI
 UNIT Gilliam GreatKnight 1 Level(1,Ally,0) [5,3] 0 0 0 1 [IronLance] NoAI
 UNIT Syrene Falcoknight 1 Level(1,Ally,0) [3,4] 0 0 0 1 [Javelin] NoAI
@@ -105,15 +107,22 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
+TestThiefUnit:
+UNIT Bazbas Thief 1 Level(15,Enemy,1) [18,3] 0 0 0 1 [Lockpick] LootingThiefAI
+
 BeginningScene:
 LOAD1 0 PlayerUnits
 ENUN
+/*
 LOAD1 0 NPCUnits
 ENUN
 LOAD1 0 EnemyUnits
 ENUN
 FADU 10
 GiveGold(20000)
+*/
+LOAD1 0 TestThiefUnit
+ENUN
 NoFade
 ENDA
 

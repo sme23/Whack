@@ -8,6 +8,8 @@ Map:
 #incbin "MerchantMadness_data.dmp"
 
 MapChanges:
+TileMap(10,17,4,1,1,Tile_Layer_12)
+TileMap(11,16,4,1,1,Tile_Layer_13)
 TileMap(0,4,0,3,2,Break5)
 TileMap(1,0,13,3,2,Break4)
 TileMap(2,9,8,3,2,Break3)
@@ -19,6 +21,14 @@ TileMap(7,19,14,1,1,Visit3)
 TileMap(8,1,14,1,1,Visit4)
 TileMap(9,5,1,1,1,Visit5)
 TileMapEnd
+
+Tile_Layer_12:
+SHORT 0x4 
+ALIGN 4
+
+Tile_Layer_13:
+SHORT 0x4 
+ALIGN 4
 
 Break5:
 SHORT 0xe1c 0xe20 0xe24 0xf1c 0x0 0xf24 

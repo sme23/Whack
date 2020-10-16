@@ -16,6 +16,7 @@ POIN Canto CantoPlus Galeforce ReMove Powerstaff CulturedPostCombat Gridmaster /
 POIN IncDecLaguzBarsPerBattle //gain or lose bar from battle
 POIN HastePostBattle //refresh if haste effect is applied & haven't yet
 POIN PostCombatIncrementFatigue PostCombatStaffIncrementFatigue //fatigue gain
+
 WORD 0 //Terminator
 
 PROTECT $1D308 $1D314
