@@ -23,10 +23,10 @@ ps2battle_1_B1:
 	BYTE	TEMPO   145*ps2battle_tbs/2
 	BYTE		VOICE   36
 	BYTE		PAN     c_v+0
-	BYTE		MOD      0
+	BYTE		MOD     0
 	BYTE		VOL     120*ps2battle_mvl/mxv
 	BYTE		PAN     c_v+0
-	BYTE		BEND     c_v+0
+	BYTE		BEND    c_v+0
 	BYTE		N11     Cn2   v100
 	BYTE	W12
 	BYTE		N05   
@@ -238,9 +238,9 @@ ps2battle_2_B1:
 // 000   ----------------------------------------
 	BYTE		VOICE   30
 	BYTE		VOL     63*ps2battle_mvl/mxv
-	BYTE		MOD      0
+	BYTE		MOD     0
 	BYTE		PAN     c_v+21
-	BYTE		BEND     c_v+0
+	BYTE		BEND    c_v+0
 	BYTE		N11     Cn2   v088
 	BYTE	W12
 	BYTE		N11   
@@ -438,7 +438,7 @@ ps2battle_2_B2:
 // 024   ----------------------------------------
 	BYTE	FINE
 
-//**************** Track 3 (Midi-Chn.6) ****************//
+//**************** Track 3 (Midi-Chn.3) ****************//
 
 ps2battle_3:
 	BYTE	KEYSH   ps2battle_key+0
@@ -446,9 +446,6 @@ ps2battle_3_B1:
 // 000   ----------------------------------------
 	BYTE		VOICE   81
 	BYTE		VOL     63*ps2battle_mvl/mxv
-	BYTE		MOD      0
-	BYTE		PAN     c_v+0
-	BYTE		BEND    c_v+0
 	BYTE		N11     Gn3   v100
 	BYTE		N11     Cn4 
 	BYTE		N11     Ds4 
@@ -464,18 +461,9 @@ ps2battle_3_B1:
 	BYTE		TIE     Gn3 
 	BYTE		TIE     Cn4 
 	BYTE		TIE     Ds4 
-	BYTE	W24
-	BYTE	W01
-	BYTE		MOD      11
-	BYTE	W04
-	BYTE		        26
-	BYTE	W13
-	BYTE		        61
-	BYTE	W18
+	BYTE	W60
 // 001   ----------------------------------------
-	BYTE	W24
-	BYTE		        0
-	BYTE	W32
+	BYTE	W56
 	BYTE	W03
 	BYTE		EOT     Gn3 
 	BYTE		        Cn4 
@@ -486,7 +474,8 @@ ps2battle_3_B1:
 	BYTE		N32     Ds4 
 	BYTE	W36
 // 002   ----------------------------------------
-	BYTE		N11     Fn3 
+ps2battle_3_002:
+	BYTE		N11     Fn3   v100
 	BYTE		N11     As3 
 	BYTE		N11     Dn4 
 	BYTE	W12
@@ -501,27 +490,18 @@ ps2battle_3_B1:
 	BYTE		TIE     Fn3 
 	BYTE		TIE     As3 
 	BYTE		TIE     Dn4 
-	BYTE	W32
-	BYTE	W02
-	BYTE		MOD      13
-	BYTE	W10
-	BYTE		        29
-	BYTE	W01
-	BYTE		        30
-	BYTE	W10
-	BYTE		        62
-	BYTE	W05
+	BYTE	W60
+	BYTE	PEND
 // 003   ----------------------------------------
-	BYTE	W36
-	BYTE		        0
-	BYTE	W56
+	BYTE	W92
 	BYTE	W03
 	BYTE		EOT     Fn3 
 	BYTE		        As3 
 	BYTE		        Dn4 
 	BYTE	W01
 // 004   ----------------------------------------
-	BYTE		N11     Gn3 
+ps2battle_3_004:
+	BYTE		N11     Gn3   v100
 	BYTE		N11     Cn4 
 	BYTE		N11     Ds4 
 	BYTE	W12
@@ -536,30 +516,22 @@ ps2battle_3_B1:
 	BYTE		TIE     Gn3 
 	BYTE		TIE     Cn4 
 	BYTE		TIE     Ds4 
-	BYTE	W23
-	BYTE		MOD      16
-	BYTE	W08
-	BYTE		        32
-	BYTE	W13
-	BYTE		        63
-	BYTE	W16
-// 005   ----------------------------------------
-ps2battle_3_005:
-	BYTE	W22
-	BYTE		MOD      0
-	BYTE	W36
-	BYTE	W01
+	BYTE	W60
 	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	W56
+	BYTE	W03
 	BYTE		EOT     Gn3 
 	BYTE		        Cn4 
 	BYTE		        Ds4 
 	BYTE	W01
-	BYTE		N32     Gn3   v100
+	BYTE		N32     Gn3 
 	BYTE		N32     Cn4 
 	BYTE		N32     Ds4 
 	BYTE	W36
 // 006   ----------------------------------------
-	BYTE		N11     Fn3 
+ps2battle_3_006:
+	BYTE		N11     Fn3   v100
 	BYTE		N11     As3 
 	BYTE		N11     Dn4 
 	BYTE	W12
@@ -574,17 +546,9 @@ ps2battle_3_005:
 	BYTE		N56     Fn3 
 	BYTE		N56     As3 
 	BYTE		N56     Dn4 
-	BYTE	W21
-	BYTE		MOD      20
-	BYTE	W07
-	BYTE		        42
-	BYTE	W11
-	BYTE		        72
-	BYTE	W20
-	BYTE		        1
-	BYTE	W01
+	BYTE	W60
+	BYTE	PEND
 // 007   ----------------------------------------
-	BYTE		        0
 	BYTE	W12
 	BYTE		N11     Ds3 
 	BYTE		N11     Gn3 
@@ -615,32 +579,11 @@ ps2battle_3_005:
 	BYTE		N11     Cn4 
 	BYTE	W12
 // 008   ----------------------------------------
-	BYTE		        Gn3 
-	BYTE		N11     Cn4 
-	BYTE		N11     Ds4 
-	BYTE	W12
-	BYTE		        Gn3 
-	BYTE		N11     Cn4 
-	BYTE		N11     Ds4 
-	BYTE	W12
-	BYTE		        Gn3 
-	BYTE		N11     Cn4 
-	BYTE		N11     Ds4 
-	BYTE	W12
-	BYTE		TIE     Gn3 
-	BYTE		TIE     Cn4 
-	BYTE		TIE     Ds4 
-	BYTE	W24
-	BYTE	W02
-	BYTE		MOD      13
-	BYTE	W06
-	BYTE		        26
-	BYTE	W11
-	BYTE		        60
-	BYTE	W17
-// 009   ----------------------------------------
 	BYTE	PATT
-	 POIN2	ps2battle_3_005
+	 POIN2	ps2battle_3_004
+// 009   ----------------------------------------
+	BYTE	W56
+	BYTE	W03
 	BYTE		EOT     Gn3 
 	BYTE		        Cn4 
 	BYTE		        Ds4 
@@ -650,112 +593,44 @@ ps2battle_3_005:
 	BYTE		N32     Ds4 
 	BYTE	W36
 // 010   ----------------------------------------
-	BYTE		N11     Fn3 
-	BYTE		N11     As3 
-	BYTE		N11     Dn4 
-	BYTE	W12
-	BYTE		        Fn3 
-	BYTE		N11     As3 
-	BYTE		N11     Dn4 
-	BYTE	W12
-	BYTE		        Fn3 
-	BYTE		N11     As3 
-	BYTE		N11     Dn4 
-	BYTE	W12
-	BYTE		TIE     Fn3 
-	BYTE		TIE     As3 
-	BYTE		TIE     Dn4 
-	BYTE	W24
-	BYTE		MOD      15
-	BYTE	W12
-	BYTE		        34
-	BYTE	W12
-	BYTE		        65
-	BYTE	W12
+	BYTE	PATT
+	 POIN2	ps2battle_3_002
 // 011   ----------------------------------------
-	BYTE	W42
-	BYTE	W01
-	BYTE		        0
-	BYTE	W52
+	BYTE	W92
+	BYTE	W03
 	BYTE		EOT     Fn3 
 	BYTE		        As3 
 	BYTE		        Dn4 
 	BYTE	W01
 // 012   ----------------------------------------
-	BYTE		N11     Gn3 
-	BYTE		N11     Cn4 
-	BYTE		N11     Ds4 
-	BYTE	W12
-	BYTE		        Gn3 
-	BYTE		N11     Cn4 
-	BYTE		N11     Ds4 
-	BYTE	W12
-	BYTE		        Gn3 
-	BYTE		N11     Cn4 
-	BYTE		N11     Ds4 
-	BYTE	W12
-	BYTE		TIE     Gn3 
-	BYTE		TIE     Cn4 
-	BYTE		TIE     Ds4 
-	BYTE	W22
-	BYTE		MOD      14
-	BYTE	W11
-	BYTE		        27
-	BYTE	W13
-	BYTE		        57
-	BYTE	W14
+	BYTE	PATT
+	 POIN2	ps2battle_3_004
 // 013   ----------------------------------------
-	BYTE	W23
-	BYTE		        0
-	BYTE	W36
+	BYTE	W56
+	BYTE	W03
 	BYTE		EOT     Gn3 
 	BYTE		        Cn4 
 	BYTE		        Ds4 
 	BYTE	W01
-	BYTE		N32     Gn3 
+	BYTE		N32     Gn3   v100
 	BYTE		N32     Cn4 
 	BYTE		N32     Ds4 
 	BYTE	W36
 // 014   ----------------------------------------
-	BYTE		N11     Fn3 
-	BYTE		N11     As3 
-	BYTE		N11     Dn4 
-	BYTE	W12
-	BYTE		        Fn3 
-	BYTE		N11     As3 
-	BYTE		N11     Dn4 
-	BYTE	W12
-	BYTE		        Fn3 
-	BYTE		N11     As3 
-	BYTE		N11     Dn4 
-	BYTE	W12
-	BYTE		N56     Fn3 
-	BYTE		N56     As3 
-	BYTE		N56     Dn4 
-	BYTE	W22
-	BYTE		MOD      14
-	BYTE	W08
-	BYTE		        30
-	BYTE	W14
-	BYTE		        63
-	BYTE	W15
-	BYTE		        1
-	BYTE	W01
+	BYTE	PATT
+	 POIN2	ps2battle_3_006
 // 015   ----------------------------------------
-	BYTE		        0
-	BYTE		N32     Ds3 
+	BYTE		N32     Ds3   v100
 	BYTE		N32     Gs3 
 	BYTE		N32     Cn4 
-	BYTE	W09
-	BYTE		MOD      0
-	BYTE	W24
-	BYTE	W03
+	BYTE	W36
 	BYTE		N56     Fn3 
 	BYTE		N56     As3 
 	BYTE		N56     Dn4 
 	BYTE	W60
 // 016   ----------------------------------------
-	BYTE		N11     Fn3 
+ps2battle_3_016:
+	BYTE		N11     Fn3   v100
 	BYTE		N11     As3 
 	BYTE		N11     Dn4 
 	BYTE	W12
@@ -770,19 +645,11 @@ ps2battle_3_005:
 	BYTE		TIE     Fn3 
 	BYTE		TIE     As3 
 	BYTE		TIE     Dn4 
-	BYTE	W24
-	BYTE	W03
-	BYTE		MOD      19
-	BYTE	W09
-	BYTE		        33
-	BYTE	W12
-	BYTE		        60
-	BYTE	W12
+	BYTE	W60
+	BYTE	PEND
 // 017   ----------------------------------------
-	BYTE	W36
+	BYTE	W56
 	BYTE	W03
-	BYTE		        0
-	BYTE	W20
 	BYTE		EOT     Fn3 
 	BYTE		        As3 
 	BYTE		        Dn4 
@@ -811,58 +678,25 @@ ps2battle_3_005:
 	BYTE		TIE     Gn3 
 	BYTE		TIE     Cn4 
 	BYTE		TIE     Ds4 
-	BYTE	W24
-	BYTE	W03
-	BYTE		MOD      17
-	BYTE	W13
-	BYTE		        34
-	BYTE	W13
-	BYTE		        57
-	BYTE	W07
+	BYTE	W60
 // 019   ----------------------------------------
-	BYTE	W36
-	BYTE	W01
-	BYTE		        0
-	BYTE	W56
-	BYTE	W02
+	BYTE	W92
+	BYTE	W03
 	BYTE		EOT     Gn3 
 	BYTE		        Cn4 
 	BYTE		        Ds4 
 	BYTE	W01
 // 020   ----------------------------------------
-	BYTE		N11     Fn3 
-	BYTE		N11     As3 
-	BYTE		N11     Dn4 
-	BYTE	W12
-	BYTE		        Fn3 
-	BYTE		N11     As3 
-	BYTE		N11     Dn4 
-	BYTE	W12
-	BYTE		        Ds3 
-	BYTE		N11     Gs3 
-	BYTE		N11     Cn4 
-	BYTE	W12
-	BYTE		TIE     Fn3 
-	BYTE		TIE     As3 
-	BYTE		TIE     Dn4 
-	BYTE	W21
-	BYTE		MOD      12
-	BYTE	W01
-	BYTE		        13
-	BYTE	W10
-	BYTE		        36
-	BYTE	W14
-	BYTE		        66
-	BYTE	W14
+	BYTE	PATT
+	 POIN2	ps2battle_3_016
 // 021   ----------------------------------------
-	BYTE	W17
-	BYTE		        0
-	BYTE	W42
+	BYTE	W56
+	BYTE	W03
 	BYTE		EOT     Fn3 
 	BYTE		        As3 
 	BYTE		        Dn4 
 	BYTE	W01
-	BYTE		N11     Fn3 
+	BYTE		N11     Fn3   v100
 	BYTE		N11     As3 
 	BYTE		N11     Dn4 
 	BYTE	W12
@@ -892,126 +726,44 @@ ps2battle_3_B2:
 // 024   ----------------------------------------
 	BYTE	FINE
 
-//**************** Track 4 (Midi-Chn.7) ****************//
+//**************** Track 4 (Midi-Chn.4) ****************//
 
 ps2battle_4:
 	BYTE	KEYSH   ps2battle_key+0
 ps2battle_4_B1:
 // 000   ----------------------------------------
 	BYTE		VOICE   103
-	BYTE		VOL     71*ps2battle_mvl/mxv
-	BYTE		MOD      0
-	BYTE		PAN     c_v+0
-	BYTE		BEND     c_v-22
+	BYTE		VOL     76*ps2battle_mvl/mxv
+	BYTE		PAN     c_v-13
 	BYTE		N23     Gn4   v100
-	BYTE	W01
-	BYTE		BEND     c_v-17
-	BYTE	W01
-	BYTE		        c_v-11
-	BYTE	W01
-	BYTE		        c_v-7
-	BYTE	W01
-	BYTE		        c_v-4
-	BYTE	W01
-	BYTE		        c_v-3
-	BYTE	W01
-	BYTE		        c_v-1
-	BYTE	W02
-	BYTE		        c_v+1
-	BYTE	W01
-	BYTE		        c_v+1
-	BYTE	W01
-	BYTE		        c_v+1
-	BYTE	W14
+	BYTE	W24
 	BYTE		N11     Ds4 
 	BYTE	W12
 	BYTE		N23     Cn4 
 	BYTE	W24
 	BYTE		N32     Cn5 
-	BYTE	W13
-	BYTE		MOD      17
-	BYTE	W09
-	BYTE		        49
-	BYTE	W11
-	BYTE		        0
-	BYTE	W03
+	BYTE	W36
 // 001   ----------------------------------------
 	BYTE		N23     As4 
 	BYTE	W24
 	BYTE		N11     Gn4 
 	BYTE	W12
 	BYTE		N56     Ds4 
-	BYTE	W14
-	BYTE		MOD      11
-	BYTE	W06
-	BYTE		        24
-	BYTE	W11
-	BYTE		        53
-	BYTE	W01
-	BYTE		        54
-	BYTE	W03
-	BYTE	W07
-	BYTE	W09
-	BYTE	W05
-	BYTE		        0
-	BYTE	W03
-	BYTE	W01
+	BYTE	W60
 // 002   ----------------------------------------
 	BYTE		N23     Fn4 
 	BYTE	W24
 	BYTE		N11     Dn4 
 	BYTE	W12
 	BYTE		N44     As3 
-	BYTE	W21
-	BYTE		MOD      10
-	BYTE	W01
-	BYTE		        11
-	BYTE	W06
-	BYTE		        27
-	BYTE	W06
-	BYTE		        48
-	BYTE	W12
-	BYTE		        0
-	BYTE	W02
+	BYTE	W48
 	BYTE		N80     Fn3 
-	BYTE	W08
-	BYTE		MOD      0
-	BYTE	W04
-// 003   ----------------------------------------
-	BYTE	W24
-	BYTE		        6
-	BYTE	W01
-	BYTE	W05
-	BYTE		        15
 	BYTE	W12
-	BYTE		        47
-	BYTE	W06
-	BYTE	W22
-	BYTE		        0
-	BYTE	W01
-	BYTE	W19
-	BYTE	W05
-	BYTE	W01
+// 003   ----------------------------------------
+	BYTE	W96
 // 004   ----------------------------------------
-	BYTE		BEND     c_v-21
 	BYTE		N23     Gn4 
-	BYTE	W01
-	BYTE		BEND     c_v-18
-	BYTE	W01
-	BYTE		        c_v-12
-	BYTE	W01
-	BYTE		        c_v-9
-	BYTE	W01
-	BYTE		        c_v-7
-	BYTE	W01
-	BYTE		        c_v-6
-	BYTE	W01
-	BYTE		        c_v-3
-	BYTE	W02
-	BYTE		        c_v-1
-	BYTE	W02
-	BYTE		        c_v+0
-	BYTE	W14
+	BYTE	W24
 	BYTE		N11     Ds4 
 	BYTE	W12
 	BYTE		N23     Cn4 
@@ -1025,21 +777,7 @@ ps2battle_4_B1:
 	BYTE		        Cn5 
 	BYTE	W12
 	BYTE		N56     Gn4 
-	BYTE	W17
-	BYTE		MOD      11
-	BYTE	W01
-	BYTE		        12
-	BYTE	W08
-	BYTE		        23
-	BYTE	W07
-	BYTE		        56
-	BYTE	W01
-	BYTE	W10
-	BYTE	W10
-	BYTE	W03
-	BYTE		        0
-	BYTE	W02
-	BYTE	W01
+	BYTE	W60
 // 006   ----------------------------------------
 	BYTE	W12
 	BYTE		N11     Fn4 
@@ -1056,43 +794,12 @@ ps2battle_4_B1:
 	BYTE		        Gn4 
 	BYTE	W24
 	BYTE		N11     Ds4 
-	BYTE	W04
-	BYTE	W08
+	BYTE	W12
 	BYTE		N56     Cn4 
-	BYTE	W13
-	BYTE	W12
-	BYTE		MOD      17
-	BYTE	W03
-	BYTE	W03
-	BYTE		        27
-	BYTE	W12
-	BYTE	W01
-	BYTE		        58
-	BYTE	W11
-	BYTE		        0
-	BYTE	W05
+	BYTE	W60
 // 008   ----------------------------------------
-	BYTE		BEND     c_v-24
 	BYTE		N23     Gn4 
-	BYTE	W01
-	BYTE		BEND     c_v-17
-	BYTE	W01
-	BYTE		        c_v-12
-	BYTE	W01
-	BYTE		        c_v-9
-	BYTE	W01
-	BYTE		        c_v-6
-	BYTE	W01
-	BYTE		        c_v-5
-	BYTE	W01
-	BYTE		        c_v-3
-	BYTE	W02
-	BYTE		        c_v-2
-	BYTE	W02
-	BYTE		        c_v-1
-	BYTE	W02
-	BYTE		        c_v+0
-	BYTE	W12
+	BYTE	W24
 	BYTE		N11     Ds4 
 	BYTE	W12
 	BYTE		N21     Cn4 
@@ -1109,20 +816,7 @@ ps2battle_4_B1:
 	BYTE		        As4 
 	BYTE	W12
 	BYTE		N56     Ds4 
-	BYTE	W12
-	BYTE	W05
-	BYTE		MOD      14
-	BYTE	W08
-	BYTE		        27
-	BYTE	W01
-	BYTE	W05
-	BYTE		        61
-	BYTE	W05
-	BYTE	W13
-	BYTE		        0
-	BYTE	W01
-	BYTE	W08
-	BYTE	W02
+	BYTE	W60
 // 010   ----------------------------------------
 	BYTE	W12
 	BYTE		N11     Dn4 
@@ -1138,20 +832,7 @@ ps2battle_4_B1:
 	BYTE		N92     As3   v088
 	BYTE	W12
 // 011   ----------------------------------------
-	BYTE	W09
-	BYTE		MOD      12
-	BYTE	W08
-	BYTE		        21
-	BYTE	W11
-	BYTE		        50
-	BYTE	W11
-	BYTE	W06
-	BYTE		        0
-	BYTE	W09
-	BYTE	W15
-	BYTE	W17
-	BYTE	W08
-	BYTE	W02
+	BYTE	W96
 // 012   ----------------------------------------
 	BYTE		N11     Cn3   v100
 	BYTE	W12
@@ -1170,28 +851,8 @@ ps2battle_4_B1:
 	BYTE		        Ds4 
 	BYTE	W12
 // 013   ----------------------------------------
-	BYTE		BEND     c_v-10
 	BYTE		N44     Dn4 
-	BYTE	W01
-	BYTE		BEND     c_v-7
-	BYTE	W01
-	BYTE		        c_v-4
-	BYTE	W01
-	BYTE		        c_v-3
-	BYTE	W01
-	BYTE		        c_v-2
-	BYTE	W02
-	BYTE		MOD      5
-	BYTE		BEND     c_v-1
-	BYTE	W02
-	BYTE		        c_v+0
-	BYTE	W05
-	BYTE		MOD      16
-	BYTE	W09
-	BYTE		        43
-	BYTE	W21
-	BYTE		        0
-	BYTE	W05
+	BYTE	W48
 	BYTE		N23     As3 
 	BYTE	W24
 	BYTE		        Cn4 
@@ -1204,54 +865,10 @@ ps2battle_4_B1:
 	BYTE		N23     Fn3 
 	BYTE	W24
 // 015   ----------------------------------------
-	BYTE		BEND     c_v-18
 	BYTE		N32     Gs3 
-	BYTE	W01
-	BYTE		BEND     c_v-16
-	BYTE	W01
-	BYTE		        c_v-12
-	BYTE	W01
-	BYTE		        c_v-10
-	BYTE	W01
-	BYTE		        c_v-5
-	BYTE	W01
-	BYTE		        c_v-4
-	BYTE	W01
-	BYTE		        c_v-2
-	BYTE	W01
-	BYTE		        c_v-1
-	BYTE	W01
-	BYTE		        c_v+0
-	BYTE	W01
-	BYTE		        c_v+1
-	BYTE	W02
-	BYTE		        c_v+0
-	BYTE	W24
-	BYTE	W01
+	BYTE	W36
 	BYTE		N56     As3 
-	BYTE	W11
-	BYTE		BEND     c_v-10
-	BYTE	W01
-	BYTE		        c_v-6
-	BYTE	W01
-	BYTE		        c_v-5
-	BYTE	W01
-	BYTE		        c_v-3
-	BYTE	W01
-	BYTE		        c_v-2
-	BYTE	W01
-	BYTE		        c_v-1
-	BYTE	W02
-	BYTE		        c_v+0
-	BYTE	W08
-	BYTE		MOD      12
-	BYTE	W06
-	BYTE		        20
-	BYTE	W10
-	BYTE		        49
-	BYTE	W13
-	BYTE		        0
-	BYTE	W05
+	BYTE	W60
 // 016   ----------------------------------------
 	BYTE		N11   
 	BYTE	W12
@@ -1289,18 +906,7 @@ ps2battle_4_B1:
 	BYTE		        Gn3 
 	BYTE	W12
 	BYTE		N56     Cn4 
-	BYTE	W15
-	BYTE		MOD      10
-	BYTE	W09
-	BYTE		        20
-	BYTE	W10
-	BYTE		        53
-	BYTE	W01
-	BYTE	W15
-	BYTE	W05
-	BYTE		        0
-	BYTE	W03
-	BYTE	W02
+	BYTE	W60
 // 020   ----------------------------------------
 	BYTE		N11     As3 
 	BYTE	W12
@@ -1313,55 +919,16 @@ ps2battle_4_B1:
 	BYTE		N80   
 	BYTE	W36
 // 021   ----------------------------------------
-	BYTE	W04
-	BYTE		MOD      15
-	BYTE	W06
-	BYTE		        26
-	BYTE	W12
-	BYTE		        54
-	BYTE	W13
-	BYTE		        0
-	BYTE	W13
+	BYTE	W48
 	BYTE		N44     Gn3 
 	BYTE	W48
 // 022   ----------------------------------------
-	BYTE		BEND     c_v-13
 	BYTE		TIE     Bn3 
-	BYTE	W01
-	BYTE		BEND     c_v-10
-	BYTE	W01
-	BYTE		        c_v-6
-	BYTE	W01
-	BYTE		        c_v-5
-	BYTE	W01
-	BYTE		        c_v-3
-	BYTE	W01
-	BYTE		        c_v-2
-	BYTE	W01
-	BYTE		        c_v-1
-	BYTE	W02
-	BYTE		        c_v+0
-	BYTE	W03
-	BYTE		MOD      14
-	BYTE	W09
-	BYTE		        21
-	BYTE	W16
-	BYTE		        43
-	BYTE	W52
-	BYTE		        0
-	BYTE	W08
+	BYTE	W96
 // 023   ----------------------------------------
-	BYTE	W14
-	BYTE	W16
-	BYTE	W16
-	BYTE	W12
-	BYTE	W15
-	BYTE	W12
-	BYTE	W08
-	BYTE	W01
-	BYTE	W01
+	BYTE	W92
+	BYTE	W03
 	BYTE		EOT   
-	BYTE		BEND     c_v+0
 	BYTE	W01
 	BYTE	GoTo
 	 POIN2	ps2battle_4_B1
@@ -1369,7 +936,7 @@ ps2battle_4_B2:
 // 024   ----------------------------------------
 	BYTE	FINE
 
-//**************** Track 5 (Midi-Chn.8) ****************//
+//**************** Track 5 (Midi-Chn.5) ****************//
 
 ps2battle_5:
 	BYTE	KEYSH   ps2battle_key+0
@@ -1377,7 +944,7 @@ ps2battle_5_B1:
 // 000   ----------------------------------------
 	BYTE		VOICE   36
 	BYTE		PAN     c_v+62
-	BYTE		MOD      0
+	BYTE		MOD     0
 	BYTE		VOL     59*ps2battle_mvl/mxv
 	BYTE		PAN     c_v+0
 	BYTE	W96
@@ -1580,7 +1147,7 @@ ps2battle_5_B2:
 // 024   ----------------------------------------
 	BYTE	FINE
 
-//**************** Track 6 (Midi-Chn.9) ****************//
+//**************** Track 6 (Midi-Chn.6) ****************//
 
 ps2battle_6:
 	BYTE	KEYSH   ps2battle_key+0
@@ -1588,7 +1155,7 @@ ps2battle_6_B1:
 // 000   ----------------------------------------
 	BYTE		VOICE   123
 	BYTE		VOL     80*ps2battle_mvl/mxv
-	BYTE		MOD      0
+	BYTE		MOD     0
 	BYTE		VOL     83*ps2battle_mvl/mxv
 	BYTE		PAN     c_v-16
 	BYTE		N02     Cn1   v100
