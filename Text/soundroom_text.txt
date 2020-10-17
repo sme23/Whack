@@ -64,3 +64,6 @@ The End[X]
 ## SongName_PS2Battle
 Battle[X]
 
+## SongName_PS3Dungeon
+Dungeon[X]
+

@@ -98,6 +98,10 @@ SongTable(BiSTheEnd,pithend,MapMusicGroup)
 #include "Songs/ps2battle.event"
 SongTable(PhantasyStar2Battle,ps2battle,BattleMusicGroup)
 }
+{
+#include "Songs/ps3d.event"
+SongTable(PS3Dungeon,ps3d,MapMusicGroup)
+}
 
 
 {
