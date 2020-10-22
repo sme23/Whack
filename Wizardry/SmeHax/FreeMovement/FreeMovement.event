@@ -30,7 +30,8 @@
 	#define EnableFreeMovement "ASMC EnableFreeMovementASMC"
 	#define DisableFreeMovement "ASMC DisableFreeMovementASMC"
 	
-	#include "FreeMovement.lyn.event"
+	//#include "FreeMovement.lyn.event"
+	#include "legacy/FreeMovement.lyn.event"
 	
 	ALIGN 4
 	FreeMovementControlProc:

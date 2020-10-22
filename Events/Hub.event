@@ -228,11 +228,11 @@ BeginningScene:
 
 //made free movement which obsoleted the menus lol
 
-//LOAD1 0 FreeMoveUnits
-//ENUN
+LOAD1 0 FreeMoveUnits
+ENUN
 
 
-//CAM1 Eirika
+CAM1 Eirika
 
 FADU 10
 
@@ -259,9 +259,9 @@ LABEL 0
 //MOVE 1 Eirika [19,7] (left 2)
 // 00 00 04 00
 
-//EnableFreeMovement
+EnableFreeMovement
 
-MNC2 MerchantMadnessChID
+//MNC2 MerchantMadnessChID
 
 NoFade
 ENDA

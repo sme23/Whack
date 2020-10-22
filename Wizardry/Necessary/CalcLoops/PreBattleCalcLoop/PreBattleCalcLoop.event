@@ -45,6 +45,8 @@ POIN LethalitySkill Bane
 POIN LethalitySkill NonGBALethalitySkill Bane
 #endif
 
+POIN DualStrike
+
 //add any new ones before here
 
 //quick riposte goes after everything that might touch AS

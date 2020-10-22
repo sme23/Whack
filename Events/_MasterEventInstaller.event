@@ -81,3 +81,7 @@
 {
 #include "Minesweeper.event"
 }
+
+{
+#include "Ch5Base.event"
+}
