@@ -53,7 +53,7 @@ END_MAIN
 ALIGN 4
 Units1:
 UNIT Eirika EirikaLord 0x00 Level(1, Ally, 0) [14,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
-UNIT Seth EphraimMasterLord Eirika Level(1, Ally, 0) [9,18] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 2 EphraimMasterLord Eirika Level(1, Ally, 0) [9,18] 0x00 0x00 0x0 0x00 [0x00] NoAI
 UNIT
 /*
 Bad:
