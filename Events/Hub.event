@@ -17,9 +17,9 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEvent(0,VanessaTalk,Moulder,Vanessa)
-CharacterEvent(0,GilliamTalk,Moulder,Gilliam)
-CharacterEvent(0,BazbaTalk,Moulder,Bazba)
+CharacterEvent(0,VanessaTalk,0xFF,Vanessa)
+CharacterEvent(0,GilliamTalk,0xFF,Gilliam)
+CharacterEvent(0,BazbaTalk,0xFF,Bazba)
 END_MAIN
 
 #define Chest(id,item,x,y) "CHES id item [x,y] 0x14"
@@ -165,17 +165,27 @@ NoFade
 ENDA
 
 Vendor15:
-Text(EmptyHouseText)
+SVAL s1 Eirika //temp, this should be doable with active unit but that requires rewriting the asmc slightly
+//SVAL s2 VendorShopList|IsPointer
+//SVAL s3 1 //vendor shop type
+//ASMC MakeShopASMC
+ASMC ChangeControlledUnitASMC
 NoFade
 ENDA
 
 Armory16:
-Text(EmptyHouseText)
+SVAL s1 Vanessa //temp, this should be doable with active unit but that requires rewriting the asmc slightly
+//SVAL s2 VendorShopList|IsPointer
+//SVAL s3 1 //vendor shop type
+//ASMC MakeShopASMC
+ASMC ChangeControlledUnitASMC
 NoFade
 ENDA
 
 Armory17:
-Text(EmptyHouseText)
+SVAL s2 VendorShopList|IsPointer
+SVAL s3 1 //vendor shop type
+ASMC MakeShopASMC
 NoFade
 ENDA
 
